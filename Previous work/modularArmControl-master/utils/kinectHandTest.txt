@@ -1,0 +1,25 @@
+clc; clear all; close all;
+imaqreset;
+depthVid = videoinput('kinect',2);
+triggerconfig(depthVid, 'manual');
+depthVid.FramesPerTrigger = 1;
+depthVid.TriggerRepeat = inf;
+set(getselectedsource(depthVid), 'TrackingMode', 'Skeleton');
+viewer = vision.DeployableVideoPlayer();
+start(depthVid);
+himg = figure;
+while ishandle(himg)
+trigger(depthVid);
+[depthMap, ~, depthMetaData] = getdata(depthVid);
+idx = find(depthMetaData.IsSkeletonTracked);
+imshow(depthMap, [0 4096]);
+if idx ~= 0
+rightHand = depthMetaData.JointDepthIndices(12,:,idx);
+rightHandWorldCoordinate = depthMetaData.JointWorldCoordinates(12,:,idx);
+zCoord = 1e3*min(depthMetaData.JointWorldCoordinates(12,:,idx));
+radius = round(90 - zCoord / 50);
+rightHandBox = [rightHand-0.5*radius 1.2*radius 1.2*radius];
+rectangle('position', rightHandBox, 'EdgeColor', [1 1 0])
+end
+end
+stop(depthVid);
