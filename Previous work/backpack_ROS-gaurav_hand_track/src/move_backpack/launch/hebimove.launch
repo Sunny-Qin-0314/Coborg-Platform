@@ -1,0 +1,7 @@
+<launch> 
+  <node name = "right_arm" pkg = "move_backpack" type = "hebi_move_to_pose.py" respawn = "true" output = "screen" />
+  <node name = "hebiros_node" pkg = "hebiros" type = "hebiros_node" respawn = "true" output = "screen" />
+  <node name = "add_hebi_group" pkg = "move_backpack" type = "add_group.py" respawn = "true" output = "screen" />
+</launch>
+
+

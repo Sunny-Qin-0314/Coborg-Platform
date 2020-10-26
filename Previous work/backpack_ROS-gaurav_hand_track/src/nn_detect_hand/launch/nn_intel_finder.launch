@@ -1,0 +1,7 @@
+<launch>
+
+
+	<node pkg="nn_detect_hand" type="get_intelhand_poses.py" name="get_hand_position">
+	</node>
+
+</launch>

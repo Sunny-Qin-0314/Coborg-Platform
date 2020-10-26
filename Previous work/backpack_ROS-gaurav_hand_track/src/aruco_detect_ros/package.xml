@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>aruco_detect_ros</name>
+  <version>0.0.0</version>
+  <description>Detects the aruco package and prints the pose of the position of aruco</description>
+  <maintainer email="gauravs123456789@gmail.com">Gaurav</maintainer>
+  <license>TODO</license>
+
+
+  <author email="gauravs123456789@gmail.com">Gaurav</author> 
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

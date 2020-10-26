@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: hebi-py
+Version: 1.0.1
+Summary: HEBI Core python bindings
+Home-page: https://docs.hebi.us
+Author: Daniel Wright
+Author-email: support@hebirobotics.com
+License: UNKNOWN
+Project-URL: API Reference, http://docs.hebi.us/docs/python/1.0.1
+Project-URL: Documentation, http://docs.hebi.us/tools.html#python-api
+Project-URL: Examples, https://github.com/HebiRobotics/HEBI-python-examples
+Project-URL: Changelog, http://docs.hebi.us/downloads_changelogs.html#python-api-changelog
+Description: 
+        HEBI Core python API
+        ====================
+        
+        HEBI python provides bindings for the HEBI Core library.
+        
+        API Reference available at http://docs.hebi.us/docs/python/1.0.1
+        
+        Documentation available on [docs.hebi.us](http://docs.hebi.us/tools.html#python-api).
+        
+        Note that this is a pre-release. Future versions may break or change APIs with
+        little or no notice.
+        Reference the [changelog](http://docs.hebi.us/downloads_changelogs.html#python-api-changelog) for more information.
+        
+        By using this software, you agree to our [software license](https://www.hebirobotics.com/softwarelicense).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: MacOS X
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
