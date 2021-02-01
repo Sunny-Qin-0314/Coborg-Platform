@@ -1,0 +1,30 @@
+cheatsheet:
+
+git config user.email "yuqingq@andrew.cmu.edu"
+git config user.name "Yuqing"
+
+git clone <link>
+
+git status
+
+git add <file>
+
+git commit -m "<comment>"
+
+git push
+
+git pull   // !!!!!!!!!!! run this everytime before you want to modify something
+
+
+
+
+Branch stuff:
+struture: main -> devel -> features(issues)
+
+git checkout -b <branch_name>
+git push --set-upstream origin <branch>
+git pull origin <your_branch>
+
+git checkout <branch>
+git merge <branch that you want to merge from>
+git push origin <branch name>
