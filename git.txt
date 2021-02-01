@@ -15,11 +15,15 @@ git push
 
 git pull   // !!!!!!!!!!! run this everytime before you want to modify something
 
+git log  // check the commit history
 
+git reset --hard HEAD^  // reset the last commit
 
 
 Branch stuff:
 struture: main -> devel -> features(issues)
+
+git branch
 
 git checkout -b <branch_name>
 git push --set-upstream origin <branch>
