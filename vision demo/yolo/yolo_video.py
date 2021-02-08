@@ -3,12 +3,12 @@ import cv2
 
 from yolo import YOLO
 
-# ap = argparse.ArgumentParser()
-# ap.add_argument('-n', '--network', default="normal", help='Network Type: normal / tiny / prn / v4-tiny')
-# ap.add_argument('-d', '--device', default=0, help='Device to use')
-# ap.add_argument('-s', '--size', default=416, help='Size for yolo')
-# ap.add_argument('-c', '--confidence', default=0.2, help='Confidence for yolo')
-# args = ap.parse_args()
+ap = argparse.ArgumentParser()
+ap.add_argument('-n', '--network', default="normal", help='Network Type: normal / tiny / prn / v4-tiny')
+ap.add_argument('-d', '--device', default=0, help='Device to use')
+ap.add_argument('-s', '--size', default=416, help='Size for yolo')
+ap.add_argument('-c', '--confidence', default=0.2, help='Confidence for yolo')
+args = ap.parse_args()
 #
 # if args.network == "normal":
 print("loading yolo...")
