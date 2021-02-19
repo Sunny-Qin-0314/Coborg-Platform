@@ -15,4 +15,4 @@ COBORG is an exoskeleton platform that will change the world. The vision of this
 CMU 2020MRSD Team C:
 Husam Wadi, Yuqing Qin, Gerry D’Ascoli, Feng Xiang, Jonathan Lord-Fonda
 
-BioRobotics Lab at CMU
+BioRobotics Lab at CMU.
