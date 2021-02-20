@@ -15,3 +15,4 @@ Ending work day
 1. git push
 2. <go to github.com>
 3. <create pull request from your branch to devel>
+dafsdfas
