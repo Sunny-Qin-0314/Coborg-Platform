@@ -1,4 +1,4 @@
-hhh cheatsheet:
+test cheatsheet:
 
 git config user.email "yuqingq@andrew.cmu.edu"
 git config user.name "Yuqing"
