@@ -12,10 +12,10 @@ int echoPin = 12; // for ultrasonic sensor
 int flexPin = A1; // flex sensor
 int IRpin = A5; // IR sensor
 
-int POTENTIOMETER_PIN = A0;
+int POTENTIOMETER_PIN = A0; // for potentiometer
 
 
-const int SERVO_PIN = 8;
+const int SERVO_PIN = 8; // for servo motor
 Servo servo;
 
 // average filtering variables
@@ -108,15 +108,13 @@ void loop(void) {
   digitalWrite(triggerPin, LOW);
   unsigned long durationMicroSec = pulseIn(echoPin, HIGH);
   int avgDurationMicroSec = avgFilterUltra((int) durationMicroSec);
-  //unsigned long avgDurationMicroSec = durationMicroSec;
   double distanceCm = avgDurationMicroSec / 2.0 * 0.0340;  // 340m/s  0.0340cm/microsec
-  //Serial.println(distanceCm);
-  //Serial.println(avgDurationMicroSec);
 
   //Potentiometer
   int analogValuePot = analogRead(POTENTIOMETER_PIN);
   int avgValuePot= avgFilterPot(analogValuePot);
-  servo.write(avgValuePot/5.71);
+  float anglePot = map(avgValuePot, 0, 1024, 0, 180.0);
+  //servo.write(avgValuePot/5.71);
   
   
   // Flex sensor  (resistance VS force)
@@ -124,19 +122,23 @@ void loop(void) {
   // All the flex sensor + servo motor code is in the above simulation circuit
     
   int val = analogRead(flexPin);  // 707-880 -> 3.45V-4.29V (0-1023 -> 0-5V) . R = 10k . Rx = 22k to 60k
-  //int avg = avgFilterFlex(val);
-  int avg = val;
-  //Serial.println(avg);
-  float angle = map(val, 700, 860, 0, 180.0);
-  servo.write(angle);
-  
-  //Serial.println(angle);
+  int avg = avgFilterFlex(val);
+  float angleFlex = map(avg, 700, 860, 0, 180.0);
 
+  //threshold between flex sensor and potentiometer
+  //to control the servomotor
+  if (angleFlex < 15.0){
+    servo.write(anglePot);
+  }else{
+    servo.write(angleFlex);
+  }
+  
   unsigned long CurrentTime = millis();
 
   unsigned long ElapsedTime = CurrentTime - StartTime;
 
   //Serial.println(ElapsedTime);
+  Serial.println(angleFlex);
 
     
   
