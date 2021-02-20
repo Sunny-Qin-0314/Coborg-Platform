@@ -4,3 +4,14 @@ You need git.
 # Introduction
 
 # General Workflow
+Starting work day
+1. git checkout devel
+2. git pull
+3. git checkout feng
+4. git pull origin devel
+5. git push
+
+Ending work day
+1. git push
+2. <go to github.com>
+3. <create pull request from your branch to devel>
