@@ -1,4 +1,4 @@
-cheatsheet:
+test cheatsheet:
 
 git config user.email "yuqingq@andrew.cmu.edu"
 git config user.name "Yuqing"
@@ -19,12 +19,21 @@ git pull   // !!!!!!!!!!! run this everytime before you want to modify something
 
 
 Branch stuff:
-struture: main -> devel -> features(issues)
+struture: main -> devel -> features(issues)/your branch
 
 git checkout -b <branch_name>
 git push --set-upstream origin <branch>
-git pull origin <your_branch>
+git pull origin <devel>
 
 git checkout <branch>
-git merge <branch that you want to merge from>
-git push origin <branch name>
+// Do pull request instead of merge
+- go to Github website
+- create the pull request
+- compare <your branch> to <devel> branch
+- edit the reviewers and labels
+- create the pull request
+- if you agree with the changes, you can merge it into the devel
+- you may also leave a comment on the changes
+
+// git merge <branch that you want to merge from>
+// git push origin <branch name>
