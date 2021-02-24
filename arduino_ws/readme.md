@@ -1,4 +1,4 @@
-arduino_ws is a catkin workspace for the sensors and motors lab.
+arduino_ws is a catkin workspace for the sensors and motors lab
 ======
 
 Arduino:
@@ -9,36 +9,35 @@ Point your arduino IDE sketch folder to "Coborg-Platform/arduino_ws/src/arduino_
 
 GUI:
 ------
-To run the ROS package for the gui, follow these steps:
+To run the ROS package for the gui, follow these steps:\
+`cd to arduino_ws`\
+`catkin_make install`\
+`source devel/setup.bash`
 
-`cd to arduino_ws`
-`catkin_make install`
-`run: source devel/setup.bash`
-
-Now we have to recompile the message library for the (jank) rosserial package to work:
-`cd Coborg-Platform/arduino_ws/src/arduino_files/libraries`
-`rm -rf ros_lib`
+Now we have to recompile the message library for the (jank) rosserial package to work:\
+`cd Coborg-Platform/arduino_ws/src/arduino_files/libraries`\
+`rm -rf ros_lib`\
 `rosrun rosserial_arduino make_libraries.py .` <- that period is important. include it in the command.
 
-You should be ready to launch the gui. plug in the arduino to a usb port and run:
-`sudo chmod a+rw /dev/ttyACM0` 
+You should be ready to launch the gui. plug in the arduino to a usb port and run:\
+`sudo chmod a+rw /dev/ttyACM0`\
 `roslaunch cmu_motor_lab demo.launch`
  
 The demo.launch file runs these components:
-joint_state publisher + GUI sliders
-robot_state publisher
-rosserial python to communicate with the arduino
+* joint_state publisher + GUI sliders
+* robot_state publisher
+* rosserial python to communicate with the arduino
 
 rqt with a custom perspective for this project:
- 	-rqt_plot of the custom CMU message to read the sensor inputs
-	-RVIZ
-		-the rqt RVIZ plugin may not automatically load the urdf.rviz perspective file.
-		-to do this manually, click on "file/open config" tab in the RVIZ section and load
-		-the file located in "cmu_motor_lab/rviz/urdf.rviz"
-		-you may have to pull out the USB plug to allow the "open file" prompt to pop up
+* rqt_plot of the custom CMU message to read the sensor inputs
+* RVIZ
+	* The rqt_rviz plugin may not automatically load the urdf.rviz perspective file.\
+	To do this manually, click on "file/open config" tab in the RVIZ section and load\
+	the file located in "cmu_motor_lab/rviz/urdf.rviz".\
+	You may have to pull out the USB plug to allow the "open file" prompt to pop up.
 	
-	-if for some reason rqt does not load it's custom perspective, click on perspective/import
-	-from the top drop down list and load the file "cmu_motor_lab/rqt/motor_lab.perspective"
+* If for some reason rqt does not load it's custom perspective, click on perspective/import\
+from the top drop down list and load the file "cmu_motor_lab/rqt/motor_lab.perspective".
 
 Additional information:
 ------
