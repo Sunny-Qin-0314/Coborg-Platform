@@ -156,19 +156,37 @@ void loop(){
     int analogValuePot = analogRead(POTENTIOMETER_PIN);
     int avgValuePot= avgFilterPot(analogValuePot);
     float anglePot = map(avgValuePot, 0, 1024, 0, 180.0);
-    
+    if(anglePot > 180.0){//bounds check
+        anglePot = 180.0;
+    }
+    if(anglePot < 0){
+        anglePot = 0;
+    }
+        
     // Flex sensor  (resistance VS force)
     // https://www.tinkercad.com/things/g7jKPpMlgkY-powerful-blorr-gaaris/editel 
     // All the flex sensor + servo motor code is in the above simulation circuit
     int val = analogRead(flexPin);  // 707-880 -> 3.45V-4.29V (0-1023 -> 0-5V) . R = 10k . Rx = 22k to 60k
     int avg = avgFilterFlex(val);
     float angleFlex = map(avg, 700, 860, 0, 180.0);
+    if(angleFlex > 180.0){//bounds check
+        angleFlex = 180.0;
+    }
+    if(angleFlex < 0){
+        angleFlex = 0;
+    }
     
     //IR Sensor
     int reading = analogRead(IRpin);
     int average = avgFilterIR(reading);
     float voltage = (average/1024.0)*5;
     float dist = 50.6/(voltage-0.173);   // cm
+    if(dist > 150.0){//bounds check
+        dist = 150.0;
+    }
+    if(dist < 0){
+        dist = 150;
+    }
     
     // Ultrasonic Sensor
     digitalWrite(triggerPin, LOW);  
@@ -179,8 +197,11 @@ void loop(){
     unsigned long durationMicroSec = pulseIn(echoPin, HIGH);
     int avgDurationMicroSec = avgFilterUltra((int) durationMicroSec);
     double distanceCm = avgDurationMicroSec / 2.0 * 0.0340;  // 340m/s  0.0340cm/microsec
-    if(distanceCm > 100.0){
+    if(distanceCm > 100.0){//bounds check
         distanceCm = 100.0;
+    }
+    if(distanceCm < 0){
+        distanceCm = 0;
     }
     
     if (state == 0){ // sensors updates motor values only in state 0
