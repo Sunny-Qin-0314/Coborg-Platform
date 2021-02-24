@@ -3,7 +3,7 @@ arduino_ws is a catkin workspace for the sensors and motors lab
 
 Arduino:
 ------
-In "Coborg-Platform/arduino_ws/src/arduino_files" is the main.ino for running the (arduino side) sensors and motors lab.
+In "Coborg-Platform/arduino_ws/src/arduino_files" is the main.ino for the arduino.
 
 Point your arduino IDE sketch folder to "Coborg-Platform/arduino_ws/src/arduino_files" to be able to compile and upload main.ino. This allows it to see the libraries folder which contains the PID and ros_lib libraries.
 
