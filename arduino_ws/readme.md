@@ -10,7 +10,7 @@ Point your arduino IDE sketch folder to "Coborg-Platform/arduino_ws/src/arduino_
 GUI:
 ------
 To run the ROS package for the gui, follow these steps:\
-`cd to arduino_ws`\
+`cd Coborg-Platform\arduino_ws`\
 `catkin_make install`\
 `source devel/setup.bash`
 
