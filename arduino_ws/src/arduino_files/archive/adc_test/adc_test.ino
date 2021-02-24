@@ -6,11 +6,9 @@
  * an analog value into ROS in a pinch.
  */
 
-
 #include <Arduino.h>
 #include <ros.h>
 #include <rosserial_arduino/CMU.h>
-
 
 // State-Switching Button declarations
 int Button0 = 3;  // Button 0 connected to digital pin 3

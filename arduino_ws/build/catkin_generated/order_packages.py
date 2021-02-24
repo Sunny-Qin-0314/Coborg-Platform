@@ -2,4 +2,4 @@
 source_root_dir = '/home/hwadi/Coborg-Platform/arduino_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/hwadi/catkin_ws/devel;/opt/ros/melodic'.split(';') if '/home/hwadi/catkin_ws/devel;/opt/ros/melodic' != '' else []
+underlay_workspaces = '/home/hwadi/Coborg-Platform/arduino_ws/devel;/opt/ros/melodic'.split(';') if '/home/hwadi/Coborg-Platform/arduino_ws/devel;/opt/ros/melodic' != '' else []
