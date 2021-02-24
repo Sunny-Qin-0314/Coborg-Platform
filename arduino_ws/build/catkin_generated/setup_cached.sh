@@ -7,7 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/hwadi/Coborg-Platform/arduino_ws/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/hwadi/Coborg-Platform/arduino_ws/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/hwadi/Coborg-Platform/arduino_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/hwadi/Coborg-Platform/arduino_ws/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH="/home/hwadi/Coborg-Platform/arduino_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"

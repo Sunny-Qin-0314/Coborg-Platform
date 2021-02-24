@@ -1,0 +1,26 @@
+<launch>
+
+	<!--args and params. some of these are left over from the urdf tutorial-->
+	<!--I am keeping them to reference in the future-->
+	<arg name="model" default="$(find cmu_motor_lab)/urdf/motor_lab.urdf"/>
+	<arg name="gui" default="true" />
+	<arg name="perspective" default="--perspective-file $(find cmu_motor_lab)/rqt/motor_lab.perspective"/>
+	<!--param name="robot_description" command="$(find xacro)/xacro $(arg model)" /-->
+	<!-- arg name="rvizconfig" default="$(find cmu_motor_lab)/rviz/urdf.rviz" / -->
+
+	<!--nodes to deploy for the demo-->
+	<!--joint_states publishers for motors-->
+	<node if="$(arg gui)" name="joint_state_publisher" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+	
+	<!--serial communication-->
+	<node name="serial_node"        pkg="rosserial_python"      type="serial_node.py">
+    <param name="port"              type="string"               value="/dev/ttyACM0"/>
+    <param name="baud"              type="int"                  value="57600"/>
+    </node>
+
+	<!--GUI-->
+	<node name = "cmu_gui" pkg ="rqt_gui" type ="rqt_gui" respawn ="false" output = "screen" args= "$(arg perspective)"/>
+	<!--node name="rviz" pkg="rviz" type="rviz" args="-d $(arg rvizconfig)" required="true"/-->
+
+</launch>

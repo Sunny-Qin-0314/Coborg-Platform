@@ -143,8 +143,6 @@ void setup(){
 }
 
 void loop(){
-    unsigned long StartTime = millis();
-    
     //Sensor Mode code runs regardless of state
     //Potentiometer
     int analogValuePot = analogRead(POTENTIOMETER_PIN);
@@ -218,12 +216,9 @@ void loop(){
         nh.spinOnce(); //check for callbacks
         delay(1); //1ms delay
     }
-    unsigned long CurrentTime = millis();
-    unsigned long ElapsedTime = CurrentTime - StartTime;
 }
 
 //Helper Functions
-
 // Function to debounce switch and change state
 void State_Change() {
   if ((millis() - B0Press) > debounceDelay) { // Check to see when button was last pressed
