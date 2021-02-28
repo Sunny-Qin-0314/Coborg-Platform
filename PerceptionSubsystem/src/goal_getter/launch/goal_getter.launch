@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<launch>
-
-  <node name="goal_getter" pkg="goal_getter" type="goal_getter">
-    <param name="yolo_topic" value="/darknet_ros/bounding_boxes" />
-  </node>
-
-</launch>
