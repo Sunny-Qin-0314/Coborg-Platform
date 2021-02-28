@@ -1,6 +1,5 @@
 import argparse
 import cv2
-
 from yolo import YOLO
 
 ap = argparse.ArgumentParser()
