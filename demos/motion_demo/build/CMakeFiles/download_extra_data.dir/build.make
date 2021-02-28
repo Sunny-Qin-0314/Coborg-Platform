@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/src"
+CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
+CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/build
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 

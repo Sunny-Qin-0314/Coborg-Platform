@@ -1,8 +1,8 @@
-# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move
+# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion demo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion_demo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_move/catkin_generated/installspace/coborg_move.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_move/catkin_generated/installspace/coborg_move.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_move/cmake" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_move/catkin_generated/installspace/coborg_moveConfig.cmake"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_move/catkin_generated/installspace/coborg_moveConfig-version.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_move/catkin_generated/installspace/coborg_moveConfig.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_move/catkin_generated/installspace/coborg_moveConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_move" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_move" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/package.xml")
 endif()
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/Playback.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/Playback.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/SaveWaypoint.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/SaveWaypoint.h
 string
 -
 vector
@@ -38,15 +38,15 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/mobile_io.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/mobile_io.hpp
 memory
 -
 hebi_cpp_api/group.hpp
 -
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group_feedback.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/rosie/teach_repeat_controller_node.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/rosie/teach_repeat_controller_node.cpp
 ros/ros.h
 -
 ros/console.h
@@ -60,29 +60,29 @@ std_msgs/Bool.h
 std_msgs/Float64.h
 -
 hebi_cpp_api_examples/SaveWaypoint.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/rosie/hebi_cpp_api_examples/SaveWaypoint.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/rosie/hebi_cpp_api_examples/SaveWaypoint.h
 hebi_cpp_api_examples/Playback.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/rosie/hebi_cpp_api_examples/Playback.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/rosie/hebi_cpp_api_examples/Playback.h
 src/util/mobile_io.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/rosie/src/util/mobile_io.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/rosie/src/util/mobile_io.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/mobile_io.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/mobile_io.cpp
 mobile_io.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/mobile_io.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/mobile_io.hpp
 ros/ros.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/ros/ros.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/ros/ros.h
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/lookup.hpp
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_command.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/mobile_io.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/mobile_io.hpp
 memory
 -
 hebi_cpp_api/group.hpp
 -
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_feedback.hpp
 
 /opt/ros/melodic/include/geometry_msgs/Twist.h
 string

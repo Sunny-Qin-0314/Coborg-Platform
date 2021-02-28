@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/src"
+CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
+CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/build
 
 # Include any dependencies generated for this target.
 include realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/depend.make
@@ -58,17 +58,17 @@ include realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/progres
 include realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/flags.make
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/flags.make
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: /home/hwadi/Coborg-Platform/demos/motion\ demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o -c "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp"
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o: /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o -c /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.i"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp" > CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.i
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp > CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.i
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.s"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp" -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.s
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp -o CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.s
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o.requires:
 
@@ -82,17 +82,17 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_n
 
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/flags.make
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/hwadi/Coborg-Platform/demos/motion\ demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o -c "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp"
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o: /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o -c /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.i"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp" > CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.i
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp > CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.i
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.s"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp" -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.s
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp -o CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.s
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o.requires:
 
@@ -106,17 +106,17 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realse
 
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/flags.make
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o: /home/hwadi/Coborg-Platform/demos/motion\ demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o -c "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp"
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o: /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o"
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o -c /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.i"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp" > CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.i
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp > CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.i
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.s"
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp" -o CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.s
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp -o CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.s
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o.requires:
 
@@ -138,59 +138,59 @@ realsense2_camera_OBJECTS = \
 # External object files for target realsense2_camera
 realsense2_camera_EXTERNAL_OBJECTS =
 
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build.make
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librealsense2.so.2.42.0
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libnodeletlib.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libbondcpp.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libcv_bridge.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libimage_transport.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/libPocoFoundation.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libroslib.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librospack.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libtf.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libtf2_ros.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libactionlib.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libtf2.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libddynamic_reconfigure.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libdiagnostic_updater.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libroscpp.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librosconsole.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librostime.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library \"/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/librealsense2_camera.so\""
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/realsense2_camera.dir/link.txt --verbose=$(VERBOSE)
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build.make
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librealsense2.so.2.42.0
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libnodeletlib.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libbondcpp.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libcv_bridge.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libimage_transport.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/libPocoFoundation.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libroslib.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librospack.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libtf.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libtf2_ros.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libactionlib.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libtf2.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libddynamic_reconfigure.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libdynamic_reconfigure_config_init_mutex.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libdiagnostic_updater.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libroscpp.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librosconsole.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/librostime.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so: realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library /home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so"
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/realsense2_camera.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build: /home/hwadi/Coborg-Platform/demos/motion\ demo/devel/lib/librealsense2_camera.so
+realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build: /home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/librealsense2_camera.so
 
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/build
 
@@ -201,10 +201,10 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/requires: reals
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/requires
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/clean:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && $(CMAKE_COMMAND) -P CMakeFiles/realsense2_camera.dir/cmake_clean.cmake
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/realsense2_camera.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/clean
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/depend:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/depend
 

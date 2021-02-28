@@ -67,14 +67,14 @@ set(hebi_cpp_api_examples_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(hebi_cpp_api_examples_SOURCE_PREFIX /home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples)
-  set(hebi_cpp_api_examples_DEVEL_PREFIX /home/hwadi/Coborg-Platform/demos/motion demo/devel)
+  set(hebi_cpp_api_examples_SOURCE_PREFIX /home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples)
+  set(hebi_cpp_api_examples_DEVEL_PREFIX /home/hwadi/Coborg-Platform/demos/motion_demo/devel)
   set(hebi_cpp_api_examples_INSTALL_PREFIX "")
   set(hebi_cpp_api_examples_PREFIX ${hebi_cpp_api_examples_DEVEL_PREFIX})
 else()
   set(hebi_cpp_api_examples_SOURCE_PREFIX "")
   set(hebi_cpp_api_examples_DEVEL_PREFIX "")
-  set(hebi_cpp_api_examples_INSTALL_PREFIX /home/hwadi/Coborg-Platform/demos/motion demo/install)
+  set(hebi_cpp_api_examples_INSTALL_PREFIX /home/hwadi/Coborg-Platform/demos/motion_demo/install)
   set(hebi_cpp_api_examples_PREFIX ${hebi_cpp_api_examples_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/hwadi/Coborg-Platform/demos/motion demo/install/lib;/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib;/home/hwadi/Coborg-Platform/arduino_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/hwadi/Coborg-Platform/demos/motion_demo/install/lib;/home/hwadi/Coborg-Platform/arduino_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

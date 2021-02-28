@@ -1,8 +1,8 @@
-# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_arm
+# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_arm
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion demo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion_demo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_arm/catkin_generated/installspace/coborg_arm.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_arm/catkin_generated/installspace/coborg_arm.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_arm/cmake" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_arm/catkin_generated/installspace/coborg_armConfig.cmake"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_arm/catkin_generated/installspace/coborg_armConfig-version.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_arm/catkin_generated/installspace/coborg_armConfig.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_arm/catkin_generated/installspace/coborg_armConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_arm" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_arm/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_arm" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_arm/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_arm" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_arm/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_arm" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_arm/launch" REGEX "/setup\\_assistant\\.launch$" EXCLUDE)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_arm" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_arm/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/coborg_arm" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_arm/config")
 endif()
 

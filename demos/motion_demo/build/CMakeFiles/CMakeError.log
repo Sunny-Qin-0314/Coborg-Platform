@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/CMakeTmp
+Change Dir: /home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_89999/fast"
-/usr/bin/make -f CMakeFiles/cmTC_89999.dir/build.make CMakeFiles/cmTC_89999.dir/build
-make[1]: Entering directory '/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_89999.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_89999.dir/CheckSymbolExists.c.o   -c "/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
-Linking C executable cmTC_89999
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89999.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_89999.dir/CheckSymbolExists.c.o  -o cmTC_89999 
-CMakeFiles/cmTC_89999.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_61db5/fast"
+/usr/bin/make -f CMakeFiles/cmTC_61db5.dir/build.make CMakeFiles/cmTC_61db5.dir/build
+make[1]: Entering directory '/home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_61db5.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_61db5.dir/CheckSymbolExists.c.o   -c /home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_61db5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_61db5.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_61db5.dir/CheckSymbolExists.c.o  -o cmTC_61db5 
+CMakeFiles/cmTC_61db5.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_89999.dir/build.make:97: recipe for target 'cmTC_89999' failed
-make[1]: *** [cmTC_89999] Error 1
-make[1]: Leaving directory '/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_89999/fast' failed
-make: *** [cmTC_89999/fast] Error 2
+CMakeFiles/cmTC_61db5.dir/build.make:97: recipe for target 'cmTC_61db5' failed
+make[1]: *** [cmTC_61db5] Error 1
+make[1]: Leaving directory '/home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_61db5/fast' failed
+make: *** [cmTC_61db5/fast] Error 2
 
-File /home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/CMakeTmp
+Change Dir: /home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_69337/fast"
-/usr/bin/make -f CMakeFiles/cmTC_69337.dir/build.make CMakeFiles/cmTC_69337.dir/build
-make[1]: Entering directory '/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_69337.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_69337.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_69337
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_69337.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_69337.dir/CheckFunctionExists.c.o  -o cmTC_69337 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_1ccaf/fast"
+/usr/bin/make -f CMakeFiles/cmTC_1ccaf.dir/build.make CMakeFiles/cmTC_1ccaf.dir/build
+make[1]: Entering directory '/home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1ccaf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_1ccaf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1ccaf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ccaf.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1ccaf.dir/CheckFunctionExists.c.o  -o cmTC_1ccaf -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_69337.dir/build.make:97: recipe for target 'cmTC_69337' failed
-make[1]: *** [cmTC_69337] Error 1
-make[1]: Leaving directory '/home/hwadi/Coborg-Platform/demos/motion demo/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_69337/fast' failed
-make: *** [cmTC_69337/fast] Error 2
+CMakeFiles/cmTC_1ccaf.dir/build.make:97: recipe for target 'cmTC_1ccaf' failed
+make[1]: *** [cmTC_1ccaf] Error 1
+make[1]: Leaving directory '/home/hwadi/Coborg-Platform/demos/motion_demo/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_1ccaf/fast' failed
+make: *** [cmTC_1ccaf/fast] Error 2
 
 

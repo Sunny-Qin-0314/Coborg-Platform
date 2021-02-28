@@ -6,8 +6,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/hexapod_control.dir/src/kits/daisy/robot/hexapod_parameters.cpp.o"
   "CMakeFiles/hexapod_control.dir/src/kits/daisy/xml_util/pugixml.cpp.o"
   "CMakeFiles/hexapod_control.dir/src/kits/daisy/xml_util/xml_helpers.cpp.o"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/hexapod_control.pdb"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/hexapod_control"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/hexapod_control.pdb"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/hexapod_control"
 )
 
 # Per-language clean rules from dependency scanning.

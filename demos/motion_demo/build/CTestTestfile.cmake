@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/hwadi/Coborg-Platform/demos/motion demo/src
-# Build directory: /home/hwadi/Coborg-Platform/demos/motion demo/build
+# Source directory: /home/hwadi/Coborg-Platform/demos/motion_demo/src
+# Build directory: /home/hwadi/Coborg-Platform/demos/motion_demo/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/src"
+CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
+CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/build
 
 # Utility rule file for clean_test_results_realsense2_description.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
 include realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/progress.make
 
 realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description" && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py "/home/hwadi/Coborg-Platform/demos/motion demo/build/test_results/realsense2_description"
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/hwadi/Coborg-Platform/demos/motion_demo/build/test_results/realsense2_description
 
 clean_test_results_realsense2_description: realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description
 clean_test_results_realsense2_description: realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/build.make
@@ -67,10 +67,10 @@ realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_de
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/build
 
 realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/clean:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description" && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_realsense2_description.dir/cmake_clean.cmake
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_realsense2_description.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/clean
 
 realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/depend:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_description" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_description /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/clean_test_results_realsense2_description.dir/depend
 

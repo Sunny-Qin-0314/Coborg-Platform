@@ -1,8 +1,8 @@
-# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_description
+# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion demo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion_demo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,24 +38,24 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_description/catkin_generated/installspace/hebi_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_description/catkin_generated/installspace/hebi_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_description/cmake" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_description/catkin_generated/installspace/hebi_descriptionConfig.cmake"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_description/catkin_generated/installspace/hebi_descriptionConfig-version.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_description/catkin_generated/installspace/hebi_descriptionConfig.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_description/catkin_generated/installspace/hebi_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_description" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_description" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_description" TYPE DIRECTORY FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_description/meshes"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_description/urdf"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_description/meshes"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_description/urdf"
     )
 endif()
 

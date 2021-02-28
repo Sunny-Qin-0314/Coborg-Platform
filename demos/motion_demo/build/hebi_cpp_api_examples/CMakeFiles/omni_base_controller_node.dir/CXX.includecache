@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/mobile_io.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/mobile_io.hpp
 memory
 -
 hebi_cpp_api/group.hpp
 -
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group_feedback.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/omni_base_controller_node.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/omni_base_controller_node.cpp
 ros/ros.h
 -
 ros/console.h
@@ -24,25 +24,25 @@ ros/package.h
 geometry_msgs/Twist.h
 -
 src/util/mobile_io.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/src/util/mobile_io.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/src/util/mobile_io.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/mobile_io.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/mobile_io.cpp
 mobile_io.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/mobile_io.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/mobile_io.hpp
 ros/ros.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/ros/ros.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/ros/ros.h
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/lookup.hpp
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_command.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/mobile_io.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/mobile_io.hpp
 memory
 -
 hebi_cpp_api/group.hpp
 -
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_feedback.hpp
 
 /opt/ros/melodic/include/geometry_msgs/Twist.h
 string

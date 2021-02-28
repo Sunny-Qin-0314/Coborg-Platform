@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/find_hebi_modules.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/find_hebi_modules.cpp
 stdio.h
 -
 ros/ros.h
@@ -16,17 +16,17 @@ ros/console.h
 ros/package.h
 -
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/hebi_cpp_api/lookup.hpp
 hebi_cpp_api/group.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/hebi_cpp_api/group.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/hebi_cpp_api/group.hpp
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/hebi_cpp_api/group_command.hpp
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/hebi_cpp_api/group_feedback.hpp
 hebi_cpp_api/trajectory.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/hebi_cpp_api/trajectory.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/hebi_cpp_api/trajectory.hpp
 Eigen/Eigen
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/Eigen/Eigen
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/Eigen/Eigen
 algorithm
 -
 cmath

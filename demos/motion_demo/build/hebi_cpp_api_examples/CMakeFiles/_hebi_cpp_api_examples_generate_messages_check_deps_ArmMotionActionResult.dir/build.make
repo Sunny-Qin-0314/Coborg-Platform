@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/src"
+CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
+CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/build
 
 # Utility rule file for _hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
 include hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/progress.make
 
 hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples" && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py hebi_cpp_api_examples /home/hwadi/Coborg-Platform/demos/motion\ demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg hebi_cpp_api_examples/ArmMotionResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py hebi_cpp_api_examples /home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/ArmMotionResult:std_msgs/Header
 
 _hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult: hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult
 _hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult: hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/build.make
@@ -67,10 +67,10 @@ hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_
 .PHONY : hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/build
 
 hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/clean:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples" && $(CMAKE_COMMAND) -P CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/cmake_clean.cmake
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples && $(CMAKE_COMMAND) -P CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/cmake_clean.cmake
 .PHONY : hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/clean
 
 hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/depend:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples /home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionResult.dir/depend
 

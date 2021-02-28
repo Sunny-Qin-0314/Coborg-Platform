@@ -1,8 +1,8 @@
-# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_description
+# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion demo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion_demo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,26 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description/cmake" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig-version.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE DIRECTORY FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_description/launch"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_description/meshes"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_description/rviz"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_description/urdf"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_description/launch"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_description/meshes"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_description/rviz"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_description/urdf"
     )
 endif()
 

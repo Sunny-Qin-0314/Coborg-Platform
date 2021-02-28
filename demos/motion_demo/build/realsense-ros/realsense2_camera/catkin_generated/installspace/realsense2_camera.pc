@@ -1,4 +1,4 @@
-prefix=/home/hwadi/Coborg-Platform/demos/motion demo/install
+prefix=/home/hwadi/Coborg-Platform/demos/motion_demo/install
 
 Name: realsense2_camera
 Description: Description of realsense2_camera

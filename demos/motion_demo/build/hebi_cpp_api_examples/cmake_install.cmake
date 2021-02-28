@@ -1,8 +1,8 @@
-# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples
+# Install script for directory: /home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion demo/install")
+  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/demos/motion_demo/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,130 +39,130 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/action" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/action/ArmMotion.action"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/action/BaseMotion.action"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/action/ArmMotion.action"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/action/BaseMotion.action"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/msg" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/msg" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/msg" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/srv" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/cmake" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examples-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/cmake" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examples-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/roseus/ros/hebi_cpp_api_examples")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/roseus/ros/hebi_cpp_api_examples")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/common-lisp/ros/hebi_cpp_api_examples")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/common-lisp/ros/hebi_cpp_api_examples")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/gennodejs/ros/hebi_cpp_api_examples")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/gennodejs/ros/hebi_cpp_api_examples")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examples.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examples.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/cmake" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examples-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/cmake" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examples-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/cmake" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examplesConfig.cmake"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examplesConfig-version.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examplesConfig.cmake"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples/catkin_generated/installspace/hebi_cpp_api_examplesConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples" TYPE FILE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples" TYPE DIRECTORY FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/config"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/launch"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/config"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/launch"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples/integrations" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/jackal_arm.launch"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/jackal_base_station.launch"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/jackal_to_hebi.urdf"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/rviz_config.rviz"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/jackal_arm.launch"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/jackal_base_station.launch"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/jackal_to_hebi.urdf"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/rviz_config.rviz"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/scripts" TYPE PROGRAM FILES "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/jackal_arm_teleop.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/scripts" TYPE PROGRAM FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/integrations/clearpath_jackal/jackal_arm_teleop.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hebi_cpp_api_examples" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/launch/daisy.launch"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/data/hexapod/gains18.xml"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/data/hexapod/gains3.xml"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/data/hexapod/hex_config.xml"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/data/hexapod/left.hrdf"
-    "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/data/hexapod/right.hrdf"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/launch/daisy.launch"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/data/hexapod/gains18.xml"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/data/hexapod/gains3.xml"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/data/hexapod/hex_config.xml"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/data/hexapod/left.hrdf"
+    "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/data/hexapod/right.hrdf"
     )
 endif()
 
@@ -173,7 +173,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_moveit_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/arm_moveit_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/arm_moveit_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_moveit_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_moveit_node")
     file(RPATH_CHANGE
@@ -193,7 +193,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/arm_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/arm_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_node")
     file(RPATH_CHANGE
@@ -213,7 +213,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_teach_repeat_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/arm_teach_repeat_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/arm_teach_repeat_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_teach_repeat_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/arm_teach_repeat_node")
     file(RPATH_CHANGE
@@ -233,7 +233,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/diff_drive_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/diff_drive_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/diff_drive_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/diff_drive_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/diff_drive_node")
     file(RPATH_CHANGE
@@ -253,7 +253,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/group_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/group_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/group_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/group_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/group_node")
     file(RPATH_CHANGE
@@ -273,7 +273,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/gripper_moveit_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/gripper_moveit_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/gripper_moveit_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/gripper_moveit_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/gripper_moveit_node")
     file(RPATH_CHANGE
@@ -293,7 +293,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/gripper_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/gripper_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/gripper_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/gripper_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/gripper_node")
     file(RPATH_CHANGE
@@ -313,7 +313,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/mecanum_base_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/mecanum_base_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/mecanum_base_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/mecanum_base_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/mecanum_base_node")
     file(RPATH_CHANGE
@@ -333,7 +333,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/omni_base_controller_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/omni_base_controller_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/omni_base_controller_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/omni_base_controller_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/omni_base_controller_node")
     file(RPATH_CHANGE
@@ -353,7 +353,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/omni_base_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/omni_base_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/omni_base_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/omni_base_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/omni_base_node")
     file(RPATH_CHANGE
@@ -373,7 +373,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/rosie_teach_repeat_controller_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/rosie_teach_repeat_controller_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/rosie_teach_repeat_controller_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/rosie_teach_repeat_controller_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/rosie_teach_repeat_controller_node")
     file(RPATH_CHANGE
@@ -393,7 +393,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/hexapod_control"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/hexapod_control")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/hexapod_control")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/hexapod_control" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/hexapod_control")
     file(RPATH_CHANGE
@@ -413,7 +413,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/hexapod_controller"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/hebi_cpp_api_examples/hexapod_controller")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples" TYPE EXECUTABLE FILES "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/hebi_cpp_api_examples/hexapod_controller")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/hexapod_controller" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hebi_cpp_api_examples/hexapod_controller")
     file(RPATH_CHANGE

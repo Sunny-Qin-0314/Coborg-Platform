@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/src"
+CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
+CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/build
 
 # Utility rule file for octomap_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ coborg_move/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build: octomap_msg
 .PHONY : coborg_move/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/build
 
 coborg_move/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/clean:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_move" && $(CMAKE_COMMAND) -P CMakeFiles/octomap_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_move && $(CMAKE_COMMAND) -P CMakeFiles/octomap_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : coborg_move/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/clean
 
 coborg_move/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/depend:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_move" "/home/hwadi/Coborg-Platform/demos/motion demo/build/coborg_move/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_move /home/hwadi/Coborg-Platform/demos/motion_demo/build/coborg_move/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : coborg_move/CMakeFiles/octomap_msgs_generate_messages_cpp.dir/depend
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/hexapod_control.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/hexapod_control.cpp
 chrono
 -
 iostream
@@ -26,25 +26,25 @@ sensor_msgs/JointState.h
 std_msgs/Bool.h
 -
 robot/hexapod.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod.hpp
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/hebi_cpp_api/lookup.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod.cpp
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/lookup.hpp
 hebi_cpp_api/group.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group.hpp
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group_command.hpp
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group_feedback.hpp
 hebi_cpp_api/group_info.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group_info.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group_info.hpp
 step.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.hpp
 hexapod.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod.hpp
 chrono
 -
 thread
@@ -54,15 +54,15 @@ ctime
 fstream
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod.hpp
 hebi_cpp_api/group.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group.hpp
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/group_command.hpp
 leg.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.hpp
 hexapod_parameters.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.hpp
 Eigen/Dense
 -
 memory
@@ -72,15 +72,15 @@ set
 chrono
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.cpp
 hexapod_parameters.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.hpp
 xml_util/xml_helpers.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/xml_util/xml_helpers.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/xml_util/xml_helpers.hpp
 xml_util/pugixml.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/xml_util/pugixml.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/xml_util/pugixml.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.hpp
 string
 -
 array
@@ -88,39 +88,39 @@ array
 Eigen/Dense
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.cpp
 leg.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.hpp
 iostream
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.hpp
 memory
 -
 hebi_cpp_api/robot_model.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/robot_model.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/robot_model.hpp
 step.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.hpp
 hexapod_parameters.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hexapod_parameters.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.cpp
 step.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.hpp
 leg.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/leg.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/step.hpp
 hebi_cpp_api/trajectory.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/trajectory.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/robot/hebi_cpp_api/trajectory.hpp
 Eigen/Dense
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugiconfig.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugiconfig.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugixml.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugixml.cpp
 pugixml.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugixml.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugixml.hpp
 stdlib.h
 -
 stdio.h
@@ -150,9 +150,9 @@ new
 stdint.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugixml.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugixml.hpp
 pugiconfig.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugiconfig.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugiconfig.hpp
 stddef.h
 -
 exception
@@ -164,13 +164,13 @@ iosfwd
 string
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/xml_helpers.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/xml_helpers.cpp
 xml_helpers.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/xml_helpers.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/xml_helpers.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/xml_helpers.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/xml_helpers.hpp
 pugixml.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugixml.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy/xml_util/pugixml.hpp
 
 /opt/ros/melodic/include/geometry_msgs/Twist.h
 string

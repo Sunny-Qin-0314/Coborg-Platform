@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/realsense2_camera_generate_messages_eus"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/roseus/ros/realsense2_camera/msg/IMUInfo.l"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/roseus/ros/realsense2_camera/msg/Extrinsics.l"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/roseus/ros/realsense2_camera/manifest.l"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/roseus/ros/realsense2_camera/msg/IMUInfo.l"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/roseus/ros/realsense2_camera/msg/Extrinsics.l"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/roseus/ros/realsense2_camera/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

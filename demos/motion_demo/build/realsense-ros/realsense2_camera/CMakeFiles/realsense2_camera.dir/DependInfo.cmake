@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/base_realsense_node.cpp" "/home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/base_realsense_node.cpp.o"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp" "/home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/realsense_node_factory.cpp.o"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp" "/home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera.dir/src/t265_realsense_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,8 +20,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/include"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/include"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/opencv"

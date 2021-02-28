@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/hello_world.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/hello_world.cpp
 stdio.h
 -
 ros/ros.h
@@ -16,7 +16,7 @@ ros/console.h
 ros/package.h
 -
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/coborg_move/src/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/coborg_move/src/hebi_cpp_api/lookup.hpp
 
 /opt/ros/melodic/include/hebi_cpp_api/group.hpp
 hebi.h

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/src"
+CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
+CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/build
 
 # Utility rule file for actionlib_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ hebi_cpp_api_examples/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build: 
 .PHONY : hebi_cpp_api_examples/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 
 hebi_cpp_api_examples/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples" && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : hebi_cpp_api_examples/CMakeFiles/actionlib_msgs_generate_messages_py.dir/clean
 
 hebi_cpp_api_examples/CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/build/hebi_cpp_api_examples/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples /home/hwadi/Coborg-Platform/demos/motion_demo/build/hebi_cpp_api_examples/CMakeFiles/actionlib_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hebi_cpp_api_examples/CMakeFiles/actionlib_msgs_generate_messages_py.dir/depend
 
