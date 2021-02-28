@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<robot name="motors">
+
+<!--Define Materials-->
+<material name="red">
+    <color rgba="1 0 0 1"/>
+  </material>
+<material name="green">
+    <color rgba="0 1 0 1"/>
+  </material>
+<material name="blue">
+    <color rgba="0 0 1 1"/>
+  </material>
+  <material name="black">
+    <color rgba="0 0 0 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+<!--Define root to motor bases-->
+<!--URDF only allows 1 root per file-->
+   <link name="root">
+  </link>
+
+<!--base declarations-->
+  <link name="servo_base">
+    <visual>
+      <geometry>    
+        <cylinder length="0.1" radius="0.25"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <link name="dc_motor_base">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.25"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+  <link name="stepper_motor_base">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.25"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+  </link>
+
+<!--base joint definitions-->
+  <joint name="root_to_servo_motor" type="fixed">
+    <axis xyz="0 0 0" />
+    <parent link="root"/>
+    <child link="servo_base"/>
+    <origin xyz="-0.75 0 0" />
+  </joint>
+
+  <joint name="root_to_dc_motor" type="fixed">
+    <axis xyz="0 0 0" />
+    <parent link="root"/>
+    <child link="dc_motor_base"/>
+    <origin xyz="0 0 0" />
+  </joint>
+
+  <joint name="root_to_stepper_motor" type="fixed">
+    <axis xyz="0 0 0" />
+    <parent link="root"/>
+    <child link="stepper_motor_base"/>
+    <origin xyz="0.75 0 0" />
+  </joint>
+
+<!--Define motor bases to motor links-->
+<!--servo-->
+  <link name="servo_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.3 0 0" />
+      <geometry>
+        <box size="0.25 0.05 0.05"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <joint name="servo_motor" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit effort="1000" lower="0" upper="3.14" velocity="0.5" />
+    <parent link="servo_base"/>
+    <child link="servo_link"/>
+    <origin xyz="0 0 0.03" />
+  </joint>
+
+<!--dc motor-->
+    <link name="dc_motor_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.3 0 0" />
+      <geometry>
+        <box size="0.25 0.05 0.05"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <joint name="dc_motor" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit effort="1000" lower="-1.57" upper="1.57" velocity="0.5" />
+    <parent link="dc_motor_base"/>
+    <child link="dc_motor_link"/>
+    <origin xyz="0 0 0.03" />
+  </joint>
+
+<!--stepper motor-->
+  <link name="stepper_motor_link">
+    <visual>
+      <origin rpy="0 0 0" xyz="-0.3 0 0" />
+      <geometry>
+        <box size="0.25 0.05 0.05"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <joint name="stepper_motor" type="revolute">
+    <axis xyz="0 0 1" />
+    <limit effort="1000" lower="0" upper="6.28" velocity="0.5" />
+    <parent link="stepper_motor_base"/>
+    <child link="stepper_motor_link"/>
+    <origin xyz="0 0 0.03" />
+  </joint>
+
+</robot>

@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/opt/ros/melodic/include/**",
+        "/home/hwadi/Coborg-Platform/arduino_ws/src/cmu_motor_lab/include/**",
+        "/home/hwadi/Coborg-Platform/arduino_ws/src/rosserial/rosserial_server/include/**",
+        "/home/hwadi/Coborg-Platform/arduino_ws/src/rosserial/rosserial_test/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
