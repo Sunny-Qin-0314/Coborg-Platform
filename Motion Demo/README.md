@@ -1,8 +1,8 @@
 # Prequisities
 
-ROS Melodic
-MoveIt
-realsense2_camera
+* ROS Melodic
+* MoveIt
+* realsense2_camera
 
 # Configuration
 
