@@ -1,4 +1,4 @@
-prefix=/home/hwadi/Coborg-Platform/demos/motion demo/install
+prefix=/home/hwadi/Coborg-Platform/demos/motion_demo/install
 
 Name: hebi_cpp_api_examples
 Description: Description of hebi_cpp_api_examples

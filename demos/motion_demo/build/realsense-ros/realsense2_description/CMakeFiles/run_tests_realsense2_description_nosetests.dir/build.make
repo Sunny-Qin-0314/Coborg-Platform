@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/src"
+CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
+CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/build
 
 # Utility rule file for run_tests_realsense2_description_nosetests.
 
@@ -63,10 +63,10 @@ realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/build
 
 realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/clean:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description" && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_realsense2_description_nosetests.dir/cmake_clean.cmake
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description && $(CMAKE_COMMAND) -P CMakeFiles/run_tests_realsense2_description_nosetests.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/clean
 
 realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/depend:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_description" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_description /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_description/CMakeFiles/run_tests_realsense2_description_nosetests.dir/depend
 

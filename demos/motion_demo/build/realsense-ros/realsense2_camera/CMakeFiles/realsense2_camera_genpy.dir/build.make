@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/src"
+CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/hwadi/Coborg-Platform/demos/motion demo/build"
+CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/demos/motion_demo/build
 
 # Utility rule file for realsense2_camera_genpy.
 
@@ -63,10 +63,10 @@ realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/build: re
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/build
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/clean:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" && $(CMAKE_COMMAND) -P CMakeFiles/realsense2_camera_genpy.dir/cmake_clean.cmake
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/realsense2_camera_genpy.dir/cmake_clean.cmake
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/clean
 
 realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/depend:
-	cd "/home/hwadi/Coborg-Platform/demos/motion demo/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/hwadi/Coborg-Platform/demos/motion demo/src" "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera" "/home/hwadi/Coborg-Platform/demos/motion demo/build" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera" "/home/hwadi/Coborg-Platform/demos/motion demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/hwadi/Coborg-Platform/demos/motion_demo/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/demos/motion_demo/src /home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera /home/hwadi/Coborg-Platform/demos/motion_demo/build /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera /home/hwadi/Coborg-Platform/demos/motion_demo/build/realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros/realsense2_camera/CMakeFiles/realsense2_camera_genpy.dir/depend
 

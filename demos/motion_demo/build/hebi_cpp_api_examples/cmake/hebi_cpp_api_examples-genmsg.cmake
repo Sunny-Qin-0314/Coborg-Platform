@@ -2,7 +2,7 @@
 
 message(STATUS "hebi_cpp_api_examples: 20 messages, 4 services")
 
-set(MSG_I_FLAGS "-Ihebi_cpp_api_examples:/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg;-Ihebi_cpp_api_examples:/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;-Icontrol_msgs:/opt/ros/melodic/share/control_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Inav_msgs:/opt/ros/melodic/share/nav_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/melodic/share/trajectory_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ihebi_cpp_api_examples:/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg;-Ihebi_cpp_api_examples:/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg;-Iactionlib_msgs:/opt/ros/melodic/share/actionlib_msgs/cmake/../msg;-Icontrol_msgs:/opt/ros/melodic/share/control_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg;-Inav_msgs:/opt/ros/melodic/share/nav_msgs/cmake/../msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Itrajectory_msgs:/opt/ros/melodic/share/trajectory_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,124 +17,124 @@ add_custom_target(hebi_cpp_api_examples_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" "hebi_cpp_api_examples/ArmMotionResult:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" "actionlib_msgs/GoalID:hebi_cpp_api_examples/BaseMotionGoal:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/BaseMotionResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" "geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" "geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/ArmMotionResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" "hebi_cpp_api_examples/BaseMotionGoal:actionlib_msgs/GoalID:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/ArmMotionFeedback:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" "actionlib_msgs/GoalID:hebi_cpp_api_examples/BaseMotionFeedback:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/BaseMotionActionResult:hebi_cpp_api_examples/BaseMotionActionGoal:hebi_cpp_api_examples/BaseMotionResult:hebi_cpp_api_examples/BaseMotionGoal:std_msgs/Header:hebi_cpp_api_examples/BaseMotionActionFeedback"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" "hebi_cpp_api_examples/BaseMotionFeedback:actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" "actionlib_msgs/GoalID:hebi_cpp_api_examples/BaseMotionActionResult:hebi_cpp_api_examples/BaseMotionFeedback:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/BaseMotionResult:hebi_cpp_api_examples/BaseMotionGoal:hebi_cpp_api_examples/BaseMotionActionFeedback:std_msgs/Header:hebi_cpp_api_examples/BaseMotionActionGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/BaseMotionResult:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" "geometry_msgs/Point"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" "actionlib_msgs/GoalID:hebi_cpp_api_examples/ArmMotionResult:hebi_cpp_api_examples/ArmMotionActionGoal:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/ArmMotionFeedback:hebi_cpp_api_examples/ArmMotionActionResult:std_msgs/Header:hebi_cpp_api_examples/ArmMotionGoal:hebi_cpp_api_examples/ArmMotionActionFeedback"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/ArmMotionActionResult:hebi_cpp_api_examples/ArmMotionFeedback:hebi_cpp_api_examples/ArmMotionGoal:std_msgs/Header:hebi_cpp_api_examples/ArmMotionResult:hebi_cpp_api_examples/ArmMotionActionFeedback:hebi_cpp_api_examples/ArmMotionActionGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/ArmMotionFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" "geometry_msgs/Point"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" "actionlib_msgs/GoalID:actionlib_msgs/GoalStatus:hebi_cpp_api_examples/BaseMotionFeedback:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
 add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" "actionlib_msgs/GoalID:hebi_cpp_api_examples/ArmMotionGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "hebi_cpp_api_examples" "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" "actionlib_msgs/GoalID:hebi_cpp_api_examples/ArmMotionGoal:std_msgs/Header"
 )
 
 #
@@ -144,147 +144,147 @@ add_custom_target(_hebi_cpp_api_examples_generate_messages_check_deps_${_filenam
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_cpp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 
 ### Generating Services
 _generate_srv_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_cpp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/hebi_cpp_api_examples
@@ -302,53 +302,53 @@ add_custom_target(hebi_cpp_api_examples_generate_messages_cpp
 add_dependencies(hebi_cpp_api_examples_generate_messages hebi_cpp_api_examples_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_cpp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -361,147 +361,147 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hebi_cpp_api_examples_generate_mess
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_eus(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 
 ### Generating Services
 _generate_srv_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_eus(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/hebi_cpp_api_examples
@@ -519,53 +519,53 @@ add_custom_target(hebi_cpp_api_examples_generate_messages_eus
 add_dependencies(hebi_cpp_api_examples_generate_messages hebi_cpp_api_examples_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_eus _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -578,147 +578,147 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hebi_cpp_api_examples_generate_mess
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_lisp(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 
 ### Generating Services
 _generate_srv_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_lisp(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/hebi_cpp_api_examples
@@ -736,53 +736,53 @@ add_custom_target(hebi_cpp_api_examples_generate_messages_lisp
 add_dependencies(hebi_cpp_api_examples_generate_messages hebi_cpp_api_examples_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_lisp _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -795,147 +795,147 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hebi_cpp_api_examples_generate_mess
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_nodejs(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 
 ### Generating Services
 _generate_srv_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_nodejs(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/hebi_cpp_api_examples
@@ -953,53 +953,53 @@ add_custom_target(hebi_cpp_api_examples_generate_messages_nodejs
 add_dependencies(hebi_cpp_api_examples_generate_messages hebi_cpp_api_examples_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_nodejs _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -1012,147 +1012,147 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS hebi_cpp_api_examples_generate_mess
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
   "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg;/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
+)
+_generate_msg_py(hebi_cpp_api_examples
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/geometry_msgs/cmake/../msg/Point.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
-)
-_generate_msg_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg"
-  "${MSG_I_FLAGS}"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/melodic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 
 ### Generating Services
 _generate_srv_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
 )
 _generate_srv_py(hebi_cpp_api_examples
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/hebi_cpp_api_examples
@@ -1170,53 +1170,53 @@ add_custom_target(hebi_cpp_api_examples_generate_messages_py
 add_dependencies(hebi_cpp_api_examples_generate_messages hebi_cpp_api_examples_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/OffsetPlayback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetFeedbackFrequency.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetGains.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/EndPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/SaveWaypoint.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/srv/SetIKSeed.srv" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionAction.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionResult.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/StartPath.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/srv/SetCommandLifetime.srv" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/Playback.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/msg/TargetWaypoints.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/BaseMotionActionFeedback.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/share/hebi_cpp_api_examples/msg/ArmMotionActionGoal.msg" NAME_WE)
 add_dependencies(hebi_cpp_api_examples_generate_messages_py _hebi_cpp_api_examples_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

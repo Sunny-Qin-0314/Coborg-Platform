@@ -2,7 +2,7 @@
 
 message(STATUS "realsense2_camera: 2 messages, 0 services")
 
-set(MSG_I_FLAGS "-Irealsense2_camera:/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Irealsense2_camera:/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg;-Isensor_msgs:/opt/ros/melodic/share/sensor_msgs/cmake/../msg;-Istd_msgs:/opt/ros/melodic/share/std_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/melodic/share/geometry_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,14 +17,14 @@ add_custom_target(realsense2_camera_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
 add_custom_target(_realsense2_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "realsense2_camera" "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "realsense2_camera" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" ""
 )
 
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
 add_custom_target(_realsense2_camera_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "realsense2_camera" "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "realsense2_camera" "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" "std_msgs/Header"
 )
 
 #
@@ -34,13 +34,13 @@ add_custom_target(_realsense2_camera_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/realsense2_camera
 )
 _generate_msg_cpp(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/realsense2_camera
@@ -60,9 +60,9 @@ add_custom_target(realsense2_camera_generate_messages_cpp
 add_dependencies(realsense2_camera_generate_messages realsense2_camera_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_cpp _realsense2_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_cpp _realsense2_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -75,13 +75,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS realsense2_camera_generate_messages
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/realsense2_camera
 )
 _generate_msg_eus(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/realsense2_camera
@@ -101,9 +101,9 @@ add_custom_target(realsense2_camera_generate_messages_eus
 add_dependencies(realsense2_camera_generate_messages realsense2_camera_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_eus _realsense2_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_eus _realsense2_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -116,13 +116,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS realsense2_camera_generate_messages
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/realsense2_camera
 )
 _generate_msg_lisp(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/realsense2_camera
@@ -142,9 +142,9 @@ add_custom_target(realsense2_camera_generate_messages_lisp
 add_dependencies(realsense2_camera_generate_messages realsense2_camera_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_lisp _realsense2_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_lisp _realsense2_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -157,13 +157,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS realsense2_camera_generate_messages
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/realsense2_camera
 )
 _generate_msg_nodejs(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/realsense2_camera
@@ -183,9 +183,9 @@ add_custom_target(realsense2_camera_generate_messages_nodejs
 add_dependencies(realsense2_camera_generate_messages realsense2_camera_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_nodejs _realsense2_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_nodejs _realsense2_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -198,13 +198,13 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS realsense2_camera_generate_messages
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/realsense2_camera
 )
 _generate_msg_py(realsense2_camera
-  "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/melodic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/realsense2_camera
@@ -224,9 +224,9 @@ add_custom_target(realsense2_camera_generate_messages_py
 add_dependencies(realsense2_camera_generate_messages realsense2_camera_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/IMUInfo.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_py _realsense2_camera_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
+get_filename_component(_filename "/home/hwadi/Coborg-Platform/demos/motion_demo/src/realsense-ros/realsense2_camera/msg/Extrinsics.msg" NAME_WE)
 add_dependencies(realsense2_camera_generate_messages_py _realsense2_camera_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

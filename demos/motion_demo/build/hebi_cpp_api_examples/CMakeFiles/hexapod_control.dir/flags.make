@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"hebi_cpp_api_examples\"
 
-CXX_INCLUDES = -I"/home/hwadi/Coborg-Platform/demos/motion demo/devel/include" -I"/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/." -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I"/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/daisy" 
+CXX_INCLUDES = -I/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include -I/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/. -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/include/eigen3 -I/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/daisy 
 

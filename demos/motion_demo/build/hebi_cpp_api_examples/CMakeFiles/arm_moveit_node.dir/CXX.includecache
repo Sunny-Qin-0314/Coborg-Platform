@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/arm_moveit_node.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/arm_moveit_node.cpp
 ros/ros.h
 -
 ros/console.h
@@ -22,9 +22,9 @@ sensor_msgs/JointState.h
 geometry_msgs/Inertia.h
 -
 hebi_cpp_api/robot_model.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/robot_model.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/robot_model.hpp
 hebi_cpp_api/arm/arm.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/arm/arm.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/arm/arm.hpp
 
 /opt/ros/melodic/include/actionlib/action_definition.h
 

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hello_world.dir/src/hello_world.cpp.o"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/coborg_move/hello_world.pdb"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/coborg_move/hello_world"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/coborg_move/hello_world.pdb"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/coborg_move/hello_world"
 )
 
 # Per-language clean rules from dependency scanning.

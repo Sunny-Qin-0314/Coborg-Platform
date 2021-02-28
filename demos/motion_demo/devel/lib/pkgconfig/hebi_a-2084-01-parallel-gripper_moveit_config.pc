@@ -1,4 +1,4 @@
-prefix=/home/hwadi/Coborg-Platform/demos/motion demo/devel
+prefix=/home/hwadi/Coborg-Platform/demos/motion_demo/devel
 
 Name: hebi_a-2084-01-parallel-gripper_moveit_config
 Description: Description of hebi_a-2084-01-parallel-gripper_moveit_config

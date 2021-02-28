@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/BaseMotionAction.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/BaseMotionAction.h
 string
 -
 vector
@@ -28,7 +28,7 @@ hebi_cpp_api_examples/BaseMotionActionResult.h
 hebi_cpp_api_examples/BaseMotionActionFeedback.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/BaseMotionActionFeedback.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/BaseMotionActionFeedback.h
 string
 -
 vector
@@ -50,7 +50,7 @@ actionlib_msgs/GoalStatus.h
 hebi_cpp_api_examples/BaseMotionFeedback.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/BaseMotionActionGoal.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/BaseMotionActionGoal.h
 string
 -
 vector
@@ -72,7 +72,7 @@ actionlib_msgs/GoalID.h
 hebi_cpp_api_examples/BaseMotionGoal.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/BaseMotionActionResult.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/BaseMotionActionResult.h
 string
 -
 vector
@@ -94,7 +94,7 @@ actionlib_msgs/GoalStatus.h
 hebi_cpp_api_examples/BaseMotionResult.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/BaseMotionFeedback.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/BaseMotionFeedback.h
 string
 -
 vector
@@ -110,7 +110,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/BaseMotionGoal.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/BaseMotionGoal.h
 string
 -
 vector
@@ -126,7 +126,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/BaseMotionResult.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/BaseMotionResult.h
 string
 -
 vector
@@ -142,23 +142,23 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/diff_drive.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/diff_drive.hpp
 memory
 -
 hebi_cpp_api/group.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group.hpp
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group_command.hpp
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/group_feedback.hpp
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/lookup.hpp
 hebi_cpp_api/trajectory.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/trajectory.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/hebi_cpp_api/trajectory.hpp
 Eigen/Dense
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/Eigen/Dense
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/Eigen/Dense
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/diff_drive_node.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/diff_drive_node.cpp
 ros/ros.h
 -
 geometry_msgs/Point.h
@@ -166,43 +166,43 @@ geometry_msgs/Point.h
 hebi_cpp_api_examples/BaseMotionAction.h
 -
 actionlib/server/simple_action_server.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/actionlib/server/simple_action_server.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/actionlib/server/simple_action_server.h
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/lookup.hpp
 hebi_cpp_api/group.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/group.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/group.hpp
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/group_command.hpp
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/group_feedback.hpp
 hebi_cpp_api/trajectory.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/trajectory.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/hebi_cpp_api/trajectory.hpp
 src/util/diff_drive.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/base/src/util/diff_drive.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/base/src/util/diff_drive.hpp
 ros/console.h
 -
 ros/package.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/diff_drive.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/diff_drive.cpp
 diff_drive.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/diff_drive.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/diff_drive.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/diff_drive.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/diff_drive.hpp
 memory
 -
 hebi_cpp_api/group.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group.hpp
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_command.hpp
 hebi_cpp_api/group_feedback.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_feedback.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/group_feedback.hpp
 hebi_cpp_api/lookup.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/lookup.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/lookup.hpp
 hebi_cpp_api/trajectory.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/trajectory.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/hebi_cpp_api/trajectory.hpp
 Eigen/Dense
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/Eigen/Dense
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/Eigen/Dense
 
 /opt/ros/melodic/include/actionlib/action_definition.h
 

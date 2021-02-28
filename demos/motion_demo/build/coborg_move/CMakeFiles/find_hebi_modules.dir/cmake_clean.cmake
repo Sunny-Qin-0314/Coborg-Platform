@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/find_hebi_modules.dir/src/find_hebi_modules.cpp.o"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/coborg_move/find_hebi_modules.pdb"
-  "/home/hwadi/Coborg-Platform/demos/motion demo/devel/lib/coborg_move/find_hebi_modules"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/coborg_move/find_hebi_modules.pdb"
+  "/home/hwadi/Coborg-Platform/demos/motion_demo/devel/lib/coborg_move/find_hebi_modules"
 )
 
 # Per-language clean rules from dependency scanning.

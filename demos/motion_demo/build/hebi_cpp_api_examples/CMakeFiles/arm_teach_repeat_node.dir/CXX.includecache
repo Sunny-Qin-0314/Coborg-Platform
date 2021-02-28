@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/EndPath.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/EndPath.h
 string
 -
 vector
@@ -22,7 +22,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/OffsetPlayback.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/OffsetPlayback.h
 string
 -
 vector
@@ -40,7 +40,7 @@ ros/message_operations.h
 geometry_msgs/Point.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/Playback.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/Playback.h
 string
 -
 vector
@@ -56,7 +56,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/SaveWaypoint.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/SaveWaypoint.h
 string
 -
 vector
@@ -72,7 +72,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/devel/include/hebi_cpp_api_examples/StartPath.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/devel/include/hebi_cpp_api_examples/StartPath.h
 string
 -
 vector
@@ -88,7 +88,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/path.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/path.hpp
 vector
 -
 string
@@ -96,7 +96,7 @@ string
 Eigen/Dense
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/./src/util/waypoint.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/./src/util/waypoint.hpp
 string
 -
 vector
@@ -104,9 +104,9 @@ vector
 Eigen/Dense
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/arm_teach_repeat_node.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/arm_teach_repeat_node.cpp
 arm_teach_repeat_node.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/arm_teach_repeat_node.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/arm_teach_repeat_node.hpp
 ros/ros.h
 -
 ros/console.h
@@ -114,43 +114,43 @@ ros/console.h
 ros/package.h
 -
 hebi_cpp_api/group_command.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/group_command.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/group_command.hpp
 hebi_cpp_api/robot_model.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/robot_model.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/robot_model.hpp
 hebi_cpp_api/arm/arm.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/arm/arm.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/arm/arm.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/arm_teach_repeat_node.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/arm_teach_repeat_node.hpp
 Eigen/Dense
 -
 std_msgs/Bool.h
 -
 hebi_cpp_api_examples/SaveWaypoint.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/SaveWaypoint.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/SaveWaypoint.h
 hebi_cpp_api_examples/Playback.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/Playback.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/Playback.h
 hebi_cpp_api_examples/StartPath.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/StartPath.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/StartPath.h
 hebi_cpp_api_examples/EndPath.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/EndPath.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/EndPath.h
 hebi_cpp_api_examples/OffsetPlayback.h
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/OffsetPlayback.h
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api_examples/OffsetPlayback.h
 hebi_cpp_api/arm/arm.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/arm/arm.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/hebi_cpp_api/arm/arm.hpp
 src/util/waypoint.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/src/util/waypoint.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/src/util/waypoint.hpp
 src/util/path.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/kits/arm/src/util/path.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/kits/arm/src/util/path.hpp
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/path.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/path.cpp
 path.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/path.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/path.hpp
 fstream
 -
 iostream
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/path.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/path.hpp
 vector
 -
 string
@@ -158,15 +158,15 @@ string
 Eigen/Dense
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/waypoint.cpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/waypoint.cpp
 waypoint.hpp
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/waypoint.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/waypoint.hpp
 fstream
 -
 iostream
 -
 
-/home/hwadi/Coborg-Platform/demos/motion demo/src/hebi_cpp_api_examples/src/util/waypoint.hpp
+/home/hwadi/Coborg-Platform/demos/motion_demo/src/hebi_cpp_api_examples/src/util/waypoint.hpp
 string
 -
 vector
