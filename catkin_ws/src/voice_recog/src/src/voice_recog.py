@@ -20,8 +20,8 @@ stoplist = ['stop']
 targetlist = ['target','take','goal']
 homelist = ['home','compact']
 
-voice_dir = '/home/coborg/Coborg-Platform/.voice_subsystem/'
-model_dir = '/home/coborg/Coborg-Platform/.voice_subsystem/model'
+voice_dir = '/home/coborg/Coborg-Platform/catkin_ws/src/voice_recog/src'
+model_dir = '/home/coborg/Coborg-Platform/catkin_ws/src/voice_recog/src/model'
 
 
 # Init decoder

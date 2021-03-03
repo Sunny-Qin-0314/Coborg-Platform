@@ -14,8 +14,8 @@ stoplist = ['stop']
 targetlist = ['target','take','goal']
 homelist = ['home','compact']
 
-voice_dir = '/home/coborg/Coborg-Platform/.voice_subsystem/'
-model_dir = '/home/coborg/Coborg-Platform/.voice_subsystem/model'
+voice_dir = '/home/coborg/Coborg-Platform/demos/voice_demo/'
+model_dir = '/home/coborg/Coborg-Platform/demos/voice_demo/model'
 
 
 # Init decoder

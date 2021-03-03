@@ -129,4 +129,4 @@ export PYTHONPATH="/opt/ros/kinetic/lib/python2.7/dist-packages:$PYTHONPATH"
 #export LD_LIBRARY_PATH=/usr/local/lib
 export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-9.0/lib64
-alias voice="python /home/coborg/Coborg-Platform/.voice_subsystem/src/listen.py"
+alias voice="python /home/coborg/Coborg-Platform/demos/voice_demo/src/listen.py"
