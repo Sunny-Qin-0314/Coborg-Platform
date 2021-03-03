@@ -137,7 +137,7 @@ void loop(){
 
         Input = (360/countpercycle)*float(count);
         myPID.Compute();
-        Serial.print(Input); Serial.print("\t"); Serial.print(Setpoint); Serial.print("\t"); Serial.println(Output);
+        //Serial.print(Input); Serial.print("\t"); Serial.print(Setpoint); Serial.print("\t"); Serial.println(Output);
 
         if(Output > 0){//CounterClockwise
             digitalWrite(motorpin1,HIGH);
@@ -152,7 +152,7 @@ void loop(){
 
         // Update Stepper Motor
         desiredStep = round(map(distanceCm, 0, 100, 0, stepsPerRevolution));
-        Serial.print("\t"); Serial.println(desiredStep);
+        //Serial.print("\t"); Serial.println(desiredStep);
         if(desiredStep > currentStep) digitalWrite(dirPin,HIGH);
         else digitalWrite(dirPin,LOW);
         for(int x = 0; x < abs(desiredStep-currentStep); x++){
@@ -164,10 +164,11 @@ void loop(){
         currentStep = desiredStep;
     }
     if(state == 1){
-        Serial.println(state);
+        //Serial.println(state);
     }
     unsigned long CurrentTime = millis();
     unsigned long ElapsedTime = CurrentTime - StartTime;
+    Serial.println(state);
 }
 
 //Helper Functions
