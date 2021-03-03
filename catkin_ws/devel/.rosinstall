@@ -1,2 +1,1 @@
-- setup-file:
-    local-name: /home/coborg/Coborg-Platform/catkin_ws/devel/setup.sh
+/home/coborg/Coborg-Platform/catkin_ws/devel/setup.sh

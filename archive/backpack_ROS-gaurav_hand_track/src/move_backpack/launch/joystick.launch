@@ -1,3 +1,0 @@
-<launch> 
-  <node name = "joystick" pkg = "move_backpack" type = "joystick.py" respawn = "true" output = "screen" />
-</launch>
