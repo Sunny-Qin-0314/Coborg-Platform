@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 
 import os
-from pocketsphinx import Decoder, LiveSpeech, get_model_path
+from pocketsphinx import Decoder
 import pyaudio
 import math
 import enum
@@ -20,8 +20,8 @@ stoplist = ['stop']
 targetlist = ['target','take','goal']
 homelist = ['home','compact']
 
-voice_dir = '/home/coborg/Coborg-Platform/VoiceSubsystem/'
-model_dir = '/home/coborg/Coborg-Platform/VoiceSubsystem/model'
+voice_dir = '/home/coborg/Coborg-Platform/catkin_ws/src/voice_recog/src'
+model_dir = '/home/coborg/Coborg-Platform/catkin_ws/src/voice_recog/src/model'
 
 
 # Init decoder
