@@ -1,0 +1,8 @@
+prefix=/home/coborg/Coborg-Platform/catkin_ws/install
+
+Name: voice_recog
+Description: Description of voice_recog
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

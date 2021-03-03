@@ -1,0 +1,2 @@
+main_state_machine:voice_recog
+-DCATKIN_DEVEL_PREFIX=/home/coborg/Coborg-Platform/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/coborg/Coborg-Platform/catkin_ws/install -G Unix Makefiles
