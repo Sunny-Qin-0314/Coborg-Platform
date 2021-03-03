@@ -11,7 +11,7 @@ class Command(enum.Enum):
 
 triggerlist = ['coborg']
 stoplist = ['stop']
-targetlist = ['target','take']
+targetlist = ['target','take','goal']
 homelist = ['home','compact']
 
 voice_dir = '/home/coborg/Coborg-Platform/VoiceSubsystem/'
@@ -54,6 +54,8 @@ while True:
                 # Print hypothesis and switch search to another mode
                 print('Decoder Mode:', decoder.get_search())
                 results = [seg.word for seg in decoder.seg()]
+                results[:] = [word for word in results if word != '<sil>' and word != '</s>' and word != '<s>']
+                
 
                 # If in "Command Mode" (after 'coborg' is heard), check for command
                 if decoder.get_search() == 'lm':
@@ -70,19 +72,19 @@ while True:
                         print(repr(Command.HOME))
                         os.system('mpg123 -q ' + voice_dir + 'Sounds/commandSound.mp3')
                         command = True
-                    elif 'fart' in results:
+                    elif 'gas' in results:
                         os.system('mpg123 -q ' + voice_dir + 'Sounds/fartSound.mp3')
                         command = True
                     elif 'drop' in results and 'beat' in results:
                         os.system('mpg123 -q ' + voice_dir + 'Sounds/sickbeatSound.mp3')
                         command = True
-                    elif 'roll' in results and 'prank' in results:
+                    elif 'sarah' in results and 'hi' in results:
                         os.system('mpg123 -q ' + voice_dir + 'Sounds/rickroll.mp3')
                         command = True
 
                 # Send stop command when "stop" is heard 3 or more times outside of "Coborg" trigger
                 if any(word in stoplist for word in results):
-                        if results.count('stop') > 2:
+                        if results.count('stop') > 4:
                             print(repr(Command.STOP))
                             os.system('mpg123 -q ' + voice_dir + 'Sounds/stopSound.mp3')
                 
@@ -91,7 +93,7 @@ while True:
                 if any(word in triggerlist for word in results):
                     os.system('mpg123 -q ' + voice_dir + 'Sounds/triggerSound.mp3')
                     decoder.set_search('lm')
-                elif decoder.get_search() == 'lm' and len(results) > 2 and results.count('<sil>') < (len(results)-2):
+                elif decoder.get_search() == 'lm' and len(results) > 0:
                      decoder.set_search('coborg')
                      if not command:
                          os.system('mpg123 -q ' + voice_dir + 'Sounds/nocommandSound.mp3')
