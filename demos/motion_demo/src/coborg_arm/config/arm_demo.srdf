@@ -18,6 +18,21 @@
         <joint name="motor2/X5_9" value="0" />
         <joint name="motor3/X5_4" value="0" />
     </group_state>
+    <group_state name="tucked_pos" group="coborg_arm">
+        <joint name="motor1/X5_9" value="-1.51" />
+        <joint name="motor2/X5_9" value="2.7597" />
+        <joint name="motor3/X5_4" value="2.5861" />
+    </group_state>
+    <group_state name="ready_push_up" group="coborg_arm">
+        <joint name="motor1/X5_9" value="1.4059" />
+        <joint name="motor2/X5_9" value="-1.3712" />
+        <joint name="motor3/X5_4" value="-1.5447" />
+    </group_state>
+    <group_state name="pushed_pos" group="coborg_arm">
+        <joint name="motor1/X5_9" value="1.6141" />
+        <joint name="motor2/X5_9" value="-0.538" />
+        <joint name="motor3/X5_4" value="-0.0521" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="end_effector" parent_link="end_link/INPUT_INTERFACE" group="coborg_arm" />
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
@@ -56,6 +71,7 @@
     <disable_collisions link1="motor3/INPUT_INTERFACE" link2="rodL" reason="Never" />
     <disable_collisions link1="motor3/INPUT_INTERFACE" link2="sensor/INPUT_INTERFACE" reason="Adjacent" />
     <disable_collisions link1="ms1/INPUT_INTERFACE" link2="right_arm1/INPUT_INTERFACE" reason="Default" />
+    <disable_collisions link1="ms1/INPUT_INTERFACE" link2="right_arm2/INPUT_INTERFACE" reason="User" />
     <disable_collisions link1="ms1/INPUT_INTERFACE" link2="rodL" reason="Adjacent" />
     <disable_collisions link1="ms1/INPUT_INTERFACE" link2="rodR" reason="Adjacent" />
     <disable_collisions link1="ms1/INPUT_INTERFACE" link2="sensor/INPUT_INTERFACE" reason="Default" />
@@ -67,7 +83,6 @@
     <disable_collisions link1="right_arm2/INPUT_INTERFACE" link2="rodL" reason="Never" />
     <disable_collisions link1="right_arm2/INPUT_INTERFACE" link2="sensor/INPUT_INTERFACE" reason="Never" />
     <disable_collisions link1="rodL" link2="rodR" reason="Adjacent" />
-    <disable_collisions link1="rodL" link2="sensor/INPUT_INTERFACE" reason="Never" />
     <disable_collisions link1="rodL" link2="shoulder_len" reason="Adjacent" />
     <disable_collisions link1="rodR" link2="shoulder_len" reason="Adjacent" />
 </robot>

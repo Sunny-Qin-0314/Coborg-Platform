@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="moveit_tutorials2" pkg="coborg_move" type="moveit_tutorials2" respawn="false" output="screen">
+  </node>
+
+</launch>

@@ -13,7 +13,7 @@
   <url type="bugtracker">https://github.com/HebiRobotics/hebi_description/issues</url>
 
   <author email="matt@hebirobotics.com">Matthew Tesch</author>
-
+   
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>urdf</build_depend>
