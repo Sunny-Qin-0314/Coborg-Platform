@@ -1,0 +1,17 @@
+/home/coborg/Coborg-Platform/catkin_ws/install/_setup_util.py
+/home/coborg/Coborg-Platform/catkin_ws/install/env.sh
+/home/coborg/Coborg-Platform/catkin_ws/install/setup.bash
+/home/coborg/Coborg-Platform/catkin_ws/install/local_setup.bash
+/home/coborg/Coborg-Platform/catkin_ws/install/setup.sh
+/home/coborg/Coborg-Platform/catkin_ws/install/local_setup.sh
+/home/coborg/Coborg-Platform/catkin_ws/install/setup.zsh
+/home/coborg/Coborg-Platform/catkin_ws/install/local_setup.zsh
+/home/coborg/Coborg-Platform/catkin_ws/install/.rosinstall
+/home/coborg/Coborg-Platform/catkin_ws/install/lib/pkgconfig/main_state_machine.pc
+/home/coborg/Coborg-Platform/catkin_ws/install/share/main_state_machine/cmake/main_state_machineConfig.cmake
+/home/coborg/Coborg-Platform/catkin_ws/install/share/main_state_machine/cmake/main_state_machineConfig-version.cmake
+/home/coborg/Coborg-Platform/catkin_ws/install/share/main_state_machine/package.xml
+/home/coborg/Coborg-Platform/catkin_ws/install/lib/pkgconfig/voice_recog.pc
+/home/coborg/Coborg-Platform/catkin_ws/install/share/voice_recog/cmake/voice_recogConfig.cmake
+/home/coborg/Coborg-Platform/catkin_ws/install/share/voice_recog/cmake/voice_recogConfig-version.cmake
+/home/coborg/Coborg-Platform/catkin_ws/install/share/voice_recog/package.xml

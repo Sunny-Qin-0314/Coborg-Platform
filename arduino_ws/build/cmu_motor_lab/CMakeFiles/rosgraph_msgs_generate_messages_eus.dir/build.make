@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hwadi/Coborg-Platform/arduino_ws/src
+CMAKE_SOURCE_DIR = /home/coborg/Coborg-Platform/arduino_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hwadi/Coborg-Platform/arduino_ws/build
+CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/arduino_ws/build
 
 # Utility rule file for rosgraph_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ cmu_motor_lab/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build: rosgraph
 .PHONY : cmu_motor_lab/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 
 cmu_motor_lab/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	cd /home/hwadi/Coborg-Platform/arduino_ws/build/cmu_motor_lab && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/coborg/Coborg-Platform/arduino_ws/build/cmu_motor_lab && $(CMAKE_COMMAND) -P CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : cmu_motor_lab/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 cmu_motor_lab/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend:
-	cd /home/hwadi/Coborg-Platform/arduino_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hwadi/Coborg-Platform/arduino_ws/src /home/hwadi/Coborg-Platform/arduino_ws/src/cmu_motor_lab /home/hwadi/Coborg-Platform/arduino_ws/build /home/hwadi/Coborg-Platform/arduino_ws/build/cmu_motor_lab /home/hwadi/Coborg-Platform/arduino_ws/build/cmu_motor_lab/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/coborg/Coborg-Platform/arduino_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coborg/Coborg-Platform/arduino_ws/src /home/coborg/Coborg-Platform/arduino_ws/src/cmu_motor_lab /home/coborg/Coborg-Platform/arduino_ws/build /home/coborg/Coborg-Platform/arduino_ws/build/cmu_motor_lab /home/coborg/Coborg-Platform/arduino_ws/build/cmu_motor_lab/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cmu_motor_lab/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
 
