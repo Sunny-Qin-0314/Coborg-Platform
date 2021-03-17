@@ -1,4 +1,4 @@
-prefix=/home/hwadi/Coborg-Platform/arduino_ws/devel
+prefix=/home/coborg/Coborg-Platform/arduino_ws/devel
 
 Name: cmu_motor_lab
 Description: Description of cmu_motor_lab
