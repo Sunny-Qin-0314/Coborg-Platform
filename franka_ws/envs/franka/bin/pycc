@@ -1,0 +1,3 @@
+#!/home/hwadi/CMU/16-662/lab1/envs/franka/bin/python3.6
+from numba.pycc import main
+main()
