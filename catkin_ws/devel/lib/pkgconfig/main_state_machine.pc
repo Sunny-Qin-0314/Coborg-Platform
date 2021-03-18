@@ -1,8 +1,0 @@
-prefix=/home/coborg/Coborg-Platform/catkin_ws/devel
-
-Name: main_state_machine
-Description: Description of main_state_machine
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
