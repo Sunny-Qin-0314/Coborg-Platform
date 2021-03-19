@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: autolab-core
+Version: 0.0.14
+Summary: Core utilities for the Berkeley AutoLab
+Home-page: https://github.com/BerkeleyAutomation/autolab_core
+Author: Jeff Mahler
+Author-email: jmahler@berkeley.edu
+License: Apache Software License
+Keywords: robotics grasping transformations
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: ruamel.yaml
+Requires-Dist: matplotlib (<=2.2.0)
+Requires-Dist: multiprocess
+Requires-Dist: setproctitle
+Requires-Dist: joblib
+Requires-Dist: colorlog
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Provides-Extra: ros
+Requires-Dist: rospkg ; extra == 'ros'
+Requires-Dist: catkin-pkg ; extra == 'ros'
+Requires-Dist: empy ; extra == 'ros'
+
+Core utilities for the Berkeley AutoLab. Includes rigid transformations, loggers, and 3D data wrappers.
+
+
