@@ -29,9 +29,9 @@ Note: download the repo in "melodic" branch!!
 
 ## to run on GPU: needs more than 4GB GPU memory
 
-# version: cuda 10.2 + cudnn 7.6.5 (not support cudnn8!!!!!!!!!!!!!)
+### version: cuda 10.2 + cudnn 7.6.5 (not support cudnn8!!!!!!!!!!!!!)
 
-# install cuda 10.2:
+### install cuda 10.2:
 Note: if there is any usr/local/cuda directory, remove it before re-install
 Note: no need to set up driver, when install cuda, it will set up driver automatically
 Note: the libcudnn7 is installed in the /usr/local/cuda-10.2, if libcudnn exists, copy to /usr/local/cuda/lib64, also copy cudnn.h as well.
@@ -42,7 +42,7 @@ check cuda version:
 nvcc -V
 
 
-# install cudnn separately:
+### install cudnn separately:
 Goto page https://developer.nvidia.com/rdp/cudnn-download
 Download all three .deb: runtime/developer/code sample
 
@@ -55,7 +55,7 @@ $ sudo dpkg -i libcudnn7-doc_7.6.5.32–1+cuda10.1_amd64.deb (the code samples).
 !! copy cudnn.h (in usr/include) to (usr/local/cuda/include)
 !! copy libcudnn* (in usr/lib/x86_...) to (/usr/local/cuda/lib64/)
 
-# modify makefile 
+### modify makefile 
 1. change Makefile in /darnet_ros/darknet
    GPU = 1
    CUDNN =1
