@@ -1582,6 +1582,14 @@ channel_descriptor.h
 cuda_runtime_api.h
 /usr/local/cuda-10.2/include/cuda_runtime_api.h
 
+/usr/local/cuda-10.2/include/cudnn.h
+driver_types.h
+/usr/local/cuda-10.2/include/driver_types.h
+cuda_runtime.h
+-
+stdint.h
+-
+
 /usr/local/cuda-10.2/include/curand.h
 cuda_runtime.h
 -
