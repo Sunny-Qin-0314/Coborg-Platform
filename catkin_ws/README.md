@@ -2,7 +2,10 @@
 
 Note: check whether the darknet has /data folder, if not, you may need to re-download the repo from darknet_ros, and change the config, launch files as mentioned below
 
+Note: make sure you have weights file in the /yolo_network_config
+
 /yolo_network_config:
+0. download the weights and cfg from /download.sh
 1. add .cfg and .weights (hand detection model weights and configs)
 2. within /cfg, run "dos2unix cross-hands.cfg" (convert it to unix format)
 
@@ -17,7 +20,9 @@ Note: check whether the darknet has /data folder, if not, you may need to re-dow
 
 ## within src/gb_visual_detection_3d/darknet_ros_3d
 
-Note: download the repo in "melodic" branch!!
+Note: download the repo and checkout to "melodic" branch!!
+Note: download msg repo and checkout to "melodic" branch before catkin_make!!
+Note: if "catkin_make" doesn't work, try "catkin_make -j1"
 
 /config:
 1. modify "darknet_3d.yaml" with correct camera depth-registed pointcloud topic and "interested_classes" ("hand")
@@ -34,7 +39,7 @@ Note: download the repo in "melodic" branch!!
 ### install cuda 10.2:
 Note: if there is any usr/local/cuda directory, remove it before re-install
 Note: no need to set up driver, when install cuda, it will set up driver automatically
-Note: the libcudnn7 is installed in the /usr/local/cuda-10.2, if libcudnn exists, copy to /usr/local/cuda/lib64, also copy cudnn.h as well.
+Note: the libcudnn7 is installed in the /usr/local/cuda-10.2, if libcudnn exists in /cuda-10.2, copy to /usr/local/cuda/lib64, also copy cudnn.h to /cuda/include as well.
 
 https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130
 
@@ -72,7 +77,10 @@ $ sudo dpkg -i libcudnn7-doc_7.6.5.32–1+cuda10.1_amd64.deb (the code samples).
 GPU is ready!
 
 ## Modify the rs_d400_and_t265.launch
-add rs_rgbd.launch into rs_d400_and_t265.launch
+Add rs_rgbd.launch into rs_d400_and_t265.launch
+
+Note: install rgbd_launch package first
+$ sudo apt-get install ros-melodic-rgbd-launch
 
 modify the tf based on the urdf for d435 and t265
 xyz="0.009 0.021 0.027" rpy="0.000 -0.018 0.005"
@@ -84,7 +92,10 @@ To use it, move it into your /opt/ros/melodic/share/realsense2_camera/launch
 1. roslaunch realsense2_camera rs_d400_and_t265.launch 
    (modified d400 and t265 launch file (combined rs_rgbd.launch and rs_d400_and_t265.launch)) or use rs_rgbd.launch with D435i only
 
-2. source devel/setup.bash
+2. catkin_make   
+   if not working, try "catkin_make -j1"
+
+   source devel/setup.bash
 
 3. roslaunch darknet_ros_3d darknet_ros_3d.launch
    (make sure configure file and launch file have already been modified with correct image topics and YOLO weights, configs)
