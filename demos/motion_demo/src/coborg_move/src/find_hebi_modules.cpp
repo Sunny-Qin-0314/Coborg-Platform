@@ -52,7 +52,20 @@ int main(int argc, char **argv)
     // ROS_INFO_STREAM("Forward Rotation: \n" << end_effector_state.rotation() << "\n");
 
     //perform inverse kinematics based on end_effector_position
-    Eigen::Vector3d pos = Eigen::Vector3d(0.491584, -0.162383, 0.441646);
+    Eigen::Vector3d pos = Eigen::Vector3d(0.491584, -0.162383, 0.441646);   
+    Eigen::Vector3d curr_pos = Eigen::Vector3d(0.6924, 0.024512, 0.413701);
+    Eigen::Vector3d changevect = pos - curr_pos;
+    changevect.normalize();
+
+    Eigen::Quaterniond quatRot;
+    quatRot.setFromTwoVectors(Eigen::Vector3d(0,-1,0),changevect);
+    Eigen::Matrix3d quatRotMat;
+    quatRotMat = quatRot.toRotationMatrix();
+    ROS_INFO_STREAM("Quaternion Rotation: \n" << quatRotMat << "\n");
+
+
+
+    //FORNOW: hard coded rotationmatrix
     Eigen::MatrixXd rot(3,3);
     rot(0,0) = 0.306492;
     rot(0,1) = 0.950377;
@@ -137,6 +150,9 @@ int main(int argc, char **argv)
     //set robot arm to be straight out
     positions.setZero();
 
+    // positions[0] = joint_values[0];
+    // positions[1] = joint_values[1];
+    // positions[2] = joint_values[2];
 
     
     hebi::GroupCommand groupCommand(group->size());
@@ -172,16 +188,16 @@ int main(int argc, char **argv)
         //std::cout << "Position feedback: " << std::endl << feedbackPos << std::endl;
 
         //stream constant joint angle vector to coborg
-        if(durr > 5.0)
-        {
-            positions[0] = joint_values[0];
-            positions[1] = joint_values[1];
-            positions[2] = joint_values[2];
-            groupCommand.setPosition(positions);
-            ROS_INFO("Running position change");
-        }
-        //group->sendCommand(groupCommand);
-        group->sendCommandWithAcknowledgement(groupCommand);
+        // if(durr > 5.0)
+        // {
+        //     positions[0] = joint_values[0];
+        //     positions[1] = joint_values[1];
+        //     positions[2] = joint_values[2];
+        //     groupCommand.setPosition(positions);
+        //     ROS_INFO("Running position change");
+        // }
+        // group->sendCommand(groupCommand);
+        // group->sendCommandWithAcknowledgement(groupCommand);
 
 
 

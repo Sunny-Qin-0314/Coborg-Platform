@@ -1,8 +1,0 @@
-digraph G {
-node [shape=box];
-"world" [label="world"];
-"base" [label="base"];
-node [shape=ellipse, color=blue, fontcolor=blue];
-"world" -> "world_joint" [label="xyz: 0 0 0 \nrpy: 0 -0 0"]
-"world_joint" -> "base"
-}

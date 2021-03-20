@@ -15,10 +15,14 @@ find_package(catkin REQUIRED COMPONENTS
   hebi_cpp_api
   message_generation
   std_msgs
+  geometry_msgs
   tf
   trajectory_msgs
   moveit_core
   moveit_ros_planning_interface
+  moveit_visual_tools
+  rviz_visual_tools
+  sensor_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -54,11 +58,9 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
-## Generate messages in the 'msg' folder
+# # Generate messages in the 'msg' folder
 # add_message_files(
 #   FILES
-#   Message1.msg
-#   Message2.msg
 # )
 
 ## Generate services in the 'srv' folder
@@ -75,11 +77,13 @@ find_package(catkin REQUIRED COMPONENTS
 #   Action2.action
 # )
 
-## Generate added messages and services with any dependencies listed here
-# generate_messages(
-#   DEPENDENCIES
-#   std_msgs  # Or other packages containing msgs
-# )
+# Generate added messages and services with any dependencies listed here
+generate_messages(
+  DEPENDENCIES
+  std_msgs  # Or other packages containing msgs
+  geometry_msgs
+  sensor_msgs
+)
 
 ################################################
 ## Declare ROS dynamic reconfigure parameters ##
@@ -175,6 +179,32 @@ add_executable(find_hebi_modules src/find_hebi_modules.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(find_hebi_modules
+  ${catkin_LIBRARIES}
+)
+
+add_executable(find_hebi_moveit_planner src/find_hebi_moveit_planner.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(find_hebi_moveit_planner
+  ${catkin_LIBRARIES}
+)
+
+add_executable(moveit_tutorials src/moveit_tutorials.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(moveit_tutorials
+  ${catkin_LIBRARIES}
+  ${Boost_LIBRARIES}
+)
+
+install(TARGETS moveit_tutorials DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+
+install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
+
+add_executable(tf_moveit_goalsetNode src/tf_moveit_goalsetNode.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(tf_moveit_goalsetNode
   ${catkin_LIBRARIES}
 )
 
