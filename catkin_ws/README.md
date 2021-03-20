@@ -5,15 +5,18 @@ Note: check whether the darknet has /data folder, if not, you may need to re-dow
 Note: make sure you have weights file in the /yolo_network_config
 
 /yolo_network_config:
+
 0. download the weights and cfg from /download.sh
 1. add .cfg and .weights (hand detection model weights and configs)
 2. within /cfg, run "dos2unix cross-hands.cfg" (convert it to unix format)
 
 /config:
+
 1. modify "ros.yaml" with correct camera topic
 2. create "yolov3-hand.yaml" to configure the model files
 
 /launch:
+
 1. modify "darknet_ros.launch" with correct yaml file (yolov3-hand.yaml)
 
 
