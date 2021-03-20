@@ -83,6 +83,7 @@ GPU is ready!
 Add rs_rgbd.launch into rs_d400_and_t265.launch
 
 Note: install rgbd_launch package first
+
 $ sudo apt-get install ros-melodic-rgbd-launch
 
 modify the tf based on the urdf for d435 and t265
@@ -96,6 +97,7 @@ To use it, move it into your /opt/ros/melodic/share/realsense2_camera/launch
    (modified d400 and t265 launch file (combined rs_rgbd.launch and rs_d400_and_t265.launch)) or use rs_rgbd.launch with D435i only
 
 2. catkin_make   
+
    if not working, try "catkin_make -j1"
 
    source devel/setup.bash
