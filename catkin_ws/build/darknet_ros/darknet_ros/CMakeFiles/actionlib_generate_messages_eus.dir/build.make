@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/coborg/Coborg-Platform/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/catkin_ws/build
+CMAKE_BINARY_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build
 
 # Utility rule file for actionlib_generate_messages_eus.
 
@@ -63,10 +63,10 @@ darknet_ros/darknet_ros/CMakeFiles/actionlib_generate_messages_eus.dir/build: ac
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/actionlib_generate_messages_eus.dir/build
 
 darknet_ros/darknet_ros/CMakeFiles/actionlib_generate_messages_eus.dir/clean:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/actionlib_generate_messages_eus.dir/clean
 
 darknet_ros/darknet_ros/CMakeFiles/actionlib_generate_messages_eus.dir/depend:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coborg/Coborg-Platform/catkin_ws/src /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros /home/coborg/Coborg-Platform/catkin_ws/build /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/actionlib_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/actionlib_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/actionlib_generate_messages_eus.dir/depend
 

@@ -1,26 +1,26 @@
 
 "use strict";
 
-let BoundingBoxes = require('./BoundingBoxes.js');
 let BoundingBox = require('./BoundingBox.js');
+let BoundingBoxes = require('./BoundingBoxes.js');
 let ObjectCount = require('./ObjectCount.js');
-let CheckForObjectsGoal = require('./CheckForObjectsGoal.js');
 let CheckForObjectsAction = require('./CheckForObjectsAction.js');
-let CheckForObjectsActionResult = require('./CheckForObjectsActionResult.js');
-let CheckForObjectsFeedback = require('./CheckForObjectsFeedback.js');
-let CheckForObjectsActionGoal = require('./CheckForObjectsActionGoal.js');
+let CheckForObjectsGoal = require('./CheckForObjectsGoal.js');
 let CheckForObjectsResult = require('./CheckForObjectsResult.js');
+let CheckForObjectsFeedback = require('./CheckForObjectsFeedback.js');
 let CheckForObjectsActionFeedback = require('./CheckForObjectsActionFeedback.js');
+let CheckForObjectsActionResult = require('./CheckForObjectsActionResult.js');
+let CheckForObjectsActionGoal = require('./CheckForObjectsActionGoal.js');
 
 module.exports = {
-  BoundingBoxes: BoundingBoxes,
   BoundingBox: BoundingBox,
+  BoundingBoxes: BoundingBoxes,
   ObjectCount: ObjectCount,
-  CheckForObjectsGoal: CheckForObjectsGoal,
   CheckForObjectsAction: CheckForObjectsAction,
-  CheckForObjectsActionResult: CheckForObjectsActionResult,
-  CheckForObjectsFeedback: CheckForObjectsFeedback,
-  CheckForObjectsActionGoal: CheckForObjectsActionGoal,
+  CheckForObjectsGoal: CheckForObjectsGoal,
   CheckForObjectsResult: CheckForObjectsResult,
+  CheckForObjectsFeedback: CheckForObjectsFeedback,
   CheckForObjectsActionFeedback: CheckForObjectsActionFeedback,
+  CheckForObjectsActionResult: CheckForObjectsActionResult,
+  CheckForObjectsActionGoal: CheckForObjectsActionGoal,
 };

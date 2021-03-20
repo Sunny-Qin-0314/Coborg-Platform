@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/coborg/Coborg-Platform/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/catkin_ws/build
+CMAKE_BINARY_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build
 
 # Utility rule file for clean_test_results_darknet_ros.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/catkin_ws/build
 include darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/progress.make
 
 darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/coborg/Coborg-Platform/catkin_ws/build/test_results/darknet_ros
+	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/test_results/darknet_ros
 
 clean_test_results_darknet_ros: darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros
 clean_test_results_darknet_ros: darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/build.make
@@ -67,10 +67,10 @@ darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/build: cle
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/build
 
 darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/clean:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_darknet_ros.dir/cmake_clean.cmake
+	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_darknet_ros.dir/cmake_clean.cmake
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/clean
 
 darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/depend:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coborg/Coborg-Platform/catkin_ws/src /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros /home/coborg/Coborg-Platform/catkin_ws/build /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/clean_test_results_darknet_ros.dir/depend
 
