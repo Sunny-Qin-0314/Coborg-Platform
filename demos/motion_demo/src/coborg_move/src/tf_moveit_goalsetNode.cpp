@@ -35,6 +35,8 @@
 #include <tf/tf.h>
 #include <eigen_conversions/eigen_msg.h>
 
+#include "std_msgs/Int16.h"
+
 geometry_msgs::Pose target_pose1;
 
 tf::TransformListener* listPoint;
@@ -45,6 +47,10 @@ bool moveReady = true;
 bool success;
 
 moveit::planning_interface::MoveGroupInterface::Plan* myPlanPoint;
+
+ros::Time beginTime;
+ros::Time currTime;
+ros::Duration durVar;
 
 void poseTransformCallback(const geometry_msgs::Pose::ConstPtr& posemsg)
 {
@@ -78,6 +84,30 @@ void poseTransformCallback(const geometry_msgs::Pose::ConstPtr& posemsg)
     
 
 }
+
+void randomPoseFunc()
+{
+    float xRangeMin = 0.6;
+    float xRangeMax = 1.0;
+    float yRangeMin = -0.35;
+    float yRangeMax = 0.0;
+    float zRangeMin = -0.2;
+    float zRangeMax = 0.0;
+
+    float randomX = ((float) rand()) / (float) RAND_MAX;
+    float randomY = ((float) rand()) / (float) RAND_MAX;
+    float randomZ = ((float) rand()) / (float) RAND_MAX;
+    target_pose1.position.x = randomX*(xRangeMax - xRangeMin) + xRangeMin;
+    target_pose1.position.y = randomY*(yRangeMax - yRangeMin) + yRangeMin;
+    target_pose1.position.z = randomZ*(zRangeMax - zRangeMin) + zRangeMin;
+}
+
+// TODO: create random position callback
+// x: 0.6 - 1.0
+// y: 0.0 - -0.35
+// z: 0.0 - -0.2
+
+
 
 int main(int argc, char **argv)
 {
@@ -135,7 +165,7 @@ int main(int argc, char **argv)
     visual_tools.trigger();
     // Start the demo
     // ^^^^^^^^^^^^^^^^^^^^^^^^^
-    visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to start the demo");
+    // visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to start the demo");
 
     // Planning to a Pose goal
     // ^^^^^^^^^^^^^^^^^^^^^^^
@@ -144,9 +174,9 @@ int main(int argc, char **argv)
 
     // positon and orientation initialized relative to the rodL frame
     
-    target_pose1.position.x = 1.0;
-    target_pose1.position.y = -0.07659;
-    target_pose1.position.z = -0.03536;
+    // target_pose1.position.x = 1.0;
+    // target_pose1.position.y = -0.07659;
+    // target_pose1.position.z = -0.03536;
     
     // base point 1 (theoretically feasible for robot arm)
     // target_pose1.position.x = 0.6124;
@@ -171,7 +201,9 @@ int main(int argc, char **argv)
     // subscribe to desired pose rostopic
     ros::Subscriber sent_msg_sub = node.subscribe("desired_pose", 1000, poseTransformCallback);
 
-    desired_pos_pub.publish(target_pose1);
+    // subscribe to vision system true rostopic to output random goal pose position
+
+    // desired_pos_pub.publish(target_pose1);
 
     movePoint->setGoalTolerance(0.001);
 
@@ -179,8 +211,21 @@ int main(int argc, char **argv)
     
     ros::Rate rate(10.0);
 
+    beginTime = ros::Time::now();
+
     while(ros::ok())
     {
+        currTime = ros::Time::now();
+        durVar = currTime - beginTime;
+
+        if ((float) durVar.toSec() > 5.0)
+        {
+            randomPoseFunc();
+            desired_pos_pub.publish(target_pose1);
+            beginTime = ros::Time::now();
+        }
+
+
 
         tf::poseMsgToEigen(target_pose1,target_joints);
         // current_state = move_group.getCurrentState();
