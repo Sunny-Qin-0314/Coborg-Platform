@@ -24,8 +24,13 @@ Note: make sure you have weights file in the /yolo_network_config
 ## within src/gb_visual_detection_3d/darknet_ros_3d
 
 Note: download the repo and checkout to "melodic" branch!!
+
+https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d
+
 Note: download msg repo and checkout to "melodic" branch before catkin_make!!
-Note: if "catkin_make" doesn't work, try "catkin_make -j1"
+
+https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d_msgs
+
 
 /config:
 1. modify "darknet_3d.yaml" with correct camera depth-registed pointcloud topic and "interested_classes" ("hand")
@@ -34,10 +39,12 @@ Note: if "catkin_make" doesn't work, try "catkin_make -j1"
 1. modify "darknet_ros_3d.launch" with correct yaml file (yolov3-hand.yaml)
 
 
+Note: if "catkin_make" doesn't work, try "catkin_make -j1"
 
-## to run on GPU: needs more than 4GB GPU memory
 
-### version: cuda 10.2 + cudnn 7.6.5 (not support cudnn8!!!!!!!!!!!!!)
+## Run on GPU: needs more than 4GB GPU memory
+
+### version: cuda 10.2 + cudnn 7.6.5 (not support cudnn8)
 
 ### install cuda 10.2:
 Note: if there is any usr/local/cuda directory, remove it before re-install
