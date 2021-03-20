@@ -201,10 +201,10 @@ install(TARGETS moveit_tutorials DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
-add_executable(moveit_tutorials2 src/moveit_tutorials2.cpp)
+add_executable(tf_moveit_goalsetNode src/tf_moveit_goalsetNode.cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(moveit_tutorials2
+target_link_libraries(tf_moveit_goalsetNode
   ${catkin_LIBRARIES}
 )
 
