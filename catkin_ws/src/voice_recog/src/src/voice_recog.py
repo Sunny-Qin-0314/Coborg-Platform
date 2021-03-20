@@ -71,26 +71,26 @@ while not rospy.is_shutdown():
                     if any(word in stoplist for word in results):
                         print(repr(Command.STOP))
                         voice_commands_pub.publish(Command.STOP.value)
-                        os.system('mpg123 -q ' + voice_dir + 'Sounds/stopSound.mp3')
+                        os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
                         command = True
                     elif any(word in targetlist for word in results):
                         print(repr(Command.TARGET))
                         voice_commands_pub.publish(Command.TARGET.value)
-                        os.system('mpg123 -q ' + voice_dir + 'Sounds/commandSound.mp3')
+                        os.system('mpg123 -q ' + voice_dir + '/Sounds/commandSound.mp3')
                         command = True
                     elif any(word in homelist for word in results):
                         print(repr(Command.HOME))
                         voice_commands_pub.publish(Command.HOME.value)
-                        os.system('mpg123 -q ' + voice_dir + 'Sounds/commandSound.mp3')
+                        os.system('mpg123 -q ' + voice_dir + '/Sounds/commandSound.mp3')
                         command = True
                     elif 'gas' in results:
-                        os.system('mpg123 -q ' + voice_dir + 'Sounds/fartSound.mp3')
+                        os.system('mpg123 -q ' + voice_dir + '/Sounds/fartSound.mp3')
                         command = True
                     elif 'drop' in results and 'beat' in results:
-                        os.system('mpg123 -q ' + voice_dir + 'Sounds/sickbeatSound.mp3')
+                        os.system('mpg123 -q ' + voice_dir + '/Sounds/sickbeatSound.mp3')
                         command = True
                     elif 'sarah' in results and 'hi' in results:
-                        os.system('mpg123 -q ' + voice_dir + 'Sounds/rickroll.mp3')
+                        os.system('mpg123 -q ' + voice_dir + '/Sounds/rickroll.mp3')
                         command = True
 
                 # Send stop command when "stop" is heard 3 or more times outside of "Coborg" trigger
@@ -98,17 +98,17 @@ while not rospy.is_shutdown():
                         if results.count('stop') > 4:
                             print(repr(Command.STOP))
                             voice_commands_pub.publish(Command.STOP.value)
-                            os.system('mpg123 -q ' + voice_dir + 'Sounds/stopSound.mp3')
+                            os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
                 
                 # Translate to base language model if 'coborg' is heard.
                 # Switch back to trigger model if language model hears a command (plays failure sound if command not valid)
                 if any(word in triggerlist for word in results):
-                    os.system('mpg123 -q ' + voice_dir + 'Sounds/triggerSound.mp3')
+                    os.system('mpg123 -q ' + voice_dir + '/Sounds/triggerSound.mp3')
                     decoder.set_search('lm')
                 elif decoder.get_search() == 'lm' and len(results) > 0:
                      decoder.set_search('coborg')
                      if not command:
-                         os.system('mpg123 -q ' + voice_dir + 'Sounds/nocommandSound.mp3')
+                         os.system('mpg123 -q ' + voice_dir + '/Sounds/nocommandSound.mp3')
                     
 
                 decoder.start_utt()

@@ -1,8 +1,8 @@
-# Install script for directory: /home/hwadi/Coborg-Platform/arduino_ws/src/cmu_motor_lab
+# Install script for directory: /home/coborg/Coborg-Platform/arduino_ws/src/cmu_motor_lab
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/hwadi/Coborg-Platform/arduino_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/coborg/Coborg-Platform/arduino_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/hwadi/Coborg-Platform/arduino_ws/build/cmu_motor_lab/catkin_generated/installspace/cmu_motor_lab.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/coborg/Coborg-Platform/arduino_ws/build/cmu_motor_lab/catkin_generated/installspace/cmu_motor_lab.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmu_motor_lab/cmake" TYPE FILE FILES
-    "/home/hwadi/Coborg-Platform/arduino_ws/build/cmu_motor_lab/catkin_generated/installspace/cmu_motor_labConfig.cmake"
-    "/home/hwadi/Coborg-Platform/arduino_ws/build/cmu_motor_lab/catkin_generated/installspace/cmu_motor_labConfig-version.cmake"
+    "/home/coborg/Coborg-Platform/arduino_ws/build/cmu_motor_lab/catkin_generated/installspace/cmu_motor_labConfig.cmake"
+    "/home/coborg/Coborg-Platform/arduino_ws/build/cmu_motor_lab/catkin_generated/installspace/cmu_motor_labConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmu_motor_lab" TYPE FILE FILES "/home/hwadi/Coborg-Platform/arduino_ws/src/cmu_motor_lab/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cmu_motor_lab" TYPE FILE FILES "/home/coborg/Coborg-Platform/arduino_ws/src/cmu_motor_lab/package.xml")
 endif()
 

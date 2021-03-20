@@ -1,5 +1,0 @@
-uint16 Potentiometer
-uint16 Flex_Sensor
-uint16 IR_Sensor
-uint16 Ultrasonic_Sensor
-uint16 Button_State
