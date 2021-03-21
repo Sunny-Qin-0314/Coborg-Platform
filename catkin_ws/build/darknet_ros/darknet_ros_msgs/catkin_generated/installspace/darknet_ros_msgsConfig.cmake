@@ -67,14 +67,14 @@ set(darknet_ros_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(darknet_ros_msgs_SOURCE_PREFIX /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros_msgs)
-  set(darknet_ros_msgs_DEVEL_PREFIX /home/coborg/Coborg-Platform/catkin_ws/devel)
+  set(darknet_ros_msgs_SOURCE_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros_msgs)
+  set(darknet_ros_msgs_DEVEL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel)
   set(darknet_ros_msgs_INSTALL_PREFIX "")
   set(darknet_ros_msgs_PREFIX ${darknet_ros_msgs_DEVEL_PREFIX})
 else()
   set(darknet_ros_msgs_SOURCE_PREFIX "")
   set(darknet_ros_msgs_DEVEL_PREFIX "")
-  set(darknet_ros_msgs_INSTALL_PREFIX /home/coborg/Coborg-Platform/catkin_ws/install)
+  set(darknet_ros_msgs_INSTALL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install)
   set(darknet_ros_msgs_PREFIX ${darknet_ros_msgs_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD
+    foreach(path /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install/lib;/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+=======
     foreach(path /home/coborg/Coborg-Platform/catkin_ws/install/lib;/home/coborg/Coborg-Platform/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+>>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

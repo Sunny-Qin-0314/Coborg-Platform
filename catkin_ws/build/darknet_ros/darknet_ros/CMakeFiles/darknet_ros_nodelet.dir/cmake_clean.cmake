@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/darknet_ros_nodelet.dir/src/yolo_object_detector_nodelet.cpp.o"
-  "/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_nodelet.pdb"
-  "/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_nodelet.so"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_nodelet.pdb"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

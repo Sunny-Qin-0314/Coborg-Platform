@@ -2,15 +2,21 @@
 
 Note: check whether the darknet has /data folder, if not, you may need to re-download the repo from darknet_ros, and change the config, launch files as mentioned below
 
+Note: make sure you have weights file in the /yolo_network_config
+
 /yolo_network_config:
+
+0. download the weights and cfg from /download.sh
 1. add .cfg and .weights (hand detection model weights and configs)
 2. within /cfg, run "dos2unix cross-hands.cfg" (convert it to unix format)
 
 /config:
+
 1. modify "ros.yaml" with correct camera topic
 2. create "yolov3-hand.yaml" to configure the model files
 
 /launch:
+
 1. modify "darknet_ros.launch" with correct yaml file (yolov3-hand.yaml)
 
 
@@ -77,6 +83,7 @@ GPU is ready!
 Add rs_rgbd.launch into rs_d400_and_t265.launch
 
 Note: install rgbd_launch package first
+
 $ sudo apt-get install ros-melodic-rgbd-launch
 
 modify the tf based on the urdf for d435 and t265
@@ -90,6 +97,7 @@ To use it, move it into your /opt/ros/melodic/share/realsense2_camera/launch
    (modified d400 and t265 launch file (combined rs_rgbd.launch and rs_d400_and_t265.launch)) or use rs_rgbd.launch with D435i only
 
 2. catkin_make   
+
    if not working, try "catkin_make -j1"
 
    source devel/setup.bash
