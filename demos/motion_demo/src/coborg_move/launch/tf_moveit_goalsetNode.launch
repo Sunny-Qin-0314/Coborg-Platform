@@ -1,0 +1,6 @@
+<launch>
+
+  <node name="tf_moveit_goalsetNode" pkg="coborg_move" type="tf_moveit_goalsetNode" respawn="false" output="screen">
+  </node>
+
+</launch>

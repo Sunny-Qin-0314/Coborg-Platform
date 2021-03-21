@@ -1,24 +1,96 @@
-Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/hwadi/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
 
-Run Build Command:"/usr/bin/make" "cmTC_428c2/fast"
-/usr/bin/make -f CMakeFiles/cmTC_428c2.dir/build.make CMakeFiles/cmTC_428c2.dir/build
-make[1]: Entering directory '/home/hwadi/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_428c2.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_428c2.dir/CheckSymbolExists.c.o   -c /home/hwadi/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_428c2
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_428c2.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_428c2.dir/CheckSymbolExists.c.o  -o cmTC_428c2 
-CMakeFiles/cmTC_428c2.dir/CheckSymbolExists.c.o: In function `main':
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/coborg/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cf5f1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cf5f1.dir/build.make CMakeFiles/cmTC_cf5f1.dir/build
+make[1]: Entering directory '/home/coborg/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cf5f1.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_cf5f1.dir/CheckSymbolExists.c.o   -c /home/coborg/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_cf5f1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf5f1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_cf5f1.dir/CheckSymbolExists.c.o  -o cmTC_cf5f1 
+CMakeFiles/cmTC_cf5f1.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_428c2.dir/build.make:97: recipe for target 'cmTC_428c2' failed
-make[1]: *** [cmTC_428c2] Error 1
-make[1]: Leaving directory '/home/hwadi/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_428c2/fast' failed
-make: *** [cmTC_428c2/fast] Error 2
+CMakeFiles/cmTC_cf5f1.dir/build.make:97: recipe for target 'cmTC_cf5f1' failed
+make[1]: *** [cmTC_cf5f1] Error 1
+make[1]: Leaving directory '/home/coborg/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_cf5f1/fast' failed
+make: *** [cmTC_cf5f1/fast] Error 2
 
-File /home/hwadi/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/coborg/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +106,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/hwadi/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp
+Change Dir: /home/coborg/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_5fa53/fast"
-/usr/bin/make -f CMakeFiles/cmTC_5fa53.dir/build.make CMakeFiles/cmTC_5fa53.dir/build
-make[1]: Entering directory '/home/hwadi/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5fa53.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_5fa53.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
-Linking C executable cmTC_5fa53
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fa53.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_5fa53.dir/CheckFunctionExists.c.o  -o cmTC_5fa53 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_a7e97/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7e97.dir/build.make CMakeFiles/cmTC_a7e97.dir/build
+make[1]: Entering directory '/home/coborg/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7e97.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a7e97.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a7e97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7e97.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a7e97.dir/CheckFunctionExists.c.o  -o cmTC_a7e97 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_5fa53.dir/build.make:97: recipe for target 'cmTC_5fa53' failed
-make[1]: *** [cmTC_5fa53] Error 1
-make[1]: Leaving directory '/home/hwadi/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_5fa53/fast' failed
-make: *** [cmTC_5fa53/fast] Error 2
+CMakeFiles/cmTC_a7e97.dir/build.make:97: recipe for target 'cmTC_a7e97' failed
+make[1]: *** [cmTC_a7e97] Error 1
+make[1]: Leaving directory '/home/coborg/Coborg-Platform/arduino_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a7e97/fast' failed
+make: *** [cmTC_a7e97/fast] Error 2
 
 
