@@ -169,7 +169,6 @@ depend:
 
 # Convenience name for target.
 darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule:
-<<<<<<< HEAD
 	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 .PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
 
@@ -187,10 +186,6 @@ sensor_msgs_generate_messages_lisp/fast:
 darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/rule:
 	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/rule
 .PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/rule
-=======
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
-.PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/rule
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 
 # Convenience name for target.
 darknet_ros_msgs_generate_messages: darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/rule
@@ -233,51 +228,6 @@ sensor_msgs_generate_messages_eus/fast:
 .PHONY : sensor_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
-darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/rule:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/rule
-.PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/rule
-
-# Convenience name for target.
-darknet_ros_msgs_generate_messages: darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/rule
-
-.PHONY : darknet_ros_msgs_generate_messages
-
-# fast build rule for target.
-darknet_ros_msgs_generate_messages/fast:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_generate_messages.dir/build
-.PHONY : darknet_ros_msgs_generate_messages/fast
-
-# Convenience name for target.
-darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-.PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_nodejs: darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-sensor_msgs_generate_messages_nodejs/fast:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_nodejs.dir/build
-.PHONY : sensor_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-.PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-sensor_msgs_generate_messages_eus: darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/rule
-
-.PHONY : sensor_msgs_generate_messages_eus
-
-# fast build rule for target.
-sensor_msgs_generate_messages_eus/fast:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_eus.dir/build
-.PHONY : sensor_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
 darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule:
 	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
 .PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/rule
@@ -309,11 +259,7 @@ sensor_msgs_generate_messages_py/fast:
 
 # Convenience name for target.
 darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-<<<<<<< HEAD
 	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-=======
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 .PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -323,11 +269,7 @@ geometry_msgs_generate_messages_eus: darknet_ros/darknet_ros_msgs/CMakeFiles/geo
 
 # fast build rule for target.
 geometry_msgs_generate_messages_eus/fast:
-<<<<<<< HEAD
 	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-=======
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 .PHONY : geometry_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
@@ -466,39 +408,6 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-<<<<<<< HEAD
-=======
-darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_BoundingBox.dir/rule:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_BoundingBox.dir/rule
-.PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_BoundingBox.dir/rule
-
-# Convenience name for target.
-_darknet_ros_msgs_generate_messages_check_deps_BoundingBox: darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_BoundingBox.dir/rule
-
-.PHONY : _darknet_ros_msgs_generate_messages_check_deps_BoundingBox
-
-# fast build rule for target.
-_darknet_ros_msgs_generate_messages_check_deps_BoundingBox/fast:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_BoundingBox.dir/build
-.PHONY : _darknet_ros_msgs_generate_messages_check_deps_BoundingBox/fast
-
-# Convenience name for target.
-darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal.dir/rule:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal.dir/rule
-.PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal.dir/rule
-
-# Convenience name for target.
-_darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal: darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal.dir/rule
-
-.PHONY : _darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal
-
-# fast build rule for target.
-_darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal/fast:
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/_darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal.dir/build
-.PHONY : _darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal/fast
-
-# Convenience name for target.
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
 	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
 .PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
@@ -785,11 +694,7 @@ darknet_ros_msgs_generate_messages_py/fast:
 
 # Convenience name for target.
 darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_genpy.dir/rule:
-<<<<<<< HEAD
 	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_genpy.dir/rule
-=======
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_genpy.dir/rule
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 .PHONY : darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_genpy.dir/rule
 
 # Convenience name for target.
@@ -799,11 +704,7 @@ darknet_ros_msgs_genpy: darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs
 
 # fast build rule for target.
 darknet_ros_msgs_genpy/fast:
-<<<<<<< HEAD
 	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_genpy.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_genpy.dir/build
-=======
-	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(MAKE) -f darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_genpy.dir/build.make darknet_ros/darknet_ros_msgs/CMakeFiles/darknet_ros_msgs_genpy.dir/build
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 .PHONY : darknet_ros_msgs_genpy/fast
 
 # Help Target
@@ -833,11 +734,6 @@ help:
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... _darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionResult"
 	@echo "... actionlib_msgs_generate_messages_py"
-<<<<<<< HEAD
-=======
-	@echo "... _darknet_ros_msgs_generate_messages_check_deps_BoundingBox"
-	@echo "... _darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionGoal"
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... _darknet_ros_msgs_generate_messages_check_deps_CheckForObjectsActionFeedback"
 	@echo "... _darknet_ros_msgs_generate_messages_check_deps_BoundingBoxes"

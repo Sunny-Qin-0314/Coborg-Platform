@@ -35,11 +35,10 @@
 #include <tf/tf.h>
 #include <eigen_conversions/eigen_msg.h>
 
-<<<<<<< HEAD
+#include <goal_getter/goal_msg.h>
+
 #include "std_msgs/Int16.h"
 
-=======
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 geometry_msgs::Pose target_pose1;
 
 tf::TransformListener* listPoint;
@@ -51,47 +50,50 @@ bool success;
 
 moveit::planning_interface::MoveGroupInterface::Plan* myPlanPoint;
 
-<<<<<<< HEAD
 ros::Time beginTime;
 ros::Time currTime;
 ros::Duration durVar;
 
-=======
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
-void poseTransformCallback(const geometry_msgs::Pose::ConstPtr& posemsg)
+bool goalSet = false;
+
+void poseTransformCallback(const goal_getter::goal_msg::ConstPtr& posemsg)
 {
     
-    ROS_INFO("callback received!!!");
-
-    //get transform between rodL and world frames
-    tf::StampedTransform transform;
-    try
+    // ROS_INFO("callback received!!!");
+    if (goalSet==false)
     {
-        listPoint->lookupTransform("world", "rodL",ros::Time(0), transform);
-        ROS_INFO("now this is pod racing!");
+        //get transform between rodL and world frames
+        tf::StampedTransform transform;
+        try
+        {
+            listPoint->lookupTransform("world", "camera_link",ros::Time(0), transform);
+            // ROS_INFO("now this is pod racing!");
 
-        target_pose1.position.x = transform.getOrigin().getX() + posemsg->position.x;
-        target_pose1.position.y = transform.getOrigin().getY() + posemsg->position.y;
-        target_pose1.position.z = transform.getOrigin().getZ() + posemsg->position.z;
+            target_pose1.position.x = transform.getOrigin().getX() + posemsg->x;
+            target_pose1.position.y = transform.getOrigin().getY() + posemsg->y;
+            target_pose1.position.z = transform.getOrigin().getZ() + posemsg->z + 0.3;
 
-        ROS_INFO("Transforms are: x: %f, y: %f: z: %f", target_pose1.position.x,target_pose1.position.y, target_pose1.position.z);
+            ROS_INFO("Transforms are: x: %f, y: %f: z: %f", target_pose1.position.x,target_pose1.position.y, target_pose1.position.z);
 
-        moveReady = true;
+            moveReady = true;
+            goalSet = true;
+        }
+        catch (tf::TransformException &ex)
+        {
+            ROS_ERROR("%s", ex.what());
+            ros::Duration(1.0).sleep();
+        }
+
+        // ROS_INFO("Transform rotation is: x: %f, y: %f, z: %f, w: %f",transform.getRotation().x(),transform.getRotation().y(),transform.getRotation().z(),transform.getRotation().w());
+        // ROS_INFO("Transform translation is: x: %f, y: %f: z: %f", transform.getOrigin().getX(),transform.getOrigin().getY(), transform.getOrigin().getZ());
+        // ROS_INFO("Frame ID: %s",transform.frame_id_.c_str());
+        
     }
-    catch (tf::TransformException &ex)
-    {
-        ROS_ERROR("%s", ex.what());
-        ros::Duration(1.0).sleep();
-    }
-
-    // ROS_INFO("Transform rotation is: x: %f, y: %f, z: %f, w: %f",transform.getRotation().x(),transform.getRotation().y(),transform.getRotation().z(),transform.getRotation().w());
-    // ROS_INFO("Transform translation is: x: %f, y: %f: z: %f", transform.getOrigin().getX(),transform.getOrigin().getY(), transform.getOrigin().getZ());
-    // ROS_INFO("Frame ID: %s",transform.frame_id_.c_str());
+    
     
 
 }
 
-<<<<<<< HEAD
 void randomPoseFunc()
 {
     float xRangeMin = 0.65;
@@ -116,8 +118,6 @@ void randomPoseFunc()
 
 
 
-=======
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 int main(int argc, char **argv)
 {
 
@@ -174,11 +174,7 @@ int main(int argc, char **argv)
     visual_tools.trigger();
     // Start the demo
     // ^^^^^^^^^^^^^^^^^^^^^^^^^
-<<<<<<< HEAD
     // visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to start the demo");
-=======
-    visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to start the demo");
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 
     // Planning to a Pose goal
     // ^^^^^^^^^^^^^^^^^^^^^^^
@@ -187,13 +183,9 @@ int main(int argc, char **argv)
 
     // positon and orientation initialized relative to the rodL frame
     
-    target_pose1.position.x = 1.0;
+    target_pose1.position.x = 0.8;
     target_pose1.position.y = -0.07659;
     target_pose1.position.z = -0.03536;
-<<<<<<< HEAD
-
-=======
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
     
     // base point 1 (theoretically feasible for robot arm)
     // target_pose1.position.x = 0.6124;
@@ -216,51 +208,53 @@ int main(int argc, char **argv)
     ros::Publisher desired_pos_pub = node.advertise<geometry_msgs::Pose>("desired_pose", 1000);
 
     // subscribe to desired pose rostopic
-    ros::Subscriber sent_msg_sub = node.subscribe("desired_pose", 1000, poseTransformCallback);
+    // ros::Subscriber sent_msg_sub = node.subscribe("desired_pose", 1000, poseTransformCallback);
 
-<<<<<<< HEAD
+    // subscribe to Yuqing's goal getter
+    ros::Subscriber camera_link_goal_pub = node.subscribe("goal", 1000, poseTransformCallback);
+
     // subscribe to vision system true rostopic to output random goal pose position
 
     // desired_pos_pub.publish(target_pose1);
-=======
-    desired_pos_pub.publish(target_pose1);
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 
-    movePoint->setGoalTolerance(0.001);
+    movePoint->setGoalTolerance(0.0001);
 
     moveit::core::RobotState start_state(*move_group.getCurrentState());
     
     ros::Rate rate(10.0);
 
-<<<<<<< HEAD
     beginTime = ros::Time::now();
+
+    move_group.setStartState(start_state);
 
     while(ros::ok())
     {
+        // start_state = *move_group.getCurrentState();
         currTime = ros::Time::now();
         durVar = currTime - beginTime;
 
-        if ((float) durVar.toSec() > 5.0)
+        // if ((float) durVar.toSec() > 5.0)
+        // {
+        //     randomPoseFunc();
+        //     desired_pos_pub.publish(target_pose1);
+        //     beginTime = ros::Time::now();
+        // }
+
+        if ((float) durVar.toSec() > 2.0)
         {
-            randomPoseFunc();
-            desired_pos_pub.publish(target_pose1);
-            beginTime = ros::Time::now();
+            goalSet = false;
         }
 
 
-=======
-    while(ros::ok())
-    {
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
 
         tf::poseMsgToEigen(target_pose1,target_joints);
         // current_state = move_group.getCurrentState();
-        move_group.setStartState(start_state);
+        // move_group.setStartState(start_state);
         
         
         // convert Eigen to joint states
 
-        movePoint->setApproximateJointValueTarget(target_pose1,"end_link/INPUT_INTERFACE"); //considered a workaround solution
+        movePoint->setJointValueTarget(target_pose1,"end_link/INPUT_INTERFACE"); //considered a workaround solution
         // movePoint->setPoseTarget(target_pose1,"end_link/INPUT_INTERFACE");
         // movePoint->setPositionTarget(target_pose1.position.x,target_pose1.position.y,target_pose1.position.z);
         // movePoint->setJointValueTarget(target_pose1, "end_link/INPUT_INTERFACE");
@@ -270,12 +264,14 @@ int main(int argc, char **argv)
         // to actually move the robot.
         success = (movePoint->plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
 
-        ROS_INFO_NAMED("tutorial", "Visualizing plan 1 (pose goal) %s", success ? "" : "FAILED");
+
+
+        ROS_INFO( success ? "SUCCESS" : "FAILED");
 
         // Visualizing plans
         // ^^^^^^^^^^^^^^^^^
         // We can also visualize the plan as a line with markers in RViz.
-        ROS_INFO_NAMED("tutorial", "Visualizing plan 1 as trajectory line");
+        // ROS_INFO_NAMED("tutorial", "Visualizing plan 1 as trajectory line");
         visual_tools.publishAxisLabeled(target_pose1, "pose1");
         visual_tools.publishText(text_pose, "Pose Goal", rvt::WHITE, rvt::XLARGE);
         visual_tools.publishTrajectoryLine(myPlanPoint->trajectory_, joint_model_group);
@@ -293,8 +289,4 @@ int main(int argc, char **argv)
     return 0;
 }
 
-<<<<<<< HEAD
    
-=======
-   
->>>>>>> 10ca6d3d686b5179a0b95dea9d2c1319428a9936
