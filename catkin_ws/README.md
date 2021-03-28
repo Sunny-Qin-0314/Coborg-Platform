@@ -98,6 +98,11 @@ xyz="0.009 0.021 0.027" rpy="0.000 -0.018 0.005"
 
 To use it, move it into your /opt/ros/melodic/share/realsense2_camera/launch
 
+## Add Surface Normal in Darknet_ros_3d_normal
+In /Darknet3d.cpp:
+
+Postprocessing the 3D bounding box and get the averaged middle point's surface normal by checking the KNN of radius 15cm.
+
 ## Run the program
 
 1. roslaunch realsense2_camera rs_d400_and_t265.launch 
