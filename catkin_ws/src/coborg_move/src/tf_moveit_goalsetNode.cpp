@@ -46,7 +46,7 @@ tf::TransformListener* listPoint;
 moveit::planning_interface::MoveGroupInterface* movePoint;
 
 bool moveReady = true;
-bool success;
+moveit::planning_interface::MoveItErrorCode success;
 
 moveit::planning_interface::MoveGroupInterface::Plan* myPlanPoint;
 
@@ -72,8 +72,9 @@ void poseTransformCallback(const goal_getter::goal_msg::ConstPtr& posemsg)
             target_pose1.position.x = transform.getOrigin().getX() + posemsg->x;
             target_pose1.position.y = transform.getOrigin().getY() + posemsg->y;
             target_pose1.position.z = transform.getOrigin().getZ() + posemsg->z + 0.3;
-
-            ROS_INFO("Transforms are: x: %f, y: %f: z: %f", target_pose1.position.x,target_pose1.position.y, target_pose1.position.z);
+            
+            ROS_INFO("Transforms are: x: %f, y: %f: z: %f", posemsg->x,posemsg->y, posemsg->z);
+            // ROS_INFO("Transforms are: x: %f, y: %f: z: %f", target_pose1.position.x,target_pose1.position.y, target_pose1.position.z);
 
             moveReady = true;
             goalSet = true;
@@ -156,7 +157,7 @@ int main(int argc, char **argv)
     ROS_INFO_NAMED("tutorial", "Available Planning Groups:");
     std::copy(move_group.getJointModelGroupNames().begin(), move_group.getJointModelGroupNames().end(),std::ostream_iterator<std::string>(std::cout, ", "));
 
-    move_group.setPlanningTime(10.0);
+    move_group.setPlanningTime(2.0);
 
     // Visualization
     // ^^^^^^^^^^^^^
@@ -225,7 +226,7 @@ int main(int argc, char **argv)
 
     beginTime = ros::Time::now();
 
-    move_group.setStartState(start_state);
+    // move_group.setStartState(start_state);
 
     while(ros::ok())
     {
@@ -240,7 +241,7 @@ int main(int argc, char **argv)
         //     beginTime = ros::Time::now();
         // }
 
-        if ((float) durVar.toSec() > 2.0)
+        if ((float) durVar.toSec() > 5.0)
         {
             goalSet = false;
         }
@@ -262,8 +263,7 @@ int main(int argc, char **argv)
         // Now, we call the planner to compute the plan and visualize it.
         // Note that we are just planning, not asking move_group
         // to actually move the robot.
-        success = (movePoint->plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
-
+        success = movePoint->plan(my_plan);
 
 
         ROS_INFO( success ? "SUCCESS" : "FAILED");
@@ -278,7 +278,7 @@ int main(int argc, char **argv)
         visual_tools.trigger();
         // visual_tools.prompt("Press 'next' in the RvizVisualToolsGui window to continue the demo"); 
 
-        move_group.move();
+        move_group.execute(my_plan);
         moveReady = false;
 
         ros::Duration(2.0).sleep();
