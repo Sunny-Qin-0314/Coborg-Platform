@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/hwadi/CMU/16-662/lab1/envs/franka"
+VIRTUAL_ENV="/home/gerry/Coborg-Platform/franka_ws/envs/franka"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

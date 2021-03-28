@@ -131,7 +131,7 @@ int main(int argc, char **argv)
         groupCommand.setPosition(positions);
 
         group->sendCommand(groupCommand);
-        group->sendCommandWithAcknowledgement(groupCommand);
+        // group->sendCommandWithAcknowledgement(groupCommand);
 
         ros::spinOnce();
         loop_rate.sleep();
