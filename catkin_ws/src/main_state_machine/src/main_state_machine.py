@@ -15,17 +15,22 @@ import enum
 # 3 = compact > Return to home position
 # # = caution > Motors stop moving, but maintain with lower torque threshold
 
-class Command(enum.Enum):
-    STOP = 1
-    TARGET = 2
+class Command(enum.IntEnum): #these are the voice commands that come in and get sent to the motors
+    STOP = 1 
+    TARGET = 2 
     HOME = 3
 
 # Statuses:
-# a = initializing > Command received, but not executing yet (e.g. detecting hands)
-# b = executing > Command being executed (e.g. moving to target)
-# c = waiting > Command completed/performing holding task, ready for next command (maintaining position in 3d space)
+# 1 = initializing > Command received, but not executing yet (e.g. detecting hands) [ROS INFO]
+# 2 = executing > Command being executed (e.g. moving to target)
+# 3 = waiting > Command completed/performing holding task, ready for next command (maintaining position in 3d space)
 
-# Speaker Sounds:
+class Status(enum.IntEnum): #this is the status that outputs to ROS terminal
+    INIT = 1 
+    EXECUTE = 2 
+    IDLE = 3
+
+# Speaker Sounds (to be implemented):
 # 0 = start-up > System has launched
 # 1 = listening > Keyword "COBORG" identified, awaiting full command
 # 2 = understood > Voice command understood
@@ -33,30 +38,35 @@ class Command(enum.Enum):
 # 4 = emergency > Emergency command detected
 # 5 = waiting > Task completed, available for next command
 
-status = 'c' # initializing
-function = 2 # compact
+status = Status.INIT # initializing
+function = Command.HOME  # compact
+
+status = Status.IDLE #idle/ready
 
 # Function for /voice_commands
 def new_command(message):
     new_command = message.data
     global status, function, state_output_pub
     print("COMMAND RECEIVED:")
-    if new_command == Command.STOP.value:
+
+    if new_command == Command.STOP:
         print("STOP")
-        function = Command.STOP.value # e_stop
-        status = 'c' # initializing
+        function = Command.STOP # e_stop
+        status = Status.EXECUTE # execute mode
         state_output_pub.publish(function)
-    elif new_command == Command.TARGET.value:
+
+    elif new_command == Command.TARGET:
         print("TARGET")
-        if status == 'c':
-            function = Command.TARGET.value # hold
-            status = 'c' # initializing
+        if status = Status.IDLE: #idle/ready
+            function = Command.TARGET # hold
+            status = Status.EXECUTE # execute mode
             state_output_pub.publish(function)
-    elif new_command == Command.HOME.value:
+
+    elif new_command == Command.HOME:
         print("HOME")
-        if status == 'c':
-            function = Command.HOME.value # compact
-            status = 'c' # initializing
+        if status = Status.IDLE: #idle/ready
+            function = Command.HOME # compact
+            status = Status.EXECUTE # execute mode
             state_output_pub.publish(function)
     """
     elif new_command == Command.STOP.value:
@@ -70,20 +80,22 @@ def new_command(message):
 def status_update(message):
     new_status = message.data
     global status
-    if new_status == 'b':
-        status = 'b' # executing
-    if new_status == 'c':
-        status = 'c' # waiting
+    if new_status == Status.EXECUTE:
+        status = Status.EXECUTE # executing
+    if new_status == Status.IDLE:
+        status = Status.IDLE # waiting
         #speaker_output_pub.publish(5)
 
-# Initializations
-rospy.init_node('main_state_machine')
-voice_commands_sub = rospy.Subscriber('/voice_commands', Int32, new_command)
-state_output_pub = rospy.Publisher('/state_output', Int32, queue_size=1)
-#speaker_output_pub = rospy.Publisher('/speaker_output', Int32, queue_size=1)
-#state_input_sub = rospy.Subscriber('/state_input', Char, status_update)
-state_output_pub.publish(function)
-#speaker_output_pub.publish(0)
 
-rospy.spin() # Should this just be spin()?
+if __name__ == "__main__":
+    # Initializations
+    rospy.init_node('main_state_machine')
+    voice_commands_sub = rospy.Subscriber('/voice_commands', Int32, new_command)
+    state_output_pub = rospy.Publisher('/state_output', Int32, queue_size=1)
+    #speaker_output_pub = rospy.Publisher('/speaker_output', Int32, queue_size=1)
+    #state_input_sub = rospy.Subscriber('/state_input', Char, status_update)
+    state_output_pub.publish(function)
+    #speaker_output_pub.publish(0)
+
+    rospy.spin() # Should this just be spin()?
 

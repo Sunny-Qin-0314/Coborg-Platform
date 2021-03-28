@@ -10,7 +10,7 @@ import rospy
 from std_msgs.msg import Int32
 
 
-class Command(enum.Enum):
+class Command(enum.IntEnum):
     STOP = 1
     TARGET = 2
     HOME = 3
@@ -70,17 +70,17 @@ while not rospy.is_shutdown():
                     print ('Result:', results)
                     if any(word in stoplist for word in results):
                         print(repr(Command.STOP))
-                        voice_commands_pub.publish(Command.STOP.value)
+                        voice_commands_pub.publish(Command.STOP)
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
                         command = True
                     elif any(word in targetlist for word in results):
                         print(repr(Command.TARGET))
-                        voice_commands_pub.publish(Command.TARGET.value)
+                        voice_commands_pub.publish(Command.TARGET)
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/commandSound.mp3')
                         command = True
                     elif any(word in homelist for word in results):
                         print(repr(Command.HOME))
-                        voice_commands_pub.publish(Command.HOME.value)
+                        voice_commands_pub.publish(Command.HOME)
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/commandSound.mp3')
                         command = True
                     elif 'gas' in results:
@@ -97,7 +97,7 @@ while not rospy.is_shutdown():
                 if any(word in stoplist for word in results):
                         if results.count('stop') > 4:
                             print(repr(Command.STOP))
-                            voice_commands_pub.publish(Command.STOP.value)
+                            voice_commands_pub.publish(Command.STOP)
                             os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
                 
                 # Translate to base language model if 'coborg' is heard.

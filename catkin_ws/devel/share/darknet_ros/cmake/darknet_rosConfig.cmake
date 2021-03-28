@@ -67,14 +67,14 @@ set(darknet_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(darknet_ros_SOURCE_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros)
-  set(darknet_ros_DEVEL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel)
+  set(darknet_ros_SOURCE_PREFIX /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros)
+  set(darknet_ros_DEVEL_PREFIX /home/coborg/Coborg-Platform/catkin_ws/devel)
   set(darknet_ros_INSTALL_PREFIX "")
   set(darknet_ros_PREFIX ${darknet_ros_DEVEL_PREFIX})
 else()
   set(darknet_ros_SOURCE_PREFIX "")
   set(darknet_ros_DEVEL_PREFIX "")
-  set(darknet_ros_INSTALL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install)
+  set(darknet_ros_INSTALL_PREFIX /home/coborg/Coborg-Platform/catkin_ws/install)
   set(darknet_ros_PREFIX ${darknet_ros_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(darknet_ros_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/include;/usr/include " STREQUAL " ")
+if(NOT "/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/include;/usr/include " STREQUAL " ")
   set(darknet_ros_INCLUDE_DIRS "")
-  set(_include_dirs "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/include;/usr/include")
+  set(_include_dirs "/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/include;/usr/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "https://github.com/leggedrobotics/darknet_ros " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_r
         message(FATAL_ERROR "Project 'darknet_ros' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'darknet_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'darknet_ros' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/${idir}'.  ${_report}")
     endif()
     _list_append_unique(darknet_ros_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib;/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/coborg/Coborg-Platform/catkin_ws/devel/lib;/home/coborg/Coborg-Platform/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
