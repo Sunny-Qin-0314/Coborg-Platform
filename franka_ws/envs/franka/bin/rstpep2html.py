@@ -1,4 +1,4 @@
-#!/home/hwadi/CMU/16-662/lab1/envs/franka/bin/python3.6
+#!/home/gerry/Coborg-Platform/franka_ws/envs/franka/bin/python3.6
 
 # $Id: rstpep2html.py 4564 2006-05-21 20:44:42Z wiemann $
 # Author: David Goodger <goodger@python.org>
