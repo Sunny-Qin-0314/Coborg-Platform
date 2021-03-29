@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/coborg/Coborg-Platform/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build
+CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/catkin_ws/build
 
 # Include any dependencies generated for this target.
 include darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/depend.make
@@ -57,10 +57,10 @@ include darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -177,81 +177,81 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_activation_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_activation_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_activation_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_activation_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -369,80 +369,80 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_crop_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_crop_layer_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_crop_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_crop_layer_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -560,88 +560,88 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_avgpool_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_avgpool_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -759,75 +759,75 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_deconvolutional_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_deconvolutional_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_deconvolutional_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_deconvolutional_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -944,81 +944,81 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_blas_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_blas_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_blas_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_blas_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -1136,72 +1136,72 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_dropout_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_dropout_layer_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_dropout_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_dropout_layer_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -1318,72 +1318,72 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_col2im_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_col2im_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_col2im_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_col2im_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col_kernels.cu
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -1500,87 +1500,87 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_im2col_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_im2col_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_im2col_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_im2col_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -1698,80 +1698,80 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_convolutional_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_convolutional_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_convolutional_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_convolutional_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o.cmake
 
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer_kernels.cu
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include/darknet.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer_kernels.cu
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/include/alloca.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/include/assert.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/include/c++/7/bits/concept_check.h
@@ -1889,80 +1889,80 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ro
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/builtin_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/channel_descriptor.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/common_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_double_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/device_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/host_config.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/host_defines.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/math_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/crt/sm_70_rt.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cuComplex.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cublas_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cublas_v2.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_device_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_fp16.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_runtime.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_runtime_api.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/cuda_texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/curand.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/device_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/device_launch_parameters.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/device_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/driver_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/driver_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/library_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_20_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_30_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_32_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_35_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_35_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_60_atomic_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/sm_61_intrinsics.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/surface_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/surface_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/surface_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/texture_fetch_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/texture_indirect_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/texture_types.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.h
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_functions.hpp
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda/include/vector_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/builtin_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/channel_descriptor.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/common_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_double_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/device_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_config.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/host_defines.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/math_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/crt/sm_70_rt.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuComplex.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cublas_v2.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_device_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_fp16.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_runtime_api.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/cuda_texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/curand.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_launch_parameters.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/device_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/driver_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/driver_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/library_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_20_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_30_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_32_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_35_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_60_atomic_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/sm_61_intrinsics.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/surface_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_fetch_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_indirect_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/texture_types.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.h
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_functions.hpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /usr/local/cuda-10.2/include/vector_types.h
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.cmake
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer_kernels.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_maxpool_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.cubin.txt -P /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.cmake
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer_kernels.cu
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building NVCC (Device) object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -E make_directory /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/.
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_maxpool_layer_kernels.cu.o -D generated_cubin_file:STRING=/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/./darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.cubin.txt -P /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o.cmake
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp > CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp > CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp -o CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/YoloObjectDetector.cpp -o CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o.requires:
 
@@ -1976,17 +1976,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cp
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/image_interface.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/image_interface.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/image_interface.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/image_interface.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/image_interface.c > CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/image_interface.c > CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/image_interface.c -o CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/src/image_interface.c -o CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o.requires:
 
@@ -2000,17 +2000,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o.p
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activation_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o.requires:
 
@@ -2024,17 +2024,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/im2col.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o.requires:
 
@@ -2048,17 +2048,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/activations.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o.requires:
 
@@ -2072,17 +2072,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/image.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o.requires:
 
@@ -2096,17 +2096,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o.
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/avgpool_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o.requires:
 
@@ -2120,17 +2120,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_la
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o.requires:
 
@@ -2144,17 +2144,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o.
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/batchnorm_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o.requires:
 
@@ -2168,17 +2168,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/list.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o.requires:
 
@@ -2192,17 +2192,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o.p
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/blas.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o.requires:
 
@@ -2216,17 +2216,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o.p
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/local_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/local_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/local_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/local_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/local_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/local_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/local_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/local_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o.requires:
 
@@ -2240,17 +2240,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_laye
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/box.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o.requires:
 
@@ -2264,17 +2264,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o.pr
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/lstm_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/lstm_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/lstm_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/lstm_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/lstm_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/lstm_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/lstm_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/lstm_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o.requires:
 
@@ -2288,17 +2288,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/col2im.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o.requires:
 
@@ -2312,17 +2312,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/matrix.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o.requires:
 
@@ -2336,17 +2336,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/connected_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/connected_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/connected_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/connected_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/connected_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/connected_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/connected_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/connected_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o.requires:
 
@@ -2360,17 +2360,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/maxpool_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o.requires:
 
@@ -2384,17 +2384,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_la
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/convolutional_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o.requires:
 
@@ -2408,17 +2408,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutio
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/network.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o.requires:
 
@@ -2432,17 +2432,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cost_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cost_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cost_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cost_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cost_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cost_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cost_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cost_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o.requires:
 
@@ -2456,17 +2456,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/normalization_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/normalization_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/normalization_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/normalization_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/normalization_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/normalization_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/normalization_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/normalization_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o.requires:
 
@@ -2480,17 +2480,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalizat
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crnn_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crnn_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crnn_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crnn_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crnn_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crnn_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crnn_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crnn_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o.requires:
 
@@ -2504,17 +2504,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/option_list.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/option_list.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/option_list.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/option_list.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/option_list.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/option_list.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/option_list.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/option_list.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o.requires:
 
@@ -2528,17 +2528,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_lis
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/crop_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o.requires:
 
@@ -2552,17 +2552,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/parser.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/parser.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/parser.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/parser.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/parser.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/parser.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o.requires:
 
@@ -2576,17 +2576,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/cuda.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o.requires:
 
@@ -2600,17 +2600,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o.p
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/region_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/region_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/region_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/region_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/region_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/region_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/region_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/region_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o.requires:
 
@@ -2624,17 +2624,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_lay
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/data.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o.requires:
 
@@ -2648,17 +2648,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o.p
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/reorg_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/reorg_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/reorg_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/reorg_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/reorg_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/reorg_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/reorg_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/reorg_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o.requires:
 
@@ -2672,17 +2672,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_laye
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/deconvolutional_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o.requires:
 
@@ -2696,17 +2696,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolut
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/rnn_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/rnn_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/rnn_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/rnn_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/rnn_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/rnn_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/rnn_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/rnn_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o.requires:
 
@@ -2720,17 +2720,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/demo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/demo.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/demo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/demo.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/demo.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/demo.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/demo.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/demo.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o.requires:
 
@@ -2744,17 +2744,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o.p
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/route_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/route_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/route_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/route_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/route_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/route_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/route_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/route_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o.requires:
 
@@ -2768,17 +2768,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_laye
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/detection_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/detection_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/detection_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/detection_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/detection_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/detection_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/detection_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/detection_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o.requires:
 
@@ -2792,17 +2792,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/shortcut_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/shortcut_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/shortcut_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/shortcut_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/shortcut_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/shortcut_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/shortcut_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/shortcut_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o.requires:
 
@@ -2816,17 +2816,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_l
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/dropout_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o.requires:
 
@@ -2840,17 +2840,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_la
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/softmax_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/softmax_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/softmax_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/softmax_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/softmax_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/softmax_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/softmax_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/softmax_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o.requires:
 
@@ -2864,17 +2864,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_la
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gemm.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o.requires:
 
@@ -2888,17 +2888,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o.p
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/tree.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o.requires:
 
@@ -2912,17 +2912,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o.p
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gru_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gru_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gru_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gru_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gru_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gru_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gru_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/gru_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o.requires:
 
@@ -2936,17 +2936,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/utils.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o.requires:
 
@@ -2960,17 +2960,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o.
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/upsample_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/upsample_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/upsample_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/upsample_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/upsample_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/upsample_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/upsample_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/upsample_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o.requires:
 
@@ -2984,17 +2984,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_l
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/logistic_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/logistic_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/logistic_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/logistic_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/logistic_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/logistic_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/logistic_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/logistic_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o.requires:
 
@@ -3008,17 +3008,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_l
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/l2norm_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/l2norm_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/l2norm_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/l2norm_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/l2norm_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/l2norm_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/l2norm_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/l2norm_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o.requires:
 
@@ -3032,17 +3032,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_lay
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/yolo_layer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/yolo_layer.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/yolo_layer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/yolo_layer.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/yolo_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/yolo_layer.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/yolo_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src/yolo_layer.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o.requires:
 
@@ -3056,17 +3056,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/art.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/art.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/art.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/art.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/art.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/art.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/art.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/art.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o.requires:
 
@@ -3080,17 +3080,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/lsd.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/lsd.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/lsd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/lsd.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/lsd.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/lsd.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/lsd.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/lsd.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o.requires:
 
@@ -3104,17 +3104,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/attention.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/attention.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/attention.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/attention.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/attention.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/attention.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/attention.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/attention.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o.requires:
 
@@ -3128,17 +3128,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/atten
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/nightmare.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/nightmare.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/nightmare.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/nightmare.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/nightmare.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/nightmare.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/nightmare.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/nightmare.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o.requires:
 
@@ -3152,17 +3152,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/night
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/captcha.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/captcha.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/captcha.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/captcha.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/captcha.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/captcha.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/captcha.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/captcha.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o.requires:
 
@@ -3176,17 +3176,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captc
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/regressor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/regressor.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/regressor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/regressor.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/regressor.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/regressor.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/regressor.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/regressor.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o.requires:
 
@@ -3200,17 +3200,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regre
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/cifar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/cifar.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/cifar.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/cifar.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/cifar.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/cifar.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/cifar.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/cifar.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o.requires:
 
@@ -3224,17 +3224,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/rnn.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/rnn.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/rnn.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/rnn.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/rnn.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/rnn.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/rnn.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/rnn.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o.requires:
 
@@ -3248,17 +3248,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/classifier.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/classifier.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/classifier.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/classifier.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/classifier.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/classifier.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/classifier.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/classifier.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o.requires:
 
@@ -3272,17 +3272,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/class
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/segmenter.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/segmenter.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/segmenter.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/segmenter.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/segmenter.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/segmenter.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/segmenter.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/segmenter.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o.requires:
 
@@ -3296,17 +3296,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segme
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/coco.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/coco.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/coco.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/coco.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/coco.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/coco.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/coco.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/coco.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o.requires:
 
@@ -3320,17 +3320,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/super.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/super.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/super.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/super.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/super.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/super.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/super.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/super.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o.requires:
 
@@ -3344,17 +3344,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/darknet.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/darknet.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/darknet.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/darknet.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/darknet.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/darknet.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/darknet.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/darknet.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o.requires:
 
@@ -3368,17 +3368,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darkn
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/tag.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/tag.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/tag.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/tag.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/tag.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/tag.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/tag.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/tag.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o.requires:
 
@@ -3392,17 +3392,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/detector.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/detector.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/detector.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/detector.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/detector.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/detector.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/detector.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/detector.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o.requires:
 
@@ -3416,17 +3416,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detec
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/yolo.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/yolo.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/yolo.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/yolo.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/yolo.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/yolo.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/yolo.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/yolo.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o.requires:
 
@@ -3440,17 +3440,17 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.
 
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/flags.make
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/go.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o   -c /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/go.c
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o: /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/go.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o   -c /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/go.c
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.i"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/go.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.i
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/go.c > CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.i
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.s"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/go.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.s
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/examples/go.c -o CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.s
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o.requires:
 
@@ -3531,216 +3531,216 @@ darknet_ros_lib_OBJECTS = \
 
 # External object files for target darknet_ros_lib
 darknet_ros_lib_EXTERNAL_OBJECTS = \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o" \
-"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o"
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o" \
+"/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o"
 
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/build.make
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libSM.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libICE.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libX11.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libXext.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/local/cuda/lib64/libcudart_static.a
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/librt.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libcv_bridge.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libactionlib.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libimage_transport.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libnodeletlib.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libbondcpp.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/libPocoFoundation.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroslib.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librospack.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroscpp.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librostime.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libcv_bridge.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libactionlib.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libimage_transport.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libmessage_filters.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libnodeletlib.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libbondcpp.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libuuid.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libclass_loader.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/libPocoFoundation.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libdl.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroslib.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librospack.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroscpp.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librostime.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libcpp_common.so
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
-/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX shared library /home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so"
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/darknet_ros_lib.dir/link.txt --verbose=$(VERBOSE)
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/YoloObjectDetector.cpp.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/src/image_interface.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activation_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/im2col.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/activations.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/image.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/avgpool_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/batchnorm_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/list.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/blas.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/local_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/box.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/lstm_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/col2im.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/matrix.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/connected_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/maxpool_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/convolutional_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/network.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cost_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/normalization_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crnn_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/option_list.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/crop_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/parser.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/cuda.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/region_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/data.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/reorg_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/deconvolutional_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/rnn_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/demo.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/route_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/detection_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/shortcut_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/dropout_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/softmax_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gemm.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/tree.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/gru_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/utils.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/upsample_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/logistic_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/l2norm_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/yolo_layer.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/art.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/lsd.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/attention.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/nightmare.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/captcha.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/regressor.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/cifar.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/rnn.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/classifier.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/segmenter.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/coco.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/super.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/darknet.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/tag.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_crop_layer_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_avgpool_layer_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_deconvolutional_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_blas_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_dropout_layer_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_col2im_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/build.make
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libSM.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libICE.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libX11.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libXext.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/local/cuda-10.2/lib64/libcudart_static.a
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/librt.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libcv_bridge.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libactionlib.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libimage_transport.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libnodeletlib.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libbondcpp.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/libPocoFoundation.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroslib.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librospack.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroscpp.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librostime.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_shape.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_bioinspired.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_ccalib.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_datasets.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_dpm.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_face.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_freetype.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_fuzzy.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_hdf.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_line_descriptor.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_optflow.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_plot.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_reg.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_saliency.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_stereo.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_structured_light.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_surface_matching.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_text.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libcv_bridge.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libactionlib.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libimage_transport.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libmessage_filters.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libnodeletlib.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libbondcpp.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libuuid.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libclass_loader.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/libPocoFoundation.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libdl.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroslib.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librospack.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libpython2.7.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_program_options.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libtinyxml2.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroscpp.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/librostime.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /opt/ros/melodic/lib/libcpp_common.so
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_video.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_viz.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_phase_unwrapping.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_rgbd.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_videoio.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgcodecs.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.3.2.0
+/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/coborg/Coborg-Platform/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Linking CXX shared library /home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so"
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/darknet_ros_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/build: /home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so
+darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/build: /home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so
 
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/build
 
@@ -3811,7 +3811,7 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/requires: darknet_ros/dar
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/requires
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/clean:
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/darknet_ros_lib.dir/cmake_clean.cmake
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/darknet_ros_lib.dir/cmake_clean.cmake
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/clean
 
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/depend: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_activation_kernels.cu.o
@@ -3824,6 +3824,6 @@ darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/depend: darknet_ros/darkn
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/depend: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_im2col_kernels.cu.o
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/depend: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_convolutional_kernels.cu.o
 darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/depend: darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/__/darknet/src/darknet_ros_lib_generated_maxpool_layer_kernels.cu.o
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coborg/Coborg-Platform/catkin_ws/src /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros /home/coborg/Coborg-Platform/catkin_ws/build /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/darknet_ros_lib.dir/depend
 

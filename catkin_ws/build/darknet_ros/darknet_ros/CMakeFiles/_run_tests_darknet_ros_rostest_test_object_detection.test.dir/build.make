@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src
+CMAKE_SOURCE_DIR = /home/coborg/Coborg-Platform/catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build
+CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/catkin_ws/build
 
 # Utility rule file for _run_tests_darknet_ros_rostest_test_object_detection.test.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build
 include darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/progress.make
 
 darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test:
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/test_results/darknet_ros/rostest-test_object_detection.xml "/usr/bin/python2 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros --package=darknet_ros --results-filename test_object_detection.xml --results-base-dir \"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/test_results\" /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/test/object_detection.test "
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && ../../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/run_tests.py /home/coborg/Coborg-Platform/catkin_ws/build/test_results/darknet_ros/rostest-test_object_detection.xml "/usr/bin/python2 /opt/ros/melodic/share/rostest/cmake/../../../bin/rostest --pkgdir=/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros --package=darknet_ros --results-filename test_object_detection.xml --results-base-dir \"/home/coborg/Coborg-Platform/catkin_ws/build/test_results\" /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/test/object_detection.test "
 
 _run_tests_darknet_ros_rostest_test_object_detection.test: darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test
 _run_tests_darknet_ros_rostest_test_object_detection.test: darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/build.make
@@ -67,10 +67,10 @@ darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_de
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/build
 
 darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/clean:
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/cmake_clean.cmake
+	cd /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros && $(CMAKE_COMMAND) -P CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/cmake_clean.cmake
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/clean
 
 darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/depend:
-	cd /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros /home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/coborg/Coborg-Platform/catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coborg/Coborg-Platform/catkin_ws/src /home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros /home/coborg/Coborg-Platform/catkin_ws/build /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros /home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : darknet_ros/darknet_ros/CMakeFiles/_run_tests_darknet_ros_rostest_test_object_detection.test.dir/depend
 

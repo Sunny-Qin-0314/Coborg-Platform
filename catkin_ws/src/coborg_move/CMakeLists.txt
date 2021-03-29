@@ -23,6 +23,7 @@ find_package(catkin REQUIRED COMPONENTS
   moveit_visual_tools
   rviz_visual_tools
   sensor_msgs
+  goal_getter
 )
 
 ## System dependencies are found with CMake's conventions
@@ -127,6 +128,7 @@ catkin_package(
   trajectory_msgs
   moveit_core
   moveit_ros_planning_interface
+  goal_getter
 #  DEPENDS system_lib
 )
 

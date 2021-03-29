@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -std=c++11  -fPIC   -O4 -g
 
-CXX_DEFINES = -DDARKNET_FILE_PATH=\"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet\" -DGPU -DOPENCV -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"darknet_ros\" -Ddarknet_ros_nodelet_EXPORTS
+CXX_DEFINES = -DDARKNET_FILE_PATH=\"/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet\" -DGPU -DOPENCV -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"darknet_ros\" -Ddarknet_ros_nodelet_EXPORTS
 
-CXX_INCLUDES = -isystem /usr/include/opencv -I/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src -I/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include -I/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/include -I/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/local/cuda/include 
+CXX_INCLUDES = -isystem /usr/include/opencv -I/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src -I/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include -I/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/include -I/home/coborg/Coborg-Platform/catkin_ws/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/usr/local/cuda-10.2/include 
 

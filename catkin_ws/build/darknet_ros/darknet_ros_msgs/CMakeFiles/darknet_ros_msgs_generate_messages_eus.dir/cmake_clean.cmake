@@ -1,16 +1,16 @@
 file(REMOVE_RECURSE
   "CMakeFiles/darknet_ros_msgs_generate_messages_eus"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsActionFeedback.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/BoundingBox.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsActionResult.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/BoundingBoxes.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsFeedback.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/ObjectCount.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsGoal.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsActionGoal.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsResult.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsAction.l"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/manifest.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/BoundingBox.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsActionGoal.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsActionFeedback.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/BoundingBoxes.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsAction.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsActionResult.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsFeedback.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsResult.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/ObjectCount.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/msg/CheckForObjectsGoal.l"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/share/roseus/ros/darknet_ros_msgs/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.
