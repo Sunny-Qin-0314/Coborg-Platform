@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/test/ObjectDetection.cpp" "/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_object_detection-test.dir/test/ObjectDetection.cpp.o"
-  "/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/test/test_main.cpp" "/home/coborg/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_object_detection-test.dir/test/test_main.cpp.o"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/test/ObjectDetection.cpp" "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_object_detection-test.dir/test/ObjectDetection.cpp.o"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/test/test_main.cpp" "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/darknet_ros/darknet_ros/CMakeFiles/darknet_ros_object_detection-test.dir/test/test_main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "DARKNET_FILE_PATH=\"/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet\""
+  "DARKNET_FILE_PATH=\"/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet\""
   "GPU"
   "OPENCV"
   "ROSCONSOLE_BACKEND_LOG4CXX"
@@ -22,19 +22,19 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/opencv"
-  "/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src"
-  "/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include"
-  "/home/coborg/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/include"
-  "/home/coborg/Coborg-Platform/catkin_ws/devel/include"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/src"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet/include"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/darknet_ros/darknet_ros/include"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
-  "/usr/local/cuda-10.2/include"
+  "/usr/local/cuda/include"
   "/usr/src/googletest/googletest/include"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/coborg/Coborg-Platform/catkin_ws/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.
