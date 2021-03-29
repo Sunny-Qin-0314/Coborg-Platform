@@ -57,14 +57,14 @@ def new_command(message):
 
     elif new_command == Command.TARGET:
         print("TARGET")
-        if status = Status.IDLE: #idle/ready
+        if status == Status.IDLE: #idle/ready
             function = Command.TARGET # hold
             status = Status.EXECUTE # execute mode
             state_output_pub.publish(function)
 
     elif new_command == Command.HOME:
         print("HOME")
-        if status = Status.IDLE: #idle/ready
+        if status == Status.IDLE: #idle/ready
             function = Command.HOME # compact
             status = Status.EXECUTE # execute mode
             state_output_pub.publish(function)

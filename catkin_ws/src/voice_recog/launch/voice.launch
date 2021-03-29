@@ -1,2 +1,4 @@
-<node pkg="voice_recog" name="voice_recog" type="voice_recog.py" output="screen"> 
-</node>
+<launch>
+    <node pkg="voice_recog" name="voice_recog" type="voice_recog.py" output="screen"> 
+    </node>
+</launch>
