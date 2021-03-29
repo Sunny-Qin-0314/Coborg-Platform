@@ -113,3 +113,9 @@ bounding_boxes:
 ```
 
 You can visualize the markers on *rviz* adding **MarkerArray** and subscribing to topic ``/darknet_ros_3d/markers``.
+
+
+## Add surface normal
+/scr/darknet_ros_3d/Darknet3d.cpp
+
+Postprocessing the 3D bounding box and get the surface normal for the averaged centroid point
