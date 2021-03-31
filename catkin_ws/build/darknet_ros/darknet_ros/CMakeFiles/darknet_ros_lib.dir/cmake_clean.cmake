@@ -72,8 +72,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/detector.c.o"
   "CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/yolo.c.o"
   "CMakeFiles/darknet_ros_lib.dir/__/darknet/examples/go.c.o"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.pdb"
-  "/home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.pdb"
+  "/home/coborg/Coborg-Platform/catkin_ws/devel/lib/libdarknet_ros_lib.so"
 )
 
 # Per-language clean rules from dependency scanning.

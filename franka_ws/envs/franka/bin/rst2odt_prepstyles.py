@@ -1,4 +1,4 @@
-#!/home/hwadi/CMU/16-662/lab1/envs/franka/bin/python3.6
+#!/home/gerry/Coborg-Platform/franka_ws/envs/franka/bin/python3.6
 
 # $Id: rst2odt_prepstyles.py 8346 2019-08-26 12:11:32Z milde $
 # Author: Dave Kuhlman <dkuhlman@rexx.com>
