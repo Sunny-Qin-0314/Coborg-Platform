@@ -5,10 +5,10 @@ Startup:
 ------
 In Coborg-Platform/franka_ws:
 
-First run the setup bash script:\
+First run the setup bash script:
 `./franka_setup_1.sh`\
 
-Once that completes run the startup script:
+Once that completes run the startup script:\
 `./franka_startup_2.sh`\
 
 GUI:
