@@ -6,7 +6,7 @@ Startup:
 In "Coborg-Platform/franka_ws:
 
 run the bash script:\
-`cd Coborg-Platform\arduino_ws`\
+`cd Coborg-Platform/arduino_ws`\
 `catkin_make install`\
 `source devel/setup.bash`
 
@@ -14,7 +14,7 @@ run the bash script:\
 GUI:
 ------
 To run the ROS package for the gui, follow these steps:\
-`cd Coborg-Platform\arduino_ws`\
+`cd Coborg-Platform/arduino_ws`\
 `catkin_make install`\
 `source devel/setup.bash`
 
