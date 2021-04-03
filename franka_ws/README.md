@@ -1,10 +1,12 @@
 franka_ws is a catkin workspace for the robot autonomy project
 ======
 
-Startup:
+Startup (for iam-bashful):
 ------
-In Coborg-Platform/franka_ws:
 
+Ensure that the franka robot is on, and that you are connected to it via an ethernet port. Follow the instructions found in the /tutorial folder "Franka-Lab1.pdf"
+
+In Coborg-Platform/franka_ws:
 First run the setup bash script:\
 `./franka_setup_1.sh`
 
