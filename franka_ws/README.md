@@ -3,7 +3,7 @@ franka_ws is a catkin workspace for the robot autonomy project
 
 Startup:
 ------
-In "Coborg-Platform/franka_ws:
+In Coborg-Platform/franka_ws:
 
 run the bash script:\
 `cd Coborg-Platform/arduino_ws`\
