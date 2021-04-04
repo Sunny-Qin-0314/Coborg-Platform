@@ -1,24 +1,11 @@
 #! /usr/bin/env python
-
-
-import rospy
-import pickle as pkl
-import numpy as np
 import enum
 
+import params
 import pick
 import place
 
-
-# from frankapy import FrankaArm
-# from autolab_core import RigidTransform
-# from frankapy import FrankaArm, SensorDataMessageType
-# from frankapy import FrankaConstants as FC
-# from frankapy.proto_utils import sensor_proto2ros_msg, make_sensor_group_msg
-# from frankapy.proto import PosePositionSensorMessage, ShouldTerminateSensorMessage, CartesianImpedanceSensorMessage
-# from franka_interface_msgs.msg import SensorDataGroup
-
-class Command(enum.IntEnum): #these are the voice commands that come in and get sent to the motors
+class Command(enum.IntEnum): #these could be voice commands. if onlyyy gerrryyy was cooooooool.
     ERROR = 0
     PICK = 1 
     PLACE = 2 
@@ -60,6 +47,10 @@ def new_command(command_input, tool_input):
         print("Error: Tool Not Found")
 
 if __name__ == "__main__":
+
+    params.validate() #define where everything is on startup
+    print(params.pegboard)
+
     while True:
         command_input = input("Pick(1) or Place(2)? Ctrl+C to quit.").upper() #convert input to upper case
         tool_input = input("Screwdriver(1), Hammer(2), Wrench(3)?").upper()
