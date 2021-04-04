@@ -16,7 +16,7 @@ Once that completes you no longer need to make the environments and can run the 
 `./franka_startup_2.sh`
 
 If you want to open a new terminal instance in the franka virtual environment with the correct catkin directories sourced run:\
-`./franka_new_terminal.sh`
+`source franka_new_shell.sh`
 
 GUI:
 ------
