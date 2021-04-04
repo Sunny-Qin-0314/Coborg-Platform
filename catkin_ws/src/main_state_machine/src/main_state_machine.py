@@ -39,7 +39,7 @@ class Status(enum.IntEnum): #this is the status that outputs to ROS terminal
 # 5 = waiting > Task completed, available for next command
 
 status = Status.INIT # initializing
-function = Command.HOME  # compact
+function = Command.HOME  # compact robot arm mode
 
 status = Status.IDLE #idle/ready
 
