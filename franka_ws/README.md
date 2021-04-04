@@ -9,7 +9,7 @@ Ensure that the franka robot is on, and that you are connected to it via an ethe
 These commands are relative to:\
 `Coborg-Platform/franka_ws`
 
-Run this script to catkin_make and pip install all dependencies by pasting this into :\
+Run this script to catkin_make and pip install all dependencies by pasting running this script:\
 `./franka_setup_1.sh`
 
 Once that completes you no longer need to make the environments and can run the robot using this script:\
