@@ -6,7 +6,8 @@ Startup (for iam-bashful):
 
 Ensure that the franka robot is on, and that you are connected to it via an ethernet port. Follow the instructions found in the /tutorial folder "Franka-Lab1.pdf"
 
-These commands are relative to: `Coborg-Platform/franka_ws`
+These commands are relative to: `Coborg-Platform/franka_ws`\
+
 Run this script to catkin_make and pip install all dependencies by pasting this into :\
 `./franka_setup_1.sh`
 
