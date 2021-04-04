@@ -10,10 +10,10 @@ These commands are relative to:\
 `Coborg-Platform/franka_ws`
 
 Run this script to catkin_make and pip install all dependencies then start the robot control:\
-`./franka_setup_1.sh`
+`source franka_setup_1.sh`
 
 Once that completes you no longer need to make the environments and can run the robot using this script:\
-`./franka_startup_2.sh`
+`source franka_startup_2.sh`
 
 If you want to open a new terminal instance in the franka virtual environment with the correct catkin directories sourced run:\
 `source franka_new_shell.sh`
