@@ -19,7 +19,7 @@ def execute(tool):
     #TO DO:
     #Check the table to see if the tool (aruco marker) is there. If not error out.
     #Check params.pegboard to see if there's space on the pegboard to place the tool. If no space error out.
-    #Place the tool
+    #Place the tool (PRM)
     #update params.pegboard
     #return to home
 
