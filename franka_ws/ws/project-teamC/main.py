@@ -12,7 +12,7 @@ class Command(enum.IntEnum): #these could be voice commands. if onlyyy gerrryyy 
 
 class Tool(enum.IntEnum): #tool type
     ERROR = 0
-    SCREWDRIVER = 1 
+    SCREWDRIVER = 1
     HAMMER = 2
     WRENCH = 3 
 
@@ -51,8 +51,11 @@ if __name__ == "__main__":
     params.validate() #define where everything is on startup
     print(params.pegboard)
 
+    params.pegboard = [1,0,0,2]
+    print(params.pegboard)
+
     while True:
         command_input = input("Pick(1) or Place(2)? Ctrl+C to quit.").upper() #convert input to upper case
-        tool_input = input("Screwdriver(1), Hammer(2), Wrench(3)?").upper()
+        tool_input = input("Screwdriver(1), Hammer(2), Wrench(3) All(9)?").upper()
         new_command(command_input, tool_input)
 

@@ -15,10 +15,10 @@ from franka_interface_msgs.msg import SensorDataGroup
 from frankapy.utils import min_jerk, min_jerk_weight
 
 def execute(tool): 
-    print(tool.name)
+    print(tool.value)
     #TO DO:
     #Check params.pegboard to see if the tool the user requested is even on the pegboard. If it's not error out.
-    #If it's there, pick it up from its location and hold in drop off location
+    #If it's there, pick it up from its location and hold in handoff location
     #Wait until user pulls the robot arm out of it's impedence bubble
     #Let go of tool
     #Update params.pegboard and return to home position

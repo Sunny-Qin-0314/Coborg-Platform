@@ -1,3 +1,5 @@
+
+
 def validate():
     global pegboard #allows us to call and update pegboard like a class
     pegboard = [0, 0, 0, 0]
@@ -17,7 +19,7 @@ def validate():
     # Third location? '0'
     # Fourth location? '2'
     #
-    # Return a list with [1, 0, 0, 2] -> main
+    # store a list with [1, 0, 0, 2] for access later
     # Now, when we call "Robot pick screwdriver" it knows there's a screwdriver in index 0.
     # Also if we say "Robot place wrench" it knows that locations 1 & 2 are empty
  
