@@ -42,3 +42,24 @@ git checkout <branch>
 
 // git merge <branch that you want to merge from>
 // git push origin <branch name>
+
+
+### git ignore
+vim .gitignore
+
+```
+devel/
+build/
+.DS_Store
+........
+```
+
+save and quit
+
+git rm -r --cached .
+
+git add .
+
+git commit -m "..."
+
+ignore should work!
