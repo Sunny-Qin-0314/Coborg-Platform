@@ -172,33 +172,33 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
   }
 
   // Create the normal estimation class, and pass the input dataset to it
-  pcl::NormalEstimation<pcl::PointXYZRGB, pcl::Normal> ne;
-  ne.setInputCloud (cloud_pcl);
+  // pcl::NormalEstimation<pcl::PointXYZRGB, pcl::Normal> ne;
+  // ne.setInputCloud (cloud_pcl);
 
-  pcl::search::KdTree<pcl::PointXYZRGB>::Ptr kdtree (new pcl::search::KdTree<pcl::PointXYZRGB> ());
+  // pcl::search::KdTree<pcl::PointXYZRGB>::Ptr kdtree (new pcl::search::KdTree<pcl::PointXYZRGB> ());
 
-  //Radial search for estimating neighborhood indices
-  (*kdtree).setInputCloud (cloud_pcl);
-  center_board_x = center_board_x/original_bboxes_.size();
-  center_board_y = center_board_y/original_bboxes_.size();
-  int pcl_normal_index = ((center_board_y)* cloud_pc2.width) + (center_board_x);
+  // //Radial search for estimating neighborhood indices
+  // (*kdtree).setInputCloud (cloud_pcl);
+  // center_board_x = center_board_x/original_bboxes_.size();
+  // center_board_y = center_board_y/original_bboxes_.size();
+  // int pcl_normal_index = ((center_board_y)* cloud_pc2.width) + (center_board_x);
 
-  pcl::PointXYZRGB searchPoint = cloud_pcl->at(pcl_normal_index);
-  float radius = 0.15;
-  std::vector<int> pointIdxRadiusSearch;
-  std::vector<float> pointRadiusSquaredDistance;
-  (*kdtree).radiusSearch (searchPoint, radius, pointIdxRadiusSearch, pointRadiusSquaredDistance);
+  // pcl::PointXYZRGB searchPoint = cloud_pcl->at(pcl_normal_index);
+  // float radius = 0.15;
+  // std::vector<int> pointIdxRadiusSearch;
+  // std::vector<float> pointRadiusSquaredDistance;
+  // (*kdtree).radiusSearch (searchPoint, radius, pointIdxRadiusSearch, pointRadiusSquaredDistance);
 
-  //Compute normal of a single point
-  float curvature;
-  float nx;
-  float ny;
-  float nz;
-  ne.computePointNormal(*cloud_pcl,pointIdxRadiusSearch,nx, ny, nz, curvature);
+  // //Compute normal of a single point
+  // float curvature;
+  // float nx;
+  // float ny;
+  // float nz;
+  // ne.computePointNormal(*cloud_pcl,pointIdxRadiusSearch,nx, ny, nz, curvature);
 
-  boxes -> normal_x = nx;
-  boxes -> normal_y = ny;
-  boxes -> normal_z = nz;
+  // boxes -> normal_x = nx;
+  // boxes -> normal_y = ny;
+  // boxes -> normal_z = nz;
   
 }
 

@@ -10,13 +10,13 @@ import rospy
 from std_msgs.msg import Int32
 
 
-class Command(enum.Enum):
+class Command(enum.IntEnum):
     STOP = 1
     TARGET = 2
     HOME = 3
 
 triggerlist = ['coborg']
-stoplist = ['stop']
+stoplist = ['stop stop stop']
 targetlist = ['target','take','goal']
 homelist = ['home','compact']
 
@@ -36,6 +36,7 @@ decoder = Decoder(config)
 decoder.set_kws('coborg',os.path.join(voice_dir, 'src/keywords.txt'))
 decoder.set_lm_file('lm', os.path.join(model_dir, 'en-us.lm.bin'))
 decoder.set_search('coborg')
+print(decoder.get_kws('coborg'))
 
 # Start listening
 p = pyaudio.PyAudio()
@@ -53,9 +54,12 @@ while not rospy.is_shutdown():
     command = False
     buf = stream.read(1024)
     if buf:
+        # Send raw audio to pocketsphinx decoder
         decoder.process_raw(buf, False, False)
+        # Once speech is detected, keep listening until no more speech is detected before processing command.
         if decoder.get_in_speech() != in_speech_bf:
             in_speech_bf = decoder.get_in_speech()
+            # Once speech is completed (decoder.get_in_speech() is set back to false), process phrase
             if not in_speech_bf:
                 decoder.end_utt()
 
@@ -70,17 +74,17 @@ while not rospy.is_shutdown():
                     print ('Result:', results)
                     if any(word in stoplist for word in results):
                         print(repr(Command.STOP))
-                        voice_commands_pub.publish(Command.STOP.value)
+                        voice_commands_pub.publish(Command.STOP)
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
                         command = True
                     elif any(word in targetlist for word in results):
                         print(repr(Command.TARGET))
-                        voice_commands_pub.publish(Command.TARGET.value)
+                        voice_commands_pub.publish(Command.TARGET)
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/commandSound.mp3')
                         command = True
                     elif any(word in homelist for word in results):
                         print(repr(Command.HOME))
-                        voice_commands_pub.publish(Command.HOME.value)
+                        voice_commands_pub.publish(Command.HOME)
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/commandSound.mp3')
                         command = True
                     elif 'gas' in results:
@@ -95,14 +99,15 @@ while not rospy.is_shutdown():
 
                 # Send stop command when "stop" is heard 3 or more times outside of "Coborg" trigger
                 if any(word in stoplist for word in results):
-                        if results.count('stop') > 4:
-                            print(repr(Command.STOP))
-                            voice_commands_pub.publish(Command.STOP.value)
-                            os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
+                        print ('STOP Result:', results)
+                        print(repr(Command.STOP))
+                        voice_commands_pub.publish(Command.STOP)
+                        os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
                 
                 # Translate to base language model if 'coborg' is heard.
                 # Switch back to trigger model if language model hears a command (plays failure sound if command not valid)
                 if any(word in triggerlist for word in results):
+                    print ('COBORG Result:', results)
                     os.system('mpg123 -q ' + voice_dir + '/Sounds/triggerSound.mp3')
                     decoder.set_search('lm')
                 elif decoder.get_search() == 'lm' and len(results) > 0:
