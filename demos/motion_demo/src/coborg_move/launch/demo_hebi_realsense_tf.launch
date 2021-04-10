@@ -2,7 +2,7 @@
     <include file="$(find coborg_arm)/launch/demo.launch" />
     <include file="$(find realsense2_camera)/launch/rs_d400_and_t265.launch" />
 
-    <node pkg="tf" type="static_transform_publisher" name="t265_coborg_tf" args="0.35 -0.5 -0.5 0 0 0 /t265_link /world 100" />
+    <node pkg="tf" type="static_transform_publisher" name="t265_coborg_tf" args="0.2794 -0.4999 -0.67305 0 0 0 /t265_link /world 100" />
     
 
 </launch>
