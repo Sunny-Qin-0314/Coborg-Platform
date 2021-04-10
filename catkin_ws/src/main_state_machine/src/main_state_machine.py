@@ -39,7 +39,7 @@ class Status(enum.IntEnum): #this is the status that outputs to ROS terminal
 # 5 = waiting > Task completed, available for next command
 
 status = Status.INIT # initializing
-function = Command.HOME  # compact
+function = Command.HOME  # compact robot arm mode
 
 status = Status.IDLE #idle/ready
 
@@ -57,14 +57,14 @@ def new_command(message):
 
     elif new_command == Command.TARGET:
         print("TARGET")
-        if status = Status.IDLE: #idle/ready
+        if status == Status.IDLE: #idle/ready
             function = Command.TARGET # hold
             status = Status.EXECUTE # execute mode
             state_output_pub.publish(function)
 
     elif new_command == Command.HOME:
         print("HOME")
-        if status = Status.IDLE: #idle/ready
+        if status == Status.IDLE: #idle/ready
             function = Command.HOME # compact
             status = Status.EXECUTE # execute mode
             state_output_pub.publish(function)
