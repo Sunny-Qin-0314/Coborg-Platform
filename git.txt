@@ -46,12 +46,11 @@ git checkout <branch>
 ### git ignore
 vim .gitignore
 
-```
+
 devel/
 build/
 .DS_Store
-........
-```
+...
 
 save and quit
 
