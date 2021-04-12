@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild
+CMAKE_SOURCE_DIR = /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild
+CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild
 
 # Utility rule file for download_extra_data.
 
@@ -67,6 +67,6 @@ CMakeFiles/download_extra_data.dir/clean:
 .PHONY : CMakeFiles/download_extra_data.dir/clean
 
 CMakeFiles/download_extra_data.dir/depend:
-	cd /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/catkin_tools_prebuild/CMakeFiles/download_extra_data.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/download_extra_data.dir/depend
 
