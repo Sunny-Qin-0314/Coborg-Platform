@@ -2,8 +2,8 @@
 import enum
 
 import params
-import pick
-import place
+# import pick
+# import place
 
 class Command(enum.IntEnum): #these could be voice commands. if onlyyy gerrryyy was cooooooool.
     ERROR = 0
@@ -12,9 +12,10 @@ class Command(enum.IntEnum): #these could be voice commands. if onlyyy gerrryyy 
 
 class Tool(enum.IntEnum): #tool type
     ERROR = 0
-    SCREWDRIVER = 1
-    HAMMER = 2
-    WRENCH = 3 
+    JONATHAN = 1
+    GERRY = 2
+    YUQING = 3
+    JASON = 4 
 
 # Function for /voice_commands
 def new_command(command_input, tool_input):

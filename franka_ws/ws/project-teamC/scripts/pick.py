@@ -16,6 +16,8 @@ from frankapy.utils import min_jerk, min_jerk_weight
 
 def execute(tool): 
     print(tool.value)
+    pegboard_empspots_idx = np.where(np.array(params.pegboard) == tool.value)[0]
+
     #TO DO:
     #Check params.pegboard to see if the tool the user requested is even on the pegboard. If it's not error out.
     #If it's there, pick it up from its location and hold in handoff location
