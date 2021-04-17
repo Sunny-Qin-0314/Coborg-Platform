@@ -2,10 +2,10 @@
 import enum
 
 import params
-# import pick
-# import place
+import pick
+import place
 
-class Command(enum.IntEnum): #these could be voice commands. if onlyyy gerrryyy was cooooooool.
+class Command(enum.IntEnum): #these could be voice commands. if onlyyy gerrryyy2 was cooooooool.
     ERROR = 0
     PICK = 1 
     PLACE = 2 
@@ -16,6 +16,7 @@ class Tool(enum.IntEnum): #tool type
     GERRY = 2
     YUQING = 3
     JASON = 4 
+    ALL = 9
 
 # Function for /voice_commands
 def new_command(command_input, tool_input):
@@ -37,15 +38,19 @@ def new_command(command_input, tool_input):
 
     #check what command was sent and execute
     if command == Command.PICK:
-        print ('Picking', tool.name)
+        #print ('Picking', tool.name)
         pick.execute(tool) #run picking function
+        print(params.pegboard) #display what is on the pegboard
 
     elif command == Command.PLACE:
-        print ('Placing', tool.name)
+        #print ('Placing', tool.name)
         place.execute(tool)
-
+        print(params.pegboard) #display what is on the pegboard
+        
     else:
-        print("Error: Tool Not Found")
+        print("Error: Input Not Found")
+
+    
 
 if __name__ == "__main__":
 
@@ -57,6 +62,6 @@ if __name__ == "__main__":
 
     while True:
         command_input = input("Pick(1) or Place(2)? Ctrl+C to quit.").upper() #convert input to upper case
-        tool_input = input("Screwdriver(1), Hammer(2), Wrench(3) All(9)?").upper()
+        tool_input = input("Tool(1), Tool(2), Tool(3), Tool(4), All(9)?").upper()
         new_command(command_input, tool_input)
 

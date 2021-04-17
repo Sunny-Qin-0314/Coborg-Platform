@@ -2,7 +2,7 @@
 
 def validate():
     global pegboard #allows us to call and update pegboard like a class
-    pegboard = [0, 0, 0, 0]
+    pegboard = [1, 2, 3, 0]
     pass
 
     # TO DO:

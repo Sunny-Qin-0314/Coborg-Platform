@@ -1,5 +1,6 @@
 import enum
-
+import params
+from pathlib import Path
 
 from frankapy import FrankaArm
 import numpy as np
@@ -12,10 +13,9 @@ from utils import *
 from geometry_msgs.msg import Pose
 import math
 from frankapy.utils import min_jerk, min_jerk_weight
-import params
 
-AZURE_KINECT_INTRINSICS = 'calib/azure_kinect.intr'
-AZURE_KINECT_EXTRINSICS = 'calib/azure_kinect_overhead/azure_kinect_overhead_to_world.tf'
+AZURE_KINECT_INTRINSICS = Path(__file__).parent.parent/'calib'/'azure_kinect.intr'
+AZURE_KINECT_EXTRINSICS = Path(__file__).parent.parent/'calib'/'azure_kinect_overhead'/'azure_kinect_overhead_to_world.tf'
 
 def execute(tool):
 
@@ -26,15 +26,15 @@ def execute(tool):
     #update params.pegboard
     #return to home
 
-    pegboard_empspots_idx = np.where(np.array(params.pegboard) == 0)[0]
+    pegboard_empspots_idx = np.where(np.array(params.pegboard) == 0)[0] #output is tuple, we want first element [0]
 
     if len(pegboard_empspots_idx) != 0:
         # there is an empty spot
         # place it into the first spot it found empty
-        print("Pick up tool: {} and place it on pegboard postion: {}".format(tool, pegboard_empspots_idx[0]))
-        run_place(pegboard_empspots_idx[0], tool) #start aruco tag pick up function
+        print("Picking up tool {} and placing it on pegboard postion {}".format(tool.name, pegboard_empspots_idx[0]))
+        run_place(pegboard_empspots_idx[0], tool) #start aruco tag place function
         params.pegboard[pegboard_empspots_idx[0]] = tool
-        print("Pick and Place Done!")
+        print("Tool {} Successfully Placed on Pegboard!".format(tool.name))
     else:
         # there is no availble spot
         print("No empty spot to place the tool.")
@@ -56,18 +56,20 @@ def run_place(available_pegboard_spot, tool_id):
     parser.add_argument('--extrinsics_file_path', type=str, default=AZURE_KINECT_EXTRINSICS) 
     args = parser.parse_args()
 
-    print('Starting robot')
+    print('Starting Robot')
     fa = FrankaArm()    
 
     print('Opening Grippers')
     #Open Gripper
     fa.open_gripper()
 
+    print('Resetting Robot')
     #Reset Pose
     fa.reset_pose() 
     #Reset Joints
     fa.reset_joints()
 
+    print('Loading Camera Parameters')
     cv_bridge = CvBridge()
     azure_kinect_intrinsics = CameraIntrinsics.load(args.intrinsics_file_path)
     azure_kinect_to_world_transform = RigidTransform.load(args.extrinsics_file_path)    
@@ -78,31 +80,34 @@ def run_place(available_pegboard_spot, tool_id):
     object_image_position = np.array([800, 800])
 
 
-    tool1_z_height = 0.01  # center of tool height = 1 cm
-    intermediate_pose_z_height = 0.30
+    tool_z_height = 0.01  #center of tool height = 1 cm
+    aruco_offset = 0.05 #offset of aruco tag to center of tool
+    intermediate_pose_z_height = 0.30 #offset pegboard z height
 
     '''
     Initial pose -> tool pose
     Tools pose on the table are preprocessed to be the correct pose for gripper to move
     '''
-    topic_name = "/aruco_multiple/pose"+ str(tool_id)
-    #pose1 = rospy.wait_for_message("/aruco_multiple/pose1", Pose) #grab pose of aruco marker tool 1
-    pose1 = rospy.wait_for_message(topic_name, Pose) #grab pose of aruco marker tool_id 
+    topic_name = "/aruco_multiple/pose"+ str(tool_id.value)
     
-    rot_matrix = quaternion_rotation_matrix(pose1.orientation.x, pose1.orientation.y,pose1.orientation.z, pose1.orientation.w)
+    print('Waiting for Tool {} on Table'.format(tool_id.name))
+    pose = rospy.wait_for_message(topic_name, Pose) #grab pose of aruco marker tool_id 
+    
+    print('Calculating Franka Transforms')
+    rot_matrix = quaternion_rotation_matrix(pose.orientation.x, pose.orientation.y,pose.orientation.z, pose.orientation.w)
     # rotate about y axis 180 deg (change z axis to point down)
     rot_grip_flip = np.array([[-1, 0, 0],[0,1,0],[0, 0, -1]])
     tool_rotation = rot_matrix@rot_grip_flip  # right hand mulplication
     
     # transform tool pose to the world frame
-    tool1_transformed =  azure_kinect_to_world_transform * RigidTransform(
+    tool_transformed =  azure_kinect_to_world_transform * RigidTransform(
         rotation = tool_rotation,
-        translation= np.array([pose1.position.x, pose1.position.y, pose1.position.z]),
+        translation= np.array([pose.position.x, pose.position.y + aruco_offset, pose.position.z]), #adding aruco offset here. +Y from camera = -X on aruco marker 
         from_frame='franka_tool', to_frame='azure_kinect_overhead'
     )
 
-    intermediate_robot_pose1 = tool1_transformed.copy()
-    intermediate_robot_pose1.translation = [tool1_transformed.translation[0], tool1_transformed.translation[1], intermediate_pose_z_height]
+    intermediate_robot_pose = tool_transformed.copy()
+    intermediate_robot_pose.translation = [tool_transformed.translation[0], tool_transformed.translation[1], intermediate_pose_z_height] #increased z height
 
 
     # The goal pose definition : rotation, translation relative to camera frame
@@ -123,37 +128,40 @@ def run_place(available_pegboard_spot, tool_id):
         from_frame='franka_tool', to_frame='azure_kinect_overhead'
     )
 
+    print('Moving to Tool {}'.format(tool_id.name))
     #Move to intermediate robot pose aruco 1
-    fa.goto_pose(intermediate_robot_pose1)
+    fa.goto_pose(intermediate_robot_pose)
 
     # use hard coded tool 1 height
-    tool1_transformed.translation[2] = tool1_z_height    
+    tool_transformed.translation[2] = tool_z_height    
 
     #Move to tool 1
-    fa.goto_pose(tool1_transformed, 5, force_thresholds=[10, 10, 10, 10, 10, 10])
+    fa.goto_pose(tool_transformed, 5, force_thresholds=[10, 10, 10, 10, 10, 10])
 
     #Close Gripper
     fa.goto_gripper(0.03, grasp=True, force=10.0)
 
+    print('Moving to Pegboard Location {}'.format(available_pegboard_spot))
     #Move to intermediate robot pose aruco 1 (higher than the pegboard)
-    intermediate_robot_pose1.translation[2] = 0.55
-    fa.goto_pose(intermediate_robot_pose1)    
+    intermediate_robot_pose.translation[2] = 0.55
+    fa.goto_pose(intermediate_robot_pose)    
 
     # move to the new intermediate robot pose on the pegboard
-    intermediate_robot_pose1_new = goal_transformed.copy()
-    intermediate_robot_pose1_new.translation[2] = 0.55
-    fa.goto_pose(intermediate_robot_pose1_new)
+    intermediate_robot_pose_offset = goal_transformed.copy()
+    intermediate_robot_pose_offset.translation[2] = 0.55
+    fa.goto_pose(intermediate_robot_pose_offset)
     
     # move to the goal pose
     goal_transformed.translation[2] = 0.265  # goal height in the world frame. This is to fix the z axis to the pegboard dropoff height.
-    fa.goto_pose(goal_transformed, 5, force_thresholds=[10, 10, 10, 10, 10, 10])
+    fa.goto_pose(goal_transformed, 5, force_thresholds=[10, 10, 20, 10, 10, 10])
     print('Opening Grippers')
     #Open Gripper
     fa.open_gripper()
 
+    print('Returning Home')
     #Move to intermediate robot pose 
-    fa.goto_pose(intermediate_robot_pose1_new)
-    fa.goto_pose(intermediate_robot_pose1)
+    fa.goto_pose(intermediate_robot_pose_offset)
+    fa.goto_pose(intermediate_robot_pose)
 
     #Reset Pose
     fa.reset_pose() 
@@ -225,5 +233,7 @@ def quaternion_rotation_matrix(x,y,z,w):
 if __name__ == "__main__": #unit testing code goes here
     tool = 4
     params.validate() #initialize pegboard
+    print(params.pegboard)
     execute(tool)
+    print(params.pegboard)
  
