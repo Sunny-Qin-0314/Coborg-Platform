@@ -19,22 +19,21 @@ AZURE_KINECT_EXTRINSICS = Path(__file__).parent.parent/'calib'/'azure_kinect_ove
 
 def execute(tool):
 
-    #TO DO:
-    #Check the table to see if the tool (aruco marker) is there. If not error out.
-    #Check params.pegboard to see if there's space on the pegboard to place the tool. If no space error out.
-    #Place the tool 
-    #update params.pegboard
-    #return to home
+    # TO DO:
+    # Check the table to see if the tool (aruco marker) is there. If not error out.
+    # Check params.pegboard to see if there's space on the pegboard to place the tool. If no space error out.
+    # Place the tool 
+    # update params.pegboard
+    # return to home
 
     pegboard_empspots_idx = np.where(np.array(params.pegboard) == 0)[0] #output is tuple, we want first element [0]
-
     if len(pegboard_empspots_idx) != 0:
         # there is an empty spot
         # place it into the first spot it found empty
         print("Picking up tool {} and placing it on pegboard postion {}".format(tool.name, pegboard_empspots_idx[0]))
         run_place(pegboard_empspots_idx[0], tool) #start aruco tag place function
         params.pegboard[pegboard_empspots_idx[0]] = tool.value
-        print("Tool {} Successfully Placed on Pegboard!".format(tool.name))
+        print("Tool {} successfully placed on pegboard!".format(tool.name))
     else:
         # there is no availble spot
         print("No empty spot to place the tool.")
@@ -60,13 +59,13 @@ def run_place(available_pegboard_spot, tool_id):
     fa = FrankaArm()    
 
     print('Opening Grippers')
-    #Open Gripper
+    # Open Gripper
     fa.open_gripper()
 
     print('Resetting Robot')
-    #Reset Pose
+    # Reset Pose
     fa.reset_pose() 
-    #Reset Joints
+    # Reset Joints
     fa.reset_joints()
 
     print('Loading Camera Parameters')
@@ -80,9 +79,9 @@ def run_place(available_pegboard_spot, tool_id):
     object_image_position = np.array([800, 800])
 
 
-    tool_z_height = 0.01  #center of tool height = 1 cm
-    aruco_offset = 0.05 #offset of aruco tag to center of tool
-    intermediate_pose_z_height = 0.30 #offset pegboard z height
+    tool_z_height = 0.01  # center of tool height = 1 cm
+    aruco_offset = -0.05 # offset of aruco tag to center of tool
+    intermediate_pose_z_height = 0.30 # offset pegboard z height
 
     '''
     Initial pose -> tool pose
@@ -91,19 +90,26 @@ def run_place(available_pegboard_spot, tool_id):
     topic_name = "/aruco_multiple/pose"+ str(tool_id.value)
     
     print('Waiting for Tool {} on Table'.format(tool_id.name))
-    pose = rospy.wait_for_message(topic_name, Pose) #grab pose of aruco marker tool_id 
-    pose.position.x = pose.position.x - aruco_offset #offset franka grab point to screwdriver base
-
+    
+    # grab pose of aruco marker tool_id 
+    pose = rospy.wait_for_message(topic_name, Pose) 
+    print(pose)
+    
     print('Calculating Franka Transforms')
-    rot_matrix = quaternion_rotation_matrix(pose.orientation.x, pose.orientation.y,pose.orientation.z, pose.orientation.w)
+    rot_matrix = quaternion_rotation_matrix(pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w)
+    trans_matrix= np.array([pose.position.x, pose.position.y, pose.position.z])
+
+    #offset x axis in aruco frame. first we transform from the camera frame to aruco frame
+    aruco_translation = rot_matrix@np.array([aruco_offset, 0, 0]) + trans_matrix
+
     # rotate about y axis 180 deg (change z axis to point down)
     rot_grip_flip = np.array([[-1, 0, 0],[0,1,0],[0, 0, -1]])
     tool_rotation = rot_matrix@rot_grip_flip  # right hand mulplication
-    
+
     # transform tool pose to the world frame
     tool_transformed =  azure_kinect_to_world_transform * RigidTransform(
         rotation = tool_rotation,
-        translation= np.array([pose.position.x, pose.position.y, pose.position.z]),
+        translation= aruco_translation, #adds offset
         from_frame='franka_tool', to_frame='azure_kinect_overhead'
     )
 
@@ -120,11 +126,6 @@ def run_place(available_pegboard_spot, tool_id):
     goal_translations = [np.array([0.375, -0.33, 0.26]), np.array([0.375, -0.245, 0.26]), np.array([0.375, -0.16, 0.26]), np.array([0.375, -0.075, 0.26])]
     goal_transformed =  azure_kinect_to_world_transform * RigidTransform(
         rotation = goal_rotation,
-        # translation= np.array([0.375, -0.33, 0.26]),  # hard coded the goal translation relative to camera_frame 1
-        # translation= np.array([0.375, -0.245, 0.26]),  # hard coded the goal translation relative to camera_frame 2
-        # translation= np.array([0.375, -0.16, 0.26]),  # hard coded the goal translation relative to camera_frame 3
-        # translation= np.array([0.375, -0.075, 0.26]),  # hard coded the goal translation relative to camera_frame 4
-
         translation = goal_translations[available_pegboard_spot],
         from_frame='franka_tool', to_frame='azure_kinect_overhead'
     )
@@ -143,7 +144,7 @@ def run_place(available_pegboard_spot, tool_id):
     fa.goto_gripper(0.03, grasp=True, force=10.0)
 
     print('Moving to Pegboard Location {}'.format(available_pegboard_spot))
-    #Move to intermediate robot pose aruco 1 (higher than the pegboard)
+    # Move to intermediate robot pose aruco 1 (higher than the pegboard)
     intermediate_robot_pose.translation[2] = 0.55
     fa.goto_pose(intermediate_robot_pose)    
 
@@ -155,18 +156,19 @@ def run_place(available_pegboard_spot, tool_id):
     # move to the goal pose
     goal_transformed.translation[2] = 0.265  # goal height in the world frame. This is to fix the z axis to the pegboard dropoff height.
     fa.goto_pose(goal_transformed, 5, force_thresholds=[20, 20, 20, 20, 20, 20])
+
     print('Opening Grippers')
-    #Open Gripper
+    # Open Gripper
     fa.open_gripper()
 
     print('Returning Home')
-    #Move to intermediate robot pose 
+    # Move to intermediate robot pose 
     fa.goto_pose(intermediate_robot_pose_offset)
     fa.goto_pose(intermediate_robot_pose)
 
-    #Reset Pose
+    # Reset Pose
     fa.reset_pose() 
-    #Reset Joints
+    # Reset Joints
     fa.reset_joints()
 
 def euler_from_quaternion(x, y, z, w):
@@ -231,13 +233,13 @@ def quaternion_rotation_matrix(x,y,z,w):
                             
     return rot_matrix
 
-if __name__ == "__main__": #unit testing code goes here
-    class Tool(enum.IntEnum):
-        x = 4
-    tool = Tool(4)
 
-    params.validate() #initialize pegboard
+
+if __name__ == "__main__": # unit testing code goes here
+    class Tool(enum.IntEnum):
+        test = 1
+    params.validate() # initialize pegboard
     print(params.pegboard)
-    execute(tool)
+    execute(Tool.test)
     print(params.pegboard)
  
