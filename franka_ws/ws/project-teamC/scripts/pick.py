@@ -41,6 +41,7 @@ def execute(tool):
 
 def run_pick(tool_spot, tool_id):
 
+    #TODO FENG + JONATHAN
     print('Starting Robot')
     fa = FrankaArm()    
 
@@ -53,6 +54,12 @@ def run_pick(tool_spot, tool_id):
     fa.reset_pose() 
     #Reset Joints
     fa.reset_joints()
+    
+    #pull array of positions from place function
+    #pull offsets
+    #create a drop off location
+    #move robot arm from pick point to drop off location
+    #at drop off location activate impedence control
 
 if __name__ == "__main__": #unit testing code goes here
     class Tool(enum.IntEnum):
