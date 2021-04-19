@@ -25,6 +25,8 @@ def execute(tool):
     # Place the tool 
     # update params.pegboard
     # return to home
+    
+    # add protective boundaries (especially above) to prevent accidental robot collisions
 
     pegboard_empspots_idx = np.where(np.array(params.pegboard) == 0)[0] #output is tuple, we want first element [0]
     if len(pegboard_empspots_idx) != 0:
