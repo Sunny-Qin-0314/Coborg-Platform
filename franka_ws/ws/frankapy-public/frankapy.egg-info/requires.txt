@@ -1,6 +1,6 @@
 autolab_core
-numpy-quaternion
-numba
-rospkg
 catkin-tools
+numba
+numpy-quaternion
 protobuf
+rospkg
