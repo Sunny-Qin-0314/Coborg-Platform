@@ -1,21 +1,16 @@
-import enum
 import params
+from utils import *
+
+import enum
 from pathlib import Path
 
 from frankapy import FrankaArm
-import numpy as np
-import argparse
-import cv2
-from cv_bridge import CvBridge
+from frankapy.utils import min_jerk, min_jerk_weight
 from autolab_core import RigidTransform, Point
-from perception import CameraIntrinsics
-from utils import *
+
 from geometry_msgs.msg import Pose
 import math
-from frankapy.utils import min_jerk, min_jerk_weight
-
-AZURE_KINECT_INTRINSICS = Path(__file__).parent.parent/'calib'/'azure_kinect.intr'
-AZURE_KINECT_EXTRINSICS = Path(__file__).parent.parent/'calib'/'azure_kinect_overhead'/'azure_kinect_overhead_to_world.tf'
+import numpy as np
 
 def execute(tool):
 
@@ -38,7 +33,7 @@ def execute(tool):
         print("Tool {} successfully placed on pegboard!".format(tool.name))
     else:
         # there is no availble spot
-        print("No empty spot to place the tool.")
+        print("No empty spot to place the tool")
 
 def run_place(tool_index, tool_id):
     '''
@@ -52,10 +47,12 @@ def run_place(tool_index, tool_id):
                 tool3: aruco marker 80
                 tool4: aruco marker 33
     '''
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--intrinsics_file_path', type=str, default=AZURE_KINECT_INTRINSICS)
-    parser.add_argument('--extrinsics_file_path', type=str, default=AZURE_KINECT_EXTRINSICS) 
-    args = parser.parse_args()
+
+    aruco_offset = -0.07 # offset of aruco tag to center of tool
+    tool_z_height = 0.01  # center of tool height = 1 cm
+    pegboard_z_height = 0.265
+    intermediate_tool_z_height = 0.30 # offset intermediate z height (tool)
+    intermediate_pegboard_z_height = 0.55 # offset intermediate z height (pegboard) 
 
     print('Starting Robot')
     fa = FrankaArm()    
@@ -64,26 +61,9 @@ def run_place(tool_index, tool_id):
     # Open Gripper
     fa.open_gripper()
 
-    print('Resetting Robot')
-    # Reset Pose
-    fa.reset_pose() 
+    print('Homing Robot')
     # Reset Joints
     fa.reset_joints()
-
-    print('Loading Camera Parameters')
-    cv_bridge = CvBridge()
-    azure_kinect_intrinsics = CameraIntrinsics.load(args.intrinsics_file_path)
-    azure_kinect_to_world_transform = RigidTransform.load(args.extrinsics_file_path)    
-
-    azure_kinect_rgb_image = get_azure_kinect_rgb_image(cv_bridge)
-    azure_kinect_depth_image = get_azure_kinect_depth_image(cv_bridge)
-
-    object_image_position = np.array([800, 800])
-
-
-    tool_z_height = 0.01  # center of tool height = 1 cm
-    aruco_offset = -0.05 # offset of aruco tag to center of tool
-    intermediate_pose_z_height = 0.30 # offset pegboard z height
 
     '''
     Initial pose -> tool pose
@@ -95,7 +75,6 @@ def run_place(tool_index, tool_id):
     
     # grab pose of aruco marker tool_id 
     pose = rospy.wait_for_message(topic_name, Pose) 
-    print(pose)
     
     print('Calculating Franka Transforms')
     rot_matrix = quaternion_rotation_matrix(pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w)
@@ -109,14 +88,14 @@ def run_place(tool_index, tool_id):
     tool_rotation = rot_matrix@rot_grip_flip  # right hand mulplication
 
     # transform tool pose to the world frame
-    tool_transformed =  azure_kinect_to_world_transform * RigidTransform(
+    tool_transformed =  params.azure_kinect_to_world_transform * RigidTransform(
         rotation = tool_rotation,
         translation= aruco_translation, #adds offset
         from_frame='franka_tool', to_frame='azure_kinect_overhead'
     )
 
     intermediate_robot_pose = tool_transformed.copy()
-    intermediate_robot_pose.translation = [tool_transformed.translation[0], tool_transformed.translation[1], intermediate_pose_z_height] #increased z height
+    intermediate_robot_pose.translation = [tool_transformed.translation[0], tool_transformed.translation[1], intermediate_tool_z_height] #increased z height
 
 
     # The goal pose definition : rotation, translation relative to camera frame
@@ -125,8 +104,8 @@ def run_place(tool_index, tool_id):
                             [1, 0, 0]])
     
     # transform goal pose to the world frame
-    goal_translations = [np.array([0.375, -0.33, 0.26]), np.array([0.375, -0.245, 0.26]), np.array([0.375, -0.16, 0.26]), np.array([0.375, -0.075, 0.26])]
-    goal_transformed =  azure_kinect_to_world_transform * RigidTransform(
+    goal_translations = [np.array([0.375, -0.33, 0.50]), np.array([0.375, -0.245, 0.50]), np.array([0.375, -0.16, 0.50]), np.array([0.375, -0.075, 0.50])]
+    goal_transformed =  params.azure_kinect_to_world_transform * RigidTransform(
         rotation = goal_rotation,
         translation = goal_translations[tool_index],
         from_frame='franka_tool', to_frame='azure_kinect_overhead'
@@ -147,29 +126,31 @@ def run_place(tool_index, tool_id):
 
     print('Moving to Pegboard Location {}'.format(tool_index))
     # Move to intermediate robot pose aruco 1 (higher than the pegboard)
-    intermediate_robot_pose.translation[2] = 0.55
+    intermediate_robot_pose.translation[2] = intermediate_pegboard_z_height # offset intermediate z height franka frame
     fa.goto_pose(intermediate_robot_pose)    
+
+    # Reset joints before going to the next intermediate pose
+    fa.reset_joints()
 
     # move to the new intermediate robot pose on the pegboard
     intermediate_robot_pose_offset = goal_transformed.copy()
-    intermediate_robot_pose_offset.translation[2] = 0.55
+    intermediate_robot_pose_offset.translation[2] = intermediate_pegboard_z_height
     fa.goto_pose(intermediate_robot_pose_offset)
     
     # move to the goal pose
-    goal_transformed.translation[2] = 0.265  # goal height in the world frame. This is to fix the z axis to the pegboard dropoff height.
+    goal_transformed.translation[2] = pegboard_z_height  # goal height in the world frame. This is to fix the z axis to the pegboard dropoff height.
     fa.goto_pose(goal_transformed, 5, force_thresholds=[20, 20, 20, 20, 20, 20])
 
     print('Opening Grippers')
-    # Open Gripper
     fa.open_gripper()
 
     print('Returning Home')
-    # Move to intermediate robot pose 
+    # Move to intermediate robot pose, but lower the z height by 10 cm to avoid hitting the camera
+    intermediate_robot_pose_offset = goal_transformed.copy()
+    intermediate_robot_pose_offset.translation[2] = intermediate_pegboard_z_height - 0.1
     fa.goto_pose(intermediate_robot_pose_offset)
-    fa.goto_pose(intermediate_robot_pose)
 
-    # Reset Pose
-    fa.reset_pose() 
+
     # Reset Joints
     fa.reset_joints()
 

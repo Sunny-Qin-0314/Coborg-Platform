@@ -50,8 +50,6 @@ def new_command(command_input, tool_input):
     else:
         print("Error: Input Not Found")
 
-    
-
 if __name__ == "__main__":
 
     params.validate() #define where everything is on startup

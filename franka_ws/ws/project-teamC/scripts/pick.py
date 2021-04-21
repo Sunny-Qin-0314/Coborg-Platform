@@ -1,19 +1,16 @@
-import enum
 import params
+from utils import *
+
+import enum
+from pathlib import Path
 
 from frankapy import FrankaArm
-import rospy
-import pickle as pkl
-import numpy as np
-
-from autolab_core import RigidTransform
-from frankapy import FrankaArm, SensorDataMessageType
-from frankapy import FrankaConstants as FC
-from frankapy.proto_utils import sensor_proto2ros_msg, make_sensor_group_msg
-from frankapy.proto import PosePositionSensorMessage, ShouldTerminateSensorMessage, CartesianImpedanceSensorMessage
-from franka_interface_msgs.msg import SensorDataGroup
-
 from frankapy.utils import min_jerk, min_jerk_weight
+from autolab_core import RigidTransform, Point
+
+from geometry_msgs.msg import Pose
+import math
+import numpy as np
 
 def execute(tool): 
     
@@ -36,31 +33,65 @@ def execute(tool):
 
     else:
         # there is no tool
-        print("Tool requested not on pegboard.")
+        print("Tool requested not on pegboard")
 
 
 def run_pick(tool_index, tool_id):
 
-    #TODO FENG + JONATHAN
+    # The goal pose definition : rotation, translation relative to camera frame
+    goal_rotation = np.array([[0, 0, 1],
+                            [0, -1, 0],
+                            [1, 0, 0]])
+    
+    # transform goal pose to the world frame
+    goal_translations = [np.array([0.385, -0.33, 0.49]), np.array([0.385, -0.245, 0.50]), np.array([0.385, -0.16, 0.50]), np.array([0.385, -0.075, 0.50])]
+    goal_transformed =  params.azure_kinect_to_world_transform * RigidTransform(
+        rotation = goal_rotation,
+        translation = goal_translations[tool_index],
+        from_frame='franka_tool', to_frame='azure_kinect_overhead'
+    )
+
+    #pegboard_z_height = 0.265
+    intermediate_pose_y_dist = 0 # offset pegboard y distance world frame
+    intermediate_pose_z_height = 0.55 # offset pegboard z height world frame
+
     print('Starting Robot')
-    fa = FrankaArm()    
+    fa = FrankaArm()  
 
     print('Opening Grippers')
-    #Open Gripper
     fa.open_gripper()
 
-    print('Resetting Robot')
-    #Reset Pose
-    fa.reset_pose() 
+    print('Homing Robot')
     #Reset Joints
     fa.reset_joints()
+   
+    print('Moving to Pegboard')
+    # move to the Intermediate robot pose x offset infront of the pegboard
+    intermediate_robot_pose_1 = goal_transformed.copy()
+    intermediate_robot_pose_1.translation[1] = intermediate_pose_y_dist
+    fa.goto_pose(intermediate_robot_pose_1)
     
-    #pull array of positions from place function
-    #pull offsets
-    #create a drop off location
-    #move robot arm from pick point to drop off location
-    #at drop off location activate impedence control
+    # move to the goal pose
+    #goal_transformed.translation[2] = pegboard_z_height  # goal height in the world frame. This is to fix the z axis to the pegboard dropoff height.
+    fa.goto_pose(goal_transformed, 5, force_thresholds=[20, 20, 20, 20, 20, 20])
 
+    print('Closing Grippers')
+    fa.close_gripper()
+
+    print('Retrieving Tool')
+    # move to the Intermediate robot pose x offset infront of the pegboard
+    intermediate_robot_pose_2 = goal_transformed.copy()
+    intermediate_robot_pose_2.translation[2] = intermediate_pose_z_height
+    fa.goto_pose(intermediate_robot_pose_2)
+
+    print('Returning Home')
+    # Reset Joints
+    fa.reset_joints()
+
+    # !!! TODO IMPEDANCE CONTROL GOES HERE !!!
+
+    print('Releasing Tool')
+    fa.open_gripper()
 
 
 if __name__ == "__main__": #unit testing code goes here
