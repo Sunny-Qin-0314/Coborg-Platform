@@ -2,8 +2,11 @@
 
 def validate():
     global pegboard #allows us to call and update pegboard like a class
-    pegboard = [1, 2, 3, 0]
-    pass
+
+    pegboard = [0,0,0,0] #init a list with 4 index
+
+    for i in range(len((pegboard))):
+        pegboard[i] = int(input('What tool is in pegboard position {}? [1, 2, 3, 4, or 0 for none]'.format(i)))
 
     # TO DO:
     #

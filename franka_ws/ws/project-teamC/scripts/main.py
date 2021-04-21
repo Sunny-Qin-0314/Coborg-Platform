@@ -55,13 +55,9 @@ def new_command(command_input, tool_input):
 if __name__ == "__main__":
 
     params.validate() #define where everything is on startup
-    print(params.pegboard)
-
-    params.pegboard = [1,0,0,2]
-    print(params.pegboard)
+    print("Current pegboard status = {}".format(params.pegboard))
 
     while True:
-        command_input = input("Pick(1) or Place(2)? Ctrl+C to quit.").upper() #convert input to upper case
-        tool_input = input("Tool(1), Tool(2), Tool(3), Tool(4), All(9)?").upper()
+        command_input = input('Pick(1) or Place(2)? Ctrl+C to quit.').upper() #convert input to upper case
+        tool_input = input('Tool(1), Tool(2), Tool(3), Tool(4), All(9)?').upper()
         new_command(command_input, tool_input)
-

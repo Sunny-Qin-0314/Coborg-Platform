@@ -40,12 +40,12 @@ def execute(tool):
         # there is no availble spot
         print("No empty spot to place the tool.")
 
-def run_place(available_pegboard_spot, tool_id):
+def run_place(tool_index, tool_id):
     '''
     Pick up one tool and place it into the specific pegboard spot
 
     Inputs:
-        available_pegboard_spot: int, the index of the availble position on the board [0,1,2,3]
+        tool_index: int, the index of the availble position on the board [0,1,2,3]
         tool_id: int, the tool want to pick up. This will be used to read the correct marker pose topic [1,2,3,4]
                 tool1: aruco marker 100
                 tool2: aruco marker 153
@@ -128,7 +128,7 @@ def run_place(available_pegboard_spot, tool_id):
     goal_translations = [np.array([0.375, -0.33, 0.26]), np.array([0.375, -0.245, 0.26]), np.array([0.375, -0.16, 0.26]), np.array([0.375, -0.075, 0.26])]
     goal_transformed =  azure_kinect_to_world_transform * RigidTransform(
         rotation = goal_rotation,
-        translation = goal_translations[available_pegboard_spot],
+        translation = goal_translations[tool_index],
         from_frame='franka_tool', to_frame='azure_kinect_overhead'
     )
 
@@ -145,7 +145,7 @@ def run_place(available_pegboard_spot, tool_id):
     #Close Gripper
     fa.goto_gripper(0.03, grasp=True, force=10.0)
 
-    print('Moving to Pegboard Location {}'.format(available_pegboard_spot))
+    print('Moving to Pegboard Location {}'.format(tool_index))
     # Move to intermediate robot pose aruco 1 (higher than the pegboard)
     intermediate_robot_pose.translation[2] = 0.55
     fa.goto_pose(intermediate_robot_pose)    

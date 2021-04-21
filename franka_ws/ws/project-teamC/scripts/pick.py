@@ -39,7 +39,7 @@ def execute(tool):
         print("Tool requested not on pegboard.")
 
 
-def run_pick(tool_spot, tool_id):
+def run_pick(tool_index, tool_id):
 
     #TODO FENG + JONATHAN
     print('Starting Robot')
@@ -60,6 +60,8 @@ def run_pick(tool_spot, tool_id):
     #create a drop off location
     #move robot arm from pick point to drop off location
     #at drop off location activate impedence control
+
+
 
 if __name__ == "__main__": #unit testing code goes here
     class Tool(enum.IntEnum):
