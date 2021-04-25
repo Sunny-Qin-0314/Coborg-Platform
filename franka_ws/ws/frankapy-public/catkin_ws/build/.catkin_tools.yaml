@@ -1,0 +1,6 @@
+devel_space: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel
+install: false
+install_space: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install
+profile: default
+source_space: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src
+workspace: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws
