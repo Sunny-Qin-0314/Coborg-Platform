@@ -67,14 +67,14 @@ set(franka_interface_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(franka_interface_msgs_SOURCE_PREFIX /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs)
-  set(franka_interface_msgs_DEVEL_PREFIX /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs)
+  set(franka_interface_msgs_SOURCE_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs)
+  set(franka_interface_msgs_DEVEL_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs)
   set(franka_interface_msgs_INSTALL_PREFIX "")
   set(franka_interface_msgs_PREFIX ${franka_interface_msgs_DEVEL_PREFIX})
 else()
   set(franka_interface_msgs_SOURCE_PREFIX "")
   set(franka_interface_msgs_DEVEL_PREFIX "")
-  set(franka_interface_msgs_INSTALL_PREFIX /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install)
+  set(franka_interface_msgs_INSTALL_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install)
   set(franka_interface_msgs_PREFIX ${franka_interface_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(franka_interface_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/include " STREQUAL " ")
+if(NOT "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/include " STREQUAL " ")
   set(franka_interface_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/include")
+  set(_include_dirs "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel
         message(FATAL_ERROR "Project 'franka_interface_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'franka_interface_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'franka_interface_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(franka_interface_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib;/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/lib;/home/gerry/ProgrammingFamiliarization2/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib;/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/lib;/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/devel/lib;/home/coborg/CMU/16-662/labs/ws/frankapy-public/catkin_ws/devel/lib;/home/coborg/Coborg-Platform/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

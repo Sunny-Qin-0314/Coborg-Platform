@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs
+CMAKE_SOURCE_DIR = /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs
+CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/CMakeFiles /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/CMakeFiles /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -272,6 +272,19 @@ franka_interface_msgs_generate_messages_cpp/fast:
 .PHONY : franka_interface_msgs_generate_messages_cpp/fast
 
 #=============================================================================
+# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal
+
+# Build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal
+
+# fast build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal/fast:
+	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal.dir/build
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal/fast
+
+#=============================================================================
 # Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_SensorData
 
 # Build rule for target.
@@ -298,30 +311,17 @@ _franka_interface_msgs_generate_messages_check_deps_FrankaInterfaceStatus/fast:
 .PHONY : _franka_interface_msgs_generate_messages_check_deps_FrankaInterfaceStatus/fast
 
 #=============================================================================
-# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd
+# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_Errors
 
 # Build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd
+_franka_interface_msgs_generate_messages_check_deps_Errors: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_Errors
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_Errors
 
 # fast build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd/fast:
-	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd.dir/build
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd/fast
-
-#=============================================================================
-# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult
-
-# Build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult
-
-# fast build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult/fast:
-	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult.dir/build
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult/fast
+_franka_interface_msgs_generate_messages_check_deps_Errors/fast:
+	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_Errors.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_Errors.dir/build
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_Errors/fast
 
 #=============================================================================
 # Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_SensorDataGroup
@@ -337,43 +337,17 @@ _franka_interface_msgs_generate_messages_check_deps_SensorDataGroup/fast:
 .PHONY : _franka_interface_msgs_generate_messages_check_deps_SensorDataGroup/fast
 
 #=============================================================================
-# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_Errors
+# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_RobotState
 
 # Build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_Errors: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_Errors
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_Errors
+_franka_interface_msgs_generate_messages_check_deps_RobotState: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_RobotState
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_RobotState
 
 # fast build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_Errors/fast:
-	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_Errors.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_Errors.dir/build
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_Errors/fast
-
-#=============================================================================
-# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal
-
-# Build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal
-
-# fast build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal/fast:
-	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal.dir/build
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal/fast
-
-#=============================================================================
-# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd
-
-# Build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd
-
-# fast build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd/fast:
-	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd.dir/build
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd/fast
+_franka_interface_msgs_generate_messages_check_deps_RobotState/fast:
+	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_RobotState.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_RobotState.dir/build
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_RobotState/fast
 
 #=============================================================================
 # Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_RunLoopProcessInfoState
@@ -389,6 +363,19 @@ _franka_interface_msgs_generate_messages_check_deps_RunLoopProcessInfoState/fast
 .PHONY : _franka_interface_msgs_generate_messages_check_deps_RunLoopProcessInfoState/fast
 
 #=============================================================================
+# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd
+
+# Build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd
+
+# fast build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd/fast:
+	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd.dir/build
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_nodejs
 
 # Build rule for target.
@@ -400,6 +387,32 @@ rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
 rosgraph_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 .PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback
+
+# Build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback
+
+# fast build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback/fast:
+	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback.dir/build
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
 
 #=============================================================================
 # Target rules for targets named std_msgs_generate_messages_eus
@@ -428,19 +441,6 @@ rosgraph_msgs_generate_messages_lisp/fast:
 .PHONY : rosgraph_msgs_generate_messages_lisp/fast
 
 #=============================================================================
-# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_RobotState
-
-# Build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_RobotState: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_RobotState
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_RobotState
-
-# fast build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_RobotState/fast:
-	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_RobotState.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_RobotState.dir/build
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_RobotState/fast
-
-#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_eus
 
 # Build rule for target.
@@ -465,6 +465,19 @@ actionlib_msgs_generate_messages_cpp: cmake_check_build_system
 actionlib_msgs_generate_messages_cpp/fast:
 	$(MAKE) -f CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd
+
+# Build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd
+
+# fast build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd/fast:
+	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd.dir/build
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd/fast
 
 #=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_cpp
@@ -701,6 +714,19 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
+# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal
+
+# Build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal
+
+# fast build rule for target.
+_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal/fast:
+	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal.dir/build
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal/fast
+
+#=============================================================================
 # Target rules for targets named std_msgs_generate_messages_lisp
 
 # Build rule for target.
@@ -805,32 +831,6 @@ actionlib_msgs_generate_messages_eus/fast:
 .PHONY : actionlib_msgs_generate_messages_eus/fast
 
 #=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
-
-# Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback
-
-# Build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback
-
-# fast build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback/fast:
-	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback.dir/build
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback/fast
-
-#=============================================================================
 # Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillAction
 
 # Build rule for target.
@@ -883,17 +883,17 @@ actionlib_msgs_generate_messages_py/fast:
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal
+# Target rules for targets named _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult
 
 # Build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal
+_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult
 
 # fast build rule for target.
-_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal/fast:
-	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal.dir/build
-.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal/fast
+_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult/fast:
+	$(MAKE) -f CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult.dir/build.make CMakeFiles/_franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult.dir/build
+.PHONY : _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -965,21 +965,22 @@ help:
 	@echo "... franka_interface_msgs_generate_messages_eus"
 	@echo "... franka_interface_msgs_gencpp"
 	@echo "... franka_interface_msgs_generate_messages_cpp"
+	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal"
 	@echo "... _franka_interface_msgs_generate_messages_check_deps_SensorData"
 	@echo "... _franka_interface_msgs_generate_messages_check_deps_FrankaInterfaceStatus"
-	@echo "... _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd"
-	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult"
-	@echo "... _franka_interface_msgs_generate_messages_check_deps_SensorDataGroup"
 	@echo "... _franka_interface_msgs_generate_messages_check_deps_Errors"
-	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal"
-	@echo "... _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd"
+	@echo "... _franka_interface_msgs_generate_messages_check_deps_SensorDataGroup"
+	@echo "... _franka_interface_msgs_generate_messages_check_deps_RobotState"
 	@echo "... _franka_interface_msgs_generate_messages_check_deps_RunLoopProcessInfoState"
+	@echo "... _franka_interface_msgs_generate_messages_check_deps_GetCurrentRobotStateCmd"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback"
+	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... _franka_interface_msgs_generate_messages_check_deps_RobotState"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_cpp"
+	@echo "... _franka_interface_msgs_generate_messages_check_deps_GetCurrentFrankaInterfaceStatusCmd"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... franka_interface_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -1000,6 +1001,7 @@ help:
 	@echo "... clean_test_results"
 	@echo "... install/local"
 	@echo "... doxygen"
+	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionGoal"
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... franka_interface_msgs_generate_messages"
 	@echo "... std_msgs_generate_messages_nodejs"
@@ -1009,13 +1011,11 @@ help:
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillFeedback"
 	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillAction"
 	@echo "... actionlib_msgs_generate_messages_lisp"
 	@echo "... franka_interface_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_py"
-	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillGoal"
+	@echo "... _franka_interface_msgs_generate_messages_check_deps_ExecuteSkillActionResult"
 	@echo "... gmock_main"
 	@echo "... gmock"
 	@echo "... gtest_main"

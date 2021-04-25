@@ -1,4 +1,4 @@
 <launch>
-    <node pkg="main_state_machine" name="coborg_main" type="main_state_machine.py" output="screen"> 
+    <node pkg="main_state_machine" name="coborg_main" type="main.py" output="screen"> 
     </node>
 </launch>

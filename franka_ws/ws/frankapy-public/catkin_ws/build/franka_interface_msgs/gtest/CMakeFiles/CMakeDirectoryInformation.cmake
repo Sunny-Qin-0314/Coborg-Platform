@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/usr/src/googletest")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

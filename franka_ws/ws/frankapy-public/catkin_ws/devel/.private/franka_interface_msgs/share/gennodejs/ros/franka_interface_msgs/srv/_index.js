@@ -1,10 +1,10 @@
 
 "use strict";
 
-let GetCurrentFrankaInterfaceStatusCmd = require('./GetCurrentFrankaInterfaceStatusCmd.js')
 let GetCurrentRobotStateCmd = require('./GetCurrentRobotStateCmd.js')
+let GetCurrentFrankaInterfaceStatusCmd = require('./GetCurrentFrankaInterfaceStatusCmd.js')
 
 module.exports = {
-  GetCurrentFrankaInterfaceStatusCmd: GetCurrentFrankaInterfaceStatusCmd,
   GetCurrentRobotStateCmd: GetCurrentRobotStateCmd,
+  GetCurrentFrankaInterfaceStatusCmd: GetCurrentFrankaInterfaceStatusCmd,
 };

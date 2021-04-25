@@ -154,7 +154,11 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD:catkin_ws/install/share/goal_getter/cmake/goal_getterConfig.cmake
     foreach(path /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install/lib;/opt/ros/melodic/lib)
+=======
+    foreach(path /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/home/gerry/ProgrammingFamiliarization3/catkin_ws/devel/lib;/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/home/gerry/ProgrammingFamiliarization2/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+>>>>>>> abb0aa7f41d979e59569e0a642bc56114e9d142c:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig.cmake
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

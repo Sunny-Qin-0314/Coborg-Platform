@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs
-# Build directory: /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs
+# Source directory: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs
+# Build directory: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

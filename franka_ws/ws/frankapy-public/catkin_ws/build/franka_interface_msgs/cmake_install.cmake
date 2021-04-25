@@ -1,8 +1,8 @@
-# Install script for directory: /home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs
+# Install script for directory: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,169 +49,169 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/_setup_util.py")
+   "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE PROGRAM FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE PROGRAM FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/env.sh")
+   "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE PROGRAM FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE PROGRAM FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/setup.bash;/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/local_setup.bash")
+   "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/setup.bash;/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE FILE FILES
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/setup.bash"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE FILE FILES
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/setup.bash"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/setup.sh;/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/local_setup.sh")
+   "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/setup.sh;/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE FILE FILES
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/setup.sh"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE FILE FILES
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/setup.sh"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/setup.zsh;/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/local_setup.zsh")
+   "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/setup.zsh;/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE FILE FILES
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/setup.zsh"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE FILE FILES
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/setup.zsh"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/.rosinstall")
+   "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE FILE FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install" TYPE FILE FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/.rosinstall")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/msg" TYPE FILE FILES
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/Errors.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/FrankaInterfaceStatus.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/RobotState.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/RunLoopProcessInfoState.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/SensorData.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/SensorDataGroup.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/Errors.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/FrankaInterfaceStatus.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/RobotState.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/RunLoopProcessInfoState.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/SensorData.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/msg/SensorDataGroup.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/srv" TYPE FILE FILES
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/srv/GetCurrentRobotStateCmd.srv"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/srv/GetCurrentFrankaInterfaceStatusCmd.srv"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/srv/GetCurrentRobotStateCmd.srv"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/srv/GetCurrentFrankaInterfaceStatusCmd.srv"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/action" TYPE FILE FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/action/ExecuteSkill.action")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/action" TYPE FILE FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/action/ExecuteSkill.action")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/msg" TYPE FILE FILES
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillAction.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillActionGoal.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillActionResult.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillActionFeedback.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillGoal.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillResult.msg"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillFeedback.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillAction.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillActionGoal.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillActionResult.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillActionFeedback.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillGoal.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillResult.msg"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillFeedback.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/cmake" TYPE FILE FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/cmake" TYPE FILE FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/include/franka_interface_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/include/franka_interface_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/roseus/ros/franka_interface_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/roseus/ros/franka_interface_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/gennodejs/ros/franka_interface_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/gennodejs/ros/franka_interface_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib/python2.7/dist-packages/franka_interface_msgs")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib/python2.7/dist-packages/franka_interface_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib/python2.7/dist-packages/franka_interface_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib/python2.7/dist-packages/franka_interface_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/cmake" TYPE FILE FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/cmake" TYPE FILE FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs/cmake" TYPE FILE FILES
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgsConfig.cmake"
-    "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgsConfig-version.cmake"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgsConfig.cmake"
+    "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/installspace/franka_interface_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs" TYPE FILE FILES "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/franka_interface_msgs" TYPE FILE FILES "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/gtest/cmake_install.cmake")
+  include("/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/gtest/cmake_install.cmake")
 
 endif()
 
@@ -223,5 +223,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,8 +1,0 @@
-<launch>
-    <include file="$(find coborg_arm)/launch/demo.launch" />
-    
-
-    <node pkg="tf" type="static_transform_publisher" name="t265_coborg_tf" args="0.2794 -0.4999 -0.67305 0 0 0 /t265_link /world 100" />
-    
-
-</launch>

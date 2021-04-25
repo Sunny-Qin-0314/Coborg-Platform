@@ -1,32 +1,32 @@
 
 "use strict";
 
-let FrankaInterfaceStatus = require('./FrankaInterfaceStatus.js');
-let RunLoopProcessInfoState = require('./RunLoopProcessInfoState.js');
-let SensorDataGroup = require('./SensorDataGroup.js');
-let RobotState = require('./RobotState.js');
-let SensorData = require('./SensorData.js');
 let Errors = require('./Errors.js');
+let FrankaInterfaceStatus = require('./FrankaInterfaceStatus.js');
+let SensorData = require('./SensorData.js');
+let RunLoopProcessInfoState = require('./RunLoopProcessInfoState.js');
+let RobotState = require('./RobotState.js');
+let SensorDataGroup = require('./SensorDataGroup.js');
+let ExecuteSkillGoal = require('./ExecuteSkillGoal.js');
 let ExecuteSkillAction = require('./ExecuteSkillAction.js');
 let ExecuteSkillActionGoal = require('./ExecuteSkillActionGoal.js');
-let ExecuteSkillActionFeedback = require('./ExecuteSkillActionFeedback.js');
-let ExecuteSkillGoal = require('./ExecuteSkillGoal.js');
-let ExecuteSkillResult = require('./ExecuteSkillResult.js');
 let ExecuteSkillFeedback = require('./ExecuteSkillFeedback.js');
+let ExecuteSkillResult = require('./ExecuteSkillResult.js');
 let ExecuteSkillActionResult = require('./ExecuteSkillActionResult.js');
+let ExecuteSkillActionFeedback = require('./ExecuteSkillActionFeedback.js');
 
 module.exports = {
-  FrankaInterfaceStatus: FrankaInterfaceStatus,
-  RunLoopProcessInfoState: RunLoopProcessInfoState,
-  SensorDataGroup: SensorDataGroup,
-  RobotState: RobotState,
-  SensorData: SensorData,
   Errors: Errors,
+  FrankaInterfaceStatus: FrankaInterfaceStatus,
+  SensorData: SensorData,
+  RunLoopProcessInfoState: RunLoopProcessInfoState,
+  RobotState: RobotState,
+  SensorDataGroup: SensorDataGroup,
+  ExecuteSkillGoal: ExecuteSkillGoal,
   ExecuteSkillAction: ExecuteSkillAction,
   ExecuteSkillActionGoal: ExecuteSkillActionGoal,
-  ExecuteSkillActionFeedback: ExecuteSkillActionFeedback,
-  ExecuteSkillGoal: ExecuteSkillGoal,
-  ExecuteSkillResult: ExecuteSkillResult,
   ExecuteSkillFeedback: ExecuteSkillFeedback,
+  ExecuteSkillResult: ExecuteSkillResult,
   ExecuteSkillActionResult: ExecuteSkillActionResult,
+  ExecuteSkillActionFeedback: ExecuteSkillActionFeedback,
 };

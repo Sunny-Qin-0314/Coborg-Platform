@@ -12,16 +12,16 @@ try:
     from catkin.environment_cache import generate_environment_script
 except ImportError:
     # search for catkin package in all workspaces and prepend to path
-    for workspace in '/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel;/home/gerry/ProgrammingFamiliarization2/catkin_ws/devel;/opt/ros/melodic'.split(';'):
+    for workspace in '/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel;/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/devel;/home/coborg/CMU/16-662/labs/ws/frankapy-public/catkin_ws/devel;/home/coborg/Coborg-Platform/catkin_ws/devel;/opt/ros/melodic'.split(';'):
         python_path = os.path.join(workspace, 'lib/python2.7/dist-packages')
         if os.path.isdir(os.path.join(python_path, 'catkin')):
             sys.path.insert(0, python_path)
             break
     from catkin.environment_cache import generate_environment_script
 
-code = generate_environment_script('/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/env.sh')
+code = generate_environment_script('/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/env.sh')
 
-output_filename = '/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/setup_cached.sh'
+output_filename = '/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/catkin_generated/setup_cached.sh'
 with open(output_filename, 'w') as f:
     # print('Generate script for cached setup "%s"' % output_filename)
     f.write('\n'.join(code))

@@ -36,7 +36,6 @@ decoder = Decoder(config)
 decoder.set_kws('coborg',os.path.join(voice_dir, 'src/keywords.txt'))
 decoder.set_lm_file('lm', os.path.join(model_dir, 'en-us.lm.bin'))
 decoder.set_search('coborg')
-print(decoder.get_kws('coborg'))
 
 # Start listening
 p = pyaudio.PyAudio()
@@ -99,7 +98,6 @@ while not rospy.is_shutdown():
 
                 # Send stop command when "stop" is heard 3 or more times outside of "Coborg" trigger
                 if any(word in stoplist for word in results):
-                        print ('STOP Result:', results)
                         print(repr(Command.STOP))
                         voice_commands_pub.publish(Command.STOP)
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
@@ -107,7 +105,6 @@ while not rospy.is_shutdown():
                 # Translate to base language model if 'coborg' is heard.
                 # Switch back to trigger model if language model hears a command (plays failure sound if command not valid)
                 if any(word in triggerlist for word in results):
-                    print ('COBORG Result:', results)
                     os.system('mpg123 -q ' + voice_dir + '/Sounds/triggerSound.mp3')
                     decoder.set_search('lm')
                 elif decoder.get_search() == 'lm' and len(results) > 0:

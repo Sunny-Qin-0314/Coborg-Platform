@@ -1,1 +1,1 @@
-/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/catkin_tools_prebuild/local_setup.bash
+/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/catkin_tools_prebuild/local_setup.bash

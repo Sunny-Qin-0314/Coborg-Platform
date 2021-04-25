@@ -1,1 +1,1 @@
-/home/gerry/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillGoal.msg
+/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/franka_interface_msgs/msg/ExecuteSkillGoal.msg
