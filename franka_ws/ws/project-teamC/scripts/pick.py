@@ -55,6 +55,13 @@ def run_pick(tool_index, tool_id):
         from_frame='franka_tool', to_frame='azure_kinect_overhead'
     )
 
+    home_flipped = RigidTransform(rotation=np.array([
+            [-1, 0, 0],
+            [0, 1, 0],
+            [0, 0, -1],
+        ]), translation=np.array([0.3069, 0, 0.4867]),
+        from_frame='franka_tool', to_frame='world')
+
     #pegboard_z_height = 0.265
     intermediate_pose_y_dist = 0 # offset pegboard y distance world frame
     intermediate_pose_z_height = 0.55 # offset pegboard z height world frame
@@ -91,6 +98,8 @@ def run_pick(tool_index, tool_id):
     print('Returning Home')
     # Reset Joints
     fa.reset_joints()
+    #added flip to keep pointy end of tool away from user
+    fa.goto_pose(home_flipped)
 
     # Impedance Control
     # Initalize variables
@@ -99,6 +108,7 @@ def run_pick(tool_index, tool_id):
     waitSec = 1
 
     print("Starting Impedance Control")
+    print("Please pickup the tool from the robot")
     pose = fa.get_pose()
     desired_position = pose.translation
     fa.apply_effector_forces_torques(controllerSec,0,0,0, block=False)
@@ -122,6 +132,7 @@ def run_pick(tool_index, tool_id):
         diffTime = float(currTime - beginTime)
     
     # Replace tool here
+    print("Returning Tool")
     fa.stop_skill()
     fa.reset_joints()
     pegboard_z_height = 0.265
@@ -146,8 +157,9 @@ def run_pick(tool_index, tool_id):
     intermediate_robot_pose_offset.translation[2] = intermediate_pegboard_z_height - 0.1
     fa.goto_pose(intermediate_robot_pose_offset)
 
-    # Reset Joints
+   # Reset Joints
     fa.reset_joints()
+
     params.userNoGrab = True #if the user successfully retrieved the tool, return true
     return
 

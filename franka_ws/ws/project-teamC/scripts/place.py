@@ -119,7 +119,7 @@ def run_place(tool_index, tool_id):
     tool_transformed.translation[2] = tool_z_height    
 
     #Move to tool 
-    fa.goto_pose(tool_transformed, 5, force_thresholds=[10, 10, 10, 10, 10, 10])
+    fa.goto_pose(tool_transformed, 5, force_thresholds=[20, 20, 20, 20, 20, 20])
 
     #Close Gripper
     fa.goto_gripper(0.03, grasp=True, force=10.0)
