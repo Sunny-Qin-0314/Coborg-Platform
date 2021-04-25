@@ -210,6 +210,13 @@ target_link_libraries(tf_moveit_goalsetNode
   ${catkin_LIBRARIES}
 )
 
+add_executable(randomGoalPoseGenerator src/randomGoalPoseGenerator.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(randomGoalPoseGenerator
+  ${catkin_LIBRARIES}
+)
+
 #############
 ## Install ##
 #############

@@ -1,0 +1,14 @@
+<launch>
+    <include file="$(find coborg_arm)/launch/planning_context.launch">
+        <arg name="load_robot_description" value="true"/>
+    </include>
+
+    <node name="moveit_tutorials"
+            pkg="coborg_move"
+            type="moveit_tutorials"
+            respawn="false" output="screen">
+        <rosparam command="load"
+                file = "$(find coborg_arm)/config/kinematics.yaml"/>
+    </node>
+
+</launch>

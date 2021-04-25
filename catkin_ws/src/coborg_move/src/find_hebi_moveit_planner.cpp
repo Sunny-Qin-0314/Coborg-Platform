@@ -27,15 +27,23 @@
 #include <pluginlib/class_loader.h>
 #include <boost/scoped_ptr.hpp>
 
-double motor1_joint = 0;
-double motor2_joint = 0;
-double motor3_joint = 0;
+#include <string.h>
 
+double motor1_joint;
+double motor2_joint;
+double motor3_joint;
+
+bool boolFirstTime = true;
+double startup_sec = 1.5;
+
+geometry_msgs::Vector3 publishState;
+
+std::string maniState;
 
 void hebiOutputCallback(const sensor_msgs::JointState::ConstPtr& msg){
   ROS_INFO("message heard!");
   ROS_INFO("motor1: %f | motor2: %f | motor3: %f", msg->position[0],msg->position[1],msg->position[2]);
-  motor1_joint = msg->position[0];
+  motor1_joint = msg->position[0] + 0.1; // offset determined empirically for level arm out at 0 radians 
   motor2_joint = msg->position[1];
   motor3_joint = msg->position[2];
 }
@@ -52,6 +60,8 @@ int main(int argc, char **argv)
     //output the topic to the screen
 
     ros::Subscriber fake_joint_states_sub = node.subscribe("/move_group/fake_controller_joint_states",1000,hebiOutputCallback);
+    ros::Publisher hebi_joints_pub = node.advertise<geometry_msgs::Vector3>("hebi_joints", 10);
+
     
     //TODO: create method to auto find the families and names
     //FORNOW: assume there is 1 family and 3 names
@@ -93,8 +103,9 @@ int main(int argc, char **argv)
     positions[1] = motor2_joint;
     positions[2] = motor3_joint;
 
+    hebi::GroupCommand groupCommandBegin(group->size());
     hebi::GroupCommand groupCommand(group->size());
-    groupCommand.setPosition(positions);
+    // groupCommand.setPosition(positions);
 
     //define feedback
     hebi::GroupFeedback group_feedback(group->size());
@@ -103,38 +114,105 @@ int main(int argc, char **argv)
     feedbackPos.setZero();
 
 
-
     group->setFeedbackFrequencyHz(50);
     ros::Time begin = ros::Time::now();
     ros::Time curr = ros::Time::now();
     double durr; 
+    
+    Eigen:: VectorXd efforts(group->size());
+    efforts.setOnes();
+
+    const double stiffness = 1.0;
 
     ros::Rate loop_rate(30);
 
 
     while(ros::ok()) {
-        //implement own code to publish message
-        curr = ros::Time::now();
-            durr = (curr- begin).toSec();
-            //console debugging command
-            //ROS_INFO("What year is it!!??\n");
 
-            if (!group->getNextFeedback(group_feedback))
-            {
-              continue;
-            }
-            group->getNextFeedback(group_feedback);
+      //implement own code to publish message
+      
+      durr = (float) (curr- begin).toSec();
+      //console debugging command
+      //ROS_INFO("What year is it!!??\n");
 
-        positions[0] = motor1_joint;
-        positions[1] = motor2_joint;
-        positions[2] = motor3_joint;
-        groupCommand.setPosition(positions);
+      ros::param::get("tf_moveit_goalsetNode/manipulation_state",maniState);
 
-        group->sendCommand(groupCommand);
-        // group->sendCommandWithAcknowledgement(groupCommand);
+      // get feedback from hebi
 
-        ros::spinOnce();
-        loop_rate.sleep();
+
+      if (group->getNextFeedback(group_feedback))
+      {
+        group->getNextFeedback(group_feedback);
+        feedbackPos = group_feedback.getPosition();
+        publishState.x = (float) feedbackPos(0);
+        publishState.y = (float) feedbackPos(1);
+        publishState.z = (float) feedbackPos(2);
+
+        if (boolFirstTime)
+        {
+
+          // TODO: load xml gain files that has the velocity and effort limits on them
+          // FORNOW: hardcode velocity numbers and push those velocities to the joints for a period of time
+          curr = ros::Time::now();
+          efforts[0] = 0.1*(motor1_joint - publishState.x);
+          efforts[1] = 0.1*(motor2_joint - publishState.y);
+          efforts[2] = 0.1*(motor3_joint - publishState.z);
+
+          groupCommandBegin.setVelocity(efforts);
+          group->sendCommand(groupCommandBegin);
+
+          if (durr > startup_sec)
+          {
+            boolFirstTime = false;
+          }
+        }
+        else
+        {
+          // position control
+          positions[0] = motor1_joint;
+          positions[1] = motor2_joint;
+          positions[2] = motor3_joint;
+          groupCommand.setPosition(positions);
+          // group->sendCommand(groupCommand);
+          group->sendCommandWithAcknowledgement(groupCommand);
+        }
+
+
+
+        
+        std::cout << "Position feedback: " << std::endl << feedbackPos << std::endl;
+      }
+
+
+
+
+
+
+
+      // if (strcmp(maniState.c_str(),"motion") == 0)
+      // {
+      //   //implement own code to publish message
+      //   curr = ros::Time::now();
+      //   durr = (curr- begin).toSec();
+      //   //console debugging command
+      //   //ROS_INFO("What year is it!!??\n");
+
+      //   positions[0] = motor1_joint;
+      //   positions[1] = motor2_joint;
+      //   positions[2] = motor3_joint;
+      //   groupCommand.setPosition(positions);
+
+      //   // group->sendCommand(groupCommand);
+      //   group->sendCommandWithAcknowledgement(groupCommand);
+      // }
+      // else if (strcmp(maniState.c_str(),"stabilize") == 0)
+      // {
+      //   hebi_joints_pub.publish(publishState);
+      // }
+
+
+      ros::spinOnce();
+      loop_rate.sleep();
    }
 
     return 0;
