@@ -127,6 +127,7 @@ catkin_package(
   trajectory_msgs
   moveit_core
   moveit_ros_planning_interface
+  sensor_msgs
 #  DEPENDS system_lib
 )
 
@@ -205,6 +206,13 @@ add_executable(tf_moveit_goalsetNode src/tf_moveit_goalsetNode.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(tf_moveit_goalsetNode
+  ${catkin_LIBRARIES}
+)
+
+add_executable(randomGoalPoseGenerator src/randomGoalPoseGenerator.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(randomGoalPoseGenerator
   ${catkin_LIBRARIES}
 )
 
