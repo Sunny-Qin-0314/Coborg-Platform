@@ -16,7 +16,7 @@ class Command(enum.IntEnum):
     HOME = 3
 
 triggerlist = ['coborg']
-stoplist = ['stop stop stop']
+stoplist = ['stop stop stop','stop']
 targetlist = ['target','take','goal']
 homelist = ['home','compact']
 
