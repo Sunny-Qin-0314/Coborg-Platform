@@ -23,6 +23,7 @@ find_package(catkin REQUIRED COMPONENTS
   moveit_visual_tools
   rviz_visual_tools
   sensor_msgs
+  goal_getter
 )
 
 ## System dependencies are found with CMake's conventions
@@ -127,6 +128,8 @@ catkin_package(
   trajectory_msgs
   moveit_core
   moveit_ros_planning_interface
+  sensor_msgs
+  goal_getter
 #  DEPENDS system_lib
 )
 
@@ -205,6 +208,13 @@ add_executable(tf_moveit_goalsetNode src/tf_moveit_goalsetNode.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(tf_moveit_goalsetNode
+  ${catkin_LIBRARIES}
+)
+
+add_executable(randomGoalPoseGenerator src/randomGoalPoseGenerator.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(randomGoalPoseGenerator
   ${catkin_LIBRARIES}
 )
 
