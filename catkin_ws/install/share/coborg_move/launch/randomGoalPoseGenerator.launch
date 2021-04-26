@@ -1,0 +1,9 @@
+<launch>
+
+  <node name="randomGoalPoseGenerator" pkg="coborg_move" type="randomGoalPoseGenerator" respawn="false" output="screen">
+  <param name="originState" value="camera_link"/>
+  </node>
+
+
+
+</launch>
