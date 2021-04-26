@@ -15,6 +15,7 @@
 
 #include <algorithm> //based on HEBI C++ API 3.3.0 documentation
 #include <cmath>
+#include <math.h>
 
 #include <moveit/move_group_interface/move_group_interface.h>
 #include <moveit/robot_model_loader/robot_model_loader.h>
@@ -39,6 +40,7 @@
 #include <string.h>
 #include <goal_getter/goal_msg.h>
 
+
 geometry_msgs::Pose goalPose;
 std::string defOrigin;
 std::int8_t sequenceCount = 0;
@@ -48,25 +50,24 @@ ros::Time currTime;
 ros::Duration durVar;
 
 std::string maniState;
+std::string svdTargetVal = "target1";
 
-
-
+// hardcoded three target positions
+Eigen::Vector3d svdPushOut01(0.895, -0.345, -0.255);
+Eigen::Vector3d svdPushOut02(0.895, -0.495, -0.255);
+Eigen::Vector3d svdPushOut03(0.895, -0.495, -0.405);
 
 
 
 // hard coded position poses
+Eigen::Vector3d intermediateHomePose(0.638892, -0.504, -0.420819);
 
-Eigen::Vector3d homePose(0.26595, -0.4133, -0.556078);
-Eigen::Vector3d readyPushOut(0.71119, -0.346, -0.05444);
-Eigen::Vector3d dummyPushUp(0.24396, -0.273652, 0.28507);
-Eigen::Vector3d dummyPushOut(0.895, -0.345, -0.255);
+Eigen::Vector3d homePose(0.2569, -0.60749, -0.5831);
+Eigen::Vector3d readyPushOut(0.7022, -0.3670, -0.08145);
+Eigen::Vector3d dummyPushUp(0.30457, -0.3261, 0.3151);
+// Eigen::Vector3d dummyPushOut(0.895, -0.345, -0.255);
 
-void goalPushOutCallback(const goal_getter::goal_msg::ConstPtr& posemsg)
-{
-    dummyPushOut(0) = posemsg->x;
-    dummyPushOut(1) = posemsg->y;
-    dummyPushOut(2) = posemsg->z;
-}
+Eigen::Vector3d dummyPushOut = svdPushOut01;
 
 void randomPoseFunc()
 {
@@ -98,7 +99,6 @@ void randomPoseFunc()
 void homePoseFunc(std::int8_t& seqCount)
 {
 
-    // if preset is "arm out": set to joint values
     goalPose.position.x = homePose(0);
     goalPose.position.y = homePose(1);
     goalPose.position.z = homePose(2);
@@ -153,10 +153,10 @@ void upPoseFunc(std::int8_t& seqCount)
 
 void upDisengagePoseFunc(std::int8_t& seqCount)
 {
-    std::int8_t countMax = 2;
+    std::int8_t countMax = 4;
     Eigen::MatrixXd seqMat(3, countMax);
 
-    // ready push out 10cm out
+    // ready push out 15cm out
     seqMat(0,0) = dummyPushUp(0);
     seqMat(1,0) = dummyPushUp(1);
     seqMat(2,0) = dummyPushUp(2) - 0.15;
@@ -164,6 +164,17 @@ void upDisengagePoseFunc(std::int8_t& seqCount)
     seqMat(0,1) = readyPushOut(0);
     seqMat(1,1) = readyPushOut(1);
     seqMat(2,1) = readyPushOut(2);
+
+    seqMat(0,2) = intermediateHomePose(0);
+    seqMat(1,2) = intermediateHomePose(1);
+    seqMat(2,2) = intermediateHomePose(2);
+
+    seqMat(0,3) = homePose(0);
+    seqMat(1,3) = homePose(1);
+    seqMat(2,3) = homePose(2);
+
+    std::string endParamSet = "home";
+    bool paramSet = false;
 
     if (seqCount > 0)
     {
@@ -178,6 +189,14 @@ void upDisengagePoseFunc(std::int8_t& seqCount)
         goalPose.position.x = seqMat(0, countMax-1);
         goalPose.position.y = seqMat(1, countMax-1);
         goalPose.position.z = seqMat(2, countMax-1);
+        paramSet = true;
+    }
+
+    if (paramSet && seqCount <= 0)
+    {
+        ros::param::set("tf_moveit_goalsetNode/manipulation_state", endParamSet);
+
+        paramSet = false;
     }
 
 }
@@ -189,18 +208,19 @@ void outPoseFunc(std::int8_t& seqCount)
     Eigen::MatrixXd seqMat(3,countMax);
 
 
-    // ready push out 10cm out
-    seqMat(0,0) = dummyPushOut(0) - 0.1;
+    // ready push out 15cm out
+    seqMat(0,0) = dummyPushOut(0) - 0.15;
     seqMat(1,0) = dummyPushOut(1);
     seqMat(2,0) = dummyPushOut(2);
 
     // push into -5cm into
-    seqMat(0,1) = dummyPushOut(0) + 0.01;
+    seqMat(0,1) = dummyPushOut(0);
     seqMat(1,1) = dummyPushOut(1);
     seqMat(2,1) = dummyPushOut(2);
 
     if (seqCount < countMax)
     {
+        // ROS_INFO("Ready to push");
         goalPose.position.x = seqMat(0, seqCount);
         goalPose.position.y = seqMat(1, seqCount);
         goalPose.position.z = seqMat(2, seqCount);
@@ -209,6 +229,7 @@ void outPoseFunc(std::int8_t& seqCount)
     }
     else
     {
+        // ROS_INFO("Pushing Now");
         goalPose.position.x = seqMat(0, countMax-1);
         goalPose.position.y = seqMat(1, countMax-1);
         goalPose.position.z = seqMat(2, countMax-1);
@@ -221,7 +242,7 @@ void outDisengagePoseFunc(std::int8_t& seqCount)
     std::int8_t countMax = 2;
     Eigen::MatrixXd seqMat(3, countMax);
 
-    // ready push out 10cm out
+    // ready push out 15cm out
     seqMat(0,0) = dummyPushOut(0) - 0.15;
     seqMat(1,0) = dummyPushOut(1);
     seqMat(2,0) = dummyPushOut(2);
@@ -229,6 +250,19 @@ void outDisengagePoseFunc(std::int8_t& seqCount)
     seqMat(0,1) = readyPushOut(0);
     seqMat(1,1) = readyPushOut(1);
     seqMat(2,1) = readyPushOut(2);
+
+    // // intermediate home pose used to speed up IK solving to home position
+    // // NOTE: does not work
+    // seqMat(0,1) = intermediateHomePose(0);
+    // seqMat(1,1) = intermediateHomePose(1);
+    // seqMat(2,1) = intermediateHomePose(2);
+
+    seqMat(0,1) = homePose(0);
+    seqMat(1,1) = homePose(1);
+    seqMat(2,1) = homePose(2);
+
+    std::string endParamSet = "home";
+    bool paramSet = false;
 
     if (seqCount > 0)
     {
@@ -243,54 +277,118 @@ void outDisengagePoseFunc(std::int8_t& seqCount)
         goalPose.position.x = seqMat(0, countMax-1);
         goalPose.position.y = seqMat(1, countMax-1);
         goalPose.position.z = seqMat(2, countMax-1);
+        paramSet = true;
+    }
+
+    if (paramSet && seqCount <= 0)
+    {
+        ros::param::set("tf_moveit_goalsetNode/manipulation_state", endParamSet);
+
+        paramSet = false;
     }
 
 }
 
-// strcmp(maniState.c_str(),"motion") == 0 && 
-// if (strcmp(maniState.c_str(),"stabilize") == 0)
+void svdTargetFunc(std::string& svdTargetVal)
+{
 
+    if (strcmp(svdTargetVal.c_str(),"target1") == 0)
+    {
+        // ROS_INFO("Position 01");
+        dummyPushOut = svdPushOut01;
+    }
+    else if (strcmp(svdTargetVal.c_str(),"target2") == 0)
+    {
+        // ROS_INFO("Position 02");
+        dummyPushOut = svdPushOut02;
+    }
+    else if(strcmp(svdTargetVal.c_str(),"target3") == 0)
+    {
+        // ROS_INFO("Position 03");
+        dummyPushOut = svdPushOut03;
+    }
+    else
+    {
+        std::cout << svdTargetVal.c_str() << std::endl;
+    }
+
+}
 
 
 int main(int argc, char **argv)
-{
+{   
+    
     ros::init(argc, argv, "random_goalPose_generator");
     ros::AsyncSpinner spinner(1);
     spinner.start();
     ros::NodeHandle node;
 
-    ros::Publisher desired_pos_pub = node.advertise<geometry_msgs::Pose>("desired_pose", 10);
+    ros::Time begin_vision_time = ros::Time::now();
+    ros::Publisher desired_pos_pub = node.advertise<geometry_msgs::Pose>("desired_pose", 1);
 
+    // // Feng Xiang code for vision SVD
+    // // code begin
     // subscribe to Yuqing's goal getter node
     // ros::Subscriber desired_goal_sub = node.subscribe("goal", 10, goalPushOutCallback);
     ros::Duration(1.0).sleep();
     boost::shared_ptr<goal_getter::goal_msg const> goalpose = ros::topic::waitForMessage<goal_getter::goal_msg>("/goal");
     // oal_getter::goal_msg goalpose = ros::topic::waitForMessage("/goal");
-    dummyPushOut[0] = goalpose->x;
-    dummyPushOut[1] = goalpose->y;
-    dummyPushOut[2] = goalpose->z;
-
+    // dummyPushOut[0] = goalpose->x;
+    // dummyPushOut[1] = goalpose->y;
+    // dummyPushOut[2] = goalpose->z;
     
     ROS_INFO_STREAM("Goal Position Reading: \n" << *goalpose << "\n");
+
+    // compute dot product
+    // 1 * {surface normal_x} / sqrt(norm(x^2 + y^2 + z^2))
+    Eigen::Vector3d measuredNormal;
+    Eigen::Vector3d groundTruthNormal(1, 0, 0);
+
+    measuredNormal[0] = goalpose->normal_x;
+    measuredNormal[1] = goalpose->normal_y;
+    measuredNormal[2] = goalpose->normal_z;
+    
+    // std::cout << "Measured Normal Vector: " << std::endl;
+    // std::cout << measuredNormal << std::endl;
+
+    float angle = groundTruthNormal.dot(measuredNormal);
+    angle = acos (angle);
+
+    std::cout << "Angle difference between ground truth and measured normals: " << std::endl;
+    std::cout << angle * (180/3.14159) << " degrees" << std::endl;
+
+    ros::Time end_vision_time = ros::Time::now();
+    std::cout << "Time: " << end_vision_time.sec - begin_vision_time.sec << " seconds" << std::endl;
     
 
     desired_pos_pub.publish(goalPose);
+    // code end
 
 
-    ros::Rate rate(10.0);
+    ros::Rate rate(20.0);
 
     beginTime = ros::Time::now();
 
     while(ros::ok())
     {
-        // ROS_INFO("testing!!!!");
         ros::param::get("tf_moveit_goalsetNode/manipulation_state",maniState);
         currTime = ros::Time::now();
         durVar = currTime - beginTime;
 
-        if (strcmp(maniState.c_str(),"random") == 0 && (float) durVar.toSec() > 2.0)
+        ros::param::get("randomGoalPoseGenerator/svdTarget", svdTargetVal);
+        svdTargetFunc(svdTargetVal);
+
+        // if ((float) durVar.toSec() > 0.25)
+        // {
+        //     ROS_INFO_STREAM("Current Pose Target: " << svdTargetVal.c_str() << "\n");
+        //     ROS_INFO_STREAM("Current Manipulation State: " << maniState.c_str() << "\n");
+        // }
+
+
+        if (strcmp(maniState.c_str(),"random") == 0 && (float) durVar.toSec() > 3.0)
         {
             randomPoseFunc();
+            // // preset pose declared for debugging
             // target_pose1.position.x = 1.0;
             // target_pose1.position.y = -0.07659;
             // target_pose1.position.z = -0.03536;
@@ -298,45 +396,42 @@ int main(int argc, char **argv)
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"home") == 0 && (float) durVar.toSec() > 2.0)
+        else if (strcmp(maniState.c_str(),"home") == 0 && (float) durVar.toSec() > 3.0)
         {
             homePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         } 
-        else if (strcmp(maniState.c_str(),"ready") == 0 && (float) durVar.toSec() > 2.0)
+        else if (strcmp(maniState.c_str(),"ready") == 0 && (float) durVar.toSec() > 3.0)
         {
             readyPoseFunc();
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();   
         }
-        else if (strcmp(maniState.c_str(),"push-up") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"push-up") == 0 && (float) durVar.toSec() > 4.0)
         {
             upPoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"up-disengage") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"up-disengage") == 0 && (float) durVar.toSec() > 4.0)
         {
             upDisengagePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"push-out") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"push-out") == 0 && (float) durVar.toSec() > 4.0)
         {
             outPoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"out-disengage") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"out-disengage") == 0 && (float) durVar.toSec() > 4.0)
         {
             outDisengagePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-
-        // ROS_INFO("%d",sequenceCount);
-
 
 
     }
