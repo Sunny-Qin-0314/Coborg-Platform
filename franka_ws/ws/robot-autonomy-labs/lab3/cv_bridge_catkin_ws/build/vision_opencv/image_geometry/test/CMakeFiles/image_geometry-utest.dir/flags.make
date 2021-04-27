@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/image_geometry/include -I/opt/ros/melodic/include -isystem /usr/include/opencv -I/usr/src/googletest/googletest/include 
+CXX_INCLUDES = -I/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/image_geometry/include -I/opt/ros/melodic/include -isystem /usr/include/opencv -I/usr/src/googletest/googletest/include 
 

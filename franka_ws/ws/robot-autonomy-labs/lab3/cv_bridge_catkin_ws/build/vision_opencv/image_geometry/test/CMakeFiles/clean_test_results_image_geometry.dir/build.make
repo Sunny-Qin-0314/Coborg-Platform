@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src
+CMAKE_SOURCE_DIR = /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build
+CMAKE_BINARY_DIR = /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build
 
 # Utility rule file for clean_test_results_image_geometry.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/
 include vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/progress.make
 
 vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry:
-	cd /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/image_geometry/test && /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/test_results/image_geometry
+	cd /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/image_geometry/test && /usr/bin/python3 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/test_results/image_geometry
 
 clean_test_results_image_geometry: vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry
 clean_test_results_image_geometry: vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/build.make
@@ -67,10 +67,10 @@ vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.d
 .PHONY : vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/build
 
 vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/clean:
-	cd /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/image_geometry/test && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_image_geometry.dir/cmake_clean.cmake
+	cd /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/image_geometry/test && $(CMAKE_COMMAND) -P CMakeFiles/clean_test_results_image_geometry.dir/cmake_clean.cmake
 .PHONY : vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/clean
 
 vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/depend:
-	cd /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/image_geometry/test /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/image_geometry/test /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/image_geometry/test /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/image_geometry/test /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vision_opencv/image_geometry/test/CMakeFiles/clean_test_results_image_geometry.dir/depend
 

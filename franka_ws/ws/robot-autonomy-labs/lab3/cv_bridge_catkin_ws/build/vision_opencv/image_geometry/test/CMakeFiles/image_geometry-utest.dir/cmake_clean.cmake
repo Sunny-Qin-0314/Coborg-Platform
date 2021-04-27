@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/image_geometry-utest.dir/utest.cpp.o"
-  "/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib/image_geometry/image_geometry-utest.pdb"
-  "/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib/image_geometry/image_geometry-utest"
+  "/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib/image_geometry/image_geometry-utest.pdb"
+  "/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib/image_geometry/image_geometry-utest"
 )
 
 # Per-language clean rules from dependency scanning.

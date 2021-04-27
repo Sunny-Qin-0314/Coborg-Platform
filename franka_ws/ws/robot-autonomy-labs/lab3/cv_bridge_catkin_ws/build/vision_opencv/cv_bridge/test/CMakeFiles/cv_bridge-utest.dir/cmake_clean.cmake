@@ -4,8 +4,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/cv_bridge-utest.dir/utest.cpp.o"
   "CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o"
   "CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o"
-  "/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib/cv_bridge/cv_bridge-utest.pdb"
-  "/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib/cv_bridge/cv_bridge-utest"
+  "/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib/cv_bridge/cv_bridge-utest.pdb"
+  "/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib/cv_bridge/cv_bridge-utest"
 )
 
 # Per-language clean rules from dependency scanning.
