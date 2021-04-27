@@ -51,10 +51,10 @@ std::string maniState;
 
 // hard coded position poses
 
-Eigen::Vector3d homePose(0.3265, -0.5616, -0.3830);
-Eigen::Vector3d readyPushOut(0.77184, -0.3211, 0.11858);
-Eigen::Vector3d dummyPushUp(0.3637, -0.2660, 0.46759);
-Eigen::Vector3d dummyPushOut(0.897061, -0.3077, -0.09259);
+Eigen::Vector3d homePose(0.2569, -0.60749, -0.5831);
+Eigen::Vector3d readyPushOut(0.7022, -0.3670, -0.08145);
+Eigen::Vector3d dummyPushUp(0.30457, -0.3261, 0.3151);
+Eigen::Vector3d dummyPushOut(0.895, -0.345, -0.255);
 
 void randomPoseFunc()
 {
@@ -178,17 +178,18 @@ void outPoseFunc(std::int8_t& seqCount)
 
 
     // ready push out 10cm out
-    seqMat(0,0) = dummyPushOut(0) - 0.1;
+    seqMat(0,0) = dummyPushOut(0) - 0.15;
     seqMat(1,0) = dummyPushOut(1);
     seqMat(2,0) = dummyPushOut(2);
 
     // push into -5cm into
-    seqMat(0,1) = dummyPushOut(0) + 0.05;
+    seqMat(0,1) = dummyPushOut(0);
     seqMat(1,1) = dummyPushOut(1);
     seqMat(2,1) = dummyPushOut(2);
 
     if (seqCount < countMax)
     {
+        ROS_INFO("Ready to push");
         goalPose.position.x = seqMat(0, seqCount);
         goalPose.position.y = seqMat(1, seqCount);
         goalPose.position.z = seqMat(2, seqCount);
@@ -197,6 +198,7 @@ void outPoseFunc(std::int8_t& seqCount)
     }
     else
     {
+        ROS_INFO("Pushing Now");
         goalPose.position.x = seqMat(0, countMax-1);
         goalPose.position.y = seqMat(1, countMax-1);
         goalPose.position.z = seqMat(2, countMax-1);
@@ -235,10 +237,6 @@ void outDisengagePoseFunc(std::int8_t& seqCount)
 
 }
 
-// strcmp(maniState.c_str(),"motion") == 0 && 
-// if (strcmp(maniState.c_str(),"stabilize") == 0)
-
-
 
 int main(int argc, char **argv)
 {
@@ -247,22 +245,23 @@ int main(int argc, char **argv)
     spinner.start();
     ros::NodeHandle node;
 
-    ros::Publisher desired_pos_pub = node.advertise<geometry_msgs::Pose>("desired_pose", 10);
+    ros::Publisher desired_pos_pub = node.advertise<geometry_msgs::Pose>("desired_pose", 1);
 
     desired_pos_pub.publish(goalPose);
 
 
-    ros::Rate rate(10.0);
+    ros::Rate rate(20.0);
 
     beginTime = ros::Time::now();
 
     while(ros::ok())
     {
+        // ROS_INFO("testing");
         ros::param::get("tf_moveit_goalsetNode/manipulation_state",maniState);
         currTime = ros::Time::now();
         durVar = currTime - beginTime;
 
-        if (strcmp(maniState.c_str(),"random") == 0 && (float) durVar.toSec() > 2.0)
+        if (strcmp(maniState.c_str(),"random") == 0 && (float) durVar.toSec() > 3.0)
         {
             randomPoseFunc();
             // target_pose1.position.x = 1.0;
@@ -272,44 +271,44 @@ int main(int argc, char **argv)
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"home") == 0 && (float) durVar.toSec() > 2.0)
+        else if (strcmp(maniState.c_str(),"home") == 0 && (float) durVar.toSec() > 3.0)
         {
             homePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         } 
-        else if (strcmp(maniState.c_str(),"ready") == 0 && (float) durVar.toSec() > 2.0)
+        else if (strcmp(maniState.c_str(),"ready") == 0 && (float) durVar.toSec() > 3.0)
         {
             readyPoseFunc();
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();   
         }
-        else if (strcmp(maniState.c_str(),"push-up") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"push-up") == 0 && (float) durVar.toSec() > 4.0)
         {
             upPoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"up-disengage") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"up-disengage") == 0 && (float) durVar.toSec() > 4.0)
         {
             upDisengagePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"push-out") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"push-out") == 0 && (float) durVar.toSec() > 4.0)
         {
             outPoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"out-disengage") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"out-disengage") == 0 && (float) durVar.toSec() > 4.0)
         {
             outDisengagePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
 
-        ROS_INFO("%d",sequenceCount);
+        // ROS_INFO("%d",sequenceCount);
 
 
 

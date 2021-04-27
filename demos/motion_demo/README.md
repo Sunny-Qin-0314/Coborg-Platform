@@ -1,8 +1,17 @@
 # Prequisities
 
-* ROS Melodic
-* MoveIt
-* realsense2_camera
+* ubuntu 18.04 (Bionic Beaver)
+* ros-melodic-desktop-full v1.4.1-0bionic.20210304.173654
+* ros-melodic-moveit v1.0.7-1bionic.20210304. 174558
+
+
+* ros-melodic-realsense2-camera v2.2.22-1bionic.20210219.07850
+* ros-melodic-realsense2-description v2.2.22-1bionic.20210219.071513 500
+* librealsense2 v2.42.0-0~realsense0.4059
+* librealsense2-dkms v1.3.16-0ubuntu1
+* librealsense2-utils v2.42.0-0~realsense0.4059
+* librealsense2-dev v2.42.0-0~realsense0.4059
+* librealsense2-dbg v2.42.0-0~realsense0.4059
 
 # Configuration
 
