@@ -327,7 +327,7 @@ int main(int argc, char **argv)
     ros::Publisher desired_pos_pub = node.advertise<geometry_msgs::Pose>("desired_pose", 1);
 
     // // Feng Xiang code for vision SVD
-    // // code begin
+    // code begin
     // subscribe to Yuqing's goal getter node
     // ros::Subscriber desired_goal_sub = node.subscribe("goal", 10, goalPushOutCallback);
     ros::Duration(1.0).sleep();
@@ -362,6 +362,10 @@ int main(int argc, char **argv)
     
 
     desired_pos_pub.publish(goalPose);
+    svdPushOut01(0) = goalpose->x;
+    svdPushOut01(1) = goalpose->y;
+    svdPushOut01(2) = goalpose->z;
+
     // code end
 
 
