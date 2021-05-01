@@ -50,7 +50,10 @@ ros::Time currTime;
 ros::Duration durVar;
 
 std::string maniState;
+std::string vision_reference_frame = "d400_link";
 std::string svdTargetVal = "target1";
+
+float uniWaitSec = 1.0;
 
 // hardcoded three target positions
 Eigen::Vector3d svdPushOut01(0.895, -0.345, -0.255);
@@ -71,28 +74,45 @@ Eigen::Vector3d dummyPushOut = svdPushOut01;
 
 void randomPoseFunc()
 {
-    // // relative to d400_link / camera_link frame
-    // float xRangeMin = 0.6;
-    // float xRangeMax = 0.9;
-    // float yRangeMin = -0.4;
-    // float yRangeMax = -0.15;
-    // float zRangeMin = -0.25;
-    // float zRangeMax = -0.15;
+    if (strcmp(svdTargetVal.c_str(),"d400_link") == 0 || strcmp(svdTargetVal.c_str(),"camera_link") == 0)
+    {
+        // relative to d400_link / camera_link frame
+        float xRangeMin = 0.6;
+        float xRangeMax = 0.9;
+        float yRangeMin = -0.4;
+        float yRangeMax = -0.15;
+        float zRangeMin = -0.25;
+        float zRangeMax = -0.15;
 
-    // relative to rodL frame
-    float xRangeMin = 0.6;
-    float xRangeMax = 0.9;
-    float yRangeMin = -0.3;
-    float yRangeMax = -0.1;
-    float zRangeMin = -0.2;
-    float zRangeMax = -0.05;
+        float randomX = ((float) rand()) / (float) RAND_MAX;
+        float randomY = ((float) rand()) / (float) RAND_MAX;
+        float randomZ = ((float) rand()) / (float) RAND_MAX;
+        goalPose.position.x = randomX*(xRangeMax - xRangeMin) + xRangeMin;
+        goalPose.position.y = randomY*(yRangeMax - yRangeMin) + yRangeMin;
+        goalPose.position.z = randomZ*(zRangeMax - zRangeMin) + zRangeMin;
+    }
+    else if (strcmp(svdTargetVal.c_str(),"rodL") == 0)
+    {
+        // relative to rodL frame
+        float xRangeMin = 0.6;
+        float xRangeMax = 0.9;
+        float yRangeMin = -0.3;
+        float yRangeMax = -0.1;
+        float zRangeMin = -0.2;
+        float zRangeMax = -0.05;
 
-    float randomX = ((float) rand()) / (float) RAND_MAX;
-    float randomY = ((float) rand()) / (float) RAND_MAX;
-    float randomZ = ((float) rand()) / (float) RAND_MAX;
-    goalPose.position.x = randomX*(xRangeMax - xRangeMin) + xRangeMin;
-    goalPose.position.y = randomY*(yRangeMax - yRangeMin) + yRangeMin;
-    goalPose.position.z = randomZ*(zRangeMax - zRangeMin) + zRangeMin;
+        float randomX = ((float) rand()) / (float) RAND_MAX;
+        float randomY = ((float) rand()) / (float) RAND_MAX;
+        float randomZ = ((float) rand()) / (float) RAND_MAX;
+        goalPose.position.x = randomX*(xRangeMax - xRangeMin) + xRangeMin;
+        goalPose.position.y = randomY*(yRangeMax - yRangeMin) + yRangeMin;
+        goalPose.position.z = randomZ*(zRangeMax - zRangeMin) + zRangeMin;
+    }
+    else
+    {
+        ROS_INFO("Origin frame not preconfigured for random pose generation");
+    }
+
 }
 
 
@@ -113,7 +133,7 @@ void readyPoseFunc()
 {
     goalPose.position.x = readyPushOut(0);
     goalPose.position.y = readyPushOut(1);
-    goalPose.position.z = readyPushOut(2);  
+    goalPose.position.z = readyPushOut(2);
 }
 
 
@@ -316,8 +336,8 @@ void svdTargetFunc(std::string& svdTargetVal)
 
 
 int main(int argc, char **argv)
-{   
-    
+{
+
     ros::init(argc, argv, "random_goalPose_generator");
     ros::AsyncSpinner spinner(1);
     spinner.start();
@@ -336,7 +356,7 @@ int main(int argc, char **argv)
     // dummyPushOut[0] = goalpose->x;
     // dummyPushOut[1] = goalpose->y;
     // dummyPushOut[2] = goalpose->z;
-    
+
     ROS_INFO_STREAM("Goal Position Reading: \n" << *goalpose << "\n");
 
     // compute dot product
@@ -347,7 +367,7 @@ int main(int argc, char **argv)
     measuredNormal[0] = goalpose->normal_x;
     measuredNormal[1] = goalpose->normal_y;
     measuredNormal[2] = goalpose->normal_z;
-    
+
     // std::cout << "Measured Normal Vector: " << std::endl;
     // std::cout << measuredNormal << std::endl;
 
@@ -359,7 +379,7 @@ int main(int argc, char **argv)
 
     ros::Time end_vision_time = ros::Time::now();
     std::cout << "Time: " << end_vision_time.sec - begin_vision_time.sec << " seconds" << std::endl;
-    
+
 
     desired_pos_pub.publish(goalPose);
     svdPushOut01(0) = goalpose->x;
@@ -380,6 +400,7 @@ int main(int argc, char **argv)
         durVar = currTime - beginTime;
 
         ros::param::get("randomGoalPoseGenerator/svdTarget", svdTargetVal);
+        ros::param::get("randomGoalPoseGenerator/originState", vision_reference_frame);
         svdTargetFunc(svdTargetVal);
 
         // if ((float) durVar.toSec() > 0.25)
@@ -389,7 +410,7 @@ int main(int argc, char **argv)
         // }
 
 
-        if (strcmp(maniState.c_str(),"random") == 0 && (float) durVar.toSec() > 3.0)
+        if (strcmp(maniState.c_str(),"random") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             randomPoseFunc();
             // // preset pose declared for debugging
@@ -400,37 +421,37 @@ int main(int argc, char **argv)
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"home") == 0 && (float) durVar.toSec() > 3.0)
+        else if (strcmp(maniState.c_str(),"home") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             homePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
-        } 
-        else if (strcmp(maniState.c_str(),"ready") == 0 && (float) durVar.toSec() > 3.0)
+        }
+        else if (strcmp(maniState.c_str(),"ready") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             readyPoseFunc();
             desired_pos_pub.publish(goalPose);
-            beginTime = ros::Time::now();   
+            beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"push-up") == 0 && (float) durVar.toSec() > 4.0)
+        else if (strcmp(maniState.c_str(),"push-up") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             upPoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"up-disengage") == 0 && (float) durVar.toSec() > 4.0)
+        else if (strcmp(maniState.c_str(),"up-disengage") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             upDisengagePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"push-out") == 0 && (float) durVar.toSec() > 4.0)
+        else if (strcmp(maniState.c_str(),"push-out") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             outPoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);
             beginTime = ros::Time::now();
         }
-        else if (strcmp(maniState.c_str(),"out-disengage") == 0 && (float) durVar.toSec() > 4.0)
+        else if (strcmp(maniState.c_str(),"out-disengage") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             outDisengagePoseFunc(sequenceCount);
             desired_pos_pub.publish(goalPose);

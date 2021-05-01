@@ -54,6 +54,7 @@ ros::Duration durVar;
 
 // subscribe to rosparam for manipulation state triggers
 std::string maniState;
+std::string vision_reference_frame = "d400_link";
 
 
 // stabilization and impedance control global variables
@@ -73,6 +74,7 @@ robot_state::RobotStatePtr* kin_model;
 // triggers when camera_link goal pose is published
 void poseTransformCallback(const geometry_msgs::Pose::ConstPtr& posemsg)
 {
+    ros::param::get("randomGoalPoseGenerator/originState", vision_reference_frame);
 
     // TODO: convert goal pose from camera_link to URDF world frame
     // FORNOW: pose converted from URDF rodL to URDF world frame
@@ -82,7 +84,7 @@ void poseTransformCallback(const geometry_msgs::Pose::ConstPtr& posemsg)
 
         // TODO: acquire the transform once
         // FORNOW: update transform parameters at every callback interval
-        listPoint->lookupTransform("world", "camera_link",ros::Time(0), transform);
+        listPoint->lookupTransform("world", vision_rerence_frame,ros::Time(0), transform);
 
         // FORNOW: only goal position is updated b/c 3DoF robot arm cannot solve 6DoF goal every time
         target_pose1.position.x = transform.getOrigin().getX() + posemsg->position.x;
@@ -182,9 +184,9 @@ int main(int argc, char **argv)
     // set max planning time for robot arm
     // setting value too low can cause arm to fail planning when there is plan available
     // setting value too high can cause arm to get stuck planning a path that is not possible
-    move_group.setPlanningTime(2.0);
+    move_group.setPlanningTime(0.5);
     // set goal tolerance for move_group
-    move_group.setGoalTolerance(0.001);
+    move_group.setGoalTolerance(0.01);
 
     // print out debugging information into terminal
     ROS_INFO("Printing Basic Information Now:");
@@ -212,9 +214,6 @@ int main(int argc, char **argv)
 
     // subscribe to desired pose rostopic
     ros::Subscriber sent_msg_sub = node.subscribe("desired_pose", 1, poseTransformCallback);
-    
-
-
 
     // (stabilization and impedance control) declaring variables
     geometry_msgs::Pose target_push_pose2;
@@ -282,16 +281,16 @@ int main(int argc, char **argv)
             // command will map trajectory and return boolean for success/failure
             moveitSuccess = move_group.plan(my_plan);
 
-            ROS_INFO_NAMED("tutorial", "Visualizing plan 1 (pose goal) %s", moveitSuccess ? "" : "FAILED");
+            // ROS_INFO_NAMED("tutorial", "Visualizing plan 1 (pose goal) %s", moveitSuccess ? "" : "FAILED");
 
 
-            // TODO: implement RViz as purely a visualizing tool
-            // FORNOW: send plan to RViz to execute, RViz will publish joint states to /joint_states
-            // ROS_INFO_NAMED("tutorial", "Visualizing plan 1 as trajectory line");
-            visual_tools.publishAxisLabeled(target_pose1, "pose1");
-            visual_tools.publishText(text_pose, "Pose Goal", rvt::WHITE, rvt::XLARGE);
-            visual_tools.publishTrajectoryLine(myPlanPoint->trajectory_, joint_model_group);
-            visual_tools.trigger();
+            // // TODO: implement RViz as purely a visualizing tool
+            // // FORNOW: send plan to RViz to execute, RViz will publish joint states to /joint_states
+            // // ROS_INFO_NAMED("tutorial", "Visualizing plan 1 as trajectory line");
+            // visual_tools.publishAxisLabeled(target_pose1, "pose1");
+            // visual_tools.publishText(text_pose, "Pose Goal", rvt::WHITE, rvt::XLARGE);
+            // visual_tools.publishTrajectoryLine(myPlanPoint->trajectory_, joint_model_group);
+            // visual_tools.trigger();
             
             // execute plan to move_group
             move_group.execute(my_plan);
@@ -308,9 +307,7 @@ int main(int argc, char **argv)
             //get the current state position and orientation
             actual_endeff_state = current_state->getGlobalLinkTransform("end_link/INPUT_INTERFACE");
             ROS_INFO_STREAM("Translation: \n" << actual_endeff_state.translation() << "\n");
-            ROS_INFO_STREAM("Rotation: \n" << actual_endeff_state.rotation() << "\n");
-            ros::Duration(2.0).sleep();
-            
+            ROS_INFO_STREAM("Rotation: \n" << actual_endeff_state.rotation() << "\n");            
 
         }
         else if (strcmp(maniState.c_str(),"impedance") == 0)
