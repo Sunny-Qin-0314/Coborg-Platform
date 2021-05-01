@@ -84,7 +84,7 @@ void poseTransformCallback(const geometry_msgs::Pose::ConstPtr& posemsg)
 
         // TODO: acquire the transform once
         // FORNOW: update transform parameters at every callback interval
-        listPoint->lookupTransform("world", vision_rerence_frame,ros::Time(0), transform);
+        listPoint->lookupTransform("world", vision_reference_frame,ros::Time(0), transform);
 
         // FORNOW: only goal position is updated b/c 3DoF robot arm cannot solve 6DoF goal every time
         target_pose1.position.x = transform.getOrigin().getX() + posemsg->position.x;

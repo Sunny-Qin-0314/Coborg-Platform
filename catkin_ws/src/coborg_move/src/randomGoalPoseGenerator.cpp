@@ -347,46 +347,46 @@ int main(int argc, char **argv)
     ros::Publisher desired_pos_pub = node.advertise<geometry_msgs::Pose>("desired_pose", 1);
 
     // // Feng Xiang code for vision SVD
-    // code begin
-    // subscribe to Yuqing's goal getter node
-    // ros::Subscriber desired_goal_sub = node.subscribe("goal", 10, goalPushOutCallback);
-    ros::Duration(1.0).sleep();
-    boost::shared_ptr<goal_getter::goal_msg const> goalpose = ros::topic::waitForMessage<goal_getter::goal_msg>("/goal");
-    // oal_getter::goal_msg goalpose = ros::topic::waitForMessage("/goal");
-    // dummyPushOut[0] = goalpose->x;
-    // dummyPushOut[1] = goalpose->y;
-    // dummyPushOut[2] = goalpose->z;
+    // // code begin
+    // // subscribe to Yuqing's goal getter node
+    // // ros::Subscriber desired_goal_sub = node.subscribe("goal", 10, goalPushOutCallback);
+    // ros::Duration(1.0).sleep();
+    // boost::shared_ptr<goal_getter::goal_msg const> goalpose = ros::topic::waitForMessage<goal_getter::goal_msg>("/goal");
+    // // oal_getter::goal_msg goalpose = ros::topic::waitForMessage("/goal");
+    // // dummyPushOut[0] = goalpose->x;
+    // // dummyPushOut[1] = goalpose->y;
+    // // dummyPushOut[2] = goalpose->z;
 
-    ROS_INFO_STREAM("Goal Position Reading: \n" << *goalpose << "\n");
+    // ROS_INFO_STREAM("Goal Position Reading: \n" << *goalpose << "\n");
 
-    // compute dot product
-    // 1 * {surface normal_x} / sqrt(norm(x^2 + y^2 + z^2))
-    Eigen::Vector3d measuredNormal;
-    Eigen::Vector3d groundTruthNormal(1, 0, 0);
+    // // compute dot product
+    // // 1 * {surface normal_x} / sqrt(norm(x^2 + y^2 + z^2))
+    // Eigen::Vector3d measuredNormal;
+    // Eigen::Vector3d groundTruthNormal(1, 0, 0);
 
-    measuredNormal[0] = goalpose->normal_x;
-    measuredNormal[1] = goalpose->normal_y;
-    measuredNormal[2] = goalpose->normal_z;
+    // measuredNormal[0] = goalpose->normal_x;
+    // measuredNormal[1] = goalpose->normal_y;
+    // measuredNormal[2] = goalpose->normal_z;
 
-    // std::cout << "Measured Normal Vector: " << std::endl;
-    // std::cout << measuredNormal << std::endl;
+    // // std::cout << "Measured Normal Vector: " << std::endl;
+    // // std::cout << measuredNormal << std::endl;
 
-    float angle = groundTruthNormal.dot(measuredNormal);
-    angle = acos (angle);
+    // float angle = groundTruthNormal.dot(measuredNormal);
+    // angle = acos (angle);
 
-    std::cout << "Angle difference between ground truth and measured normals: " << std::endl;
-    std::cout << angle * (180/3.14159) << " degrees" << std::endl;
+    // std::cout << "Angle difference between ground truth and measured normals: " << std::endl;
+    // std::cout << angle * (180/3.14159) << " degrees" << std::endl;
 
-    ros::Time end_vision_time = ros::Time::now();
-    std::cout << "Time: " << end_vision_time.sec - begin_vision_time.sec << " seconds" << std::endl;
+    // ros::Time end_vision_time = ros::Time::now();
+    // std::cout << "Time: " << end_vision_time.sec - begin_vision_time.sec << " seconds" << std::endl;
 
 
-    desired_pos_pub.publish(goalPose);
-    svdPushOut01(0) = goalpose->x;
-    svdPushOut01(1) = goalpose->y;
-    svdPushOut01(2) = goalpose->z;
+    // desired_pos_pub.publish(goalPose);
+    // svdPushOut01(0) = goalpose->x;
+    // svdPushOut01(1) = goalpose->y;
+    // svdPushOut01(2) = goalpose->z;
 
-    // code end
+    // // code end
 
 
     ros::Rate rate(20.0);
