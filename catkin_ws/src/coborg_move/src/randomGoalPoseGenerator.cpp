@@ -53,9 +53,10 @@ std::string maniState;
 std::string vision_reference_frame = "d400_link";
 std::string svdTargetVal = "target1";
 
-float uniWaitSec = 1.0;
+float uniWaitSec = 1.5;
 
 // hardcoded three target positions
+// TODO: change positions to be relative to the world position
 Eigen::Vector3d svdPushOut01(0.895, -0.345, -0.255);
 Eigen::Vector3d svdPushOut02(0.895, -0.495, -0.255);
 Eigen::Vector3d svdPushOut03(0.895, -0.495, -0.405);
@@ -63,33 +64,53 @@ Eigen::Vector3d svdPushOut03(0.895, -0.495, -0.405);
 
 
 // hard coded position poses
-Eigen::Vector3d intermediateHomePose(0.638892, -0.504, -0.420819);
-
-Eigen::Vector3d homePose(0.2569, -0.60749, -0.5831);
-Eigen::Vector3d readyPushOut(0.7022, -0.3670, -0.08145);
-Eigen::Vector3d dummyPushUp(0.30457, -0.3261, 0.3151);
+// presets are created relative to the urdf world frame
+// Eigen::Vector3d intermediateHomePose(0.638892, -0.504, -0.420819);
+// Eigen::Vector3d homePose(0.2569, -0.60749, -0.5831);
+// Eigen::Vector3d readyPushOut(0.7022, -0.3670, -0.08145);
+// Eigen::Vector3d dummyPushUp(0.30457, -0.3261, 0.3151);
 // Eigen::Vector3d dummyPushOut(0.895, -0.345, -0.255);
 
-Eigen::Vector3d dummyPushOut = svdPushOut01;
+// Eigen::Vector3d dummyPushOut = svdPushOut01;
+
+Eigen::Vector3d homePose(-0.0144186, -0.0856238, 0.116201);
+Eigen::Vector3d readyPushOut(0.434776, 0.152788, 0.614739);
+Eigen::Vector3d dummyPushOut(0.626008, 0.174859, 0.438969);
+Eigen::Vector3d dummyPushUp(0.0294834, 0.190455, 1.06668);
+
+tf::StampedTransform* globalTransform;
+
+Eigen::Vector3d presetPositionUpdate(const tf::StampedTransform *transformPtr, const Eigen::Vector3d& presetVect)
+{
+    // update home preset pose
+    Eigen::Vector3d tempVect;
+
+    tempVect(0) = -transformPtr->getOrigin().getX() + presetVect(0);
+    tempVect(1) = -transformPtr->getOrigin().getY() + presetVect(1);
+    tempVect(2) = -transformPtr->getOrigin().getZ() + presetVect(2);
+
+    return tempVect;
+}
+
 
 void randomPoseFunc()
 {
     if (strcmp(svdTargetVal.c_str(),"d400_link") == 0 || strcmp(svdTargetVal.c_str(),"camera_link") == 0)
     {
-        // relative to d400_link / camera_link frame
-        float xRangeMin = 0.6;
-        float xRangeMax = 0.9;
-        float yRangeMin = -0.4;
-        float yRangeMax = -0.15;
-        float zRangeMin = -0.25;
-        float zRangeMax = -0.15;
+        // // relative to d400_link / camera_link frame at default static transform from t265_link
+        // float xRangeMin = 0.6;
+        // float xRangeMax = 0.9;
+        // float yRangeMin = -0.4;
+        // float yRangeMax = -0.15;
+        // float zRangeMin = -0.25;
+        // float zRangeMax = -0.15;
 
-        float randomX = ((float) rand()) / (float) RAND_MAX;
-        float randomY = ((float) rand()) / (float) RAND_MAX;
-        float randomZ = ((float) rand()) / (float) RAND_MAX;
-        goalPose.position.x = randomX*(xRangeMax - xRangeMin) + xRangeMin;
-        goalPose.position.y = randomY*(yRangeMax - yRangeMin) + yRangeMin;
-        goalPose.position.z = randomZ*(zRangeMax - zRangeMin) + zRangeMin;
+        // float randomX = ((float) rand()) / (float) RAND_MAX;
+        // float randomY = ((float) rand()) / (float) RAND_MAX;
+        // float randomZ = ((float) rand()) / (float) RAND_MAX;
+        // goalPose.position.x = randomX*(xRangeMax - xRangeMin) + xRangeMin;
+        // goalPose.position.y = randomY*(yRangeMax - yRangeMin) + yRangeMin;
+        // goalPose.position.z = randomZ*(zRangeMax - zRangeMin) + zRangeMin;
     }
     else if (strcmp(svdTargetVal.c_str(),"rodL") == 0)
     {
@@ -119,9 +140,9 @@ void randomPoseFunc()
 void homePoseFunc(std::int8_t& seqCount)
 {
 
-    goalPose.position.x = homePose(0);
-    goalPose.position.y = homePose(1);
-    goalPose.position.z = homePose(2);
+    goalPose.position.x = presetPositionUpdate(globalTransform, homePose)(0);
+    goalPose.position.y = presetPositionUpdate(globalTransform, homePose)(1);
+    goalPose.position.z = presetPositionUpdate(globalTransform, homePose)(2);
 
     seqCount = 0;
 
@@ -131,9 +152,9 @@ void homePoseFunc(std::int8_t& seqCount)
 
 void readyPoseFunc()
 {
-    goalPose.position.x = readyPushOut(0);
-    goalPose.position.y = readyPushOut(1);
-    goalPose.position.z = readyPushOut(2);
+    goalPose.position.x = presetPositionUpdate(globalTransform, readyPushOut)(0);
+    goalPose.position.y = presetPositionUpdate(globalTransform, readyPushOut)(1);
+    goalPose.position.z = presetPositionUpdate(globalTransform, readyPushOut)(2);
 }
 
 
@@ -142,17 +163,19 @@ void upPoseFunc(std::int8_t& seqCount)
     std::int8_t countMax = 2;
 
     Eigen::MatrixXd seqMat(3,countMax);
+    Eigen::Vector3d offsetBack(0,0,-0.1);
+    Eigen::Vector3d offsetForward(0,0,0.05);
 
 
     // ready push out 10cm out
-    seqMat(0,0) = dummyPushUp(0);
-    seqMat(1,0) = dummyPushUp(1);
-    seqMat(2,0) = dummyPushUp(2) - 0.1;
+    seqMat(0,0) = presetPositionUpdate(globalTransform, dummyPushUp)(0);
+    seqMat(1,0) = presetPositionUpdate(globalTransform, dummyPushUp)(1);
+    seqMat(2,0) = presetPositionUpdate(globalTransform, dummyPushUp+offsetBack)(2);
 
     // push into -5cm into
-    seqMat(0,1) = dummyPushUp(0);
-    seqMat(1,1) = dummyPushUp(1);
-    seqMat(2,1) = dummyPushUp(2) + 0.05;
+    seqMat(0,1) = presetPositionUpdate(globalTransform, dummyPushUp)(0);
+    seqMat(1,1) = presetPositionUpdate(globalTransform, dummyPushUp)(1);
+    seqMat(2,1) = presetPositionUpdate(globalTransform, dummyPushUp+offsetForward)(2);
 
     if (seqCount < countMax)
     {
@@ -173,25 +196,23 @@ void upPoseFunc(std::int8_t& seqCount)
 
 void upDisengagePoseFunc(std::int8_t& seqCount)
 {
-    std::int8_t countMax = 4;
+    std::int8_t countMax = 3;
     Eigen::MatrixXd seqMat(3, countMax);
 
+    Eigen::Vector3d OffsetBack(0,0,-0.15);
+
     // ready push out 15cm out
-    seqMat(0,0) = dummyPushUp(0);
-    seqMat(1,0) = dummyPushUp(1);
-    seqMat(2,0) = dummyPushUp(2) - 0.15;
+    seqMat(0,0) = presetPositionUpdate(globalTransform, dummyPushUp)(0);
+    seqMat(1,0) = presetPositionUpdate(globalTransform, dummyPushUp)(1);
+    seqMat(2,0) = presetPositionUpdate(globalTransform, dummyPushUp + OffsetBack)(2);
 
-    seqMat(0,1) = readyPushOut(0);
-    seqMat(1,1) = readyPushOut(1);
-    seqMat(2,1) = readyPushOut(2);
+    seqMat(0,1) = presetPositionUpdate(globalTransform, readyPushOut)(0);
+    seqMat(1,1) = presetPositionUpdate(globalTransform, readyPushOut)(1);
+    seqMat(2,1) = presetPositionUpdate(globalTransform, readyPushOut)(2);
 
-    seqMat(0,2) = intermediateHomePose(0);
-    seqMat(1,2) = intermediateHomePose(1);
-    seqMat(2,2) = intermediateHomePose(2);
-
-    seqMat(0,3) = homePose(0);
-    seqMat(1,3) = homePose(1);
-    seqMat(2,3) = homePose(2);
+    seqMat(0,2) = presetPositionUpdate(globalTransform, homePose)(0);
+    seqMat(1,2) = presetPositionUpdate(globalTransform, homePose)(1);
+    seqMat(2,2) = presetPositionUpdate(globalTransform, homePose)(2);
 
     std::string endParamSet = "home";
     bool paramSet = false;
@@ -226,17 +247,18 @@ void outPoseFunc(std::int8_t& seqCount)
     std::int8_t countMax = 2;
 
     Eigen::MatrixXd seqMat(3,countMax);
+    Eigen::Vector3d OffsetBack(-0.1,0,0);
 
 
     // ready push out 15cm out
-    seqMat(0,0) = dummyPushOut(0) - 0.15;
-    seqMat(1,0) = dummyPushOut(1);
-    seqMat(2,0) = dummyPushOut(2);
+    seqMat(0,0) = presetPositionUpdate(globalTransform, dummyPushOut + OffsetBack)(0);
+    seqMat(1,0) = presetPositionUpdate(globalTransform, dummyPushOut)(1);
+    seqMat(2,0) = presetPositionUpdate(globalTransform, dummyPushOut)(2);
 
     // push into -5cm into
-    seqMat(0,1) = dummyPushOut(0);
-    seqMat(1,1) = dummyPushOut(1);
-    seqMat(2,1) = dummyPushOut(2);
+    seqMat(0,1) = presetPositionUpdate(globalTransform, dummyPushOut)(0);
+    seqMat(1,1) = presetPositionUpdate(globalTransform, dummyPushOut)(1);
+    seqMat(2,1) = presetPositionUpdate(globalTransform, dummyPushOut)(2);
 
     if (seqCount < countMax)
     {
@@ -249,7 +271,7 @@ void outPoseFunc(std::int8_t& seqCount)
     }
     else
     {
-        // ROS_INFO("Pushing Now");
+        ROS_INFO("Pushing Now");
         goalPose.position.x = seqMat(0, countMax-1);
         goalPose.position.y = seqMat(1, countMax-1);
         goalPose.position.z = seqMat(2, countMax-1);
@@ -261,15 +283,16 @@ void outDisengagePoseFunc(std::int8_t& seqCount)
 {
     std::int8_t countMax = 2;
     Eigen::MatrixXd seqMat(3, countMax);
+    Eigen::Vector3d OffsetBack(-0.15,0,0);
 
     // ready push out 15cm out
-    seqMat(0,0) = dummyPushOut(0) - 0.15;
-    seqMat(1,0) = dummyPushOut(1);
-    seqMat(2,0) = dummyPushOut(2);
+    seqMat(0,0) = presetPositionUpdate(globalTransform, dummyPushOut + OffsetBack)(0);
+    seqMat(1,0) = presetPositionUpdate(globalTransform, dummyPushOut)(1);
+    seqMat(2,0) = presetPositionUpdate(globalTransform, dummyPushOut)(2);
 
-    seqMat(0,1) = readyPushOut(0);
-    seqMat(1,1) = readyPushOut(1);
-    seqMat(2,1) = readyPushOut(2);
+    seqMat(0,1) = presetPositionUpdate(globalTransform, readyPushOut)(0);
+    seqMat(1,1) = presetPositionUpdate(globalTransform, readyPushOut)(1);
+    seqMat(2,1) = presetPositionUpdate(globalTransform, readyPushOut)(2);
 
     // // intermediate home pose used to speed up IK solving to home position
     // // NOTE: does not work
@@ -277,9 +300,9 @@ void outDisengagePoseFunc(std::int8_t& seqCount)
     // seqMat(1,1) = intermediateHomePose(1);
     // seqMat(2,1) = intermediateHomePose(2);
 
-    seqMat(0,1) = homePose(0);
-    seqMat(1,1) = homePose(1);
-    seqMat(2,1) = homePose(2);
+    seqMat(0,1) = presetPositionUpdate(globalTransform, homePose)(0);
+    seqMat(1,1) = presetPositionUpdate(globalTransform, homePose)(1);
+    seqMat(2,1) = presetPositionUpdate(globalTransform, homePose)(2);
 
     std::string endParamSet = "home";
     bool paramSet = false;
@@ -315,17 +338,17 @@ void svdTargetFunc(std::string& svdTargetVal)
     if (strcmp(svdTargetVal.c_str(),"target1") == 0)
     {
         // ROS_INFO("Position 01");
-        dummyPushOut = svdPushOut01;
+        // dummyPushOut = svdPushOut01;
     }
     else if (strcmp(svdTargetVal.c_str(),"target2") == 0)
     {
         // ROS_INFO("Position 02");
-        dummyPushOut = svdPushOut02;
+        // dummyPushOut = svdPushOut02;
     }
     else if(strcmp(svdTargetVal.c_str(),"target3") == 0)
     {
         // ROS_INFO("Position 03");
-        dummyPushOut = svdPushOut03;
+        // dummyPushOut = svdPushOut03;
     }
     else
     {
@@ -333,6 +356,8 @@ void svdTargetFunc(std::string& svdTargetVal)
     }
 
 }
+
+
 
 
 int main(int argc, char **argv)
@@ -388,6 +413,14 @@ int main(int argc, char **argv)
 
     // // code end
 
+    // update transform between urdf world and d400/camera_link frame
+    tf::TransformListener listener;
+    tf::StampedTransform transform;
+
+    globalTransform = &transform;
+    
+
+
 
     ros::Rate rate(20.0);
 
@@ -401,7 +434,19 @@ int main(int argc, char **argv)
 
         ros::param::get("randomGoalPoseGenerator/svdTarget", svdTargetVal);
         ros::param::get("randomGoalPoseGenerator/originState", vision_reference_frame);
-        svdTargetFunc(svdTargetVal);
+        try{
+            listener.lookupTransform("world", vision_reference_frame.c_str(), ros::Time(0), transform);
+            // ROS_INFO("%s", vision_reference_frame.c_str());
+            // presetPositionUpdate(transform, homePose);
+
+        }
+        catch (tf::TransformException ex){
+            ROS_ERROR("%s", ex.what());
+            ros::Duration(0.5).sleep();
+            continue;
+        }
+        // presetPositionUpdate(transform);
+        // svdTargetFunc(svdTargetVal);
 
         // if ((float) durVar.toSec() > 0.25)
         // {

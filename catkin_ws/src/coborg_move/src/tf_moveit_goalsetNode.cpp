@@ -184,7 +184,7 @@ int main(int argc, char **argv)
     // set max planning time for robot arm
     // setting value too low can cause arm to fail planning when there is plan available
     // setting value too high can cause arm to get stuck planning a path that is not possible
-    move_group.setPlanningTime(0.5);
+    move_group.setPlanningTime(1.0);
     // set goal tolerance for move_group
     move_group.setGoalTolerance(0.01);
 
