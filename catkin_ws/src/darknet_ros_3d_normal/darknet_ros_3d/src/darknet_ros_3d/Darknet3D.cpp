@@ -75,8 +75,8 @@ Darknet3D::initParams()
   output_bbx3d_topic_ = "/darknet_ros_3d/bounding_boxes";
   pointcloud_topic_ = "/camera/depth_registered/points";
   working_frame_ = "/camera_link";
-  mininum_detection_thereshold_ = 0.5f;
-  minimum_probability_ = 0.3f;
+  mininum_detection_thereshold_ = 0.01f;
+  minimum_probability_ = 0.4f;
 
   nh_.param("darknet_ros_topic", input_bbx_topic_, input_bbx_topic_);
   nh_.param("output_bbx3d_topic", output_bbx3d_topic_, output_bbx3d_topic_);
@@ -119,6 +119,7 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
       continue;
     }
 
+    // std::cout << "here" << std::endl;
     int center_x, center_y;
 
     center_x = (bbx.xmax + bbx.xmin) / 2;
@@ -134,7 +135,7 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
       continue;
 
     float maxx, minx, maxy, miny, maxz, minz;
-
+    // std::cout << "there is a center point" << std::endl;
     maxx = maxy = maxz =  -std::numeric_limits<float>::max();
     minx = miny = minz =  std::numeric_limits<float>::max();
 
@@ -146,9 +147,12 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
 
         if (std::isnan(point.x))
           continue;
-
-        if (fabs(point.x - center_point.x) > mininum_detection_thereshold_)
+        // std::cout << fabs(point.x - center_point.x)  << " "<< mininum_detection_thereshold_ << std::endl;
+        if (fabs(point.x - center_point.x) > mininum_detection_thereshold_){
+          // std::cout << "less than 2.5 cm" << std::endl;
           continue;
+        }
+          
 
         maxx = std::max(point.x, maxx);
         maxy = std::max(point.y, maxy);
@@ -172,6 +176,14 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
   }
 
   // Create the normal estimation class, and pass the input dataset to it
+  center_board_x = center_board_x/original_bboxes_.size();
+  center_board_y = center_board_y/original_bboxes_.size();
+  int pcl_normal_index = ((center_board_y)* cloud_pc2.width) + (center_board_x);
+
+  pcl::PointXYZRGB searchPoint = cloud_pcl->at(pcl_normal_index);
+
+  if (std::isnan(searchPoint.x))
+          return;
   pcl::NormalEstimation<pcl::PointXYZRGB, pcl::Normal> ne;
   ne.setInputCloud (cloud_pcl);
 
@@ -179,11 +191,7 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
 
   //Radial search for estimating neighborhood indices
   (*kdtree).setInputCloud (cloud_pcl);
-  center_board_x = center_board_x/original_bboxes_.size();
-  center_board_y = center_board_y/original_bboxes_.size();
-  int pcl_normal_index = ((center_board_y)* cloud_pc2.width) + (center_board_x);
-
-  pcl::PointXYZRGB searchPoint = cloud_pcl->at(pcl_normal_index);
+  
   float radius = 0.15;
   std::vector<int> pointIdxRadiusSearch;
   std::vector<float> pointRadiusSquaredDistance;

@@ -1,4 +1,4 @@
-#!/home/gerry/Coborg-Platform/franka_ws/envs/franka/bin/python
+#!/home/coborg/Coborg-Platform/franka_ws/envs/franka/bin/python
 
 import sys
 import getopt

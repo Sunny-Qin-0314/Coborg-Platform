@@ -38,7 +38,9 @@ public:
     goal_msg.x = center_x/bboxes_.size();
     goal_msg.y = center_y/bboxes_.size();
     goal_msg.z = center_z/bboxes_.size();
-    
+    goal_msg.normal_x = normal_x;
+    goal_msg.normal_y = normal_y;
+    goal_msg.normal_z = normal_z;
     goal_pub_.publish(goal_msg);
   }
 
@@ -49,12 +51,17 @@ private:
     // This callback, only save the 3D bounding boxes in 'bboxes_' variable:
     
     bboxes_ = msg->bounding_boxes;
+    normal_x = msg -> normal_x;
+    normal_y = msg -> normal_y;
+    normal_z = msg -> normal_z;
   }
 
   ros::NodeHandle nh_;
   ros::Subscriber darknet3d_sub_;
   ros::Publisher goal_pub_;
   std::vector<gb_visual_detection_3d_msgs::BoundingBox3d> bboxes_;
+  float normal_x, normal_y, normal_z;
+
 };
 
 int

@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib;/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/lib;/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/devel/lib;/home/coborg/CMU/16-662/labs/ws/frankapy-public/catkin_ws/devel/lib;/home/coborg/Coborg-Platform/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib;/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/lib;/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/devel/lib;/home/coborg/CMU/16-662/labs/ws/frankapy-public/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

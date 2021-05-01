@@ -16,7 +16,8 @@ class Command(enum.IntEnum):
     HOME = 3
 
 triggerlist = ['coborg']
-stoplist = ['stop stop stop']
+estoplist = ['stop stop stop']
+stoplist = ['stop']
 targetlist = ['target','take','goal']
 homelist = ['home','compact']
 
@@ -92,12 +93,12 @@ while not rospy.is_shutdown():
                     elif 'drop' in results and 'beat' in results:
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/sickbeatSound.mp3')
                         command = True
-                    elif 'sarah' in results and 'hi' in results:
+                    elif 'john' in results and 'hi' in results:
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/rickroll.mp3')
                         command = True
 
                 # Send stop command when "stop" is heard 3 or more times outside of "Coborg" trigger
-                if any(word in stoplist for word in results):
+                if any(word in estoplist for word in results):
                         print(repr(Command.STOP))
                         voice_commands_pub.publish(Command.STOP)
                         os.system('mpg123 -q ' + voice_dir + '/Sounds/stopSound.mp3')
