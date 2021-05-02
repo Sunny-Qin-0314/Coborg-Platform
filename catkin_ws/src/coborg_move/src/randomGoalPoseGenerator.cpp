@@ -52,14 +52,16 @@ ros::Duration durVar;
 std::string maniState;
 std::string vision_reference_frame = "d400_link";
 std::string svdTargetVal = "target1";
+std::string visionTargetStart = "visiongoal";
+std::string visionTargetEnd = "goalset";
 
-float uniWaitSec = 1.5;
+float uniWaitSec = 1.0;
 
 // hardcoded three target positions
 // TODO: change positions to be relative to the world position
-Eigen::Vector3d svdPushOut01(0.895, -0.345, -0.255);
-Eigen::Vector3d svdPushOut02(0.895, -0.495, -0.255);
-Eigen::Vector3d svdPushOut03(0.895, -0.495, -0.405);
+Eigen::Vector3d svdPushOut01(0.895-0.2704, -0.345+0.5209, -0.255+0.70005);
+Eigen::Vector3d svdPushOut02(0.895-0.2704, -0.495+0.5209, -0.255+0.70005);
+Eigen::Vector3d svdPushOut03(0.895-0.2704, -0.495+0.5209, -0.405+0.70005);
 
 
 
@@ -74,7 +76,7 @@ Eigen::Vector3d svdPushOut03(0.895, -0.495, -0.405);
 // Eigen::Vector3d dummyPushOut = svdPushOut01;
 
 Eigen::Vector3d homePose(-0.0144186, -0.0856238, 0.116201);
-Eigen::Vector3d readyPushOut(0.434776, 0.152788, 0.614739);
+Eigen::Vector3d readyPushOut(0.353297, 0.11838, 0.342266);
 Eigen::Vector3d dummyPushOut(0.626008, 0.174859, 0.438969);
 Eigen::Vector3d dummyPushUp(0.0294834, 0.190455, 1.06668);
 
@@ -97,30 +99,42 @@ void randomPoseFunc()
 {
     if (strcmp(svdTargetVal.c_str(),"d400_link") == 0 || strcmp(svdTargetVal.c_str(),"camera_link") == 0)
     {
-        // // relative to d400_link / camera_link frame at default static transform from t265_link
+        // relative to d400_link / camera_link frame at default static transform from t265_link
         // float xRangeMin = 0.6;
         // float xRangeMax = 0.9;
         // float yRangeMin = -0.4;
         // float yRangeMax = -0.15;
         // float zRangeMin = -0.25;
         // float zRangeMax = -0.15;
+        float xRangeMin = 0.6;
+        float xRangeMax = 0.9;
+        float yRangeMin = 0.0;
+        float yRangeMax = 0.3;
+        float zRangeMin = 0.1;
+        float zRangeMax = 0.4;
 
-        // float randomX = ((float) rand()) / (float) RAND_MAX;
-        // float randomY = ((float) rand()) / (float) RAND_MAX;
-        // float randomZ = ((float) rand()) / (float) RAND_MAX;
-        // goalPose.position.x = randomX*(xRangeMax - xRangeMin) + xRangeMin;
-        // goalPose.position.y = randomY*(yRangeMax - yRangeMin) + yRangeMin;
-        // goalPose.position.z = randomZ*(zRangeMax - zRangeMin) + zRangeMin;
+        float randomX = ((float) rand()) / (float) RAND_MAX;
+        float randomY = ((float) rand()) / (float) RAND_MAX;
+        float randomZ = ((float) rand()) / (float) RAND_MAX;
+        goalPose.position.x = randomX*(xRangeMax - xRangeMin) + xRangeMin;
+        goalPose.position.y = randomY*(yRangeMax - yRangeMin) + yRangeMin;
+        goalPose.position.z = randomZ*(zRangeMax - zRangeMin) + zRangeMin;
     }
     else if (strcmp(svdTargetVal.c_str(),"rodL") == 0)
     {
         // relative to rodL frame
+        // float xRangeMin = 0.6;
+        // float xRangeMax = 0.9;
+        // float yRangeMin = -0.3;
+        // float yRangeMax = -0.1;
+        // float zRangeMin = -0.2;
+        // float zRangeMax = -0.05;
         float xRangeMin = 0.6;
         float xRangeMax = 0.9;
-        float yRangeMin = -0.3;
-        float yRangeMax = -0.1;
-        float zRangeMin = -0.2;
-        float zRangeMax = -0.05;
+        float yRangeMin = 0.0;
+        float yRangeMax = 0.3;
+        float zRangeMin = 0.1;
+        float zRangeMax = 0.4;
 
         float randomX = ((float) rand()) / (float) RAND_MAX;
         float randomY = ((float) rand()) / (float) RAND_MAX;
@@ -247,18 +261,33 @@ void outPoseFunc(std::int8_t& seqCount)
     std::int8_t countMax = 2;
 
     Eigen::MatrixXd seqMat(3,countMax);
-    Eigen::Vector3d OffsetBack(-0.1,0,0);
+    Eigen::Vector3d OffsetBack(-0.15,0,0);
 
+    if (strcmp(svdTargetVal.c_str(), visionTargetEnd.c_str()) == 0)
+    {
+        // ready push out 15cm out
+        seqMat(0,0) = dummyPushOut(0) - OffsetBack(0);
+        seqMat(1,0) = dummyPushOut(1);
+        seqMat(2,0) = dummyPushOut(2);
 
-    // ready push out 15cm out
-    seqMat(0,0) = presetPositionUpdate(globalTransform, dummyPushOut + OffsetBack)(0);
-    seqMat(1,0) = presetPositionUpdate(globalTransform, dummyPushOut)(1);
-    seqMat(2,0) = presetPositionUpdate(globalTransform, dummyPushOut)(2);
+        // push into -5cm into
+        seqMat(0,1) = dummyPushOut(0);
+        seqMat(1,1) = dummyPushOut(1);
+        seqMat(2,1) = dummyPushOut(2);
+    }
+    else
+    {
+        // ready push out 15cm out
+        seqMat(0,0) = presetPositionUpdate(globalTransform, dummyPushOut + OffsetBack)(0);
+        seqMat(1,0) = presetPositionUpdate(globalTransform, dummyPushOut)(1);
+        seqMat(2,0) = presetPositionUpdate(globalTransform, dummyPushOut)(2);
 
-    // push into -5cm into
-    seqMat(0,1) = presetPositionUpdate(globalTransform, dummyPushOut)(0);
-    seqMat(1,1) = presetPositionUpdate(globalTransform, dummyPushOut)(1);
-    seqMat(2,1) = presetPositionUpdate(globalTransform, dummyPushOut)(2);
+        // push into -5cm into
+        seqMat(0,1) = presetPositionUpdate(globalTransform, dummyPushOut)(0);
+        seqMat(1,1) = presetPositionUpdate(globalTransform, dummyPushOut)(1);
+        seqMat(2,1) = presetPositionUpdate(globalTransform, dummyPushOut)(2);        
+    }
+
 
     if (seqCount < countMax)
     {
@@ -283,16 +312,16 @@ void outDisengagePoseFunc(std::int8_t& seqCount)
 {
     std::int8_t countMax = 2;
     Eigen::MatrixXd seqMat(3, countMax);
-    Eigen::Vector3d OffsetBack(-0.15,0,0);
+    Eigen::Vector3d OffsetBack(-0.20,0,0);
 
     // ready push out 15cm out
     seqMat(0,0) = presetPositionUpdate(globalTransform, dummyPushOut + OffsetBack)(0);
     seqMat(1,0) = presetPositionUpdate(globalTransform, dummyPushOut)(1);
     seqMat(2,0) = presetPositionUpdate(globalTransform, dummyPushOut)(2);
 
-    seqMat(0,1) = presetPositionUpdate(globalTransform, readyPushOut)(0);
-    seqMat(1,1) = presetPositionUpdate(globalTransform, readyPushOut)(1);
-    seqMat(2,1) = presetPositionUpdate(globalTransform, readyPushOut)(2);
+    // seqMat(0,1) = presetPositionUpdate(globalTransform, readyPushOut)(0);
+    // seqMat(1,1) = presetPositionUpdate(globalTransform, readyPushOut)(1);
+    // seqMat(2,1) = presetPositionUpdate(globalTransform, readyPushOut)(2);
 
     // // intermediate home pose used to speed up IK solving to home position
     // // NOTE: does not work
@@ -332,27 +361,52 @@ void outDisengagePoseFunc(std::int8_t& seqCount)
 
 }
 
-void svdTargetFunc(std::string& svdTargetVal)
+Eigen::Vector3d svdTargetFunc(std::string& svdTargetVal)
 {
 
     if (strcmp(svdTargetVal.c_str(),"target1") == 0)
     {
         // ROS_INFO("Position 01");
         // dummyPushOut = svdPushOut01;
+        return svdPushOut01;
     }
     else if (strcmp(svdTargetVal.c_str(),"target2") == 0)
     {
         // ROS_INFO("Position 02");
         // dummyPushOut = svdPushOut02;
+        return svdPushOut02;
     }
     else if(strcmp(svdTargetVal.c_str(),"target3") == 0)
     {
         // ROS_INFO("Position 03");
         // dummyPushOut = svdPushOut03;
+        return svdPushOut03;
+    }
+    else if(strcmp(svdTargetVal.c_str(), visionTargetStart.c_str()) == 0)
+    {
+        std::cout << svdTargetVal.c_str() << std::endl;
+        Eigen::Vector3d goalSetPose;
+        ROS_INFO("Waiting for message from goal rostopic");
+        // goal is relative to camera frame
+        boost::shared_ptr<goal_getter::goal_msg const> goalpose = ros::topic::waitForMessage<goal_getter::goal_msg>("/goal");
+
+        ROS_INFO("Position Received");
+
+        goalSetPose(0) = goalpose->x;
+        goalSetPose(1) = goalpose->y;
+        goalSetPose(2) = goalpose->z;
+
+        ROS_INFO_STREAM("Goal Position Reading: \n" << *goalpose << "\n");
+        
+        ros::param::set("randomGoalPoseGenerator/svdTarget", visionTargetEnd);
+
+
+        return goalSetPose;
+
     }
     else
     {
-        std::cout << svdTargetVal.c_str() << std::endl;
+        return dummyPushOut;
     }
 
 }
@@ -429,8 +483,6 @@ int main(int argc, char **argv)
     while(ros::ok())
     {
         ros::param::get("tf_moveit_goalsetNode/manipulation_state",maniState);
-        currTime = ros::Time::now();
-        durVar = currTime - beginTime;
 
         ros::param::get("randomGoalPoseGenerator/svdTarget", svdTargetVal);
         ros::param::get("randomGoalPoseGenerator/originState", vision_reference_frame);
@@ -446,7 +498,7 @@ int main(int argc, char **argv)
             continue;
         }
         // presetPositionUpdate(transform);
-        // svdTargetFunc(svdTargetVal);
+        dummyPushOut = svdTargetFunc(svdTargetVal);
 
         // if ((float) durVar.toSec() > 0.25)
         // {
@@ -455,6 +507,8 @@ int main(int argc, char **argv)
         // }
 
 
+        currTime = ros::Time::now();
+        durVar = currTime - beginTime;
         if (strcmp(maniState.c_str(),"random") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             randomPoseFunc();

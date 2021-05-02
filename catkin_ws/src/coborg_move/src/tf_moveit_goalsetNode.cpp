@@ -186,7 +186,7 @@ int main(int argc, char **argv)
     // setting value too high can cause arm to get stuck planning a path that is not possible
     move_group.setPlanningTime(1.0);
     // set goal tolerance for move_group
-    move_group.setGoalTolerance(0.01);
+    move_group.setGoalTolerance(0.005);
 
     // print out debugging information into terminal
     ROS_INFO("Printing Basic Information Now:");
