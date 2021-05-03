@@ -9,6 +9,7 @@ import math
 import enum
 
 import rospy
+import rospkg
 from std_msgs.msg import Int32
 
 
@@ -18,8 +19,10 @@ class Command(enum.IntEnum):
     HOME = 3
     READY = 4
 
-voice_dir = '/home/coborg/Coborg-Platform/catkin_ws/src/voice_recog/src'
-model_dir = '/home/coborg/Coborg-Platform/catkin_ws/src/voice_recog/src/model'
+rospack = rospkg.RosPack()
+package_dir = rospack.get_path("voice_recog")
+voice_dir = package_dir + '/src'
+model_dir = package_dir + '/src/model'
 
 
 # Init decoder
