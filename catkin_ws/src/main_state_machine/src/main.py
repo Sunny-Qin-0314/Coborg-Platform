@@ -1,9 +1,12 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import rospy
 from std_msgs.msg import Int32
 from std_msgs.msg import Char
 import enum
+import pyaudio
+from pydub import AudioSegment
+from pydub.playback import play
 
 # Updates List:
 # Consider changing the state machine to work on actions instead of publisher/subscriber
@@ -19,6 +22,7 @@ class Command(enum.IntEnum): #these are the voice commands that come in and get 
     STOP = 1 
     TARGET = 2 
     HOME = 3
+    READY = 4
 
 # Statuses:
 # 1 = initializing > Command received, but not executing yet (e.g. detecting hands) [ROS INFO]
@@ -68,6 +72,13 @@ def new_command(message):
             function = Command.HOME # compact
             status = Status.EXECUTE # execute mode
             state_output_pub.publish(function)
+    
+    elif new_command == Command.READY:
+        print("READY")
+        if status == Status.IDLE: #idle/ready
+            function = Command.READY # compact
+            status = Status.EXECUTE # execute mode
+            state_output_pub.publish(function)
     """
     elif new_command == Command.STOP.value:
         if function != 0:
@@ -93,7 +104,7 @@ if __name__ == "__main__":
     voice_commands_sub = rospy.Subscriber('/voice_commands', Int32, new_command)
     state_output_pub = rospy.Publisher('/state_output', Int32, queue_size=1)
     #speaker_output_pub = rospy.Publisher('/speaker_output', Int32, queue_size=1)
-    #state_input_sub = rospy.Subscriber('/state_input', Char, status_update)
+    state_input_sub = rospy.Subscriber('/state_input', Int32, status_update)
     state_output_pub.publish(function)
     #speaker_output_pub.publish(0)
 
