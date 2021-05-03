@@ -1,1 +1,16 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs/msg/_package_SensorDataGroup.lisp
+(cl:in-package franka_interface_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          HAS_TRAJECTORY_GENERATOR_SENSOR_DATA-VAL
+          HAS_TRAJECTORY_GENERATOR_SENSOR_DATA
+          HAS_FEEDBACK_CONTROLLER_SENSOR_DATA-VAL
+          HAS_FEEDBACK_CONTROLLER_SENSOR_DATA
+          HAS_TERMINATION_HANDLER_SENSOR_DATA-VAL
+          HAS_TERMINATION_HANDLER_SENSOR_DATA
+          TRAJECTORYGENERATORSENSORDATA-VAL
+          TRAJECTORYGENERATORSENSORDATA
+          FEEDBACKCONTROLLERSENSORDATA-VAL
+          FEEDBACKCONTROLLERSENSORDATA
+          TERMINATIONHANDLERSENSORDATA-VAL
+          TERMINATIONHANDLERSENSORDATA
+))

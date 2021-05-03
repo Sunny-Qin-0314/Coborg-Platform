@@ -1,1 +1,4 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs/srv/_package_GetCurrentRobotStateCmd.lisp
+(cl:in-package franka_interface_msgs-srv)
+(cl:export '(ROBOT_STATE-VAL
+          ROBOT_STATE
+))

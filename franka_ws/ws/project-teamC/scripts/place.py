@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 import params
 from utils import *
 
@@ -48,7 +49,7 @@ def run_place(tool_index, tool_id):
                 tool4: aruco marker 33
     '''
 
-    aruco_offset = -0.07 # offset of aruco tag to center of tool
+    aruco_offset = -0.10 # offset of aruco tag to center of tool
     tool_z_height = 0.01  # center of tool height = 1 cm
     pegboard_z_height = 0.265
     intermediate_tool_z_height = 0.30 # offset intermediate z height (tool)
@@ -121,10 +122,10 @@ def run_place(tool_index, tool_id):
     tool_transformed.translation[2] = tool_z_height    
 
     #Move to tool 
-    fa.goto_pose(tool_transformed, 5, force_thresholds=[20, 20, 20, 20, 20, 20])
+    fa.goto_pose(tool_transformed, 5, force_thresholds=[30, 30, 30, 30, 30, 30])
 
     #Close Gripper
-    fa.goto_gripper(0.03, grasp=True, force=10.0)
+    fa.goto_gripper(0.03, grasp=True, force=40.0)
 
     print('Moving to Pegboard Location {}'.format(tool_index))
     # Move to intermediate robot pose aruco 1 (higher than the pegboard)
@@ -141,7 +142,7 @@ def run_place(tool_index, tool_id):
     
     # move to the goal pose
     goal_transformed.translation[2] = pegboard_z_height  # goal height in the world frame. This is to fix the z axis to the pegboard dropoff height.
-    fa.goto_pose(goal_transformed, 5, force_thresholds=[20, 20, 20, 20, 20, 20])
+    fa.goto_pose(goal_transformed, 5, force_thresholds=[30, 30, 30, 30, 30, 30])
 
     print('Opening Grippers')
     fa.open_gripper()

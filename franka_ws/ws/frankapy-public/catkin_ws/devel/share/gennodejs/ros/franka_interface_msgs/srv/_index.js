@@ -1,1 +1,10 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/gennodejs/ros/franka_interface_msgs/srv/_index.js
+
+"use strict";
+
+let GetCurrentRobotStateCmd = require('./GetCurrentRobotStateCmd.js')
+let GetCurrentFrankaInterfaceStatusCmd = require('./GetCurrentFrankaInterfaceStatusCmd.js')
+
+module.exports = {
+  GetCurrentRobotStateCmd: GetCurrentRobotStateCmd,
+  GetCurrentFrankaInterfaceStatusCmd: GetCurrentFrankaInterfaceStatusCmd,
+};
