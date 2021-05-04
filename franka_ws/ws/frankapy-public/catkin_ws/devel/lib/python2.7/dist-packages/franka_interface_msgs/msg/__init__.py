@@ -1,1 +1,13 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/lib/python2.7/dist-packages/franka_interface_msgs/msg/__init__.py
+from ._Errors import *
+from ._ExecuteSkillAction import *
+from ._ExecuteSkillActionFeedback import *
+from ._ExecuteSkillActionGoal import *
+from ._ExecuteSkillActionResult import *
+from ._ExecuteSkillFeedback import *
+from ._ExecuteSkillGoal import *
+from ._ExecuteSkillResult import *
+from ._FrankaInterfaceStatus import *
+from ._RobotState import *
+from ._RunLoopProcessInfoState import *
+from ._SensorData import *
+from ._SensorDataGroup import *

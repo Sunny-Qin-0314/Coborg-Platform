@@ -1,5 +1,5 @@
+#! /usr/bin/env python
 import params
-from utils import *
 import time
 
 import enum
@@ -62,6 +62,13 @@ def run_pick(tool_index, tool_id):
         ]), translation=np.array([0.3069, 0, 0.4867]),
         from_frame='franka_tool', to_frame='world')
 
+    hand_off = RigidTransform(rotation=np.array([
+            [-0.86405261, 0.49902793, 0.06606846],
+            [0.4933981, 0.86559895, -0.08530919],
+            [-0.09976046, -0.04111357, -0.99416161],
+        ]), translation=np.array([0.5182401, -0.21211296, 0.28499551]),
+        from_frame='franka_tool', to_frame='world')
+
     #pegboard_z_height = 0.265
     intermediate_pose_y_dist = 0 # offset pegboard y distance world frame
     intermediate_pose_z_height = 0.55 # offset pegboard z height world frame
@@ -98,12 +105,13 @@ def run_pick(tool_index, tool_id):
     print('Returning Home')
     # Reset Joints
     fa.reset_joints()
-    #added flip to keep pointy end of tool away from user
-    fa.goto_pose(home_flipped)
+
+    # Go to hand off location
+    fa.goto_pose(hand_off, ignore_virtual_walls=True)
 
     # Impedance Control
     # Initalize variables
-    distThres = 0.2
+    distThres = 0.07
     controllerSec = 20
     waitSec = 1
 
@@ -111,7 +119,12 @@ def run_pick(tool_index, tool_id):
     print("Please pickup the tool from the robot")
     pose = fa.get_pose()
     desired_position = pose.translation
-    fa.apply_effector_forces_torques(controllerSec,0,0,0, block=False)
+
+    # Testing code for impedance control
+    
+
+    #fa.apply_effector_forces_torques(controllerSec,0,0,0, block=False)
+    fa.goto_pose(pose, buffer_time = 20, use_impedance=True, dynamic = True, cartesian_impedances=[0,0,200,0,0,0], block=False, ignore_virtual_walls=True)
     beginTime = time.time()
     currTime = time.time()
     diffTime = float(currTime - beginTime)
@@ -119,7 +132,7 @@ def run_pick(tool_index, tool_id):
     while diffTime < controllerSec:
         pose = fa.get_pose()
         position = pose.translation
-        error = desired_position - position
+        error = desired_position[0:2] - position[0:2]
         if np.linalg.norm(error) > distThres:
             fa.stop_skill()
             fa.open_gripper()
