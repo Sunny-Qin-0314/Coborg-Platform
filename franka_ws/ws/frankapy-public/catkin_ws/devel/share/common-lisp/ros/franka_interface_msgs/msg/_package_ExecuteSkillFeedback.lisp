@@ -1,1 +1,6 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs/msg/_package_ExecuteSkillFeedback.lisp
+(cl:in-package franka_interface_msgs-msg)
+(cl:export '(NUM_EXECUTION_FEEDBACK-VAL
+          NUM_EXECUTION_FEEDBACK
+          EXECUTION_FEEDBACK-VAL
+          EXECUTION_FEEDBACK
+))

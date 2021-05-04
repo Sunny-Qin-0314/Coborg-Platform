@@ -1,1 +1,7 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/gennodejs/ros/franka_interface_msgs/_index.js
+
+"use strict";
+
+module.exports = {
+  msg: require('./msg/_index.js'),
+  srv: require('./srv/_index.js')
+};

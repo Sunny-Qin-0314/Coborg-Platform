@@ -1,1 +1,10 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs/msg/_package_FrankaInterfaceStatus.lisp
+(cl:in-package franka_interface_msgs-msg)
+(cl:export '(HEADER-VAL
+          HEADER
+          IS_READY-VAL
+          IS_READY
+          ERROR_DESCRIPTION-VAL
+          ERROR_DESCRIPTION
+          IS_FRESH-VAL
+          IS_FRESH
+))

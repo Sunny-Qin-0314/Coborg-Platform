@@ -1,1 +1,4 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs/srv/_package_GetCurrentFrankaInterfaceStatusCmd.lisp
+(cl:in-package franka_interface_msgs-srv)
+(cl:export '(FRANKA_INTERFACE_STATUS-VAL
+          FRANKA_INTERFACE_STATUS
+))
