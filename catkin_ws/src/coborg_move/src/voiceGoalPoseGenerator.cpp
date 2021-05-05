@@ -275,7 +275,6 @@ void upDisengagePoseFunc(std::int8_t& seqCount)
     Eigen::MatrixXd seqMat(3, countMax);
 
     Eigen::Vector3d OffsetBack(0,0,-0.15);
-    seqCount = countMax;
 
     // ready push out 15cm out
     seqMat(0,0) = presetPositionUpdate(dummyPushUp + OffsetBack)(0);
@@ -708,20 +707,12 @@ int main(int argc, char **argv)
         ros::param::get("voiceGoalPoseGenerator/svdTarget", svdTargetVal);
         // ros::param::get("voiceGoalPoseGenerator/originState", "camera_link");
 
-
+        currTime = ros::Time::now();
+        durVar = currTime - beginTime;
 
         // presetPositionUpdate(transform);
         dummyPushOut = svdTargetFunc(svdTargetVal);
 
-        // if ((float) durVar.toSec() > 0.25)
-        // {
-        //     ROS_INFO_STREAM("Current Pose Target: " << svdTargetVal.c_str() << "\n");
-        //     ROS_INFO_STREAM("Current Manipulation State: " << maniState.c_str() << "\n");
-        // }
-
-
-        currTime = ros::Time::now();
-        durVar = currTime - beginTime;
         if (strcmp(maniState.c_str(),"random") == 0 && (float) durVar.toSec() > uniWaitSec)
         {
             randomPoseFunc();
