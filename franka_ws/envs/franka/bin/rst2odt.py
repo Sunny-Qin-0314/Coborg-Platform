@@ -1,4 +1,4 @@
-#!/home/gerry/Coborg-Platform/franka_ws/envs/franka/bin/python3.6
+#!/home/coborg/Coborg-Platform/franka_ws/envs/franka/bin/python3.6
 
 # $Id: rst2odt.py 5839 2009-01-07 19:09:28Z dkuhlman $
 # Author: Dave Kuhlman <dkuhlman@rexx.com>

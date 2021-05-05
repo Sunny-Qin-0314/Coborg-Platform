@@ -1,0 +1,2 @@
+vision_opencv/cv_bridge:vision_opencv/image_geometry:vision_opencv/opencv_tests:vision_opencv/vision_opencv
+-DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.6m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.6m.so -DCATKIN_DEVEL_PREFIX=/home/coborg/Coborg-Platform/franka_ws/ws/cv_bridge_ws/devel -DCMAKE_INSTALL_PREFIX=/home/coborg/Coborg-Platform/franka_ws/ws/cv_bridge_ws/install -G Unix Makefiles

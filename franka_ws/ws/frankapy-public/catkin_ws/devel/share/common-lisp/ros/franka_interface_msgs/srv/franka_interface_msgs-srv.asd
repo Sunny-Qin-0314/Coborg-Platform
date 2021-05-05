@@ -1,1 +1,12 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs/srv/franka_interface_msgs-srv.asd
+
+(cl:in-package :asdf)
+
+(defsystem "franka_interface_msgs-srv"
+  :depends-on (:roslisp-msg-protocol :roslisp-utils :franka_interface_msgs-msg
+)
+  :components ((:file "_package")
+    (:file "GetCurrentFrankaInterfaceStatusCmd" :depends-on ("_package_GetCurrentFrankaInterfaceStatusCmd"))
+    (:file "_package_GetCurrentFrankaInterfaceStatusCmd" :depends-on ("_package"))
+    (:file "GetCurrentRobotStateCmd" :depends-on ("_package_GetCurrentRobotStateCmd"))
+    (:file "_package_GetCurrentRobotStateCmd" :depends-on ("_package"))
+  ))

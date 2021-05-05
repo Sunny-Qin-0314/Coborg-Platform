@@ -1,0 +1,2 @@
+franka-interface-msgs
+-DCATKIN_DEVEL_PREFIX=/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/install -G Unix Makefiles

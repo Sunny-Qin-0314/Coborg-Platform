@@ -66,6 +66,18 @@ endif()
 set(main_state_machine_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+if("TRUE" STREQUAL "TRUE")
+  set(cv_bridge_SOURCE_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/cv_bridge)
+  set(cv_bridge_DEVEL_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel)
+  set(cv_bridge_INSTALL_PREFIX "")
+  set(cv_bridge_PREFIX ${cv_bridge_DEVEL_PREFIX})
+else()
+  set(cv_bridge_SOURCE_PREFIX "")
+  set(cv_bridge_DEVEL_PREFIX "")
+  set(cv_bridge_INSTALL_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/install)
+  set(cv_bridge_PREFIX ${cv_bridge_INSTALL_PREFIX})
+=======
 if("FALSE" STREQUAL "TRUE")
   set(main_state_machine_SOURCE_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/main_state_machine)
   set(main_state_machine_DEVEL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel)
@@ -76,6 +88,7 @@ else()
   set(main_state_machine_DEVEL_PREFIX "")
   set(main_state_machine_INSTALL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install)
   set(main_state_machine_PREFIX ${main_state_machine_INSTALL_PREFIX})
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/main_state_machine/cmake/main_state_machineConfig.cmake
 endif()
 
 # warn when using a deprecated package
@@ -89,6 +102,17 @@ if(NOT "" STREQUAL "")
 endif()
 
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+set(cv_bridge_FOUND_CATKIN_PROJECT TRUE)
+
+if(NOT "/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/cv_bridge/include;/usr/include;/usr/include/opencv " STREQUAL " ")
+  set(cv_bridge_INCLUDE_DIRS "")
+  set(_include_dirs "/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/cv_bridge/include;/usr/include;/usr/include/opencv")
+  if(NOT "https://github.com/ros-perception/vision_opencv/issues " STREQUAL " ")
+    set(_report "Check the issue tracker 'https://github.com/ros-perception/vision_opencv/issues' and consider creating a ticket if the problem has not been reported yet.")
+  elseif(NOT "http://www.ros.org/wiki/cv_bridge " STREQUAL " ")
+    set(_report "Check the website 'http://www.ros.org/wiki/cv_bridge' for information and consider reporting the problem.")
+=======
 set(main_state_machine_FOUND_CATKIN_PROJECT TRUE)
 
 if(NOT " " STREQUAL " ")
@@ -98,6 +122,7 @@ if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
     set(_report "Check the website '' for information and consider reporting the problem.")
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/main_state_machine/cmake/main_state_machineConfig.cmake
   else()
     set(_report "Report the problem to the maintainer 'coborg <coborg@todo.todo>' and request to fix the problem.")
   endif()
@@ -110,7 +135,11 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'main_state_machine' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+      message(FATAL_ERROR "Project 'cv_bridge' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/cv_bridge/${idir}'.  ${_report}")
+=======
       message(FATAL_ERROR "Project 'main_state_machine' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '\${prefix}/${idir}'.  ${_report}")
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/main_state_machine/cmake/main_state_machineConfig.cmake
     endif()
     _list_append_unique(main_state_machine_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,11 +183,15 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+    foreach(path /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/opt/ros/melodic/lib)
+=======
 <<<<<<< HEAD:catkin_ws/install/share/main_state_machine/cmake/main_state_machineConfig.cmake
     foreach(path /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install/lib;/opt/ros/melodic/lib)
 =======
     foreach(path /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/home/gerry/ProgrammingFamiliarization3/catkin_ws/devel/lib;/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/home/gerry/ProgrammingFamiliarization2/catkin_ws/devel/lib;/opt/ros/melodic/lib)
 >>>>>>> abb0aa7f41d979e59569e0a642bc56114e9d142c:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/opencv_tests/cmake/opencv_testsConfig.cmake
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/main_state_machine/cmake/main_state_machineConfig.cmake
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

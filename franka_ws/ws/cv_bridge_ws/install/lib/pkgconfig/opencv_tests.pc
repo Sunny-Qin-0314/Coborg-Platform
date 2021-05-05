@@ -1,0 +1,8 @@
+prefix=/home/coborg/Coborg-Platform/franka_ws/ws/cv_bridge_ws/install
+
+Name: opencv_tests
+Description: Description of opencv_tests
+Version: 1.15.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

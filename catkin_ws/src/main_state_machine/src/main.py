@@ -79,10 +79,12 @@ def new_command(message):
 # Function for /state_input
 def status_update(message):
     new_status = message.data
+    print("Status update received")
     global status
     if new_status == Status.EXECUTE:
         status = Status.EXECUTE # executing
     if new_status == Status.IDLE:
+        print("Idle command received")
         status = Status.IDLE # waiting
         #speaker_output_pub.publish(5)
 
@@ -93,7 +95,7 @@ if __name__ == "__main__":
     voice_commands_sub = rospy.Subscriber('/voice_commands', Int32, new_command)
     state_output_pub = rospy.Publisher('/state_output', Int32, queue_size=1)
     #speaker_output_pub = rospy.Publisher('/speaker_output', Int32, queue_size=1)
-    #state_input_sub = rospy.Subscriber('/state_input', Char, status_update)
+    state_input_sub = rospy.Subscriber('/state_input', Int32, status_update)
     state_output_pub.publish(function)
     #speaker_output_pub.publish(0)
 

@@ -1,4 +1,4 @@
-#!/home/gerry/Coborg-Platform/franka_ws/envs/franka/bin/python3.6
+#!/home/coborg/Coborg-Platform/franka_ws/envs/franka/bin/python3.6
 
 # -*- coding: utf-8 -*-
 import re

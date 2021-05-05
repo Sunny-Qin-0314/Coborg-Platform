@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/devel/lib;/opt/ros/melodic/lib")

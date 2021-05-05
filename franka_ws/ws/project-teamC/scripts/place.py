@@ -1,3 +1,4 @@
+#! /usr/bin/env python
 import params
 from utils import *
 
@@ -48,15 +49,14 @@ def run_place(tool_index, tool_id):
                 tool4: aruco marker 33
     '''
 
-    aruco_offset = -0.07 # offset of aruco tag to center of tool
+    aruco_offset = -0.10 # offset of aruco tag to center of tool
     tool_z_height = 0.01  # center of tool height = 1 cm
     pegboard_z_height = 0.265
     intermediate_tool_z_height = 0.30 # offset intermediate z height (tool)
     intermediate_pegboard_z_height = 0.55 # offset intermediate z height (pegboard) 
 
     print('Starting Robot')
-    fa = FrankaArm()    
-
+    fa = FrankaArm()
     print('Opening Grippers')
     # Open Gripper
     fa.open_gripper()
@@ -79,12 +79,15 @@ def run_place(tool_index, tool_id):
     print('Calculating Franka Transforms')
     rot_matrix = quaternion_rotation_matrix(pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w)
     trans_matrix= np.array([pose.position.x, pose.position.y, pose.position.z])
-
+    
+    _,_,yaw = euler_from_quaternion(pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w)
+    print(yaw)
     #offset x axis in aruco frame. first we transform from the camera frame to aruco frame
     aruco_translation = rot_matrix@np.array([aruco_offset, 0, 0]) + trans_matrix
 
     # rotate about y axis 180 deg (change z axis to point down)
-    rot_grip_flip = np.array([[-1, 0, 0],[0,1,0],[0, 0, -1]])
+    rot_grip_flip = np.array([[-1, 0, 0],[0,-1,0],[0, 0, 1]])
+    rot_matrix =  np.array([[np.cos(-yaw), np.sin(-yaw), 0],[-np.sin(-yaw),np.cos(-yaw),0],[0, 0, 1]])
     tool_rotation = rot_matrix@rot_grip_flip  # right hand mulplication
 
     # transform tool pose to the world frame
@@ -119,10 +122,10 @@ def run_place(tool_index, tool_id):
     tool_transformed.translation[2] = tool_z_height    
 
     #Move to tool 
-    fa.goto_pose(tool_transformed, 5, force_thresholds=[10, 10, 10, 10, 10, 10])
+    fa.goto_pose(tool_transformed, 5, force_thresholds=[30, 30, 30, 30, 30, 30])
 
     #Close Gripper
-    fa.goto_gripper(0.03, grasp=True, force=10.0)
+    fa.goto_gripper(0.03, grasp=True, force=40.0)
 
     print('Moving to Pegboard Location {}'.format(tool_index))
     # Move to intermediate robot pose aruco 1 (higher than the pegboard)
@@ -139,7 +142,7 @@ def run_place(tool_index, tool_id):
     
     # move to the goal pose
     goal_transformed.translation[2] = pegboard_z_height  # goal height in the world frame. This is to fix the z axis to the pegboard dropoff height.
-    fa.goto_pose(goal_transformed, 5, force_thresholds=[20, 20, 20, 20, 20, 20])
+    fa.goto_pose(goal_transformed, 5, force_thresholds=[30, 30, 30, 30, 30, 30])
 
     print('Opening Grippers')
     fa.open_gripper()

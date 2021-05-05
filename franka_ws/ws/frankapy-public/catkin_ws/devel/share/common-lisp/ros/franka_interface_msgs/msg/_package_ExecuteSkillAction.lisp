@@ -1,1 +1,8 @@
-/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs/share/common-lisp/ros/franka_interface_msgs/msg/_package_ExecuteSkillAction.lisp
+(cl:in-package franka_interface_msgs-msg)
+(cl:export '(ACTION_GOAL-VAL
+          ACTION_GOAL
+          ACTION_RESULT-VAL
+          ACTION_RESULT
+          ACTION_FEEDBACK-VAL
+          ACTION_FEEDBACK
+))

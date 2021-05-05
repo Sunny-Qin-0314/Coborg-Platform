@@ -11,7 +11,11 @@
 
 # since this file is sourced either use the provided _CATKIN_SETUP_DIR
 # or fall back to the destination set at configure time
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/atomic_configure/setup.sh
+: ${_CATKIN_SETUP_DIR:=/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel}
+=======
 : ${_CATKIN_SETUP_DIR:=/home/yuqing/Desktop/Coborg-Platform/catkin_ws/install}
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/setup.sh
 _SETUP_UTIL="$_CATKIN_SETUP_DIR/_setup_util.py"
 unset _CATKIN_SETUP_DIR
 

@@ -66,6 +66,18 @@ endif()
 set(goal_getter_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/opencv_tests/cmake/opencv_testsConfig.cmake
+if("TRUE" STREQUAL "TRUE")
+  set(opencv_tests_SOURCE_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/opencv_tests)
+  set(opencv_tests_DEVEL_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel)
+  set(opencv_tests_INSTALL_PREFIX "")
+  set(opencv_tests_PREFIX ${opencv_tests_DEVEL_PREFIX})
+else()
+  set(opencv_tests_SOURCE_PREFIX "")
+  set(opencv_tests_DEVEL_PREFIX "")
+  set(opencv_tests_INSTALL_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/install)
+  set(opencv_tests_PREFIX ${opencv_tests_INSTALL_PREFIX})
+=======
 if("FALSE" STREQUAL "TRUE")
   set(goal_getter_SOURCE_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/goal_getter)
   set(goal_getter_DEVEL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel)
@@ -76,6 +88,7 @@ else()
   set(goal_getter_DEVEL_PREFIX "")
   set(goal_getter_INSTALL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install)
   set(goal_getter_PREFIX ${goal_getter_INSTALL_PREFIX})
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/goal_getter/cmake/goal_getterConfig.cmake
 endif()
 
 # warn when using a deprecated package
@@ -110,7 +123,11 @@ if(NOT "include " STREQUAL " ")
         message(FATAL_ERROR "Project 'goal_getter' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/opencv_tests/cmake/opencv_testsConfig.cmake
+      message(FATAL_ERROR "Project 'opencv_tests' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/opencv_tests/${idir}'.  ${_report}")
+=======
       message(FATAL_ERROR "Project 'goal_getter' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '\${prefix}/${idir}'.  ${_report}")
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/goal_getter/cmake/goal_getterConfig.cmake
     endif()
     _list_append_unique(goal_getter_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,11 +171,15 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/opencv_tests/cmake/opencv_testsConfig.cmake
+    foreach(path /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/opt/ros/melodic/lib)
+=======
 <<<<<<< HEAD:catkin_ws/install/share/goal_getter/cmake/goal_getterConfig.cmake
     foreach(path /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install/lib;/opt/ros/melodic/lib)
 =======
     foreach(path /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/home/gerry/ProgrammingFamiliarization3/catkin_ws/devel/lib;/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/home/gerry/ProgrammingFamiliarization2/catkin_ws/devel/lib;/opt/ros/melodic/lib)
 >>>>>>> abb0aa7f41d979e59569e0a642bc56114e9d142c:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/goal_getter/cmake/goal_getterConfig.cmake
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

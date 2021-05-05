@@ -67,6 +67,17 @@ set(voice_recog_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/opencv_tests/catkin_generated/installspace/opencv_testsConfig.cmake
+  set(opencv_tests_SOURCE_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/src/vision_opencv/opencv_tests)
+  set(opencv_tests_DEVEL_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel)
+  set(opencv_tests_INSTALL_PREFIX "")
+  set(opencv_tests_PREFIX ${opencv_tests_DEVEL_PREFIX})
+else()
+  set(opencv_tests_SOURCE_PREFIX "")
+  set(opencv_tests_DEVEL_PREFIX "")
+  set(opencv_tests_INSTALL_PREFIX /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/install)
+  set(opencv_tests_PREFIX ${opencv_tests_INSTALL_PREFIX})
+=======
   set(voice_recog_SOURCE_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/src/voice_recog)
   set(voice_recog_DEVEL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/devel)
   set(voice_recog_INSTALL_PREFIX "")
@@ -76,6 +87,7 @@ else()
   set(voice_recog_DEVEL_PREFIX "")
   set(voice_recog_INSTALL_PREFIX /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install)
   set(voice_recog_PREFIX ${voice_recog_INSTALL_PREFIX})
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/voice_recog/cmake/voice_recogConfig.cmake
 endif()
 
 # warn when using a deprecated package
@@ -154,11 +166,15 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
+<<<<<<< HEAD:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/opencv_tests/catkin_generated/installspace/opencv_testsConfig.cmake
+    foreach(path /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/install/lib;/opt/ros/melodic/lib)
+=======
 <<<<<<< HEAD:catkin_ws/install/share/voice_recog/cmake/voice_recogConfig.cmake
     foreach(path /home/yuqing/Desktop/Coborg-Platform/catkin_ws/install/lib;/opt/ros/melodic/lib)
 =======
     foreach(path /home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/install/lib;/home/gerry/ProgrammingFamiliarization3/catkin_ws/devel/lib;/home/gerry/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/devel/lib;/home/gerry/ProgrammingFamiliarization2/catkin_ws/devel/lib;/opt/ros/melodic/lib)
 >>>>>>> abb0aa7f41d979e59569e0a642bc56114e9d142c:franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/build/vision_opencv/opencv_tests/catkin_generated/installspace/opencv_testsConfig.cmake
+>>>>>>> 0ad6f6b835c25920092c265e79cc9ef3ac4c9b72:catkin_ws/install/share/voice_recog/cmake/voice_recogConfig.cmake
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
