@@ -262,11 +262,12 @@ void outPoseFunc(std::int8_t& seqCount)
 
     Eigen::MatrixXd seqMat(3,countMax);
     Eigen::Vector3d OffsetBack(-0.15,0,0);
+    Eigen::Vector3d OffsetForward(0.1, 0, 0);
 
     if (strcmp(svdTargetVal.c_str(), visionTargetEnd.c_str()) == 0)
     {
         // ready push out 15cm out
-        seqMat(0,0) = dummyPushOut(0) - OffsetBack(0);
+        seqMat(0,0) = dummyPushOut(0) + OffsetBack(0);
         seqMat(1,0) = dummyPushOut(1);
         seqMat(2,0) = dummyPushOut(2);
 
@@ -310,7 +311,7 @@ void outPoseFunc(std::int8_t& seqCount)
 
 void outDisengagePoseFunc(std::int8_t& seqCount)
 {
-    std::int8_t countMax = 2;
+    std::int8_t countMax = 3;
     Eigen::MatrixXd seqMat(3, countMax);
     Eigen::Vector3d OffsetBack(-0.20,0,0);
 

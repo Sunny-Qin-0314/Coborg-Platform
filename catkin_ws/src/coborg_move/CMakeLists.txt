@@ -218,6 +218,13 @@ target_link_libraries(randomGoalPoseGenerator
   ${catkin_LIBRARIES}
 )
 
+add_executable(voiceGoalPoseGenerator src/voiceGoalPoseGenerator.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(voiceGoalPoseGenerator
+  ${catkin_LIBRARIES}
+)
+
 #############
 ## Install ##
 #############

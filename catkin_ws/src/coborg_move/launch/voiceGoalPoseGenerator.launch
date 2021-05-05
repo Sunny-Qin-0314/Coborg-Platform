@@ -1,6 +1,6 @@
 <launch>
 
-  <node name="randomGoalPoseGenerator" pkg="coborg_move" type="randomGoalPoseGenerator" respawn="false" output="screen">
+  <node name="voiceGoalPoseGenerator" pkg="coborg_move" type="voiceGoalPoseGenerator" respawn="false" output="screen">
   <param name="originState" value="camera_link"/>
   <param name="svdTarget" value="target1"/>
   </node>
