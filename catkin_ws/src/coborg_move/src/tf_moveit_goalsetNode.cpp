@@ -54,6 +54,7 @@ ros::Duration durVar;
 
 // subscribe to rosparam for manipulation state triggers
 std::string maniState;
+//std::string "camera_link" = "camera_link";
 
 
 // stabilization and impedance control global variables
@@ -69,36 +70,53 @@ moveit::planning_interface::MoveGroupInterface::Plan* myPlanPoint;
 moveit::planning_interface::MoveGroupInterface* movePoint;
 robot_state::RobotStatePtr* kin_model;
 
+std::vector<std::string> presetPositionNames;
+std::vector<std::vector<double>> presetJointValues;
+
+//declare preset joint positions
+// home: -110, -136, -144 [deg]
+// home: -1.91986, -2.37365, -2.51327 [rad]
+
+// ready: -54, -126, -87 [deg]
+// ready: -0.942478, -2.19911, -1.51844 [rad]
+
+
 
 // triggers when camera_link goal pose is published
 void poseTransformCallback(const geometry_msgs::Pose::ConstPtr& posemsg)
 {
+    // ros::param::get("voiceGoalPoseGenerator/originState", "camera_link");
 
     // TODO: convert goal pose from camera_link to URDF world frame
     // FORNOW: pose converted from URDF rodL to URDF world frame
     tf::StampedTransform transform;
-    try
-    {
+    // try
+    // {
 
-        // TODO: acquire the transform once
-        // FORNOW: update transform parameters at every callback interval
-        listPoint->lookupTransform("world", "camera_link",ros::Time(0), transform);
+    //     // TODO: acquire the transform once
+    //     // FORNOW: update transform parameters at every callback interval
+    //     // listPoint->waitForTransform("/world", "/camera_link", ros::Time(0), ros::Duration(3.0));
+    //     // listPoint->lookupTransform("/world", "/camera_link",ros::Time(0), transform);
 
-        // FORNOW: only goal position is updated b/c 3DoF robot arm cannot solve 6DoF goal every time
-        target_pose1.position.x = transform.getOrigin().getX() + posemsg->position.x;
-        target_pose1.position.y = transform.getOrigin().getY() + posemsg->position.y;
-        target_pose1.position.z = transform.getOrigin().getZ() + posemsg->position.z;
+    //     // FORNOW: only goal position is updated b/c 3DoF robot arm cannot solve 6DoF goal every time
+    //     target_pose1.position.x = -0.242 + posemsg->position.x;
+    //     target_pose1.position.y = 0.069 + posemsg->position.y;
+    //     target_pose1.position.z = 0.610 + posemsg->position.z;
 
-        ROS_INFO("Transforms are: x: %f, y: %f: z: %f", target_pose1.position.x,target_pose1.position.y, target_pose1.position.z);
+    //     ROS_INFO("Transforms are: x: %f, y: %f: z: %f", target_pose1.position.x,target_pose1.position.y, target_pose1.position.z);
 
-        // robot arm can now move to updated goal pose
-        moveReady = true;
-    }
-    catch (tf::TransformException &ex)
-    {
-        ROS_ERROR("%s", ex.what());
-        ros::Duration(1.0).sleep();
-    }
+    //     // robot arm can now move to updated goal pose
+    //     moveReady = true;
+    // }
+    // catch (tf::TransformException &ex)
+    // {
+    //     ROS_ERROR("%s", ex.what());
+    // }
+
+    target_pose1.position.x = -0.242 + posemsg->position.x;
+    target_pose1.position.y = 0.069 + posemsg->position.y;
+    target_pose1.position.z = 0.610 + posemsg->position.z;
+    moveReady = true;
 
     // // debugging commands
     // ROS_INFO("callback received!!!");
@@ -114,7 +132,6 @@ void poseTransformCallback(const geometry_msgs::Pose::ConstPtr& posemsg)
 void hebiJointsCallback(const geometry_msgs::Twist::ConstPtr& hebimsg)
 {
     //compute foward kinematics of robot
-    // ROS_INFO("hebi callback received");
     hebiJointAngles.at(0) = hebimsg->linear.x;
     hebiJointAngles.at(1) = hebimsg->linear.y;
     hebiJointAngles.at(2) = hebimsg->linear.z;
@@ -131,7 +148,7 @@ int main(int argc, char **argv)
 
 
     ros::init(argc, argv, "tf_moveit_goalsetNode");
-    ros::AsyncSpinner spinner(1);
+    ros::AsyncSpinner spinner(0);
     spinner.start();
     ros::NodeHandle node;
 
@@ -184,7 +201,7 @@ int main(int argc, char **argv)
     // setting value too high can cause arm to get stuck planning a path that is not possible
     move_group.setPlanningTime(2.0);
     // set goal tolerance for move_group
-    move_group.setGoalTolerance(0.001);
+    move_group.setGoalTolerance(0.005);
 
     // print out debugging information into terminal
     ROS_INFO("Printing Basic Information Now:");
@@ -204,6 +221,21 @@ int main(int argc, char **argv)
     // ROS: The package MoveItVisualtools provides many capabilities for visualizing objects, robots
     // and trajectories in RViz as well as debugging tools such as step-by-step introspection of a script
 
+    // declare home and ready global variables
+    presetPositionNames.push_back("home");
+    presetPositionNames.push_back("ready");
+
+
+    //declare preset joint positions
+    // home: -110, -136, -144 [deg]
+    // home: -1.91986, -2.37365, -2.51327 [rad]
+
+    // ready: -54, -126, -87 [deg]
+    // ready: -0.942478, -2.19911, -1.51844 [rad]
+    presetJointValues.push_back({-1.91986, -2.37365, -2.51327});
+    presetJointValues.push_back({-0.942478, -2.19911, -1.51844});
+
+
 
     // (impedance control) publish to desired hebi torques rostopic
     ros::Publisher desired_efforts_pub = node.advertise<geometry_msgs::Vector3>("desired_hebi_efforts", 1);
@@ -211,10 +243,7 @@ int main(int argc, char **argv)
     ros::Subscriber hebi_joints_sub = node.subscribe("hebi_joints", 1, hebiJointsCallback);
 
     // subscribe to desired pose rostopic
-    ros::Subscriber sent_msg_sub = node.subscribe("desired_pose", 1, poseTransformCallback);
-    
-
-
+    // ros::Subscriber sent_msg_sub = node.subscribe("desired_pose", 1, poseTransformCallback);
 
     // (stabilization and impedance control) declaring variables
     geometry_msgs::Pose target_push_pose2;
@@ -257,12 +286,43 @@ int main(int argc, char **argv)
 
         // get the current state of the robot
         ros::param::get("tf_moveit_goalsetNode/manipulation_state",maniState);
-        ROS_INFO("The state of manipulation is: %s", maniState.c_str());
+        // ROS_INFO("The state of manipulation is: %s", maniState.c_str());
         // currTime = ros::Time::now();
         // durVar = currTime - beginTime;
 
+        if(!moveReady)
+        {
+            boost::shared_ptr<geometry_msgs::Pose const> desired_pose = ros::topic::waitForMessage<geometry_msgs::Pose>("/desired_pose");
+
+            poseTransformCallback(desired_pose);
+        }
+
+
         if (moveReady)
         {
+
+            for (int i = 0; i < presetPositionNames.size(); i++)
+            {
+                if (strcmp(maniState.c_str(),presetPositionNames[i].c_str()) == 0)
+                {
+                    int presetIndex = i;
+                    // std::cout << presetJointValues[presetIndex][0] << std::endl;
+                    std::vector<double> joint_group_positions;
+                    current_state->copyJointGroupPositions(joint_model_group, joint_group_positions);
+                    joint_group_positions[0] = presetJointValues[presetIndex][0];
+                    joint_group_positions[1] = presetJointValues[presetIndex][1];
+                    joint_group_positions[2] = presetJointValues[presetIndex][2];
+
+                    move_group.setJointValueTarget(joint_group_positions);
+                    moveitSuccess = move_group.plan(my_plan);
+
+                    move_group.execute(my_plan);
+                    moveReady = false;
+
+                    continue;
+                }
+            }
+
 
             // TODO: replace this code, does not replace with 
             // tf::poseMsgToEigen(target_pose1,target_joints);
@@ -280,18 +340,23 @@ int main(int argc, char **argv)
 
             // set plan from current state to goal state
             // command will map trajectory and return boolean for success/failure
-            moveitSuccess = move_group.plan(my_plan);
+            // moveitSuccess = move_group.plan(my_plan);
 
-            ROS_INFO_NAMED("tutorial", "Visualizing plan 1 (pose goal) %s", moveitSuccess ? "" : "FAILED");
+            moveitSuccess = (move_group.plan(my_plan) == moveit::planning_interface::MoveItErrorCode::SUCCESS);
 
+            if (!moveitSuccess)
+            {
+                continue;
+            }
+            std::cout << "Successful Trajectory: " << moveitSuccess << std::endl;
 
-            // TODO: implement RViz as purely a visualizing tool
-            // FORNOW: send plan to RViz to execute, RViz will publish joint states to /joint_states
-            // ROS_INFO_NAMED("tutorial", "Visualizing plan 1 as trajectory line");
-            visual_tools.publishAxisLabeled(target_pose1, "pose1");
-            visual_tools.publishText(text_pose, "Pose Goal", rvt::WHITE, rvt::XLARGE);
-            visual_tools.publishTrajectoryLine(myPlanPoint->trajectory_, joint_model_group);
-            visual_tools.trigger();
+            // // TODO: implement RViz as purely a visualizing tool
+            // // FORNOW: send plan to RViz to execute, RViz will publish joint states to /joint_states
+            // // ROS_INFO_NAMED("tutorial", "Visualizing plan 1 as trajectory line");
+            // visual_tools.publishAxisLabeled(target_pose1, "pose1");
+            // visual_tools.publishText(text_pose, "Pose Goal", rvt::WHITE, rvt::XLARGE);
+            // visual_tools.publishTrajectoryLine(myPlanPoint->trajectory_, joint_model_group);
+            // visual_tools.trigger();
             
             // execute plan to move_group
             move_group.execute(my_plan);
@@ -307,10 +372,8 @@ int main(int argc, char **argv)
 
             //get the current state position and orientation
             actual_endeff_state = current_state->getGlobalLinkTransform("end_link/INPUT_INTERFACE");
-            ROS_INFO_STREAM("Translation: \n" << actual_endeff_state.translation() << "\n");
-            ROS_INFO_STREAM("Rotation: \n" << actual_endeff_state.rotation() << "\n");
-            ros::Duration(2.0).sleep();
-            
+            // ROS_INFO_STREAM("Translation: \n" << actual_endeff_state.translation() << "\n");
+            // ROS_INFO_STREAM("Rotation: \n" << actual_endeff_state.rotation() << "\n");            
 
         }
         else if (strcmp(maniState.c_str(),"impedance") == 0)
@@ -318,7 +381,6 @@ int main(int argc, char **argv)
             
             // // Option 2: impedance control based on joint angle errors
             // // compute joint angles of 
-            // ROS_INFO("now this is pod racing");
 
             // // compute joint angles at the pushed target pose
             // target_push_pose2 = target_pose1;
@@ -327,12 +389,10 @@ int main(int argc, char **argv)
 
             // Option 1: impedance control based on x, y, z errors
             target_push_pose2 = target_pose1;
-            // ROS_INFO_STREAM("Goal Pose: \n" << target_push_pose2 << "\n");
             target_push_pose2.position.x += 0.25;
             jointVelocityVect[0] = hebiJointAngVelocities.at(0);
             jointVelocityVect[1] = hebiJointAngVelocities.at(1);
             jointVelocityVect[2] = hebiJointAngVelocities.at(2);
-            // ROS_INFO("State is now in stabilization mode");
             // compute fwd kinematics from hebi joints
             robot_state->setJointGroupPositions(joint_model_group, hebiJointAngles);
             end_effector_state = robot_state->getGlobalLinkTransform("end_link/INPUT_INTERFACE");
@@ -362,14 +422,6 @@ int main(int argc, char **argv)
             // std::cout << "xErrP:  " << xErrP << std::endl;
             // std::cout << "yErrP:  " << yErrP << std::endl;
             // std::cout << "zErrP:  " << zErrP << std::endl;
-            // for (std::size_t i = 0; i < joint_names.size(); ++i)
-            // {
-            //     ROS_INFO("Joint %s: ", joint_names[i].c_str());
-            // }
-            // Answer: world
-            // ROS_INFO("Model Frame: %s", robot_model->getModelFrame().c_str());
-
-            // ROS_INFO_STREAM("Desired Pose: \n" << target_push_pose2);
 
             // set effort from gains and errors
             endLinkEffort[0] = impGainXp*xErrP + impGainXd*xErrD; // x directional force
