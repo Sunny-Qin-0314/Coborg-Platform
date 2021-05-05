@@ -1,0 +1,23 @@
+[36m--[0m Using CATKIN_DEVEL_PREFIX: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/.private/franka_interface_msgs
+[36m--[0m Using CMAKE_PREFIX_PATH: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel;/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/devel;/home/coborg/CMU/16-662/labs/ws/frankapy-public/catkin_ws/devel;/opt/ros/melodic
+[36m--[0m This workspace overlays: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel;/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/devel;/home/coborg/CMU/16-662/labs/ws/frankapy-public/catkin_ws/devel;/opt/ros/melodic
+[36m--[0m Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.17", minimum required is "2")
+[36m--[0m Using PYTHON_EXECUTABLE: /usr/bin/python2
+[36m--[0m Using Debian Python package layout
+[36m--[0m Using empy: /usr/bin/empy
+[36m--[0m Using CATKIN_ENABLE_TESTING: ON
+[36m--[0m Call enable_testing()
+[36m--[0m Using CATKIN_TEST_RESULTS_DIR: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs/test_results
+[36m--[0m Found gtest sources under '/usr/src/googletest': gtests will be built
+[36m--[0m Found gmock sources under '/usr/src/googletest': gmock will be built
+[36m--[0m Found PythonInterp: /usr/bin/python2 (found version "2.7.17")
+[36m--[0m Using Python nosetests: /usr/bin/nosetests-2.7
+[36m--[0m catkin 0.7.29
+[36m--[0m BUILD_SHARED_LIBS is on
+[36m--[0m Using these message generators: gencpp;geneus;genlisp;gennodejs;genpy
+[36m--[0m Generating .msg files for action franka_interface_msgs/ExecuteSkill /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/src/franka-interface-msgs/action/ExecuteSkill.action
+Generating for action ExecuteSkill
+[36m--[0m franka_interface_msgs: 13 messages, 2 services
+[36m--[0m Configuring done
+[36m--[0m Generating done
+[36m--[0m Build files have been written to: /home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/build/franka_interface_msgs

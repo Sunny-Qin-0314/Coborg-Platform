@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/coborg/Coborg-Platform/franka_ws/ws/frankapy-public/catkin_ws/devel/include/**",
+        "/home/coborg/CMU/16-662/labs/ws/frankapy-public/catkin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/src/vision_opencv/cv_bridge/include/**",
+        "/home/coborg/CMU/16-662/labs/ws/cv_bridge_catkin_ws/src/vision_opencv/image_geometry/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

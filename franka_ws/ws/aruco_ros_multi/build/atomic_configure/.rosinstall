@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/coborg/Coborg-Platform/franka_ws/ws/aruco_ros_multi/devel/setup.sh

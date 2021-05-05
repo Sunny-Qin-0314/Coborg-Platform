@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/coborg/Coborg-Platform/franka_ws/ws/robot-autonomy-labs/lab3/cv_bridge_catkin_ws/install/setup.sh

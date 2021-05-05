@@ -1,0 +1,8 @@
+prefix=/home/coborg/Coborg-Platform/franka_ws/ws/aruco_ros_multi/devel
+
+Name: aruco
+Description: Description of aruco
+Version: 2.1.1
+Cflags: -I/home/coborg/Coborg-Platform/franka_ws/ws/aruco_ros_multi/src/aruco_ros_multi/aruco/include
+Libs: -L${prefix}/lib -laruco
+Requires: 

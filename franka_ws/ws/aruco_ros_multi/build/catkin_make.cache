@@ -1,0 +1,2 @@
+aruco_ros_multi/aruco:aruco_ros_multi/aruco_msgs:aruco_ros_multi/aruco_ros_multi
+-DCATKIN_DEVEL_PREFIX=/home/coborg/Coborg-Platform/franka_ws/ws/aruco_ros_multi/devel -DCMAKE_INSTALL_PREFIX=/home/coborg/Coborg-Platform/franka_ws/ws/aruco_ros_multi/install -G Unix Makefiles
