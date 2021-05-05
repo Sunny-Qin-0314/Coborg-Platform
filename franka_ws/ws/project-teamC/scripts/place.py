@@ -8,6 +8,7 @@ from pathlib import Path
 from frankapy import FrankaArm
 from frankapy.utils import min_jerk, min_jerk_weight
 from autolab_core import RigidTransform, Point
+import rospy
 
 from geometry_msgs.msg import Pose
 import math

@@ -45,7 +45,6 @@ def prompt():
         elif command_input == '2': #if place
             timeout = time.time() + 60*5 #run for 5 minutes
             while time.time() < timeout and params.available:
-                
                for tag in params.available:
                     try: #if there's data in the tag
                         topic_name = "/aruco_multiple/pose"+ str(tag)

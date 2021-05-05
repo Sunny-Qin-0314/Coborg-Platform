@@ -4,6 +4,10 @@ import os
 from pocketsphinx import Decoder
 import pyaudio
 import math
+import time
+import rospy
+from rospy.exceptions import ROSException
+from geometry_msgs.msg import Pose
 
 import params
 import pick
@@ -24,8 +28,8 @@ class Tool(enum.IntEnum): #tool type
 
 ### VOICE COMMAND ADDITION SETUP (Optional)
 triggerlist = ['frank']
-commandlist = ['pick','place']
-toollist = ['one','one(2)','two','too','to','three','four','for','all']
+getlist = ['get','get(2)']
+toollist = ['flat','philips']
 
 franka_dir = '/home/coborg/Coborg-Platform/franka_ws/ws/project-teamC/scripts'
 model_dir = '/home/coborg/Coborg-Platform/catkin_ws/src/voice_recog/src/model'
@@ -119,33 +123,49 @@ if __name__ == "__main__":
                     # If in "Command Mode" (after 'coborg' is heard), check for command
                     if decoder.get_search() == 'lm':
                         print ('Result:', results)
-                        if any(word in commandlist for word in results):
-                            commands = [word for word in results if word in commandlist]
-                            print(commands[0])
-                            command = '0'
-                            if 'pick' in commands[0]:
-                                command = '1'
-                            if 'place' in commands[0]:
-                                command = '2'
+                        if 'pick' in results and 'up' in results:
+                            print("Picking up tools")
+                            params.available = [tool for tool in range(1,5) if tool not in params.pegboard] #update what's available to pick
+                            timeout = time.time() + 60*5 #run for 5 minutes
+                            while time.time() < timeout and params.available:
+                                for tag in params.available:
+                                    # topic_name = "/aruco_multiple/pose"+ str(tag)
+                                    # try: #if there's data in the tag
+                                    #     pose = rospy.wait_for_message(topic_name, Pose, timeout=3)
+                                    new_command('2', str(tag))
+                                    params.available = [tool for tool in range(1,5) if tool not in params.pegboard] #update what's available to pick
+                                    # except ROSException: #if the "wait for message" times out then pass to next tag
+                                    #     print("searching...")
+                        elif any(word in getlist for word in results):
+                            command = '1'
                             if any(word in toollist for word in results):
                                 print("Found a tool")
                                 tools = [word for word in results if word in toollist]
-                                print(command[0],tools[0])
                                 tool = '0'
-                                if 'one' in tools[0]:
-                                    tool = '1'
-                                if 'too' in tools[0] or 'two' in tools[0] or 'to' in tools[0]:
-                                    tool = '2'
-                                if 'three' in tools[0]:
-                                    tool = '3'
-                                if 'four' in tools[0] or 'for' in tools[0]:
-                                    tool = '4'
-                                new_command(command, tool)
+                                if 'philips' in tools[0]:
+                                    if 1 in params.pegboard:
+                                        tool = '1'
+                                    elif 3 in params.pegboard:
+                                        tool = '3'
+                                    else:
+                                        print("No Philips head screwdrivers on pegboard!")
+                                if 'flat' in tools[0]:
+                                    if 2 in params.pegboard:
+                                        tool = '2'
+                                    elif 4 in params.pegboard:
+                                        tool = '4'
+                                    else:
+                                        print("No Flathead screwdrivers on pegboard!")
+                                if tool == '0':
+                                    print("Tool not recognized")
+                                else:
+                                    new_command(command, tool)
                     
                     # Translate to base language model if 'coborg' is heard.
                     # Switch back to trigger model if language model hears a command (plays failure sound if command not valid)
                     if any(word in triggerlist for word in results):
                         # os.system('mpg123 -q ' + model_dir + '/../Sounds/triggerSound.mp3')
+                        print("Franka listening for command")
                         decoder.set_search('lm')
                     elif decoder.get_search() == 'lm' and len(results) > 0:
                         decoder.set_search('franka')

@@ -111,7 +111,7 @@ def run_pick(tool_index, tool_id):
 
     # Impedance Control
     # Initalize variables
-    distThres = 0.07
+    distThres = 0.05
     controllerSec = 20
     waitSec = 1
 
