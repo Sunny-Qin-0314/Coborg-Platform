@@ -231,7 +231,18 @@ The flow of this mode begins with verifying that the D435i camera is set at the 
 The first thing the user will do is push either one or two hands in front and in view of the D435i camera. The user will then recite "CoBorg" in the direction of the microphone that is connected to the local computer. An audible confirmation sound will play when the node correctly interprets the initiation sound. The user will then recite "go here" towards the direction of the microphone. The robot feedback an audible confirmation sound and the vision and actuated manipulation pipeline will begin. After the vision nodes acquire the goal position of the center of the one hand or the average center between the two hands, the actuated manipulation system will acquire that goal pose and initiate its motion. The robot arm will first confirm it is in its home position. Then the robot arm will initiate to its ready position which is partly extended outwards in front of the robot. The arm will then attempt to solve for a position that is some X distance away from the goal position in the X-Axis direction relative to the global frame of the robot URDF model. If the arm solves for this position, then the arm will move to that position. The last goal that the robot arm will solve for is at the goal position. The ideal end position of the robot arm is either in the center of the one hand in the one-handed case or at the average position between the two hands in the two-handed case. Once the user wants the robot arm to retract back, the user will say "CoBorg". The robot will feedback a confirmation tone. The user will say "come back". The robot will feedback another audible confirmation tone. The arm will then go back to the ready position and then back to home.
 
 
+# Converting HRDF to URDF
+Note: HRDF file is created using HEBI's 3D CAD tool. 
 
+In the terminal, navigate to the hebi_description source folder. You will need to run the generate_pipeline.bash tool to convert HRDF to XACRO and SDF.
+
+'''
+./scripts/generate_pipeline.bash <HRDF file> <space deliminted desired names of actuator motors>
+'''
+
+The SDF file will be saved in the models/ folder. The URDF file will be saved in the urdf/kits/ folder. 
+  
+NOTE: the bash script assumes that there is a gripper at the end of the linkage arm. Would need to do some manual configuration of the XACRO file to clean up the code and add additional components to the URDF model.
 
 ## References
 - TBD
