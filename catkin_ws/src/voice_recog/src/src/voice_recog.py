@@ -7,6 +7,7 @@ from pydub import AudioSegment
 from pydub.playback import play
 import math
 import enum
+import time
 
 import rospy
 import rospkg
@@ -47,6 +48,8 @@ stream.start_stream()
 rospy.init_node('voice_recog')
 voice_commands_pub = rospy.Publisher('/voice_commands', Int32, queue_size=1)
 
+command_timer = 0
+timer_flag = False
 command = False
 sound = False
 in_speech_bf = False
@@ -59,9 +62,11 @@ while not rospy.is_shutdown():
         decoder.process_raw(buf, False, False)
         # Once speech is detected, keep listening until no more speech is detected before processing command.
         if decoder.get_in_speech() != in_speech_bf:
+            if command_timer > 0 and (time.time() - command_timer) > 5.0:
+                timer_flag = True
             in_speech_bf = decoder.get_in_speech()
             # Once speech is completed (decoder.get_in_speech() is set back to false), process phrase
-            if not in_speech_bf:
+            if not in_speech_bf or timer_flag:
                 decoder.end_utt()
 
                 # Print hypothesis and switch search to another mode
@@ -96,19 +101,22 @@ while not rospy.is_shutdown():
 
                 # Send stop command when "stop stop stop" is outside of "Coborg" trigger
                 if 'stop stop stop' in results:
-                        print(repr(Command.STOP))
-                        voice_commands_pub.publish(Command.STOP)
-                        sound = AudioSegment.from_mp3(voice_dir + '/Sounds/stopSound.mp3')
+                    print(repr(Command.STOP))
+                    voice_commands_pub.publish(Command.STOP)
+                    sound = AudioSegment.from_mp3(voice_dir + '/Sounds/stopSound.mp3')
                 
                 # Translate to base language model if 'coborg' is heard.
                 # Switch back to trigger model if language model hears a command (plays failure sound if command not valid)
-                if 'coborg' in results:
+                if 'hey coborg' in results:
                     sound = AudioSegment.from_mp3(voice_dir + '/Sounds/triggerSound.mp3')
                     decoder.set_search('lm')
-                elif decoder.get_search() == 'lm' and len(results) > 0:
-                     decoder.set_search('coborg')
-                     if not command:
-                         sound = AudioSegment.from_mp3(voice_dir + '/Sounds/nocommandSound.mp3')
+                    command_timer = time.time()
+                elif decoder.get_search() == 'lm' and (len(results) > 0 or timer_flag):
+                    decoder.set_search('coborg')
+                    command_timer = 0
+                    timer_flag = False
+                    if not command:
+                        sound = AudioSegment.from_mp3(voice_dir + '/Sounds/nocommandSound.mp3')
                 
                 # Play response sound (if set)
                 if sound:
