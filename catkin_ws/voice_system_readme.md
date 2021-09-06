@@ -5,7 +5,7 @@
 date: 2021-05-06 # YYYY-MM-DD
 # This will be displayed at the bottom of the article
 # You should set the article's title:
-title: Vision System Setup Readme
+title: Voice System Setup Readme
 # The 'title' is automatically displayed at the top of the page
 # and used in other parts of the site.
 ---
