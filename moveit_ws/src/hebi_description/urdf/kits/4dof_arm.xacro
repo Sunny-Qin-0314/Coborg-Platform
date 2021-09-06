@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" version="1.2.0" name="4dof_arm">
+  <!-- HEBI 4dof_arm Arm Kit -->
+  <xacro:include filename="$(find hebi_description)/urdf/hebi.xacro"/>
+  <xacro:arg name="hebi_base_frame" default="world"/>
+  <xacro:property name="hebi_base_frame" value="$(arg hebi_base_frame)"/>
+  <xacro:if value="${hebi_base_frame == 'world'}">
+    <link name="$(arg hebi_base_frame)"/>
+  </xacro:if>
+  <joint name="$(arg hebi_base_frame)_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <parent link="$(arg hebi_base_frame)"/>
+    <child link="HEBI/arm1/INPUT_INTERFACE"/>
+  </joint>
+  <xacro:actuator type="X5_1" name="HEBI/arm1" child="arm2_bracket"/>
+  <xacro:bracket type="X5HeavyRightOutside" name="arm2_bracket" child="HEBI/arm2"/>
+  <xacro:actuator type="X5_1" name="HEBI/arm2" child="arm2_arm3"/>
+  <xacro:link type="X5" twist="0.000000" extension="0.175000" name="arm2_arm3" child="HEBI/arm3"/>
+  <xacro:actuator type="X5_1" name="HEBI/arm3" child="arm3_arm4"/>
+  <xacro:link type="X5" twist="0.000000" extension="0.175000" name="arm3_arm4" child="HEBI/arm4"/>
+  <xacro:actuator type="X5_1" name="HEBI/arm4" child="end_effector"/>
+  <xacro:gripper name="end_effector"/>
+</robot>
