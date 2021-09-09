@@ -60,10 +60,11 @@ while not rospy.is_shutdown():
     if buf:
         # Send raw audio to pocketsphinx decoder
         decoder.process_raw(buf, False, False)
+        if command_timer > 0 and (time.time() - command_timer) > 5.0:
+            timer_flag = True
+            print("TIMEOUT")
         # Once speech is detected, keep listening until no more speech is detected before processing command.
-        if decoder.get_in_speech() != in_speech_bf:
-            if command_timer > 0 and (time.time() - command_timer) > 5.0:
-                timer_flag = True
+        if decoder.get_in_speech() != in_speech_bf or timer_flag:
             in_speech_bf = decoder.get_in_speech()
             # Once speech is completed (decoder.get_in_speech() is set back to false), process phrase
             if not in_speech_bf or timer_flag:
@@ -73,7 +74,7 @@ while not rospy.is_shutdown():
                 print('Decoder Mode:', decoder.get_search())
                 results = [seg.word for seg in decoder.seg()]
                 results[:] = [word for word in results if word != '<sil>' and word != '</s>' and word != '<s>']
-                
+                print ('Result:', results)
 
                 # If in "Command Mode" (after 'coborg' is heard), check for command
                 if decoder.get_search() == 'lm':
