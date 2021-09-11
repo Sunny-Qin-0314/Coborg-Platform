@@ -4,7 +4,7 @@ project(darknet_ros_3d)
 ## Compile as C++11, supported in ROS Kinetic and newer
 set(CMAKE_BUILD_TYPE RelWithDebInfo)
 add_compile_options(-std=c++11)
-set(PCL_DIR "/usr/lib/x86_64-linux-gnu/cmake/pcl/")
+set(PCL_DIR "/usr/lib/aarch64-linux-gnu/cmake/pcl/")
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)

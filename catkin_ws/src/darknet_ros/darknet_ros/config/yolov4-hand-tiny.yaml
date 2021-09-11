@@ -1,0 +1,11 @@
+yolo_model:
+
+  config_file:
+    name: cross-hands-yolov4-tiny.cfg
+  weight_file:
+    name: cross-hands-yolov4-tiny.weights
+  threshold:
+    value: 0.3
+  detection_classes:
+    names:
+      - hand

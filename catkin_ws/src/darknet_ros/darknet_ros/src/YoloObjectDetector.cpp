@@ -117,35 +117,35 @@ void YoloObjectDetector::init() {
   // Initialize publisher and subscriber.
   std::string cameraTopicName;
   int cameraQueueSize;
-  std::string objectDetectorTopicName;
-  int objectDetectorQueueSize;
-  bool objectDetectorLatch;
+  // std::string objectDetectorTopicName;
+  // int objectDetectorQueueSize;
+  // bool objectDetectorLatch;
   std::string boundingBoxesTopicName;
   int boundingBoxesQueueSize;
   bool boundingBoxesLatch;
-  std::string detectionImageTopicName;
-  int detectionImageQueueSize;
-  bool detectionImageLatch;
+  // std::string detectionImageTopicName;
+  // int detectionImageQueueSize;
+  // bool detectionImageLatch;
 
   nodeHandle_.param("subscribers/camera_reading/topic", cameraTopicName, std::string("/camera/color/image_raw"));
   nodeHandle_.param("subscribers/camera_reading/queue_size", cameraQueueSize, 1);
-  nodeHandle_.param("publishers/object_detector/topic", objectDetectorTopicName, std::string("found_object"));
-  nodeHandle_.param("publishers/object_detector/queue_size", objectDetectorQueueSize, 1);
-  nodeHandle_.param("publishers/object_detector/latch", objectDetectorLatch, false);
+  // nodeHandle_.param("publishers/object_detector/topic", objectDetectorTopicName, std::string("found_object"));
+  // nodeHandle_.param("publishers/object_detector/queue_size", objectDetectorQueueSize, 1);
+  // nodeHandle_.param("publishers/object_detector/latch", objectDetectorLatch, false);
   nodeHandle_.param("publishers/bounding_boxes/topic", boundingBoxesTopicName, std::string("bounding_boxes"));
   nodeHandle_.param("publishers/bounding_boxes/queue_size", boundingBoxesQueueSize, 1);
   nodeHandle_.param("publishers/bounding_boxes/latch", boundingBoxesLatch, false);
-  nodeHandle_.param("publishers/detection_image/topic", detectionImageTopicName, std::string("detection_image"));
-  nodeHandle_.param("publishers/detection_image/queue_size", detectionImageQueueSize, 1);
-  nodeHandle_.param("publishers/detection_image/latch", detectionImageLatch, true);
+  // nodeHandle_.param("publishers/detection_image/topic", detectionImageTopicName, std::string("detection_image"));
+  // nodeHandle_.param("publishers/detection_image/queue_size", detectionImageQueueSize, 1);
+  // nodeHandle_.param("publishers/detection_image/latch", detectionImageLatch, true);
 
   imageSubscriber_ = imageTransport_.subscribe(cameraTopicName, cameraQueueSize, &YoloObjectDetector::cameraCallback, this);
-  objectPublisher_ =
-      nodeHandle_.advertise<darknet_ros_msgs::ObjectCount>(objectDetectorTopicName, objectDetectorQueueSize, objectDetectorLatch);
+  // objectPublisher_ =
+  //     nodeHandle_.advertise<darknet_ros_msgs::ObjectCount>(objectDetectorTopicName, objectDetectorQueueSize, objectDetectorLatch);
   boundingBoxesPublisher_ =
       nodeHandle_.advertise<darknet_ros_msgs::BoundingBoxes>(boundingBoxesTopicName, boundingBoxesQueueSize, boundingBoxesLatch);
-  detectionImagePublisher_ =
-      nodeHandle_.advertise<sensor_msgs::Image>(detectionImageTopicName, detectionImageQueueSize, detectionImageLatch);
+  // detectionImagePublisher_ =
+  //     nodeHandle_.advertise<sensor_msgs::Image>(detectionImageTopicName, detectionImageQueueSize, detectionImageLatch);
 
   // Action servers.
   std::string checkForObjectsActionName;
@@ -309,10 +309,10 @@ void* YoloObjectDetector::detectInThread() {
     printf("\033[2J");
     printf("\033[1;1H");
     printf("\nFPS:%.1f\n", fps_);
-    printf("Objects:\n\n");
+    // printf("Objects:\n\n");
   }
-  image display = buff_[(buffIndex_ + 2) % 3];
-  draw_detections(display, dets, nboxes, demoThresh_, demoNames_, demoAlphabet_, demoClasses_);
+  // image display = buff_[(buffIndex_ + 2) % 3];
+  // draw_detections(display, dets, nboxes, demoThresh_, demoNames_, demoAlphabet_, demoClasses_);
 
   // extract the bounding boxes and send them to ROS
   int i, j;
@@ -493,11 +493,11 @@ void YoloObjectDetector::yolo() {
     if (!demoPrefix_) {
       fps_ = 1. / (what_time_is_it_now() - demoTime_);
       demoTime_ = what_time_is_it_now();
-      if (viewImage_) {
-        displayInThread(0);
-      } else {
-        generate_image(buff_[(buffIndex_ + 1) % 3], ipl_);
-      }
+      // if (viewImage_) {
+      //   displayInThread(0);
+      // } else {
+      //   generate_image(buff_[(buffIndex_ + 1) % 3], ipl_);
+      // }
       publishInThread();
     } else {
       char name[256];
@@ -531,10 +531,10 @@ bool YoloObjectDetector::isNodeRunning(void) {
 
 void* YoloObjectDetector::publishInThread() {
   // Publish image.
-  cv::Mat cvImage = cv::cvarrToMat(ipl_);
-  if (!publishDetectionImage(cv::Mat(cvImage))) {
-    ROS_DEBUG("Detection image has not been broadcasted.");
-  }
+  // cv::Mat cvImage = cv::cvarrToMat(ipl_);
+  // if (!publishDetectionImage(cv::Mat(cvImage))) {
+  //   ROS_DEBUG("Detection image has not been broadcasted.");
+  // }
 
   // Publish bounding boxes and detection result.
   int num = roiBoxes_[0].num;
@@ -548,11 +548,11 @@ void* YoloObjectDetector::publishInThread() {
       }
     }
 
-    darknet_ros_msgs::ObjectCount msg;
-    msg.header.stamp = ros::Time::now();
-    msg.header.frame_id = "detection";
-    msg.count = num;
-    objectPublisher_.publish(msg);
+    // darknet_ros_msgs::ObjectCount msg;
+    // msg.header.stamp = ros::Time::now();
+    // msg.header.frame_id = "detection";
+    // msg.count = num;
+    // objectPublisher_.publish(msg);
 
     for (int i = 0; i < numClasses_; i++) {
       if (rosBoxCounter_[i] > 0) {
@@ -579,13 +579,14 @@ void* YoloObjectDetector::publishInThread() {
     boundingBoxesResults_.header.frame_id = "detection";
     boundingBoxesResults_.image_header = headerBuff_[(buffIndex_ + 1) % 3];
     boundingBoxesPublisher_.publish(boundingBoxesResults_);
-  } else {
-    darknet_ros_msgs::ObjectCount msg;
-    msg.header.stamp = ros::Time::now();
-    msg.header.frame_id = "detection";
-    msg.count = 0;
-    objectPublisher_.publish(msg);
   }
+  // } else {
+  //   darknet_ros_msgs::ObjectCount msg;
+  //   msg.header.stamp = ros::Time::now();
+  //   msg.header.frame_id = "detection";
+  //   msg.count = 0;
+  //   objectPublisher_.publish(msg);
+  // }
   if (isCheckingForObjects()) {
     ROS_DEBUG("[YoloObjectDetector] check for objects in image.");
     darknet_ros_msgs::CheckForObjectsResult objectsActionResult;

@@ -28,8 +28,8 @@ if (CUDA_FOUND)
 	-gencode arch=compute_60,code=sm_60 
 	-gencode arch=compute_61,code=sm_61 
 	-gencode arch=compute_70,code=sm_70 
-	-gencode arch=compute_75,code=sm_75 
-	-gencode arch=compute_75,code=compute_75
+	-gencode arch=compute_72,code=sm_72 
+	-gencode arch=compute_72,code=compute_72
   )
   add_definitions(-DGPU)
 else()
@@ -181,6 +181,7 @@ else()
 
 endif()
 
+
 target_link_libraries(${PROJECT_NAME}_lib
   m
   pthread
@@ -191,6 +192,8 @@ target_link_libraries(${PROJECT_NAME}_lib
   ${OpenCV_LIBS}
 )
 
+
+
 target_link_libraries(${PROJECT_NAME}
   ${PROJECT_NAME}_lib
 )
@@ -198,6 +201,7 @@ target_link_libraries(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME}_nodelet
   ${PROJECT_NAME}_lib
 )
+#add_dependencies(${PROJECT_NAME}_lib ${catkin_EXPORTED_TARGETS})
 
 add_dependencies(${PROJECT_NAME}_lib
   darknet_ros_msgs_generate_messages_cpp

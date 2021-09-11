@@ -9,8 +9,8 @@ ARCH= -gencode=arch=compute_50,code=sm_50 \
 	-gencode=arch=compute_60,code=sm_60 \
 	-gencode=arch=compute_61,code=sm_61 \
 	-gencode=arch=compute_70,code=sm_70 \
-	-gencode=arch=compute_75,code=sm_75 \
-	-gencode=arch=compute_75,code=compute_75
+	-gencode=arch=compute_72,code=sm_72 \
+	-gencode=arch=compute_72,code=compute_72
 # This is what I use, uncomment if you know your arch and want to specify
 # ARCH= -gencode arch=compute_75,code=compute_75
 
