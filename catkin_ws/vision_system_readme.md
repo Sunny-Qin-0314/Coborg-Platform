@@ -2,7 +2,7 @@
 # Jekyll 'Front Matter' goes here. Most are set by default, and should NOT be
 # overwritten except in special circumstances. 
 # You should set the date the article was last updated like this:
-date: 2021-05-06 # YYYY-MM-DD
+date: 2021-09-10 # YYYY-MM-DD
 # This will be displayed at the bottom of the article
 # You should set the article's title:
 title: Vision System Setup Readme
@@ -31,6 +31,16 @@ Before you start the integration, make sure you have prepared your pre-trained Y
 - Ubuntu: 18.04
 
 - ROS: Melodic
+
+- OpenCV: 3.4.6 (if using OpenCV 4+, follow this [link](https://github.com/leggedrobotics/darknet_ros/issues/290#issuecomment-762345858))
+
+- CUDA: 10.2 
+
+- cuDNN: 7.6.x
+
+- numpy: 1.19.0
+
+- If use NVIDIA Jetson, JetPack 4.3 works fine (default: CUDA 10.0 + cuDNN 7.6), need to downgrade default OpenCV from 4.1.1 to 3.4.6 (compile OpenCV from source, using this [link](https://jkjung-avt.github.io/opencv-on-nano/))
 
 - YOLO: The official YOLO ROS wrapper GitHub repo [darknet_ros](https://github.com/leggedrobotics/darknet_ros) currently only supports YOLOv3 and below. If you are using YOLOv4, try this repo instead [yolo_v4](https://github.com/tom13133/darknet_ros/tree/yolov4)
 
@@ -88,6 +98,8 @@ Before you start the integration, make sure you have prepared your pre-trained Y
 ## Setting up YOLO with CUDA GPU Acceleration
 
 You may find that running YOLO through the CPU is very slow. To increase run-time performance, you can accelerate it by using a CUDA enabled GPU. 
+
+**Note: if you are using NVIDIA Jetson, CUDA and cuDNN are set up by using SDK manager. JetPack 4.3 contains CUDA 10.0 + cuDNN 7.6, which works fine with darknet_ros. You cannot install CUDA and cuDNN seperately since Jetson is ARM based. NVIDIA only supports fixed versions for CUDA and cuDNN on Jetson. Latest Jetpack(4.6) contains CUDA 10.2 + cuDNN 8.x, which you might seen a performance drop because of using cuDNN 8. The issue currently is still not resolved, so for now, use cuDNN 7.6 with darknet_ros.**
 
 **Note: darknet currently only supports (last updated 2021) CUDA 10.2 with cuDNN 7.6.5 and below. If you are using CUDA 11+ or cuDNN 8.0+, you probably need to downgrade CUDA and cuDNN for darknet to work.** 
 
