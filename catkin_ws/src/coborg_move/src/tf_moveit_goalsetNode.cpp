@@ -159,7 +159,7 @@ int main(int argc, char **argv)
     ROS_INFO("Loading robot model");
 
     // set and configure to planning group
-    static const std::string PLANNING_GROUP = "dof_4_arm"; // change out with name of the arm
+    static const std::string PLANNING_GROUP = "coborg_arm"; // change out with name of the arm
     moveit::planning_interface::MoveGroupInterface move_group(PLANNING_GROUP);
     movePoint = &move_group;
 
