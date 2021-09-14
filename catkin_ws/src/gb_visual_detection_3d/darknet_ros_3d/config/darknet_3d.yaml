@@ -1,5 +1,6 @@
 darknet_ros_topic: /darknet_ros/bounding_boxes
 output_bbx3d_topic: /darknet_ros_3d/bounding_boxes
+output_goal_topic: /goal
 point_cloud_topic: /cam1/depth_registered/points
 working_frame: cam1_link
 mininum_detection_thereshold: 0.025

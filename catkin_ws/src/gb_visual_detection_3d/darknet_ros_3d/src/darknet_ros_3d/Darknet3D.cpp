@@ -61,6 +61,7 @@ Darknet3D::Darknet3D():
 
   darknet3d_pub_ = nh_.advertise<gb_visual_detection_3d_msgs::BoundingBoxes3d>(output_bbx3d_topic_, 100);
   markers_pub_ = nh_.advertise<visualization_msgs::MarkerArray>("/darknet_ros_3d/markers", 100);
+  goal_pub_ = nh_.advertise<gb_visual_detection_3d_msgs::goal_msg>(output_goal_topic_, 100);
 
   yolo_sub_ = nh_.subscribe(input_bbx_topic_, 1, &Darknet3D::darknetCb, this);
   pointCloud_sub_ = nh_.subscribe(pointcloud_topic_, 1, &Darknet3D::pointCloudCb, this);
@@ -73,6 +74,7 @@ Darknet3D::initParams()
 {
   input_bbx_topic_ = "/darknet_ros/bounding_boxes";
   output_bbx3d_topic_ = "/darknet_ros_3d/bounding_boxes";
+  output_goal_topic_ = "/goal";
   pointcloud_topic_ = "/camera/depth_registered/points";
   working_frame_ = "/camera_link";
   mininum_detection_thereshold_ = 0.01f;
@@ -80,6 +82,7 @@ Darknet3D::initParams()
 
   nh_.param("darknet_ros_topic", input_bbx_topic_, input_bbx_topic_);
   nh_.param("output_bbx3d_topic", output_bbx3d_topic_, output_bbx3d_topic_);
+  nh_.param("output_goal_topic", output_goal_topic_, output_goal_topic_);
   nh_.param("point_cloud_topic", pointcloud_topic_, pointcloud_topic_);
   nh_.param("working_frame", working_frame_, working_frame_);
   nh_.param("mininum_detection_thereshold", mininum_detection_thereshold_, mininum_detection_thereshold_);
@@ -103,7 +106,7 @@ Darknet3D::darknetCb(const darknet_ros_msgs::BoundingBoxes::ConstPtr& msg)
 void
 Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
     const pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr cloud_pcl,
-    gb_visual_detection_3d_msgs::BoundingBoxes3d* boxes)
+    gb_visual_detection_3d_msgs::BoundingBoxes3d* boxes, gb_visual_detection_3d_msgs::goal_msg* goal)
 {
   boxes->header.stamp = cloud_pc2.header.stamp;
   boxes->header.frame_id = working_frame_;
@@ -119,7 +122,6 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
       continue;
     }
 
-    // std::cout << "here" << std::endl;
     int center_x, center_y;
 
     center_x = (bbx.xmax + bbx.xmin) / 2;
@@ -135,7 +137,6 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
       continue;
 
     float maxx, minx, maxy, miny, maxz, minz;
-    // std::cout << "there is a center point" << std::endl;
     maxx = maxy = maxz =  -std::numeric_limits<float>::max();
     minx = miny = minz =  std::numeric_limits<float>::max();
 
@@ -147,9 +148,7 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
 
         if (std::isnan(point.x))
           continue;
-        // std::cout << fabs(point.x - center_point.x)  << " "<< mininum_detection_thereshold_ << std::endl;
         if (fabs(point.x - center_point.x) > mininum_detection_thereshold_){
-          // std::cout << "less than 2.5 cm" << std::endl;
           continue;
         }
           
@@ -207,7 +206,14 @@ Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
   boxes -> normal_x = nx;
   boxes -> normal_y = ny;
   boxes -> normal_z = nz;
-  
+
+  goal -> Class = "Hand";
+  goal -> x = searchPoint.x;
+  goal -> y = searchPoint.y;
+  goal -> z = searchPoint.z;
+  goal -> normal_x = nx;
+  goal -> normal_y = ny;
+  goal -> normal_z = nz;
 }
 
 void
@@ -217,7 +223,8 @@ Darknet3D::update()
     return;
 
   if ((darknet3d_pub_.getNumSubscribers() == 0) &&
-      (markers_pub_.getNumSubscribers() == 0))
+      (markers_pub_.getNumSubscribers() == 0) &&
+      (goal_pub_.getNumSubscribers() == 0))
     return;
 
   sensor_msgs::PointCloud2 local_pointcloud;
@@ -236,10 +243,12 @@ Darknet3D::update()
   pcl::fromROSMsg(local_pointcloud, *pcrgb);
 
   gb_visual_detection_3d_msgs::BoundingBoxes3d msg;
+  gb_visual_detection_3d_msgs::goal_msg goal;
 
-  calculate_boxes(local_pointcloud, pcrgb, &msg);
+  calculate_boxes(local_pointcloud, pcrgb, &msg, &goal);
 
   darknet3d_pub_.publish(msg);
+  goal_pub_.publish(goal);
 
   publish_markers(msg);
 }

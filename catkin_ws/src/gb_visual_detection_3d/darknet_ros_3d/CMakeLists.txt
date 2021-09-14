@@ -47,6 +47,8 @@ target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 add_executable(darknet3d_node src/darknet3d_node.cpp)
 target_link_libraries(darknet3d_node ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${PROJECT_NAME})
 
+add_dependencies(${PROJECT_NAME} ${catkin_EXPORTED_TARGETS})
+
 add_executable(darknet3d_listener_node test/darknet3d_listener_node.cpp)
 target_link_libraries(darknet3d_listener_node ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${PROJECT_NAME})
 

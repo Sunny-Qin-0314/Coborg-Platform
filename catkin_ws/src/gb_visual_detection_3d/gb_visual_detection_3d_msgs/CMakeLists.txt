@@ -10,6 +10,7 @@ add_message_files(
  FILES
  BoundingBoxes3d.msg
  BoundingBox3d.msg
+ goal_msg.msg
 )
 
 generate_messages(

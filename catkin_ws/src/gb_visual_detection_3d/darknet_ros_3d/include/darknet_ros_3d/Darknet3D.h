@@ -41,6 +41,7 @@
 #include <ros/ros.h>
 
 #include <gb_visual_detection_3d_msgs/BoundingBoxes3d.h>
+#include <gb_visual_detection_3d_msgs/goal_msg.h>
 #include <darknet_ros_msgs/BoundingBoxes.h>
 #include <sensor_msgs/PointCloud2.h>
 
@@ -70,11 +71,11 @@ private:
 
   void calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
       const pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr cloud_pcl,
-      gb_visual_detection_3d_msgs::BoundingBoxes3d* boxes);
+      gb_visual_detection_3d_msgs::BoundingBoxes3d* boxes, gb_visual_detection_3d_msgs::goal_msg* goal);
 
   ros::NodeHandle nh_;
   ros::Subscriber yolo_sub_, pointCloud_sub_;
-  ros::Publisher darknet3d_pub_, markers_pub_;
+  ros::Publisher darknet3d_pub_, markers_pub_, goal_pub_;
   tf::TransformListener tfListener_;
 
   std::vector<darknet_ros_msgs::BoundingBox> original_bboxes_;
@@ -83,6 +84,7 @@ private:
 
   std::string input_bbx_topic_;
   std::string output_bbx3d_topic_;
+  std::string output_goal_topic_;
   std::string pointcloud_topic_;
   std::string working_frame_;
   std::vector<std::string> interested_classes_;
