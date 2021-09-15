@@ -1,8 +1,0 @@
-prefix=/home/coborg/Coborg-Platform/demos/plane_demo/install
-
-Name: ros_detect_planes_from_depth_img
-Description: Description of ros_detect_planes_from_depth_img
-Version: 1.2.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs rospy roscpp

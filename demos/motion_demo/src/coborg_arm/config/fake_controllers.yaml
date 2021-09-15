@@ -1,9 +1,0 @@
-controller_list:
-  - name: fake_coborg_arm_controller
-    joints:
-      - motor1/X5_9
-      - motor2/X5_9
-      - motor3/X5_4
-initial:  # Define initial robot poses.
-  - group: coborg_arm
-    pose: arm_out

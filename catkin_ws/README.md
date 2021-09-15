@@ -1,121 +1,68 @@
-## within src/darknet_ros/darnet_ros/
+# Coborg-Platform
 
-Note: check whether the darknet has /data folder, if not, you may need to re-download the repo from darknet_ros, and change the config, launch files as mentioned below
+COBORG is an exoskeleton platform that will change the world. The vision of this system is to be able to act as a helping hand for it’s operator. We’ve found that people who do overhead manufacturing, for example automation or aircraft assembly, tend to strain their arms after working for long periods of time, and often require a second person to assist them as they work. We want to create a platform that will empower and aid the user as they do their day to day tasks.
 
-Note: make sure you have weights file in the /yolo_network_config
-
-/yolo_network_config:
-
-0. download the weights and cfg from /download.sh
-1. add .cfg and .weights (hand detection model weights and configs)
-2. within /cfg, run "dos2unix cross-hands.cfg" (convert it to unix format)
-
-/config:
-
-1. modify "ros.yaml" with correct camera topic
-2. create "yolov3-hand.yaml" to configure the model files
-
-/launch:
-
-1. modify "darknet_ros.launch" with correct yaml file (yolov3-hand.yaml)
+## Get Started
 
 
+### Compile/Build
+Compile the whole system under catkin_ws.
 
-## within src/gb_visual_detection_3d/darknet_ros_3d
+1. Under /catkin_ws: 
 
-Note: download the repo and checkout to "melodic" branch!!
+**Note:Darknet and darknet_ros need to be setup seperately since the large weight files and large /data folder in darknet. See vision subsystem readme to setup these two package before catkin_make**
 
-https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d
+```
+catkin_make
+```
 
-Note: download msg repo and checkout to "melodic" branch before catkin_make!!
+### Run
 
-https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d_msgs
+The integrated, voice activated mode of the actuated manipulation system incorporates the other subsystems of this product: voice, vision, and main state machine nodes. This mode was run in the SVD encore event to showcase the synergy between the different subsystems and to showcase the use case flow of using the robot arm. To run this mode, the user must run the other subsystem nodes. From a high level, the order of launching subsystems is shown below:
+
+1. RealSense D435i and T265 -> depth camera node
+3. Darknet ros 3D model -> vision node
+2. Robot model and URDF -> robot model node
+5. Voice recognition node -> voice node
+6. Main state machine node -> main state machine node
+7. MoveIt model interface node -> path planning node
+8. Actuated manipulation pose generator node -> path intermidiate node
+9. HEBI motor interface node -> motor node
+
+To run this mode, the following commands should be run (user will need multiple terminal tabs and windows to run all these nodes). Make sure to run `source devel/setup.bash` for all new terminal instances:
+
+```
+### terminal instance
+roslaunch coborg_move demo_hebi_realsense_tf.launch
+
+### terminal instance
+roslaunch darknet_ros_3d darknet_ros_3d.launch
+
+### terminal instance
+roslaunch voice_recog voice.launch
+
+### terminal instance
+roslaunch main_state_machine main.launch
+
+### terminal instance
+roslaunch coborg_move tf_moveit_goalsetNode.launch
+
+### terminal instance
+roslaunch coborg_move voiceGoalPoseGenerator.launch
+
+### terminal instance
+roslaunch coborg_move find_hebi_moveit_planner.launch
+```
+
+The node contains the same preset positioning and rosparam structure as the preset positions mode implemented for the first SVD event. In addition, this mode can react to appropriate voice inputs, generate a goal pose from detected hands from the vision noce, and have te robot arm move to those goal positions. 
+
+The flow of this mode begins with verifying that the D435i camera is set at the appropriate viewing angle and the camera can see the hands that will be in view at their intended positions. In addition, the robot arm should be in its home/compact position before beginning this runthrough.
+
+The first thing the user will do is push either one or two hands in front and in view of the D435i camera. The user will then recite "CoBorg" in the direction of the microphone that is connected to the local computer. An audible confirmation sound will play when the node correctly interprets the initiation sound. The user will then recite "go here" towards the direction of the microphone. The robot will feedback an audible confirmation sound and the vision and actuated manipulation pipeline will begin. After the vision nodes acquire the goal position of the center of the one hand or the average center between the two hands, the actuated manipulation system will acquire that goal pose and initiate its motion. The robot arm will first confirm it is in its home position. Then the robot arm will initiate to its ready position which is partly extended outwards in front of the robot. The arm will then attempt to solve for a position that is some X distance away from the goal position in the X-Axis direction relative to the global frame of the robot URDF model. If the arm solves for this position, then the arm will move to that position. The last goal that the robot arm will solve for is at the goal position. The ideal end position of the robot arm is either in the center of the one hand in the one-handed case or at the average position between the two hands in the two-handed case. Once the user wants the robot arm to retract back, the user will say "CoBorg". The robot will feedback a confirmation tone. The user will say "come back". The robot will feedback another audible confirmation tone. The arm will then go back to the ready position and then back to home.
 
 
-/config:
-1. modify "darknet_3d.yaml" with correct camera depth-registed pointcloud topic and "interested_classes" ("hand")
+## Team
+CMU 2020MRSD Team C:
+Husam Wadi, Yuqing Qin, Gerry D’Ascoli, Feng Xiang, Jonathan Lord-Fonda
 
-/launch:
-1. modify "darknet_ros_3d.launch" with correct yaml file (yolov3-hand.yaml)
-
-
-Note: if "catkin_make" doesn't work, try "catkin_make -j1"
-
-
-## Run on GPU: needs more than 4GB GPU memory
-
-### version: cuda 10.2 + cudnn 7.6.5 (not support cudnn8)
-
-### install cuda 10.2:
-Note: if there is any usr/local/cuda directory, remove it before re-install
-Note: no need to set up driver, when install cuda, it will set up driver automatically
-Note: the libcudnn7 is installed in the /usr/local/cuda-10.2, if libcudnn exists in /cuda-10.2, copy to /usr/local/cuda/lib64, also copy cudnn.h to /cuda/include as well.
-
-https://medium.com/@exesse/cuda-10-1-installation-on-ubuntu-18-04-lts-d04f89287130
-
-check cuda version:
-nvcc -V
-
-
-### install cudnn separately:
-Goto page https://developer.nvidia.com/rdp/cudnn-download
-Download all three .deb: runtime/developer/code sample
-
-$ sudo dpkg -i libcudnn7_7.6.5.32–1+cuda10.1_amd64.deb (the runtime library),
-
-$ sudo dpkg -i libcudnn7-dev_7.6.5.32–1+cuda10.1_amd64.deb (the developer library), and
-
-$ sudo dpkg -i libcudnn7-doc_7.6.5.32–1+cuda10.1_amd64.deb (the code samples).
-
-!! copy cudnn.h (in usr/include) to (usr/local/cuda/include)
-!! copy libcudnn* (in usr/lib/x86_...) to (/usr/local/cuda/lib64/)
-
-### modify makefile 
-1. change Makefile in /darnet_ros/darknet
-   GPU = 1
-   CUDNN =1
-   OPENCV = 1
-   -gencode (75)
-
-2. run "make" in /darknet_ros/darknet
-
-3. change CmakeList.txt in /darknet_ros/darknet_ros
-   -gencode = 75
-
-4. run "catkin_make -DCMAKE_BUILD_TYPE=Release" in /catkin_ws
-
-GPU is ready!
-
-## Modify the rs_d400_and_t265.launch
-Add rs_rgbd.launch into rs_d400_and_t265.launch
-
-Note: install rgbd_launch package first
-
-$ sudo apt-get install ros-melodic-rgbd-launch
-
-modify the tf based on the urdf for d435 and t265
-xyz="0.009 0.021 0.027" rpy="0.000 -0.018 0.005"
-
-To use it, move it into your /opt/ros/melodic/share/realsense2_camera/launch
-
-## Add Surface Normal in Darknet_ros_3d_normal
-In /Darknet3d.cpp:
-
-Postprocessing the 3D bounding box and get the averaged middle point's surface normal by checking the KNN of radius 15cm.
-
-## Run the program
-
-1. roslaunch realsense2_camera rs_d400_and_t265.launch 
-   (modified d400 and t265 launch file (combined rs_rgbd.launch and rs_d400_and_t265.launch)) or use rs_rgbd.launch with D435i only
-
-2. catkin_make   
-
-   if not working, try "catkin_make -j1"
-
-   source devel/setup.bash
-
-3. roslaunch darknet_ros_3d darknet_ros_3d.launch
-   (make sure configure file and launch file have already been modified with correct image topics and YOLO weights, configs)
-
-4. rosrun goal_getter goal_getter
-   (publish 3D position to /goal topic)
+BioRobotics Lab at CMU.

@@ -1,2 +1,0 @@
-ros_detect_planes_from_depth_img:ros_pub_and_sub_rgbd_and_cloud
--DCATKIN_DEVEL_PREFIX=/home/coborg/Coborg-Platform/demos/plane_demo/devel -DCMAKE_INSTALL_PREFIX=/home/coborg/Coborg-Platform/demos/plane_demo/install -G Unix Makefiles

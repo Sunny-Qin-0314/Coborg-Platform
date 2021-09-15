@@ -1,8 +1,0 @@
-prefix=/home/coborg/Coborg-Platform/demos/motion_demo/install
-
-Name: hebi_cpp_api_examples
-Description: Description of hebi_cpp_api_examples
-Version: 1.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: actionlib actionlib_msgs control_msgs geometry_msgs hebi_cpp_api message_runtime nav_msgs roscpp sensor_msgs std_msgs tf trajectory_msgs

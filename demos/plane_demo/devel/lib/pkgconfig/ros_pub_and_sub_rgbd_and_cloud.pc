@@ -1,8 +1,0 @@
-prefix=/home/coborg/Coborg-Platform/demos/plane_demo/devel
-
-Name: ros_pub_and_sub_rgbd_and_cloud
-Description: Description of ros_pub_and_sub_rgbd_and_cloud
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: message_runtime

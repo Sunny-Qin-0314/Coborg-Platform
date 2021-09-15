@@ -1,8 +1,0 @@
-prefix=/home/coborg/Coborg-Platform/demos/motion_demo/devel
-
-Name: coborg_move
-Description: Description of coborg_move
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: roscpp rospy hebi_cpp_api message_runtime std_msgs tf trajectory_msgs moveit_core moveit_ros_planning_interface sensor_msgs

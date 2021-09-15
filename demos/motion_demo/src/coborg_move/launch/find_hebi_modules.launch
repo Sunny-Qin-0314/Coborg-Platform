@@ -1,3 +1,0 @@
-<launch>
-    <node pkg="coborg_move" type="find_hebi_modules" name="find_hebi_modules" output="screen" />
-</launch>

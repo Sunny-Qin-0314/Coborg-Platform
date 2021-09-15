@@ -1,8 +1,0 @@
-prefix=/home/coborg/Coborg-Platform/demos/motion_demo/install
-
-Name: hebi_description
-Description: Description of hebi_description
-Version: 0.1.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

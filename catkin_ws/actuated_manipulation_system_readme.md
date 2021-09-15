@@ -185,51 +185,6 @@ rosparam set /tf_moveit_goalsetNode/manipulation_state out-disengage
 ```
 
 
-## Integrated, Voice Activated Mode
-
-The integrated, voice activated mode of the actuated manipulation system incorporates the other subsystems of this product: voice, vision, and main state machine nodes. This mode was run in the SVD encore event to showcase the synergy between the different subsystems and to showcase the use case flow of using the robot arm. To run this mode, the user must run the other subsystem nodes. From a high level, the order of launching subsystems is shown below:
-
-1. RealSense D435i and T265
-3. Darknet ros 3D model
-2. Robot model and URDF
-5. Voice recognition node
-6. Main state machine node
-7. MoveIt model interface node
-8. Actuated manipulation pose generator node
-9. HEBI motor interface node
-
-To run this mode, the following commands should be run (user will need multiple terminal tabs and windows to run all these nodes). Make sure to run source devel/setup.bash for all new terminal instances:
-
-```
-# terminal instance
-roslaunch coborg_move demo_hebi_realsense_tf.launch
-
-# terminal instance
-roslaunch darknet_ros_3d darknet_ros_3d.launch
-
-# terminal instance
-conda activate coborg-voice
-roslaunch voice_recog voice.launch
-
-# terminal instance
-conda main_state_machine main.launch
-
-# terminal instance
-roslaunch coborg_move tf_moveit_goalsetNode.launch
-
-# terminal instance
-roslaunch coborg_move voiceGoalPoseGenerator.launch
-
-# terminal instance
-roslaunch coborg_move find_hebi_moveit_planner.launch
-```
-
-The node contains the same preset positioning and rosparam structure as the preset positions mode implemented for the first SVD event. In addition, this mode can react to appropriate voice inputs, generate a goal pose from detected hands from the vision noce, and have te robot arm move to those goal positions. 
-
-The flow of this mode begins with verifying that the D435i camera is set at the appropriate viewing angle and the camera can see the hands that will be in view at their intended positions. In addition, the robot arm should be in its home/compact position before beginning this runthrough.
-
-The first thing the user will do is push either one or two hands in front and in view of the D435i camera. The user will then recite "CoBorg" in the direction of the microphone that is connected to the local computer. An audible confirmation sound will play when the node correctly interprets the initiation sound. The user will then recite "go here" towards the direction of the microphone. The robot will feedback an audible confirmation sound and the vision and actuated manipulation pipeline will begin. After the vision nodes acquire the goal position of the center of the one hand or the average center between the two hands, the actuated manipulation system will acquire that goal pose and initiate its motion. The robot arm will first confirm it is in its home position. Then the robot arm will initiate to its ready position which is partly extended outwards in front of the robot. The arm will then attempt to solve for a position that is some X distance away from the goal position in the X-Axis direction relative to the global frame of the robot URDF model. If the arm solves for this position, then the arm will move to that position. The last goal that the robot arm will solve for is at the goal position. The ideal end position of the robot arm is either in the center of the one hand in the one-handed case or at the average position between the two hands in the two-handed case. Once the user wants the robot arm to retract back, the user will say "CoBorg". The robot will feedback a confirmation tone. The user will say "come back". The robot will feedback another audible confirmation tone. The arm will then go back to the ready position and then back to home.
-
 # Miscellaneous Topics
 
 ## Converting HRDF to URDF
