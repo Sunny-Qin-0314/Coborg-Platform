@@ -1,0 +1,8 @@
+prefix=/home/coborg/moveit_ws/install
+
+Name: coborg_arm
+Description: Description of coborg_arm
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

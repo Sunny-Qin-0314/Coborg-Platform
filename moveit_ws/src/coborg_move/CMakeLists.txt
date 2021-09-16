@@ -23,7 +23,6 @@ find_package(catkin REQUIRED COMPONENTS
   moveit_visual_tools
   rviz_visual_tools
   sensor_msgs
-  goal_getter
 )
 
 ## System dependencies are found with CMake's conventions
@@ -132,7 +131,6 @@ catkin_package(
   moveit_core
   moveit_ros_planning_interface
   sensor_msgs
-  goal_getter
 #  DEPENDS system_lib
 )
 
@@ -208,26 +206,20 @@ install(TARGETS moveit_tutorials DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(DIRECTORY launch DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION})
 
-add_executable(tf_moveit_goalsetNode src/tf_moveit_goalsetNode.cpp)
+add_executable(dof_MoveItGoalSet src/dof_MoveItGoalSet.cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(tf_moveit_goalsetNode
+target_link_libraries(dof_MoveItGoalSet
   ${catkin_LIBRARIES}
 )
 
-add_executable(randomGoalPoseGenerator src/randomGoalPoseGenerator.cpp)
+add_executable(dof_PoseGenerator src/dof_PoseGenerator.cpp)
 
 ## Specify libraries to link a library or executable target against
-target_link_libraries(randomGoalPoseGenerator
+target_link_libraries(dof_PoseGenerator
   ${catkin_LIBRARIES}
 )
 
-add_executable(voiceGoalPoseGenerator src/voiceGoalPoseGenerator.cpp)
-
-## Specify libraries to link a library or executable target against
-target_link_libraries(voiceGoalPoseGenerator
-  ${catkin_LIBRARIES}
-)
 
 #############
 ## Install ##
@@ -238,10 +230,12 @@ target_link_libraries(voiceGoalPoseGenerator
 
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
-# catkin_install_python(PROGRAMS
-#   scripts/my_python_script
-#   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-# )
+catkin_install_python(PROGRAMS
+  scripts/python_moveit_test.py
+  scripts/Mechanical_Task_Space_Checker.py
+  scripts/mechanicaltask_tester.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
 
 ## Mark executables for installation
 ## See http://docs.ros.org/melodic/api/catkin/html/howto/format1/building_executables.html

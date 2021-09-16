@@ -1,0 +1,8 @@
+prefix=/home/coborg/moveit_ws/devel
+
+Name: dof_5_config_y_arm
+Description: Description of dof_5_config_y_arm
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

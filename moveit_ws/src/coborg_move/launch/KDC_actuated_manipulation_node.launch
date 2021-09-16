@@ -1,8 +1,0 @@
-<launch>
-
-  <node name="KDC_actuated_manipulation_node" pkg="coborg_move" type="KDC_actuated_manipulation_node" respawn="false" output="screen">
-  <param name="originState" value="camera_link"/>
-  <param name="manipulation_state" value="standby"/>
-  </node>
-
-</launch>
