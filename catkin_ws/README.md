@@ -32,25 +32,25 @@ The integrated, voice activated mode of the actuated manipulation system incorpo
 To run this mode, the following commands should be run (user will need multiple terminal tabs and windows to run all these nodes). Make sure to run `source devel/setup.bash` for all new terminal instances:
 
 ```
-### terminal instance
+# terminal instance
 roslaunch coborg_move demo_hebi_realsense_tf.launch
 
-### terminal instance
+# terminal instance
 roslaunch darknet_ros_3d darknet_ros_3d.launch
 
-### terminal instance
+# terminal instance
 roslaunch voice_recog voice.launch
 
-### terminal instance
+# terminal instance
 roslaunch main_state_machine main.launch
 
-### terminal instance
+# terminal instance
 roslaunch coborg_move tf_moveit_goalsetNode.launch
 
-### terminal instance
+# terminal instance
 roslaunch coborg_move voiceGoalPoseGenerator.launch
 
-### terminal instance
+# terminal instance
 roslaunch coborg_move find_hebi_moveit_planner.launch
 ```
 
