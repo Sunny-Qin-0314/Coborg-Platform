@@ -38,7 +38,7 @@
 
 #include "std_msgs/Int16.h"
 #include <string.h>
-#include <goal_getter/goal_msg.h>
+#include <gb_visual_detection_3d_msgs/goal_msg.h>
 
 
 geometry_msgs::Pose goalPose;
@@ -389,7 +389,7 @@ Eigen::Vector3d svdTargetFunc(std::string& svdTargetVal)
         Eigen::Vector3d goalSetPose;
         ROS_INFO("Waiting for message from goal rostopic");
         // goal is relative to camera frame
-        boost::shared_ptr<goal_getter::goal_msg const> goalpose = ros::topic::waitForMessage<goal_getter::goal_msg>("/goal");
+        boost::shared_ptr<gb_visual_detection_3d_msgs::goal_msg const> goalpose = ros::topic::waitForMessage<gb_visual_detection_3d_msgs::goal_msg>("/goal");
 
         ROS_INFO("Position Received");
 

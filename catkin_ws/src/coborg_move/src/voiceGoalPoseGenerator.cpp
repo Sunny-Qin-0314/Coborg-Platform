@@ -39,7 +39,7 @@
 #include "std_msgs/Int16.h"
 #include "std_msgs/Int32.h"
 #include <string.h>
-#include <goal_getter/goal_msg.h>
+#include <gb_visual_detection_3d_msgs/goal_msg.h>
 
 ros::Publisher desired_pos_pub;
 
@@ -149,7 +149,7 @@ Eigen::Vector3d presetPositionUpdate(const Eigen::Vector3d& presetVect)
 
 void randomPoseFunc()
 {
-    if (strcmp(svdTargetVal.c_str(),"d400_link") == 0 || strcmp(svdTargetVal.c_str(),"camera_link") == 0)
+    if (strcmp(svdTargetVal.c_str(),"d400_link") == 0 || strcmp(svdTargetVal.c_str(),"cam1_link") == 0)
     {
         // relative to d400_link / camera_link frame at default static transform from t265_link
         // float xRangeMin = 0.6;
@@ -495,7 +495,7 @@ Eigen::Vector3d svdTargetFunc(std::string& svdTargetVal)
         // goal is relative to camera frame
 
         ros::Duration(1.0).sleep();
-        boost::shared_ptr<goal_getter::goal_msg const> goalpose = ros::topic::waitForMessage<goal_getter::goal_msg>("/goal");
+        boost::shared_ptr<gb_visual_detection_3d_msgs::goal_msg const> goalpose = ros::topic::waitForMessage<gb_visual_detection_3d_msgs::goal_msg>("/goal");
 
         ROS_INFO("Position Received");
 
