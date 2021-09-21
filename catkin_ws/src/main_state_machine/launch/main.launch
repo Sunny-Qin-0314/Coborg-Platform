@@ -1,4 +1,8 @@
 <launch>
+    <!--Start up realsense -->
+    <include file="$(find realsense2_camera)/launch/rs_d400_and_t265.launch">
+        <arg name="camera" value="cam1"/>
+    </include>
     <!--Start up Move-it nodes-->
     <include file="$(find coborg_move)/launch/demo_hebi_realsense_tf.launch"/>
     <!--Start up Vision subystem-->
