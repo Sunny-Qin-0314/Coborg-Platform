@@ -258,19 +258,23 @@ The process listed below will work whether you are using YOLO through the darkne
    **mininum_detection_thereshold: 0.025**  (The maximum depth of the 3D bounding boxes in meters)
 
    
-## Goal Getter Node and Vision System Integration
+## Post-processing and Vision System Integration
 
-### Goal Getter Node
+### Goal Getter Node (Deprecated)
 
 In the goal getter, we post-process all of the 3D bounding boxes got from the darknet_ros_3d node. Specifically, we take the average 3D position over those detected bounding boxes. We publish the averaged goal position and surface normal into the `/goal` topic.
+
+### Optimize Goal Getter Node (latest version):
+
+Instead of post-processing the 3D bounding boxes in another node, we merge the process when we calculate the 3D bounding boxes and publish the goal position to /goal rostopic. 
 
 ### Run the whole vision demo:
 
 1. `roslaunch realsense2_camera rs_rgbd.launch` or use our predefined `rs_d400_and_t265.launch`
    
-2. `roslaunch darknet_ros_3d darknet_ros_3d.launch`
+2. `roslaunch darknet_ros_3d darknet_ros_3d.launch` (this launch file will launch all vision nodes)
    
-3. `rosrun goal_getter goal_getter`
+3. `rosrun goal_getter goal_getter` (Deprecated)
    
    **Note: I did not include launch file for goal_getter node, simply run it with rosrun**
 

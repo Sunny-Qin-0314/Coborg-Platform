@@ -1,7 +1,6 @@
 <launch>
 
     <!-- removed code to run rs_d400_and_t265.launch-->
-    <include file="$(find realsense2_camera)/launch/rs_d400_and_t265.launch" />
     <include file="$(find coborg_arm)/launch/demo.launch" />
 
 

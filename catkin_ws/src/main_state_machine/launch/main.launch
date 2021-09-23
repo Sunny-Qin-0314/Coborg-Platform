@@ -1,4 +1,21 @@
 <launch>
+    <!--Start up realsense -->
+    <include file="$(find realsense2_camera)/launch/rs_d400_and_t265.launch">
+        <arg name="camera" value="cam1"/>
+    </include>
+    <!--Start up Move-it nodes-->
+    <include file="$(find coborg_move)/launch/demo_hebi_realsense_tf.launch"/>
+    <!--Start up Vision subystem-->
+    <include file="$(find darknet_ros_3d)/launch/darknet_ros_3d.launch"/>
+    <!--Start up Voice subsystem-->
+    <include file="$(find voice_recog)/launch/voice.launch"/>
+    <!--Start up Main State Machine-->
     <node pkg="main_state_machine" name="coborg_main" type="main.py" output="screen"> 
     </node>
+    <!--Start up goal setter-->
+    <include file="$(find coborg_move)/launch/tf_moveit_goalsetNode.launch"/>
+    <!--Start up voice goal-->
+    <include file="$(find coborg_move)/launch/voiceGoalPoseGenerator.launch"/>
+    <!--Start up hebi moveit planner-->
+    <include file="$(find coborg_move)/launch/find_hebi_moveit_planner.launch"/>
 </launch>

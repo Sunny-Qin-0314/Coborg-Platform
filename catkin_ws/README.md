@@ -6,7 +6,6 @@ COBORG is an exoskeleton platform that will change the world. The vision of this
 
 
 ### Compile/Build
-Compile the whole system under catkin_ws.
 
 1. Under /catkin_ws: 
 
@@ -29,28 +28,34 @@ The integrated, voice activated mode of the actuated manipulation system incorpo
 8. Actuated manipulation pose generator node -> path intermidiate node
 9. HEBI motor interface node -> motor node
 
-To run this mode, the following commands should be run (user will need multiple terminal tabs and windows to run all these nodes). Make sure to run `source devel/setup.bash` for all new terminal instances:
+To run the integrated system:
+```
+source devel/setup.bash
+roslaunch main_state_machine main.launch
+```
+
+To run subsystem seperately, the following commands should be run (user will need multiple terminal tabs and windows to run all these nodes). Make sure to run `source devel/setup.bash` for all new terminal instances:
 
 ```
-### terminal instance
+# terminal instance
 roslaunch coborg_move demo_hebi_realsense_tf.launch
 
-### terminal instance
+# terminal instance
 roslaunch darknet_ros_3d darknet_ros_3d.launch
 
-### terminal instance
+# terminal instance
 roslaunch voice_recog voice.launch
 
-### terminal instance
+# terminal instance
 roslaunch main_state_machine main.launch
 
-### terminal instance
+# terminal instance
 roslaunch coborg_move tf_moveit_goalsetNode.launch
 
-### terminal instance
+# terminal instance
 roslaunch coborg_move voiceGoalPoseGenerator.launch
 
-### terminal instance
+# terminal instance
 roslaunch coborg_move find_hebi_moveit_planner.launch
 ```
 

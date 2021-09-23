@@ -54,17 +54,17 @@
   <build_depend>rospy</build_depend>
   <build_depend>moveit_core</build_depend>
   <build_depend>moveit_ros_planning_interface</build_depend>
-  <build_depend>goal_getter</build_depend>
+  <build_depend>gb_visual_detection_3d_msgs</build_depend>
   <build_export_depend>roscpp</build_export_depend>
   <build_export_depend>rospy</build_export_depend>
   <build_export_depend>message_runtime</build_export_depend>
-  <build_export_depend>goal_getter</build_export_depend>
+  <build_export_depend>gb_visual_detection_3d_msgs</build_export_depend>
   <exec_depend>roscpp</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>message_runtime</exec_depend>
   <exec_depend>moveit_core</exec_depend>
   <exec_depend>moveit_ros_planning_interface</exec_depend>
-  <exec_depend>goal_getter</exec_depend>
+  <exec_depend>gb_visual_detection_3d_msgs</exec_depend>
 
   <depend>std_msgs</depend>
   <depend>geometry_msgs</depend>

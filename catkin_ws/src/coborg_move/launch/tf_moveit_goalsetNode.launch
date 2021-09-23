@@ -1,7 +1,7 @@
 <launch>
 
   <node name="tf_moveit_goalsetNode" pkg="coborg_move" type="tf_moveit_goalsetNode" respawn="false" output="screen">
-  <param name="manipulation_state" value="standby"/>
+  <param name="manipulation_state" value="home"/>
   </node>
 
 
