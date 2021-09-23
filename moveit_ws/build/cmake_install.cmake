@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/coborg/moveit_ws/build/gtest/cmake_install.cmake")
   include("/home/coborg/moveit_ws/build/coborg_arm/cmake_install.cmake")
+  include("/home/coborg/moveit_ws/build/dof_4_4inchlower_arm/cmake_install.cmake")
   include("/home/coborg/moveit_ws/build/dof_4_arm/cmake_install.cmake")
   include("/home/coborg/moveit_ws/build/dof_5_config_y_arm/cmake_install.cmake")
   include("/home/coborg/moveit_ws/build/dof_5_config_z_arm/cmake_install.cmake")

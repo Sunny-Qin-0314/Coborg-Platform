@@ -89,11 +89,13 @@ elif group_name is "dof_5_config_z_arm":
     compact_configuration_rad = np.array([0.0, -1.9266, 0.0, -2.0307, -2.3778])
 elif group_name is "dof_5_config_y_arm":
     compact_configuration_rad = np.array([0.0, -1.9266, 0.0, -2.0307, -2.3778])
+elif group_name is "dof_5_config_y_arm":
+    compact_configuration_rad = np.array([0.0, -1.9266, 0.0, -2.0307, -2.3778])
 
 chest_to_t265_transform = np.array([[1,0,0,0],[0,1,0,0],[0,0,1,0],[-0.1651,0.2159,0.3048,1]])
 t265_to_world_transform=np.array([[1,0,0,0],[0,1,0,0],[0,0,1,0],[0.2794,-0.4999,-0.67305,1]])
 # t265_to_world*chest_to_origin*(p_chest)
-chest_to_origin_transform = t265_to_world_transform @ chest_to_t265_transform
+chest_to_origin_transform = np.matmul(t265_to_world_transform, chest_to_t265_transform)
 
 stable_waypoints_num = 20
 
@@ -114,7 +116,7 @@ def IK_runner(goal_point, origin_point = False, stable_waypoints = False):
     if origin_point:
         # If a Cartesian origin point was given, start there
         pose_goal = geometry_msgs.msg.Pose()
-        origin_point_transformed = chest_to_origin_transform @ np.array([origin_point, 1])
+        origin_point_transformed = np.matmul(chest_to_origin_transform, np.array([origin_point, 1]))
         pose_goal.position.x = origin_point_transformed[0] * ft_to_m
         pose_goal.position.y = origin_point_transformed[1] * ft_to_m
         pose_goal.position.z = origin_point_transformed[2] * ft_to_m
@@ -124,7 +126,7 @@ def IK_runner(goal_point, origin_point = False, stable_waypoints = False):
         plan = group.go(wait=True)
         group.stop()
         group.clear_pose_targets()
-    else
+    else:
         group.go(compact_configuration_rad, wait=True)
         group.stop()
     # MoveIt trajectory planning
@@ -133,12 +135,12 @@ def IK_runner(goal_point, origin_point = False, stable_waypoints = False):
 
         wpose = group.get_current_pose().pose
         start_pose = np.array([wpose.position.x, wpose.position.y, wpose.position.z])
-        start_pose_transformed = chest_to_origin_transform @ np.array([start_pose,1])
-        goal_point_transformed = chest_to_origin_transform @ np.array([goal_point,1])
+        start_pose_transformed = np.matmul(chest_to_origin_transform, np.array([start_pose,1]))
+        goal_point_transformed = np.matmul(chest_to_origin_transform, np.array([goal_point,1]))
         x_step = (goal_point_transformed[0] - start_pose_transformed[0])/stable_waypoints_num
         y_step = (goal_point_transformed[1] - start_pose_transformed[1])/stable_waypoints_num
         z_step = (goal_point_transformed[2] - start_pose_transformed[2])/stable_waypoints_num
-        for ii = range(stable_waypoints_num):
+        for ii in range(stable_waypoints_num):
             wpose.position.x += x_step
             wpose.position.y += y_step
             wpose.position.z += z_step
@@ -151,12 +153,13 @@ def IK_runner(goal_point, origin_point = False, stable_waypoints = False):
                                         0.01,        # eef_step
                                         0.0)         # jump_threshold
 
-        else:
-            IK_outcome = group.plan()
-            group.stop()
-            group.clear_pose_targets()
+    else:
+        IK_outcome = group.plan()
+        group.stop()
+        group.clear_pose_targets()
 
     return IK_outcome
+
 
 # ROS/Move-It Initializations
 moveit_commander.roscpp_initialize(sys.argv)
@@ -184,15 +187,15 @@ task_space_goals_spherical = np.zeros(perimeter_choices.shape)
 # Add "min" perimeter values
 perimeter_choices_worker = np.copy(perimeter_choices)
 perimeter_choices_worker[perimeter_choices > 0] = 0
-task_space_goals_spherical = task_space_goals_spherical + np.diag(task_space_boundaries[:,0]) @ (perimeter_choices_worker * -1)
+task_space_goals_spherical = task_space_goals_spherical + np.matmul(np.diag(task_space_boundaries[:,0]), (perimeter_choices_worker * -1))
 # Add "max" perimeter values
 perimeter_choices_worker = np.copy(perimeter_choices)
 perimeter_choices_worker[perimeter_choices < 0] = 0
-task_space_goals_spherical = task_space_goals_spherical + np.diag(task_space_boundaries[:,1]) @ perimeter_choices_worker
+task_space_goals_spherical = task_space_goals_spherical + np.matmul(np.diag(task_space_boundaries[:,1]), perimeter_choices_worker)
 # Add random perimeter values
 perimeter_choices_worker = np.copy(perimeter_choices)
 perimeter_choices_worker = np.abs(np.abs(perimeter_choices_worker) - 1)
-task_space_goals_spherical = task_space_goals_spherical + np.add(np.diag(task_space_boundaries[:,1] - task_space_boundaries[:,0]) @ np.random.rand(perimeter_choices_worker.shape[0], perimeter_choices_worker.shape[1]), np.repeat(task_space_boundaries[:,0].reshape(-1,1), perimeter_choices_worker.shape[1], axis = 1)) * perimeter_choices_worker
+task_space_goals_spherical = task_space_goals_spherical + np.add(np.matmul(np.diag(task_space_boundaries[:,1] - task_space_boundaries[:,0]), np.random.rand(perimeter_choices_worker.shape[0], perimeter_choices_worker.shape[1])), np.repeat(task_space_boundaries[:,0].reshape(-1,1), perimeter_choices_worker.shape[1], axis = 1)) * perimeter_choices_worker
 # Convert from spherical coordinates to cartesian coordinates
 task_space_goals_cartesian = np.zeros(task_space_goals_spherical.shape)
 task_space_goals_cartesian[0,:] = task_space_goals_spherical[0,:] * np.cos(task_space_goals_spherical[1,:]*2*np.pi/360) * np.cos(task_space_goals_spherical[2,:]*2*np.pi/360)
@@ -247,17 +250,17 @@ buffer_space_goals_spherical = np.zeros(buffer_perimeter_choices.shape)
 buffer_perimeter_choices_worker = np.copy(buffer_perimeter_choices)
 buffer_perimeter_choices_worker[buffer_perimeter_choices > 0] = 0
 for ii in range(buffer_perimeter_choices_worker.shape[2]):
-    buffer_space_goals_spherical[:,:,ii] = buffer_space_goals_spherical[:,:,ii] + np.diag(buffer_space_boundaries[:,0,ii]) @ (buffer_perimeter_choices_worker[:,:,ii] * -1)
+    buffer_space_goals_spherical[:,:,ii] = buffer_space_goals_spherical[:,:,ii] + np.matmul(np.diag(buffer_space_boundaries[:,0,ii]), (buffer_perimeter_choices_worker[:,:,ii] * -1))
 # Add "max" perimeter values
 buffer_perimeter_choices_worker = np.copy(buffer_perimeter_choices)
 buffer_perimeter_choices_worker[buffer_perimeter_choices < 0] = 0
 for ii in range(buffer_perimeter_choices_worker.shape[2]):
-    buffer_space_goals_spherical[:,:,ii] = buffer_space_goals_spherical[:,:,ii] + np.diag(buffer_space_boundaries[:,1,ii]) @ buffer_perimeter_choices_worker[:,:,ii]
+    buffer_space_goals_spherical[:,:,ii] = buffer_space_goals_spherical[:,:,ii] + np.matmul(np.diag(buffer_space_boundaries[:,1,ii]), buffer_perimeter_choices_worker[:,:,ii])
 # Add random perimeter values
 buffer_perimeter_choices_worker = np.copy(buffer_perimeter_choices)
 buffer_perimeter_choices_worker = np.abs(np.abs(buffer_perimeter_choices_worker) - 1)
 for ii in range(buffer_perimeter_choices_worker.shape[2]):
-    buffer_space_goals_spherical[:,:,ii] = buffer_space_goals_spherical[:,:,ii] + np.add(np.diag(buffer_space_boundaries[:,1,ii] - buffer_space_boundaries[:,0,ii]) @ np.random.rand(buffer_perimeter_choices_worker.shape[0], buffer_perimeter_choices_worker.shape[1]), np.repeat(buffer_space_boundaries[:,0,ii].reshape(-1,1), buffer_perimeter_choices_worker.shape[1], axis = 1)) * buffer_perimeter_choices_worker[:,:,ii]
+    buffer_space_goals_spherical[:,:,ii] = buffer_space_goals_spherical[:,:,ii] + np.add(np.matmul(np.diag(buffer_space_boundaries[:,1,ii] - buffer_space_boundaries[:,0,ii]), np.random.rand(buffer_perimeter_choices_worker.shape[0], buffer_perimeter_choices_worker.shape[1])), np.repeat(buffer_space_boundaries[:,0,ii].reshape(-1,1), buffer_perimeter_choices_worker.shape[1], axis = 1)) * buffer_perimeter_choices_worker[:,:,ii]
 # Convert from spherical coordinates to cartesian coordinates
 buffer_space_goals_cartesian = np.zeros(buffer_space_goals_spherical.shape)
 buffer_space_goals_cartesian[0,:,:] = buffer_space_goals_spherical[0,:,:] * np.cos(buffer_space_goals_spherical[1,:,:]*2*np.pi/360) * np.cos(buffer_space_goals_spherical[2,:,:]*2*np.pi/360)
@@ -308,7 +311,7 @@ stable_task_space_goals_cartesian = np.zeros((4, H_matrices.shape[2] * task_spac
 stable_task_space_success = []
 for H_num in range(H_matrices.shape[2]):
     for goal_num in range(task_space_goals_cartesian_subset.shape[1]):
-        stable_task_space_goals_cartesian[:, goal_num * H_matrices.shape[2] + H_num] = H_matrices[:,:,H_num] @ np.append(task_space_goals_cartesian_subset[:,goal_num], [1], 0)
+        stable_task_space_goals_cartesian[:, goal_num * H_matrices.shape[2] + H_num] = np.matmul(H_matrices[:,:,H_num], np.append(task_space_goals_cartesian_subset[:,goal_num], [1], 0))
         stable_task_space_success.append(IK_runner(stable_task_space_goals_cartesian[:, goal_num * H_matrices.shape[2] + H_num], origin_point = task_space_goals_cartesian_subset[0:3, goal_num], stable_waypoints = True))
 # Plot task space stability results, colored for success
 fig = plt.figure()
@@ -336,7 +339,7 @@ stable_buffer_space_goals_cartesian = np.zeros((4, H_matrices.shape[2] * buffer_
 stable_buffer_space_success = []
 for H_num in range(H_matrices.shape[2]):
     for goal_num in range(buffer_space_goals_cartesian_subset.shape[1]):
-        stable_buffer_space_goals_cartesian[:, goal_num * H_matrices.shape[2] + H_num] = H_matrices[:,:,H_num] @ np.append(buffer_space_goals_cartesian_subset[:,goal_num], [1], 0)
+        stable_buffer_space_goals_cartesian[:, goal_num * H_matrices.shape[2] + H_num] = np.matmul(H_matrices[:,:,H_num], np.append(buffer_space_goals_cartesian_subset[:,goal_num], [1], 0))
         stable_buffer_space_success.append(IK_runner(stable_buffer_space_goals_cartesian[:, goal_num * H_matrices.shape[2] + H_num], origin_point = buffer_space_goals_cartesian_subset[0:3, goal_num], stable_waypoints = True))
 # Plot buffer space stability results, colored for success
 fig = plt.figure()

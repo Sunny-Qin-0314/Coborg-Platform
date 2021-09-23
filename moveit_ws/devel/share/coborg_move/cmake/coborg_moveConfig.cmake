@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(coborg_move_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "/home/coborg/moveit_ws/devel/include " STREQUAL " ")
   set(coborg_move_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "/home/coborg/moveit_ws/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -185,7 +185,7 @@ foreach(t ${coborg_move_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;hebi_cpp_api;message_runtime;std_msgs;tf;trajectory_msgs;moveit_core;moveit_ros_planning_interface;sensor_msgs")
+set(depends "roscpp;rospy;hebi_cpp_api;message_runtime;std_msgs;tf;trajectory_msgs;moveit_core;moveit_ros_planning_interface;sensor_msgs;moveit_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

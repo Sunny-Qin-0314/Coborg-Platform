@@ -371,16 +371,16 @@
       </material>
     </visual>
     <visual>
-      <origin rpy="0 1.57075 0" xyz="0.11585 0 0.02"/>
+      <origin rpy="0 1.57075 0" xyz="0.0846 0 0.02"/>
       <geometry>
-        <cylinder length="0.2063" radius=".016"/>
+        <cylinder length="0.1438" radius=".016"/>
       </geometry>
       <material name="silver">
         <color rgba="0.6 0.6 0.6 1"/>
       </material>
     </visual>
     <visual>
-      <origin rpy="2.163 0 0" xyz="0.2317 -0.0165942524924 0.00883618415505"/>
+      <origin rpy="2.163 0 0" xyz="0.1692 -0.0165942524924 0.00883618415505"/>
       <geometry>
         <mesh filename="package://hebi_description/meshes/A-2039-02.stl"/>
       </geometry>
@@ -395,28 +395,28 @@
       </geometry>
     </collision>
     <collision>
-      <origin rpy="0 1.57075 0" xyz="0.11585 0 0.02"/>
+      <origin rpy="0 1.57075 0" xyz="0.0846 0 0.02"/>
       <geometry>
-        <cylinder length="0.2063" radius=".016"/>
+        <cylinder length="0.1438" radius=".016"/>
       </geometry>
     </collision>
     <collision>
-      <origin rpy="2.163 0 0" xyz="0.2317 -0.0165942524924 0.00883618415505"/>
+      <origin rpy="2.163 0 0" xyz="0.1692 -0.0165942524924 0.00883618415505"/>
       <geometry>
         <mesh filename="package://hebi_description/meshes/A-2039-02.stl"/>
       </geometry>
     </collision>
     <!-- Approximate inertia as thin rod about x axis -->
     <inertial>
-      <origin rpy="0 0 0" xyz="0.11585 0 0.02"/>
-      <mass value="0.36468"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0016314838071" iyz="0.0" izz="0.0016314838071"/>
+      <origin rpy="0 0 0" xyz="0.0846 0 0.02"/>
+      <mass value="0.33968"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0008103813696" iyz="0.0" izz="0.0008103813696"/>
     </inertial>
   </link>
   <joint name="right_arm2/OUTPUT_JOINT" type="fixed">
     <parent link="right_arm2/INPUT_INTERFACE"/>
     <child link="motor3/INPUT_INTERFACE"/>
-    <origin rpy="2.163 0 0" xyz="0.2317 -0.0165942524924 0.00883618415505"/>
+    <origin rpy="2.163 0 0" xyz="0.1692 -0.0165942524924 0.00883618415505"/>
   </joint>
   <gazebo reference="right_arm2/INPUT_INTERFACE">
     <selfCollide>true</selfCollide>
@@ -593,16 +593,16 @@
       </material>
     </visual>
     <visual>
-      <origin rpy="0 1.57075 0" xyz="0.12795 0 0.02"/>
+      <origin rpy="0 1.57075 0" xyz="0.0967 0 0.02"/>
       <geometry>
-        <cylinder length="0.2305" radius=".016"/>
+        <cylinder length="0.168" radius=".016"/>
       </geometry>
       <material name="silver">
         <color rgba="0.6 0.6 0.6 1"/>
       </material>
     </visual>
     <visual>
-      <origin rpy="0 0 0" xyz="0.2609 0 0.02"/>
+      <origin rpy="0 0 0" xyz="0.1984 0 0.02"/>
       <geometry>
         <sphere radius="0.023"/>
       </geometry>
@@ -617,28 +617,28 @@
       </geometry>
     </collision>
     <collision>
-      <origin rpy="0 1.57075 0" xyz="0.12795 0 0.02"/>
+      <origin rpy="0 1.57075 0" xyz="0.0967 0 0.02"/>
       <geometry>
-        <cylinder length="0.2305" radius=".016"/>
+        <cylinder length="0.168" radius=".016"/>
       </geometry>
     </collision>
     <collision>
-      <origin rpy="0 0 0" xyz="0.2559 0 0.02"/>
+      <origin rpy="0 0 0" xyz="0.1934 0 0.02"/>
       <geometry>
         <sphere radius="0.02"/>
       </geometry>
     </collision>
     <!-- Approximate inertia as thin rod about x axis -->
     <inertial>
-      <origin rpy="0 0 0" xyz="0.12795 0 0.02"/>
-      <mass value="0.37436"/>
-      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.0020429077893" iyz="0.0" izz="0.0020429077893"/>
+      <origin rpy="0 0 0" xyz="0.0967 0 0.02"/>
+      <mass value="0.34936"/>
+      <inertia ixx="0.0" ixy="0.0" ixz="0.0" iyy="0.00108894231013" iyz="0.0" izz="0.00108894231013"/>
     </inertial>
   </link>
   <joint name="end_joint" type="fixed">
     <parent link="sensor/INPUT_INTERFACE"/>
     <child link="end_link/INPUT_INTERFACE"/>
-    <origin rpy="0 0 0" xyz="0.2559 0 0.02"/>
+    <origin rpy="0 0 0" xyz="0.1934 0 0.02"/>
   </joint>
   <gazebo reference="sensor/INPUT_INTERFACE">
     <selfCollide>true</selfCollide>

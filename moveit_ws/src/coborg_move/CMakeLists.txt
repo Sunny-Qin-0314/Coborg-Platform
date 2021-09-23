@@ -23,6 +23,7 @@ find_package(catkin REQUIRED COMPONENTS
   moveit_visual_tools
   rviz_visual_tools
   sensor_msgs
+  moveit_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -58,10 +59,11 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * uncomment the generate_messages entry below
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
-# # Generate messages in the 'msg' folder
-# add_message_files(
-#   FILES
-# )
+# Generate messages in the 'msg' folder
+add_message_files(
+  FILES
+  CartesianTrajectory.msg
+)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -83,6 +85,7 @@ generate_messages(
   std_msgs  # Or other packages containing msgs
   geometry_msgs
   sensor_msgs
+  moveit_msgs
 )
 
 ################################################
@@ -131,6 +134,7 @@ catkin_package(
   moveit_core
   moveit_ros_planning_interface
   sensor_msgs
+  moveit_msgs
 #  DEPENDS system_lib
 )
 
@@ -217,6 +221,13 @@ add_executable(dof_PoseGenerator src/dof_PoseGenerator.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(dof_PoseGenerator
+  ${catkin_LIBRARIES}
+)
+
+add_executable(Mechanical_Task_Space_MoveIt src/Mechanical_Task_Space_MoveIt.cpp)
+
+## Specify libraries to link a library or executable target against
+target_link_libraries(Mechanical_Task_Space_MoveIt
   ${catkin_LIBRARIES}
 )
 

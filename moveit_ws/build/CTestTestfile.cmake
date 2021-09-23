@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("coborg_arm")
+subdirs("dof_4_4inchlower_arm")
 subdirs("dof_4_arm")
 subdirs("dof_5_config_y_arm")
 subdirs("dof_5_config_z_arm")

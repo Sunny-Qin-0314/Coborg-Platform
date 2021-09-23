@@ -165,11 +165,11 @@
   <xacro:shoulder name="ms1" extension="0.4" twist="0"/>
   <xacro:x_tube_link name="right_arm1" child="motor2" extension="0.125" twist="1.3343"/>
   <xacro:x5 joint="motor2" child="right_arm2" model="X5_9"/>
-  <xacro:x_tube_link name="right_arm2" child="motor3" extension="0.2317" twist="2.1630"/>
+  <xacro:x_tube_link name="right_arm2" child="motor3" extension="0.1692" twist="2.1630"/>
   <xacro:x5 joint="motor3" child="right_arm3" model="X5_9"/>
   <xacro:x_tube_link name="right_arm3" child="motor4" extension="0.2048" twist="-3.7736" />
   <xacro:x5 joint="motor4" child="sensor" model="X5_4" />
-  <xacro:sensor_mac name="sensor" child="end_link" extension="0.2559"/>
+  <xacro:sensor_mac name="sensor" child="end_link" extension="0.1934"/>
 
    <!-- end link -->
   <link name="end_link/INPUT_INTERFACE">

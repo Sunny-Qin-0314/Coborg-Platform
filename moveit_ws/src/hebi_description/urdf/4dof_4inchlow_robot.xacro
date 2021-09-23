@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="arm_demo">
+
+  <!-- *************************** XACRO MACROS *************************** -->
+
+  <xacro:include filename="./x_library.xacro"/>
+  <xacro:include filename="./shoulder.xacro"/>
+  <xacro:include filename="./leftarm_top.xacro"/>
+  <xacro:include filename="./sensor.xacro" />
+
+  <!-- ************************* ROBOT DEFINITION ************************* -->
+
+  <link name="world" />
+
+  <link name="shoulder_len">
+    <visual>
+      <origin xyz="0 .2475 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.5 0.03" />
+      </geometry>
+      <xacro:silver_material/>
+    </visual>
+    <collision>
+      <origin xyz="0 -.2475 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.5 0.03" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 .2475 0" rpy="0 0 0" />
+      <mass value="1.0"/>
+      <inertia ixx=".021" ixy="0.0" ixz="0.0" iyy=".021" iyz="0.0" izz=".00015"/>
+   </inertial>
+  </link>
+  <link name="body">
+    <visual>
+      <origin xyz=".09 0.2475 -.25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.25 0.32 .5" />
+      </geometry>
+      <xacro:silver_material/>
+    </visual>
+    <collision>
+      <origin xyz=".09 0.2475 -.25" rpy="0 0 0" />
+      <geometry>
+        <box size="0.18 0.32 0.5" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz=".09 .2475 -.25" rpy="0 0 0" />
+      <mass value="1.0"/>
+      <inertia ixx=".112" ixy="0.0" ixz="0.0" iyy=".029" iyz="0.0" izz=".0235"/>
+    </inertial>
+  </link>
+
+  <link name="head">
+    <visual>
+      <origin xyz=".09 0.2475 .09" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.09" />
+      </geometry>
+      <xacro:silver_material/>
+    </visual>
+    <collision>
+      <origin xyz=".09 0.2475 .09" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.09" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz=".09 0.2475 .09" rpy="0 0 0" />
+      <mass value="1.0"/>
+      <inertia ixx=".00324" ixy="0.0" ixz="0.0" iyy=".00324" iyz="0.0" izz=".00324"/>
+    </inertial>
+  </link>
+
+  <link name="rodR">
+    <visual>
+      <origin xyz="0 .02 -.1" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.03 0.2" />
+      </geometry>
+      <xacro:silver_material/>
+    </visual>
+    <collision>
+      <origin xyz="0 -.025 -.1" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.03 0.2" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 -.025 -.1" rpy="0 0 0" />
+      <mass value="1.0"/>
+      <inertia ixx=".0034" ixy="0.0" ixz="0.0" iyy=".0034" iyz="0.0" izz=".00015"/>
+    </inertial>
+  </link>
+
+
+  <link name="rodL">
+    <visual>
+      <origin xyz="0 -.025 -.1" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.03 0.2" />
+      </geometry>
+      <xacro:silver_material/>
+    </visual>
+    <collision>
+      <origin xyz="0 -.025 -.1" rpy="0 0 0" />
+      <geometry>
+        <box size="0.03 0.03 0.2" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 -.025 -.1" rpy="0 0 0" />
+      <mass value="1.0"/>
+      <inertia ixx=".0034" ixy="0.0" ixz="0.0" iyy=".0034" iyz="0.0" izz=".00015"/>
+    </inertial>
+  </link>
+
+  <joint name="right_arm" type="fixed">
+    <parent link="world" />
+    <child link="rodR" />
+    <origin xyz="-.34 0.03 0.5" rpy="0 0 0" />
+  </joint>
+
+  <joint name="left_arm" type="fixed">
+    <parent link="world" />
+    <child link="rodL"/>
+    <origin xyz="-.34 0.475 0.5" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_base" type="fixed">
+    <parent link="world"/>
+    <child link="motor1/INPUT_INTERFACE"/>
+    <origin xyz="0 0.03 0.2984" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="base_s" type="fixed">
+    <parent link="world"/>
+    <child link="ms1/INPUT_INTERFACE" />
+    <origin xyz="0 0.03 0.2984" rpy="0 0 0" />
+  </joint>
+
+  <joint name="shoulder" type="fixed">
+    <parent link="world"/>
+    <child link="shoulder_len"/>
+    <origin xyz="-.34 0 0.5" rpy="0 0 0"/>
+  </joint>
+
+  <joint name="body" type="fixed">
+    <parent link="world" />
+    <child link="body" />
+    <origin xyz="-.34 0 0.515" rpy="0 0 0" />
+  </joint>
+
+  <joint name="head" type="fixed">
+    <parent link="world" />
+    <child link="head" />
+    <origin xyz="-.318 0 0.5" rpy="0 0 0" />
+  </joint>
+
+  <!-- joints -->
+  <xacro:x5 joint="motor1" child="right_arm1" model="X5_9"/>
+  <xacro:shoulder name="ms1" extension="0.4" twist="0"/>
+  <xacro:x_tube_link name="right_arm1" child="motor2" extension="0.125" twist="1.3343"/>
+  <xacro:x5 joint="motor2" child="right_arm2" model="X5_9"/>
+  <xacro:x_tube_link name="right_arm2" child="motor3" extension="0.1692" twist="2.1630"/>
+  <xacro:x5 joint="motor3" child="right_arm3" model="X5_9"/>
+  <xacro:x_tube_link name="right_arm3" child="motor4" extension="0.2048" twist="-3.7736" />
+  <xacro:x5 joint="motor4" child="sensor" model="X5_4" />
+  <xacro:sensor_mac name="sensor" child="end_link" extension="0.1934"/>
+
+   <!-- end link -->
+  <link name="end_link/INPUT_INTERFACE">
+  </link>
+  <gazebo reference="base">
+    <selfCollide>true</selfCollide>
+  </gazebo>
+  <gazebo>
+    <plugin filename="libhebi_gazebo_plugin.so" name="hebi_gazebo_plugin">
+    </plugin>
+  </gazebo>
+
+</robot>

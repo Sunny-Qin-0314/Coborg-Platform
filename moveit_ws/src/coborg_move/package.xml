@@ -60,6 +60,7 @@
   <exec_depend>roscpp</exec_depend>
   <exec_depend>rospy</exec_depend>
   <exec_depend>message_runtime</exec_depend>
+  <exec_depend>message_generation</exec_depend>
   <exec_depend>moveit_core</exec_depend>
   <exec_depend>moveit_ros_planning_interface</exec_depend>
 
@@ -69,6 +70,7 @@
   <depend>tf</depend>
   <depend>trajectory_msgs</depend>
   <depend>hebi_cpp_api</depend>
+  <depend>moveit_msgs</depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

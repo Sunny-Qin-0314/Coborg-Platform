@@ -336,6 +336,12 @@ control_msgs_DIR:PATH=/opt/ros/melodic/share/control_msgs/cmake
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //Value Computed by CMake
+dof_4_4inchlower_arm_BINARY_DIR:STATIC=/home/coborg/moveit_ws/build/dof_4_4inchlower_arm
+
+//Value Computed by CMake
+dof_4_4inchlower_arm_SOURCE_DIR:STATIC=/home/coborg/moveit_ws/src/dof_4_4inchlower_arm
+
+//Value Computed by CMake
 dof_4_arm_BINARY_DIR:STATIC=/home/coborg/moveit_ws/build/dof_4_arm
 
 //Value Computed by CMake
@@ -776,7 +782,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=19
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=20
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

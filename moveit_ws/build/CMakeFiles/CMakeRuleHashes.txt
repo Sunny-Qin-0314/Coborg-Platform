@@ -1,4 +1,5 @@
 # Hashes of file build rules.
+d951f1411b8b905e0c9a2921f7cb585f /home/coborg/moveit_ws/devel/include/coborg_move/CartesianTrajectory.h
 c562f30194ca952fd43c37f4b10f296c /home/coborg/moveit_ws/devel/include/hebi_cpp_api_examples/ArmMotionAction.h
 9ef8a33259445af1daa9b74fac5e2629 /home/coborg/moveit_ws/devel/include/hebi_cpp_api_examples/ArmMotionActionFeedback.h
 91997fda005b3eedf72355ed8d146c03 /home/coborg/moveit_ws/devel/include/hebi_cpp_api_examples/ArmMotionActionGoal.h
@@ -23,6 +24,8 @@ d53f9c8ecf6adbf62355685535aeb8c6 /home/coborg/moveit_ws/devel/include/hebi_cpp_a
 93fcdd37ce8f0210644bebcfcede712a /home/coborg/moveit_ws/devel/include/hebi_cpp_api_examples/SetIKSeed.h
 ab490d40899119c561fa8466c1cafd4b /home/coborg/moveit_ws/devel/include/hebi_cpp_api_examples/StartPath.h
 8b96b28e6d47d1d0f6cd5c8aec0ba8de /home/coborg/moveit_ws/devel/include/hebi_cpp_api_examples/TargetWaypoints.h
+a8b6c0cc573270a56fb5212277dc8635 /home/coborg/moveit_ws/devel/lib/python2.7/dist-packages/coborg_move/msg/_CartesianTrajectory.py
+e425bcf471ab2852f9552c3c278dc898 /home/coborg/moveit_ws/devel/lib/python2.7/dist-packages/coborg_move/msg/__init__.py
 4109bce6f67c3fcb8b00fd53f759a675 /home/coborg/moveit_ws/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples/msg/_ArmMotionAction.py
 d6cbf887b57ee46d0eb9165dbed7dfaf /home/coborg/moveit_ws/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples/msg/_ArmMotionActionFeedback.py
 b8300bd5e1c049832c76834a728a7eda /home/coborg/moveit_ws/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples/msg/_ArmMotionActionGoal.py
@@ -49,6 +52,7 @@ df0fe45f3d565b264e1dbc3053d02cdc /home/coborg/moveit_ws/devel/lib/python2.7/dist
 a538197644be6081b333189b0d1c03bd /home/coborg/moveit_ws/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples/srv/_SetGains.py
 913db094872ea0857d5816b831f93926 /home/coborg/moveit_ws/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples/srv/_SetIKSeed.py
 0df7cae3e5486096c13ed60e47a7bfb5 /home/coborg/moveit_ws/devel/lib/python2.7/dist-packages/hebi_cpp_api_examples/srv/__init__.py
+da4ea282627471f116611a67bc74bf5d /home/coborg/moveit_ws/devel/share/common-lisp/ros/coborg_move/msg/CartesianTrajectory.lisp
 70f68c0c3f7b35b86806332b2c56031d /home/coborg/moveit_ws/devel/share/common-lisp/ros/hebi_cpp_api_examples/msg/ArmMotionAction.lisp
 61c9f81035364c6ba6bc67d78debf80f /home/coborg/moveit_ws/devel/share/common-lisp/ros/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.lisp
 331e9a7da504eedf1923e0b959d67c1c /home/coborg/moveit_ws/devel/share/common-lisp/ros/hebi_cpp_api_examples/msg/ArmMotionActionGoal.lisp
@@ -73,6 +77,7 @@ bcf13270b0529bc4ca7a3810b904b8f9 /home/coborg/moveit_ws/devel/share/common-lisp/
 94fcbeb744f5a02712feed3dba39b48c /home/coborg/moveit_ws/devel/share/common-lisp/ros/hebi_cpp_api_examples/srv/SetFeedbackFrequency.lisp
 07df5e7fe1877ce115815195e9a060ed /home/coborg/moveit_ws/devel/share/common-lisp/ros/hebi_cpp_api_examples/srv/SetGains.lisp
 9d2aa6f6c5c03782e44b0d7e088dc5d5 /home/coborg/moveit_ws/devel/share/common-lisp/ros/hebi_cpp_api_examples/srv/SetIKSeed.lisp
+70e30169df528b637d180bbb4daf785d /home/coborg/moveit_ws/devel/share/gennodejs/ros/coborg_move/msg/CartesianTrajectory.js
 ea0c43017dd88e9e49be4e692db4fea1 /home/coborg/moveit_ws/devel/share/gennodejs/ros/hebi_cpp_api_examples/msg/ArmMotionAction.js
 da7cb1af9c132b5ae6775a38e97cbef6 /home/coborg/moveit_ws/devel/share/gennodejs/ros/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.js
 40b886d6ee8e53f284a1d3da2479a2f3 /home/coborg/moveit_ws/devel/share/gennodejs/ros/hebi_cpp_api_examples/msg/ArmMotionActionGoal.js
@@ -97,7 +102,8 @@ b6df53894d30040034ecb8e1dcfc1061 /home/coborg/moveit_ws/devel/share/gennodejs/ro
 30ea6b2371057c4520996e329dd1fe0b /home/coborg/moveit_ws/devel/share/gennodejs/ros/hebi_cpp_api_examples/srv/SetFeedbackFrequency.js
 373f759dd18bbfa2d9d96220fe6490cf /home/coborg/moveit_ws/devel/share/gennodejs/ros/hebi_cpp_api_examples/srv/SetGains.js
 5e4ea55cd33ee698e7ea0a1dc67612f3 /home/coborg/moveit_ws/devel/share/gennodejs/ros/hebi_cpp_api_examples/srv/SetIKSeed.js
-6b3436776ccc8cfbb9245804a2394fec /home/coborg/moveit_ws/devel/share/roseus/ros/coborg_move/manifest.l
+e4e993ebd61d3c9a9fdf44b956029d78 /home/coborg/moveit_ws/devel/share/roseus/ros/coborg_move/manifest.l
+43bae808f0a220e63528ac8545cf702e /home/coborg/moveit_ws/devel/share/roseus/ros/coborg_move/msg/CartesianTrajectory.l
 d004a791648348d0234bd6980827a219 /home/coborg/moveit_ws/devel/share/roseus/ros/hebi_cpp_api_examples/manifest.l
 a75fa3a0fcfcf95907c5bc102e06cc80 /home/coborg/moveit_ws/devel/share/roseus/ros/hebi_cpp_api_examples/msg/ArmMotionAction.l
 4b28c6a7528096897d7c4b4fece9bfe1 /home/coborg/moveit_ws/devel/share/roseus/ros/hebi_cpp_api_examples/msg/ArmMotionActionFeedback.l
@@ -124,7 +130,12 @@ f036f8008edcbd555a1210d709dfca7e /home/coborg/moveit_ws/devel/share/roseus/ros/h
 4c4f7dd2715efd46f9a973d50b2554e8 /home/coborg/moveit_ws/devel/share/roseus/ros/hebi_cpp_api_examples/srv/SetGains.l
 59331fad5b1f5c00c0e769d6c3780656 /home/coborg/moveit_ws/devel/share/roseus/ros/hebi_cpp_api_examples/srv/SetIKSeed.l
 52bf1714590fb655b51b30631f95e303 CMakeFiles/clean_test_results
+b367680e0caed4bd2f70b5d264e3b327 coborg_move/CMakeFiles/_coborg_move_generate_messages_check_deps_CartesianTrajectory
+9f006833a56eea910253fc2ea4c48963 coborg_move/CMakeFiles/coborg_move_generate_messages_cpp
 9f006833a56eea910253fc2ea4c48963 coborg_move/CMakeFiles/coborg_move_generate_messages_eus
+9f006833a56eea910253fc2ea4c48963 coborg_move/CMakeFiles/coborg_move_generate_messages_lisp
+9f006833a56eea910253fc2ea4c48963 coborg_move/CMakeFiles/coborg_move_generate_messages_nodejs
+9f006833a56eea910253fc2ea4c48963 coborg_move/CMakeFiles/coborg_move_generate_messages_py
 9f1bc84cef17e53a218b48f5dd83978e hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionAction
 e61016a3924a8249ae97836e1e38a5c8 hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionFeedback
 be194a944724b6cb87ee2e59265944d8 hebi_cpp_api_examples/CMakeFiles/_hebi_cpp_api_examples_generate_messages_check_deps_ArmMotionActionGoal
