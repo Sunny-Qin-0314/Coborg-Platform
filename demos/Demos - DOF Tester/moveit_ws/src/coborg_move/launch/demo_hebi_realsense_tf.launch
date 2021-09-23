@@ -1,0 +1,21 @@
+<launch>
+
+    <!-- removed code to run rs_d400_and_t265.launch-->
+    <include file="$(find realsense2_camera)/launch/rs_d400_and_t265.launch" />
+    <!-- <include file="$(find coborg_arm)/launch/demo.launch" /> -->
+    <include file="$(find dof_4_arm)/launch/demo.launch" />
+
+
+    <node pkg="tf" type="static_transform_publisher" name="t265_coborg_tf" args="0.2794 -0.4999 -0.67305 0 0 0 /t265_link /world 100" />
+    
+    <node pkg="coborg_move" type="dof_PoseGenerator" name="dof_PoseGenerator" output="screen" >
+    <param name="arm_name" value="dof_4_arm"/>
+    <param name="svdTarget" value="target1"/>
+    <param name="originState" value="d400_link"/>
+    <param name="manipulation_state" value="standby"/>
+    <param name="degrees_of_freedom" value="4a"/>
+    </node>
+    <!-- <node pkg="coborg_move" type="dof_MoveItGoalSet" name="dof_MoveItGoalSet" output="screen" /> -->
+
+
+</launch>

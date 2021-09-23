@@ -1,0 +1,2 @@
+
+-DCMAKE_BUILD_TYPE=Debug --pkg coborg_move -G Unix Makefiles -DCATKIN_DEVEL_PREFIX=/home/coborg/Coborg-Platform/catkin_ws/src/coborg_move/devel_isolated -DCMAKE_INSTALL_PREFIX=/home/coborg/Coborg-Platform/catkin_ws/src/coborg_move/install_isolated

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot version="1.2.0">
+  <actuator type="X5-1" />
+  <bracket type="X5HeavyRightOutside" />
+  <actuator type="X5-1" />
+  <link type="X5" twist="0.000000" extension="0.175000" />
+  <actuator type="X5-1" />
+  <link type="X5" twist="0.000000" extension="0.175000" />
+  <actuator type="X5-1" />
+  <bracket type="X5HeavyRightInside" />
+  <actuator type="X5-1" />
+  <link type="X5" twist="0.000000" extension="0.175000" />
+  <end-effector />
+</robot>

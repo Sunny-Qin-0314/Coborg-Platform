@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="coborg_move" type="hello_world" name="hello_world" output="screen" />
+</launch>

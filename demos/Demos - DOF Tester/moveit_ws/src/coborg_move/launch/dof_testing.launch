@@ -1,0 +1,15 @@
+<launch>
+
+  <node name="dof_PoseGenerator" pkg="coborg_move" type="dof_PoseGenerator" respawn="false" output="screen">
+  <param name="svdTarget" value="target1"/>
+  </node>
+
+  <!-- Update static transform between T265 and D435 cameras-->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="t265_to_d400" args="0.009 0.021 0.027 0 -0.018 0.005 /$(arg tf_prefix_camera1)_link /$(arg tf_prefix_camera2)_link 100"/>-->
+  
+  <node name="dof_MoveItGoalSet" pkg="coborg_move" type="dof_MoveItGoalSet" respawn="false" output="screen">
+  <param name="originState" value="camera_link"/>
+  <param name="manipulation_state" value="standby"/>
+  </node>
+
+</launch>
